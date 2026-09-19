@@ -1,0 +1,23 @@
+# Local source and generated media
+*.mp3
+*.wav
+*.flac
+*.mid
+*.midi
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Large local models and temporary files
+*.pt
+*.pth
+*.onnx
+*.tmp
+*.temp
+
+# Keep final normalized JSON output trackable.
+
