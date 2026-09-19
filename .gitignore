@@ -2,6 +2,9 @@
 *.mp3
 *.wav
 *.flac
+*.m4a
+*.aac
+*.ogg
 *.mid
 *.midi
 
@@ -20,4 +23,3 @@ __pycache__/
 *.temp
 
 # Keep final normalized JSON output trackable.
-
