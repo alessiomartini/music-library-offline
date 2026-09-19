@@ -1,0 +1,23 @@
+[project]
+name = "music-library-offline"
+version = "0.1.0"
+description = "Offline audio-to-score pipeline for music-library"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "demucs>=4.0.0",
+    "torch>=2.0.0",
+    "torchaudio>=2.0.0",
+    "music21>=9.0.0",
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "librosa>=0.10.0",
+    "pretty-midi>=0.2.10",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
