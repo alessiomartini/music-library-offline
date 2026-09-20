@@ -64,26 +64,27 @@ song-specific. Run them in order for a new or re-transcribed song:
 
 1. `separate.py <slug>` — Demucs source separation into vocal +
    accompaniment stems (`working/<slug>/{vocals,accompaniment}.wav`).
-2. `transcribe_vocals.py <slug>` — vocal melody, from whichever source the
-   song config's `melodySource.type` names:
-   - `"curated"` — read a manually curated MusicXML reference
-     (`melodySource.musicxml`). Authoritative; use once a curated reference
-     exists and has been checked against the recording. This is what
-     Your Song uses.
-   - `"basic-pitch"` — automatic transcription (Basic Pitch) filtered by
-     `melodySource.vocalRange` / `firstVocalSec` / `velocityThreshold` /
-     `minDurationTicks`, then quantized to an eighth-note grid (music21's
-     MusicXML writer rejects the "inexpressible" raw durations basic-pitch
-     produces otherwise). This is what E cerca 'e me capi uses; expect it to
-     need correction, same as any automatic transcription (see
-     `docs/FUTURE-ARCHITECTURE.md`, "Human Curation Is Part of the
-     Workflow" — not yet done for this song).
-3. `align_lyrics.py <slug>` — assigns each syllable in the song config's
-   `lyrics` to the next vocal note event, in order within each verse
-   (resetting at verse boundaries rather than drifting across the whole
-   song), skipping tied continuation notes. A simple heuristic: it does not
-   detect a real melisma (one syllable held across several *different*
-   pitches, no tie) within a verse — mark those in the song config by hand.
+2. `transcribe_vocals.py <slug>` — automatic vocal melody transcription
+   (Basic Pitch) over the vocal stem, filtered by `melodySource.vocalRange`
+   / `firstVocalSec` / `velocityThreshold` / `minDurationTicks`, then
+   quantized to an eighth-note grid (music21's MusicXML writer rejects the
+   "inexpressible" raw durations basic-pitch produces otherwise). Always
+   automatic — there is no manually curated melody source. Expect the
+   result to need correction, same as any automatic transcription (see
+   `docs/FUTURE-ARCHITECTURE.md`, "Human Curation Is Part of the
+   Workflow").
+3. `align_lyrics.py <slug>` — forced alignment: runs torchaudio's `MMS_FA`
+   (a multilingual Wav2Vec2 CTC aligner) over the vocal stem against the
+   full, romanized (via `uroman`) syllable sequence from the song config's
+   `lyrics`, to find each syllable's actual onset/offset in the recording.
+   CTC alignment absorbs silence and instrumental gaps between syllables on
+   its own, so no verse-boundary guessing is needed. Vocal pitch for each
+   syllable is read from whichever `transcribe_vocals.py` note is active at
+   its midpoint — Basic Pitch's note *boundaries* are otherwise unused, since
+   every output event's timing now comes from the aligner and there is
+   exactly one output event per syllable. A syllable whose text romanizes to
+   nothing in the aligner's vocabulary (e.g. corrupted source text) is
+   dropped with a warning rather than aborting the run.
 4. `extract_harmony.py <slug>` — chord recognition on the accompaniment stem
    via **lv-chordia** (see below). Duration is derived from the next
    event's already-rounded start, not rounded independently — see "Harmony

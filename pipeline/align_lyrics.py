@@ -2,32 +2,32 @@
 """
 Step 3 — lyric alignment.
 
-Assigns each syllable from songs/<slug>.json's "lyrics" to the next vocal
-note event, in order, within each verse — not across the whole song in one
-pass. Two heuristics reduce (but do not eliminate) the mismatch between note
-count and syllable count that a real melody with tied notes and melismas
-always has:
+Forced alignment: given the vocal stem and the song config's already-known
+lyric text, finds when each syllable is actually sung by running torchaudio's
+MMS_FA (a multilingual Wav2Vec2 CTC forced aligner) over the full audio
+against the flattened, romanized syllable sequence from every verse in
+songs/<slug>.json's "lyrics", in order. This replaces the previous
+sequential/per-verse heuristic (assign syllables to notes in order, reset at
+guessed verse boundaries), which had no information about where in the
+recording a syllable actually falls and broke down whenever the automatic
+melody transcription's note count didn't match the syllable count.
 
-1. A tied note (see transcribe_vocals.py's tie extraction) is one sustained
-   musical note split across a barline into two written events. Only the
-   first (tie type "start") consumes a syllable; the continuation/stop
-   note(s) get no lyric, the same way a single untied note would.
+Because CTC forced alignment naturally absorbs silence/instrumental gaps
+between tokens (via the blank symbol), it does not need verse boundaries
+guessed in advance, and it produces exact onset/offset timing per syllable
+directly from the audio.
 
-2. Syllables are assigned per verse, not in one pass across the whole
-   song. The alignment resets at each verse boundary instead of letting a
-   melisma's extra notes permanently shift every syllable after it for the
-   rest of the song. Verse boundaries are guessed by matching each verse's
-   expected cumulative position (by syllable count, as a fraction of the
-   song's total syllables) against the nearest actual rest in the melody —
-   printed below for a quick check against the recording.
+Vocal note pitch still comes from working/<slug>/vocal-events.json (Basic
+Pitch, see transcribe_vocals.py): each syllable's aligned time window is
+matched to the Basic Pitch note event active at its midpoint (nearest by
+start tick if none is active there) purely to read off a pitch. Basic
+Pitch's own note *boundaries* are no longer used for anything — every
+output event's timing comes from the forced aligner, and there is exactly
+one output event per syllable (no more notes carried with no lyric).
 
-Neither heuristic detects a real melisma (one syllable held across several
-*different* pitches, no tie) within a verse: that still falls back to
-"leftover notes get no lyric" at the end of the verse's syllable list, same
-as the old whole-song behavior but now contained to one verse instead of
-cascading through the rest of the song. Getting melismas fully right needs
-either audio/text forced alignment or hand-marked note-spans in the song
-config — see docs/FUTURE-ARCHITECTURE.md's melisma model.
+A syllable whose text romanizes to no character in the aligner's vocabulary
+(e.g. corrupted source text) cannot be aligned and is dropped with a
+warning, rather than crashing the run.
 
 Writes working/<slug>/aligned-lyrics.json.
 
@@ -35,96 +35,146 @@ Run with:  python pipeline/align_lyrics.py <slug>
 """
 import argparse
 import json
+import sys
 from pathlib import Path
+
+import torch
+import librosa
+from torchaudio.pipelines import MMS_FA as BUNDLE
+import uroman
 
 from constants import PPQ
 
 REPO_ROOT = Path(__file__).parent.parent
 
 
-def find_verse_boundaries(events: list[dict], verse_syllable_counts: list[int]) -> list[int]:
-    """Return, for each verse after the first, the event index it should start at.
+def safe_print(message: str) -> None:
+    """print() that can't crash on a console codepage that doesn't cover a
+    character in song lyrics (e.g. Windows cp1252 vs. a source file's
+    mojibake or accented text)."""
+    encoding = sys.stdout.encoding or "ascii"
+    print(message.encode(encoding, errors="replace").decode(encoding))
 
-    Matches the verse's expected position (cumulative syllables so far /
-    total syllables) against the nearest actual rest between two assignable
-    (non-tie-continuation) events, so a boundary never falls in the middle
-    of a legato run.
-    """
-    assignable_indices = [i for i, e in enumerate(events) if e.get("tie", {}).get("type") not in ("continue", "stop")]
-    total_syllables = sum(verse_syllable_counts)
-    total_assignable = len(assignable_indices)
 
-    # Candidate boundaries: a rest between consecutive assignable events,
-    # recorded as (how many assignable slots precede it, its event index).
-    candidates = []
-    for pos, idx in enumerate(assignable_indices[:-1]):
-        next_idx = assignable_indices[pos + 1]
-        prev_end = events[idx]["start"] + events[idx]["duration"]
-        if events[next_idx]["start"] > prev_end:
-            candidates.append((pos + 1, next_idx))
+# Snap syllable onsets/durations to a sixteenth-note grid: the forced
+# aligner's raw frame timestamps land at arbitrary audio-frame precision,
+# and an unquantized quarterLength is either rejected outright or notated
+# unreadably by music21's MusicXML writer (same rationale as
+# transcribe_vocals.py's and extract_harmony.py's grid quantization).
+GRID_TICKS = PPQ // 4
+MIN_DURATION_TICKS = GRID_TICKS
 
-    boundaries = []
-    cumulative = 0
-    for count in verse_syllable_counts[:-1]:
-        cumulative += count
-        target_fraction = cumulative / total_syllables
-        best = min(candidates, key=lambda c: abs(c[0] / total_assignable - target_fraction))
-        boundaries.append(best[1])
-    return boundaries
+
+def flatten_syllables(config: dict) -> list[dict]:
+    return [
+        {"verse": verse["verse"], "text": syl["text"], "syllabic": syl.get("syllabic", "single")}
+        for verse in config["lyrics"]
+        for syl in verse["syllables"]
+    ]
+
+
+def romanize_syllables(syllables: list[dict], valid_chars: set[str], warnings: list[str]) -> list[str]:
+    romanizer = uroman.Uroman()
+    romanized = []
+    for syl in syllables:
+        text = romanizer.romanize_string(syl["text"]).lower().strip()
+        text = "".join(c for c in text if c in valid_chars)
+        if not text:
+            warnings.append(f"syllable {syl['text']!r} (verse {syl['verse']!r}) romanized to nothing usable, dropping")
+        romanized.append(text)
+    return romanized
+
+
+def align_audio(vocals_path: Path, romanized: list[str]) -> tuple[list, float]:
+    """Returns (per-word TokenSpan lists, seconds-per-frame ratio) for the
+    non-empty entries of `romanized`, aligned against the full vocal stem."""
+    model = BUNDLE.get_model()
+    model.eval()
+    tokenizer = BUNDLE.get_tokenizer()
+    aligner = BUNDLE.get_aligner()
+
+    audio, _ = librosa.load(str(vocals_path), sr=BUNDLE.sample_rate, mono=True)
+    waveform = torch.from_numpy(audio).unsqueeze(0)
+
+    non_empty = [w for w in romanized if w]
+    safe_print(f"Running forced alignment on {waveform.shape[1] / BUNDLE.sample_rate:.1f}s of audio, {len(non_empty)} words ...")
+    with torch.inference_mode():
+        emission, _ = model(waveform)
+
+    tokens = tokenizer(non_empty)
+    spans = aligner(emission[0], tokens)
+    ratio = waveform.shape[1] / emission.shape[1] / BUNDLE.sample_rate
+    return spans, ratio
+
+
+def nearest_pitch(vocal_events: list[dict], midpoint_tick: int) -> int:
+    for event in vocal_events:
+        if event["start"] <= midpoint_tick < event["start"] + event["duration"]:
+            return event["pitch"]
+    return min(vocal_events, key=lambda e: abs(e["start"] - midpoint_tick))["pitch"]
 
 
 def align(slug: str) -> None:
     config = json.loads((REPO_ROOT / "songs" / f"{slug}.json").read_text())
+    vocals_path = REPO_ROOT / "working" / slug / "vocals.wav"
+    if not vocals_path.exists():
+        raise SystemExit(f"ERROR: {vocals_path} not found — run separate.py first")
     events_path = REPO_ROOT / "working" / slug / "vocal-events.json"
     if not events_path.exists():
         raise SystemExit(f"ERROR: {events_path} not found — run transcribe_vocals.py first")
-    events = sorted(json.loads(events_path.read_text())["events"], key=lambda e: e["start"])
+    vocal_events = sorted(json.loads(events_path.read_text())["events"], key=lambda e: e["start"])
 
-    verses = config["lyrics"]
-    verse_syllable_counts = [len(v["syllables"]) for v in verses]
-    print(f"Vocal note events: {len(events)}")
-    print(f"Verses: {[v['verse'] for v in verses]}, syllable counts: {verse_syllable_counts}")
+    syllables = flatten_syllables(config)
+    safe_print(f"Syllables in song config: {len(syllables)}")
 
-    boundaries = find_verse_boundaries(events, verse_syllable_counts) if len(verses) > 1 else []
-    segment_bounds = [0, *boundaries, len(events)]
+    warnings: list[str] = []
+    valid_chars = set(BUNDLE.get_dict(star=None)) - {"-"}
+    romanized = romanize_syllables(syllables, valid_chars, warnings)
+    for w in warnings:
+        safe_print(f"WARNING: {w}")
+
+    spans, ratio = align_audio(vocals_path, romanized)
+
     tempo_bpm = config["tempoBpm"]
-    for i, idx in enumerate(boundaries):
-        seconds = events[idx]["start"] / PPQ * 60.0 / tempo_bpm
-        print(f"  guessed boundary before verse {verses[i + 1]['verse']!r}: event {idx}, ~{seconds:.1f}s — check against the recording")
+    ticks_per_sec = tempo_bpm / 60.0 * PPQ
 
     aligned = []
-    total_notes_without_lyrics = 0
-    for verse, start_idx, end_idx in zip(verses, segment_bounds, segment_bounds[1:]):
-        segment = events[start_idx:end_idx]
-        syllables = verse["syllables"]
-        syl_i = 0
-        placed = 0
-        for event in segment:
-            lyric = None
-            is_tie_continuation = event.get("tie", {}).get("type") in ("continue", "stop")
-            if not is_tie_continuation and syl_i < len(syllables):
-                syl = syllables[syl_i]
-                lyric = {"verse": verse["verse"], "text": syl["text"], "syllabic": syl.get("syllabic", "single")}
-                syl_i += 1
-                placed += 1
-            entry = {"start": event["start"], "duration": event["duration"], "pitch": event["pitch"], "lyric": lyric}
-            if "tie" in event:
-                entry["tie"] = event["tie"]
-            aligned.append(entry)
-        if syl_i < len(syllables):
-            print(f"WARNING: verse {verse['verse']!r} has {len(syllables) - syl_i} syllables left over — more syllables than assignable notes in this segment")
-        without_lyric = sum(1 for e in segment if not e.get("tie", {}).get("type") in ("continue", "stop")) - placed
-        total_notes_without_lyrics += without_lyric + sum(1 for e in segment if e.get("tie", {}).get("type") in ("continue", "stop"))
-        print(f"  {verse['verse']!r}: {len(segment)} notes, {placed}/{len(syllables)} syllables placed")
+    span_i = 0
+    previous_end = 0
+    dropped = 0
+    for syl, word in zip(syllables, romanized):
+        if not word:
+            dropped += 1
+            continue
+        span = spans[span_i]
+        span_i += 1
+
+        start_sec = span[0].start * ratio
+        end_sec = span[-1].end * ratio
+        start = round(start_sec * ticks_per_sec / GRID_TICKS) * GRID_TICKS
+        end = round(end_sec * ticks_per_sec / GRID_TICKS) * GRID_TICKS
+        start = max(start, previous_end)
+        duration = max(end - start, MIN_DURATION_TICKS)
+
+        pitch = nearest_pitch(vocal_events, start + duration // 2)
+        aligned.append({
+            "start": start,
+            "duration": duration,
+            "pitch": pitch,
+            "lyric": {"verse": syl["verse"], "text": syl["text"], "syllabic": syl["syllabic"]},
+        })
+        previous_end = start + duration
+
+    safe_print(f"Aligned {len(aligned)}/{len(syllables)} syllables ({dropped} dropped, unalignable text)")
 
     output_path = REPO_ROOT / "working" / slug / "aligned-lyrics.json"
     output_path.write_text(json.dumps({
         "ppq": PPQ,
         "aligned": aligned,
-        "notes_without_lyrics": total_notes_without_lyrics,
-        "total_syllables": sum(verse_syllable_counts),
+        "total_syllables": len(syllables),
+        "syllables_dropped": dropped,
     }, indent=2))
-    print(f"Wrote {output_path}")
+    safe_print(f"Wrote {output_path}")
 
 
 if __name__ == "__main__":

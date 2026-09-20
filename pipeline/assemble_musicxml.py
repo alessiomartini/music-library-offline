@@ -58,21 +58,26 @@ def chord_symbol(h: dict) -> m21harmony.ChordSymbol:
     return m21harmony.ChordSymbol(symbol)
 
 
-def build_voice_part(vocal_events: list[dict], lyrics_by_start: dict) -> stream.Part:
+def build_voice_part(aligned: list[dict]) -> stream.Part:
+    """Builds the voice part from align_lyrics.py's own events — one per
+    syllable, forced-aligned timing — rather than from
+    transcribe_vocals.py's raw Basic Pitch notes: align_lyrics.py's output
+    is the authoritative note timing (see its module docstring), and its
+    "start" ticks generally don't coincide with Basic Pitch's own."""
     part = stream.Part()
     part.id = "voice"
     part.partName = "Voice"
     part.instrument = instrument.Vocalist()
     part.insert(0, clef.TrebleClef())
 
-    for event in vocal_events:
+    for event in aligned:
         p = m21pitch.Pitch()
         p.midi = event["pitch"]
         n = note.Note(p)
         n.duration.quarterLength = ticks_to_ql(event["duration"])
         n.offset = ticks_to_ql(event["start"])
 
-        lyric = lyrics_by_start.get(event["start"])
+        lyric = event.get("lyric")
         if lyric:
             n.lyrics.append(note.Lyric(text=lyric["text"], number=1, syllabic=lyric.get("syllabic", "single")))
 
@@ -181,7 +186,6 @@ def assemble(slug: str) -> None:
     config = json.loads((REPO_ROOT / "songs" / f"{slug}.json").read_text())
     working_dir = REPO_ROOT / "working" / slug
 
-    vocal_events = json.loads((working_dir / "vocal-events.json").read_text())["events"]
     aligned = json.loads((working_dir / "aligned-lyrics.json").read_text())["aligned"]
     harmony_events = json.loads((working_dir / "harmony-events.json").read_text())["harmony"]
     instrumental_path = working_dir / "instrumental-events.json"
@@ -189,24 +193,21 @@ def assemble(slug: str) -> None:
         raise SystemExit(f"ERROR: {instrumental_path} not found — run transcribe_instrumental.py first")
     instrumental_events = json.loads(instrumental_path.read_text())["events"]
 
-    print(f"Vocal events: {len(vocal_events)}")
-    print(f"Aligned lyrics: {len([a for a in aligned if a['lyric']])}")
+    print(f"Aligned voice events: {len(aligned)} ({len([a for a in aligned if a['lyric']])} with a lyric)")
     print(f"Harmony events: {len(harmony_events)}")
     print(f"Instrumental events: {len(instrumental_events)}")
 
-    lyrics_by_start = {a["start"]: a["lyric"] for a in aligned if a["lyric"]}
-
     outputs = {
-        "voice.musicxml": [build_voice_part(vocal_events, lyrics_by_start)],
+        "voice.musicxml": [build_voice_part(aligned)],
         "instrumental.musicxml": [build_instrumental_part(instrumental_events)],
         "harmony.musicxml": [build_harmony_symbols_part(harmony_events)],
         "full-score.musicxml": [
-            build_voice_part(vocal_events, lyrics_by_start),
+            build_voice_part(aligned),
             build_instrumental_part(instrumental_events),
             build_harmony_symbols_part(harmony_events),
         ],
         "lead-sheet.musicxml": [
-            build_voice_part(vocal_events, lyrics_by_start),
+            build_voice_part(aligned),
             build_harmony_symbols_part(harmony_events),
         ],
     }
