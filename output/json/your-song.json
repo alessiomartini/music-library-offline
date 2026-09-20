@@ -239,6 +239,58 @@
       {
         "start": 218880,
         "duration": 3840
+      },
+      {
+        "start": 222720,
+        "duration": 3840
+      },
+      {
+        "start": 226560,
+        "duration": 3840
+      },
+      {
+        "start": 230400,
+        "duration": 3840
+      },
+      {
+        "start": 234240,
+        "duration": 3840
+      },
+      {
+        "start": 238080,
+        "duration": 3840
+      },
+      {
+        "start": 241920,
+        "duration": 3840
+      },
+      {
+        "start": 245760,
+        "duration": 3840
+      },
+      {
+        "start": 249600,
+        "duration": 3840
+      },
+      {
+        "start": 253440,
+        "duration": 3840
+      },
+      {
+        "start": 257280,
+        "duration": 3840
+      },
+      {
+        "start": 261120,
+        "duration": 3840
+      },
+      {
+        "start": 264960,
+        "duration": 3840
+      },
+      {
+        "start": 268800,
+        "duration": 3840
       }
     ],
     "tempo": {
@@ -252,8 +304,8 @@
         "events": [
           {
             "kind": "note",
-            "start": 2040,
-            "duration": 60,
+            "start": 8160,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -265,8 +317,8 @@
           },
           {
             "kind": "note",
-            "start": 2100,
-            "duration": 60,
+            "start": 8400,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -278,8 +330,8 @@
           },
           {
             "kind": "note",
-            "start": 2160,
-            "duration": 60,
+            "start": 8640,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -291,8 +343,8 @@
           },
           {
             "kind": "note",
-            "start": 2220,
-            "duration": 60,
+            "start": 8880,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -304,8 +356,8 @@
           },
           {
             "kind": "note",
-            "start": 2280,
-            "duration": 120,
+            "start": 9120,
+            "duration": 480,
             "pitch": 67,
             "lyrics": [
               {
@@ -317,8 +369,8 @@
           },
           {
             "kind": "note",
-            "start": 2400,
-            "duration": 60,
+            "start": 9600,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -330,8 +382,8 @@
           },
           {
             "kind": "note",
-            "start": 2460,
-            "duration": 180,
+            "start": 9840,
+            "duration": 720,
             "pitch": 67,
             "lyrics": [
               {
@@ -343,8 +395,8 @@
           },
           {
             "kind": "note",
-            "start": 2640,
-            "duration": 120,
+            "start": 10560,
+            "duration": 480,
             "pitch": 67,
             "lyrics": [
               {
@@ -356,8 +408,8 @@
           },
           {
             "kind": "note",
-            "start": 3000,
-            "duration": 60,
+            "start": 12000,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -369,8 +421,8 @@
           },
           {
             "kind": "note",
-            "start": 3060,
-            "duration": 60,
+            "start": 12240,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -382,8 +434,8 @@
           },
           {
             "kind": "note",
-            "start": 3120,
-            "duration": 60,
+            "start": 12480,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -395,8 +447,8 @@
           },
           {
             "kind": "note",
-            "start": 3180,
-            "duration": 60,
+            "start": 12720,
+            "duration": 240,
             "pitch": 70,
             "lyrics": [
               {
@@ -408,8 +460,8 @@
           },
           {
             "kind": "note",
-            "start": 3240,
-            "duration": 120,
+            "start": 12960,
+            "duration": 480,
             "pitch": 65,
             "lyrics": [
               {
@@ -421,8 +473,8 @@
           },
           {
             "kind": "note",
-            "start": 3360,
-            "duration": 180,
+            "start": 13440,
+            "duration": 720,
             "pitch": 67,
             "lyrics": [
               {
@@ -434,8 +486,8 @@
           },
           {
             "kind": "note",
-            "start": 3540,
-            "duration": 30,
+            "start": 14160,
+            "duration": 120,
             "pitch": 68,
             "lyrics": [
               {
@@ -447,8 +499,8 @@
           },
           {
             "kind": "note",
-            "start": 3570,
-            "duration": 30,
+            "start": 14280,
+            "duration": 120,
             "pitch": 67,
             "lyrics": [
               {
@@ -460,8 +512,8 @@
           },
           {
             "kind": "note",
-            "start": 3600,
-            "duration": 240,
+            "start": 14400,
+            "duration": 960,
             "pitch": 65,
             "lyrics": [
               {
@@ -473,8 +525,8 @@
           },
           {
             "kind": "note",
-            "start": 4020,
-            "duration": 60,
+            "start": 16080,
+            "duration": 240,
             "pitch": 60,
             "lyrics": [
               {
@@ -486,8 +538,8 @@
           },
           {
             "kind": "note",
-            "start": 4080,
-            "duration": 60,
+            "start": 16320,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -499,8 +551,8 @@
           },
           {
             "kind": "note",
-            "start": 4140,
-            "duration": 60,
+            "start": 16560,
+            "duration": 240,
             "pitch": 62,
             "lyrics": [
               {
@@ -512,8 +564,8 @@
           },
           {
             "kind": "note",
-            "start": 4200,
-            "duration": 60,
+            "start": 16800,
+            "duration": 240,
             "pitch": 62,
             "lyrics": [
               {
@@ -525,8 +577,8 @@
           },
           {
             "kind": "note",
-            "start": 4260,
-            "duration": 60,
+            "start": 17040,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -538,8 +590,8 @@
           },
           {
             "kind": "note",
-            "start": 4320,
-            "duration": 180,
+            "start": 17280,
+            "duration": 720,
             "pitch": 63,
             "lyrics": [
               {
@@ -551,8 +603,8 @@
           },
           {
             "kind": "note",
-            "start": 4500,
-            "duration": 60,
+            "start": 18000,
+            "duration": 240,
             "pitch": 62,
             "lyrics": [
               {
@@ -564,8 +616,8 @@
           },
           {
             "kind": "note",
-            "start": 4560,
-            "duration": 60,
+            "start": 18240,
+            "duration": 240,
             "pitch": 62,
             "lyrics": [
               {
@@ -577,8 +629,8 @@
           },
           {
             "kind": "note",
-            "start": 4620,
-            "duration": 180,
+            "start": 18480,
+            "duration": 720,
             "pitch": 63,
             "lyrics": [
               {
@@ -590,8 +642,8 @@
           },
           {
             "kind": "note",
-            "start": 4920,
-            "duration": 60,
+            "start": 19680,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -603,8 +655,8 @@
           },
           {
             "kind": "note",
-            "start": 4980,
-            "duration": 60,
+            "start": 19920,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -616,8 +668,8 @@
           },
           {
             "kind": "note",
-            "start": 5040,
-            "duration": 60,
+            "start": 20160,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -629,8 +681,8 @@
           },
           {
             "kind": "note",
-            "start": 5100,
-            "duration": 120,
+            "start": 20400,
+            "duration": 480,
             "pitch": 63,
             "lyrics": [
               {
@@ -642,8 +694,8 @@
           },
           {
             "kind": "note",
-            "start": 5220,
-            "duration": 60,
+            "start": 20880,
+            "duration": 240,
             "pitch": 66,
             "lyrics": [
               {
@@ -655,8 +707,8 @@
           },
           {
             "kind": "note",
-            "start": 5280,
-            "duration": 60,
+            "start": 21120,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -668,8 +720,8 @@
           },
           {
             "kind": "note",
-            "start": 5340,
-            "duration": 120,
+            "start": 21360,
+            "duration": 480,
             "pitch": 63,
             "lyrics": [
               {
@@ -681,8 +733,8 @@
           },
           {
             "kind": "note",
-            "start": 5460,
-            "duration": 60,
+            "start": 21840,
+            "duration": 240,
             "pitch": 58,
             "lyrics": [
               {
@@ -694,8 +746,8 @@
           },
           {
             "kind": "note",
-            "start": 5520,
-            "duration": 60,
+            "start": 22080,
+            "duration": 240,
             "pitch": 60,
             "lyrics": [
               {
@@ -707,8 +759,8 @@
           },
           {
             "kind": "note",
-            "start": 5580,
-            "duration": 180,
+            "start": 22320,
+            "duration": 720,
             "pitch": 63,
             "lyrics": [
               {
@@ -720,8 +772,8 @@
           },
           {
             "kind": "note",
-            "start": 5940,
-            "duration": 60,
+            "start": 23760,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -733,8 +785,8 @@
           },
           {
             "kind": "note",
-            "start": 6000,
-            "duration": 60,
+            "start": 24000,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -746,8 +798,8 @@
           },
           {
             "kind": "note",
-            "start": 6060,
-            "duration": 60,
+            "start": 24240,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -759,8 +811,8 @@
           },
           {
             "kind": "note",
-            "start": 6120,
-            "duration": 120,
+            "start": 24480,
+            "duration": 480,
             "pitch": 63,
             "lyrics": [
               {
@@ -772,8 +824,8 @@
           },
           {
             "kind": "note",
-            "start": 6240,
-            "duration": 60,
+            "start": 24960,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -785,8 +837,8 @@
           },
           {
             "kind": "note",
-            "start": 6300,
-            "duration": 120,
+            "start": 25200,
+            "duration": 480,
             "pitch": 65,
             "lyrics": [
               {
@@ -798,8 +850,8 @@
           },
           {
             "kind": "note",
-            "start": 6420,
-            "duration": 60,
+            "start": 25680,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -811,8 +863,8 @@
           },
           {
             "kind": "note",
-            "start": 6480,
-            "duration": 60,
+            "start": 25920,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -824,8 +876,8 @@
           },
           {
             "kind": "note",
-            "start": 6540,
-            "duration": 60,
+            "start": 26160,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -837,8 +889,8 @@
           },
           {
             "kind": "note",
-            "start": 6600,
-            "duration": 120,
+            "start": 26400,
+            "duration": 480,
             "pitch": 65,
             "lyrics": [
               {
@@ -850,8 +902,8 @@
           },
           {
             "kind": "note",
-            "start": 6840,
-            "duration": 60,
+            "start": 27360,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -863,8 +915,8 @@
           },
           {
             "kind": "note",
-            "start": 6900,
-            "duration": 60,
+            "start": 27600,
+            "duration": 240,
             "pitch": 70,
             "lyrics": [
               {
@@ -876,8 +928,8 @@
           },
           {
             "kind": "note",
-            "start": 6960,
-            "duration": 60,
+            "start": 27840,
+            "duration": 240,
             "pitch": 70,
             "lyrics": [
               {
@@ -889,8 +941,8 @@
           },
           {
             "kind": "note",
-            "start": 7020,
-            "duration": 180,
+            "start": 28080,
+            "duration": 720,
             "pitch": 72,
             "lyrics": [
               {
@@ -902,8 +954,8 @@
           },
           {
             "kind": "note",
-            "start": 7200,
-            "duration": 60,
+            "start": 28800,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -915,8 +967,8 @@
           },
           {
             "kind": "note",
-            "start": 7260,
-            "duration": 60,
+            "start": 29040,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -928,8 +980,8 @@
           },
           {
             "kind": "note",
-            "start": 7320,
-            "duration": 120,
+            "start": 29280,
+            "duration": 480,
             "pitch": 60,
             "lyrics": [
               {
@@ -941,8 +993,8 @@
           },
           {
             "kind": "note",
-            "start": 7800,
-            "duration": 60,
+            "start": 31200,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -954,8 +1006,8 @@
           },
           {
             "kind": "note",
-            "start": 7860,
-            "duration": 60,
+            "start": 31440,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -967,8 +1019,8 @@
           },
           {
             "kind": "note",
-            "start": 7920,
-            "duration": 60,
+            "start": 31680,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -980,8 +1032,8 @@
           },
           {
             "kind": "note",
-            "start": 7980,
-            "duration": 60,
+            "start": 31920,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -993,8 +1045,8 @@
           },
           {
             "kind": "note",
-            "start": 8040,
-            "duration": 120,
+            "start": 32160,
+            "duration": 480,
             "pitch": 70,
             "lyrics": [
               {
@@ -1006,8 +1058,8 @@
           },
           {
             "kind": "note",
-            "start": 8160,
-            "duration": 180,
+            "start": 32640,
+            "duration": 720,
             "pitch": 72,
             "lyrics": [
               {
@@ -1019,8 +1071,8 @@
           },
           {
             "kind": "note",
-            "start": 8340,
-            "duration": 60,
+            "start": 33360,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -1032,8 +1084,8 @@
           },
           {
             "kind": "note",
-            "start": 8400,
-            "duration": 60,
+            "start": 33600,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -1045,8 +1097,8 @@
           },
           {
             "kind": "note",
-            "start": 8460,
-            "duration": 180,
+            "start": 33840,
+            "duration": 720,
             "pitch": 65,
             "lyrics": [
               {
@@ -1058,8 +1110,8 @@
           },
           {
             "kind": "note",
-            "start": 8760,
-            "duration": 60,
+            "start": 35040,
+            "duration": 240,
             "pitch": 60,
             "lyrics": [
               {
@@ -1071,8 +1123,8 @@
           },
           {
             "kind": "note",
-            "start": 8820,
-            "duration": 60,
+            "start": 35280,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -1084,8 +1136,8 @@
           },
           {
             "kind": "note",
-            "start": 8880,
-            "duration": 60,
+            "start": 35520,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -1097,8 +1149,8 @@
           },
           {
             "kind": "note",
-            "start": 8940,
-            "duration": 180,
+            "start": 35760,
+            "duration": 720,
             "pitch": 63,
             "lyrics": [
               {
@@ -1110,8 +1162,8 @@
           },
           {
             "kind": "note",
-            "start": 9120,
-            "duration": 60,
+            "start": 36480,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -1123,8 +1175,8 @@
           },
           {
             "kind": "note",
-            "start": 9180,
-            "duration": 180,
+            "start": 36720,
+            "duration": 720,
             "pitch": 65,
             "lyrics": [
               {
@@ -1136,8 +1188,8 @@
           },
           {
             "kind": "note",
-            "start": 9360,
-            "duration": 240,
+            "start": 37440,
+            "duration": 960,
             "pitch": 65,
             "lyrics": [
               {
@@ -1149,8 +1201,8 @@
           },
           {
             "kind": "note",
-            "start": 10200,
-            "duration": 60,
+            "start": 40800,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -1162,8 +1214,8 @@
           },
           {
             "kind": "note",
-            "start": 10260,
-            "duration": 60,
+            "start": 41040,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -1175,8 +1227,8 @@
           },
           {
             "kind": "note",
-            "start": 10320,
-            "duration": 60,
+            "start": 41280,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -1188,8 +1240,8 @@
           },
           {
             "kind": "note",
-            "start": 10380,
-            "duration": 60,
+            "start": 41520,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -1201,8 +1253,8 @@
           },
           {
             "kind": "note",
-            "start": 10440,
-            "duration": 120,
+            "start": 41760,
+            "duration": 480,
             "pitch": 67,
             "lyrics": [
               {
@@ -1214,8 +1266,8 @@
           },
           {
             "kind": "note",
-            "start": 10560,
-            "duration": 60,
+            "start": 42240,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -1227,8 +1279,8 @@
           },
           {
             "kind": "note",
-            "start": 10620,
-            "duration": 180,
+            "start": 42480,
+            "duration": 720,
             "pitch": 67,
             "lyrics": [
               {
@@ -1240,8 +1292,8 @@
           },
           {
             "kind": "note",
-            "start": 10800,
-            "duration": 120,
+            "start": 43200,
+            "duration": 480,
             "pitch": 67,
             "lyrics": [
               {
@@ -1253,8 +1305,8 @@
           },
           {
             "kind": "note",
-            "start": 11160,
-            "duration": 60,
+            "start": 44640,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -1266,8 +1318,8 @@
           },
           {
             "kind": "note",
-            "start": 11220,
-            "duration": 60,
+            "start": 44880,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -1279,8 +1331,8 @@
           },
           {
             "kind": "note",
-            "start": 11280,
-            "duration": 60,
+            "start": 45120,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -1292,8 +1344,8 @@
           },
           {
             "kind": "note",
-            "start": 11340,
-            "duration": 60,
+            "start": 45360,
+            "duration": 240,
             "pitch": 70,
             "lyrics": [
               {
@@ -1305,8 +1357,8 @@
           },
           {
             "kind": "note",
-            "start": 11400,
-            "duration": 120,
+            "start": 45600,
+            "duration": 480,
             "pitch": 65,
             "lyrics": [
               {
@@ -1318,8 +1370,8 @@
           },
           {
             "kind": "note",
-            "start": 11520,
-            "duration": 180,
+            "start": 46080,
+            "duration": 720,
             "pitch": 67,
             "lyrics": [
               {
@@ -1331,8 +1383,8 @@
           },
           {
             "kind": "note",
-            "start": 11700,
-            "duration": 30,
+            "start": 46800,
+            "duration": 120,
             "pitch": 68,
             "lyrics": [
               {
@@ -1344,8 +1396,8 @@
           },
           {
             "kind": "note",
-            "start": 11730,
-            "duration": 30,
+            "start": 46920,
+            "duration": 120,
             "pitch": 67,
             "lyrics": [
               {
@@ -1357,8 +1409,8 @@
           },
           {
             "kind": "note",
-            "start": 11760,
-            "duration": 240,
+            "start": 47040,
+            "duration": 960,
             "pitch": 65,
             "lyrics": [
               {
@@ -1370,8 +1422,8 @@
           },
           {
             "kind": "note",
-            "start": 12180,
-            "duration": 60,
+            "start": 48720,
+            "duration": 240,
             "pitch": 60,
             "lyrics": [
               {
@@ -1383,8 +1435,8 @@
           },
           {
             "kind": "note",
-            "start": 12240,
-            "duration": 60,
+            "start": 48960,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -1396,8 +1448,8 @@
           },
           {
             "kind": "note",
-            "start": 12300,
-            "duration": 60,
+            "start": 49200,
+            "duration": 240,
             "pitch": 62,
             "lyrics": [
               {
@@ -1409,8 +1461,8 @@
           },
           {
             "kind": "note",
-            "start": 12360,
-            "duration": 60,
+            "start": 49440,
+            "duration": 240,
             "pitch": 62,
             "lyrics": [
               {
@@ -1422,8 +1474,8 @@
           },
           {
             "kind": "note",
-            "start": 12420,
-            "duration": 60,
+            "start": 49680,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -1435,8 +1487,8 @@
           },
           {
             "kind": "note",
-            "start": 12480,
-            "duration": 180,
+            "start": 49920,
+            "duration": 720,
             "pitch": 63,
             "lyrics": [
               {
@@ -1448,8 +1500,8 @@
           },
           {
             "kind": "note",
-            "start": 12660,
-            "duration": 60,
+            "start": 50640,
+            "duration": 240,
             "pitch": 62,
             "lyrics": [
               {
@@ -1461,8 +1513,8 @@
           },
           {
             "kind": "note",
-            "start": 12720,
-            "duration": 60,
+            "start": 50880,
+            "duration": 240,
             "pitch": 62,
             "lyrics": [
               {
@@ -1474,8 +1526,8 @@
           },
           {
             "kind": "note",
-            "start": 12780,
-            "duration": 180,
+            "start": 51120,
+            "duration": 720,
             "pitch": 63,
             "lyrics": [
               {
@@ -1487,8 +1539,8 @@
           },
           {
             "kind": "note",
-            "start": 13080,
-            "duration": 60,
+            "start": 52320,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -1500,8 +1552,8 @@
           },
           {
             "kind": "note",
-            "start": 13140,
-            "duration": 60,
+            "start": 52560,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -1513,8 +1565,8 @@
           },
           {
             "kind": "note",
-            "start": 13200,
-            "duration": 60,
+            "start": 52800,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -1526,8 +1578,8 @@
           },
           {
             "kind": "note",
-            "start": 13260,
-            "duration": 120,
+            "start": 53040,
+            "duration": 480,
             "pitch": 63,
             "lyrics": [
               {
@@ -1539,8 +1591,8 @@
           },
           {
             "kind": "note",
-            "start": 13380,
-            "duration": 60,
+            "start": 53520,
+            "duration": 240,
             "pitch": 66,
             "lyrics": [
               {
@@ -1552,8 +1604,8 @@
           },
           {
             "kind": "note",
-            "start": 13440,
-            "duration": 60,
+            "start": 53760,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -1565,8 +1617,8 @@
           },
           {
             "kind": "note",
-            "start": 13500,
-            "duration": 120,
+            "start": 54000,
+            "duration": 480,
             "pitch": 63,
             "lyrics": [
               {
@@ -1578,8 +1630,8 @@
           },
           {
             "kind": "note",
-            "start": 13620,
-            "duration": 60,
+            "start": 54480,
+            "duration": 240,
             "pitch": 58,
             "lyrics": [
               {
@@ -1591,8 +1643,8 @@
           },
           {
             "kind": "note",
-            "start": 13680,
-            "duration": 60,
+            "start": 54720,
+            "duration": 240,
             "pitch": 60,
             "lyrics": [
               {
@@ -1604,8 +1656,8 @@
           },
           {
             "kind": "note",
-            "start": 13740,
-            "duration": 180,
+            "start": 54960,
+            "duration": 720,
             "pitch": 63,
             "lyrics": [
               {
@@ -1617,8 +1669,8 @@
           },
           {
             "kind": "note",
-            "start": 14100,
-            "duration": 60,
+            "start": 56400,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -1630,8 +1682,8 @@
           },
           {
             "kind": "note",
-            "start": 14160,
-            "duration": 60,
+            "start": 56640,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -1643,8 +1695,8 @@
           },
           {
             "kind": "note",
-            "start": 14220,
-            "duration": 60,
+            "start": 56880,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -1656,8 +1708,8 @@
           },
           {
             "kind": "note",
-            "start": 14280,
-            "duration": 120,
+            "start": 57120,
+            "duration": 480,
             "pitch": 63,
             "lyrics": [
               {
@@ -1669,8 +1721,8 @@
           },
           {
             "kind": "note",
-            "start": 14400,
-            "duration": 60,
+            "start": 57600,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -1682,8 +1734,8 @@
           },
           {
             "kind": "note",
-            "start": 14460,
-            "duration": 120,
+            "start": 57840,
+            "duration": 480,
             "pitch": 65,
             "lyrics": [
               {
@@ -1695,8 +1747,8 @@
           },
           {
             "kind": "note",
-            "start": 14580,
-            "duration": 60,
+            "start": 58320,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -1708,8 +1760,8 @@
           },
           {
             "kind": "note",
-            "start": 14640,
-            "duration": 60,
+            "start": 58560,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -1721,8 +1773,8 @@
           },
           {
             "kind": "note",
-            "start": 14700,
-            "duration": 60,
+            "start": 58800,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -1734,8 +1786,8 @@
           },
           {
             "kind": "note",
-            "start": 14760,
-            "duration": 120,
+            "start": 59040,
+            "duration": 480,
             "pitch": 65,
             "lyrics": [
               {
@@ -1747,8 +1799,8 @@
           },
           {
             "kind": "note",
-            "start": 15000,
-            "duration": 60,
+            "start": 60000,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -1760,8 +1812,8 @@
           },
           {
             "kind": "note",
-            "start": 15060,
-            "duration": 60,
+            "start": 60240,
+            "duration": 240,
             "pitch": 70,
             "lyrics": [
               {
@@ -1773,8 +1825,8 @@
           },
           {
             "kind": "note",
-            "start": 15120,
-            "duration": 60,
+            "start": 60480,
+            "duration": 240,
             "pitch": 70,
             "lyrics": [
               {
@@ -1786,8 +1838,8 @@
           },
           {
             "kind": "note",
-            "start": 15180,
-            "duration": 180,
+            "start": 60720,
+            "duration": 720,
             "pitch": 72,
             "lyrics": [
               {
@@ -1799,8 +1851,8 @@
           },
           {
             "kind": "note",
-            "start": 15360,
-            "duration": 60,
+            "start": 61440,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -1812,8 +1864,8 @@
           },
           {
             "kind": "note",
-            "start": 15420,
-            "duration": 60,
+            "start": 61680,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -1825,8 +1877,8 @@
           },
           {
             "kind": "note",
-            "start": 15480,
-            "duration": 120,
+            "start": 61920,
+            "duration": 480,
             "pitch": 60,
             "lyrics": [
               {
@@ -1838,8 +1890,8 @@
           },
           {
             "kind": "note",
-            "start": 15960,
-            "duration": 60,
+            "start": 63840,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -1851,8 +1903,8 @@
           },
           {
             "kind": "note",
-            "start": 16020,
-            "duration": 60,
+            "start": 64080,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -1864,8 +1916,8 @@
           },
           {
             "kind": "note",
-            "start": 16080,
-            "duration": 60,
+            "start": 64320,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -1877,8 +1929,8 @@
           },
           {
             "kind": "note",
-            "start": 16140,
-            "duration": 60,
+            "start": 64560,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -1890,8 +1942,8 @@
           },
           {
             "kind": "note",
-            "start": 16200,
-            "duration": 120,
+            "start": 64800,
+            "duration": 480,
             "pitch": 70,
             "lyrics": [
               {
@@ -1903,8 +1955,8 @@
           },
           {
             "kind": "note",
-            "start": 16320,
-            "duration": 180,
+            "start": 65280,
+            "duration": 720,
             "pitch": 72,
             "lyrics": [
               {
@@ -1916,8 +1968,8 @@
           },
           {
             "kind": "note",
-            "start": 16500,
-            "duration": 60,
+            "start": 66000,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -1929,8 +1981,8 @@
           },
           {
             "kind": "note",
-            "start": 16560,
-            "duration": 60,
+            "start": 66240,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -1942,8 +1994,8 @@
           },
           {
             "kind": "note",
-            "start": 16620,
-            "duration": 180,
+            "start": 66480,
+            "duration": 720,
             "pitch": 65,
             "lyrics": [
               {
@@ -1955,8 +2007,8 @@
           },
           {
             "kind": "note",
-            "start": 16920,
-            "duration": 60,
+            "start": 67680,
+            "duration": 240,
             "pitch": 60,
             "lyrics": [
               {
@@ -1968,8 +2020,8 @@
           },
           {
             "kind": "note",
-            "start": 16980,
-            "duration": 60,
+            "start": 67920,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -1981,8 +2033,8 @@
           },
           {
             "kind": "note",
-            "start": 17040,
-            "duration": 60,
+            "start": 68160,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -1994,8 +2046,8 @@
           },
           {
             "kind": "note",
-            "start": 17100,
-            "duration": 180,
+            "start": 68400,
+            "duration": 720,
             "pitch": 63,
             "lyrics": [
               {
@@ -2007,8 +2059,8 @@
           },
           {
             "kind": "note",
-            "start": 18360,
-            "duration": 60,
+            "start": 73440,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -2020,8 +2072,8 @@
           },
           {
             "kind": "note",
-            "start": 18420,
-            "duration": 60,
+            "start": 73680,
+            "duration": 240,
             "pitch": 70,
             "lyrics": [
               {
@@ -2033,8 +2085,8 @@
           },
           {
             "kind": "note",
-            "start": 18480,
-            "duration": 60,
+            "start": 73920,
+            "duration": 240,
             "pitch": 70,
             "lyrics": [
               {
@@ -2046,8 +2098,8 @@
           },
           {
             "kind": "note",
-            "start": 18540,
-            "duration": 60,
+            "start": 74160,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -2059,8 +2111,8 @@
           },
           {
             "kind": "note",
-            "start": 18600,
-            "duration": 120,
+            "start": 74400,
+            "duration": 480,
             "pitch": 70,
             "lyrics": [
               {
@@ -2072,8 +2124,8 @@
           },
           {
             "kind": "note",
-            "start": 18720,
-            "duration": 120,
+            "start": 74880,
+            "duration": 480,
             "pitch": 72,
             "lyrics": [
               {
@@ -2085,8 +2137,8 @@
           },
           {
             "kind": "note",
-            "start": 18840,
-            "duration": 60,
+            "start": 75360,
+            "duration": 240,
             "pitch": 70,
             "lyrics": [
               {
@@ -2098,8 +2150,8 @@
           },
           {
             "kind": "note",
-            "start": 18900,
-            "duration": 60,
+            "start": 75600,
+            "duration": 240,
             "pitch": 66,
             "lyrics": [
               {
@@ -2111,8 +2163,8 @@
           },
           {
             "kind": "note",
-            "start": 18960,
-            "duration": 60,
+            "start": 75840,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -2124,8 +2176,8 @@
           },
           {
             "kind": "note",
-            "start": 19020,
-            "duration": 180,
+            "start": 76080,
+            "duration": 720,
             "pitch": 63,
             "lyrics": [
               {
@@ -2137,8 +2189,8 @@
           },
           {
             "kind": "note",
-            "start": 19380,
-            "duration": 60,
+            "start": 77520,
+            "duration": 240,
             "pitch": 60,
             "lyrics": [
               {
@@ -2150,8 +2202,8 @@
           },
           {
             "kind": "note",
-            "start": 19440,
-            "duration": 60,
+            "start": 77760,
+            "duration": 240,
             "pitch": 60,
             "lyrics": [
               {
@@ -2163,8 +2215,8 @@
           },
           {
             "kind": "note",
-            "start": 19500,
-            "duration": 60,
+            "start": 78000,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -2176,8 +2228,8 @@
           },
           {
             "kind": "note",
-            "start": 19560,
-            "duration": 60,
+            "start": 78240,
+            "duration": 240,
             "pitch": 60,
             "lyrics": [
               {
@@ -2189,8 +2241,8 @@
           },
           {
             "kind": "note",
-            "start": 19620,
-            "duration": 60,
+            "start": 78480,
+            "duration": 240,
             "pitch": 66,
             "lyrics": [
               {
@@ -2202,8 +2254,8 @@
           },
           {
             "kind": "note",
-            "start": 19680,
-            "duration": 30,
+            "start": 78720,
+            "duration": 120,
             "pitch": 67,
             "lyrics": [
               {
@@ -2215,8 +2267,8 @@
           },
           {
             "kind": "note",
-            "start": 19710,
-            "duration": 30,
+            "start": 78840,
+            "duration": 120,
             "pitch": 65,
             "lyrics": [
               {
@@ -2228,8 +2280,8 @@
           },
           {
             "kind": "note",
-            "start": 19740,
-            "duration": 180,
+            "start": 78960,
+            "duration": 720,
             "pitch": 63,
             "lyrics": [
               {
@@ -2241,8 +2293,8 @@
           },
           {
             "kind": "note",
-            "start": 20280,
-            "duration": 60,
+            "start": 81120,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -2254,8 +2306,8 @@
           },
           {
             "kind": "note",
-            "start": 20340,
-            "duration": 60,
+            "start": 81360,
+            "duration": 240,
             "pitch": 70,
             "lyrics": [
               {
@@ -2267,8 +2319,8 @@
           },
           {
             "kind": "note",
-            "start": 20400,
-            "duration": 60,
+            "start": 81600,
+            "duration": 240,
             "pitch": 70,
             "lyrics": [
               {
@@ -2280,8 +2332,8 @@
           },
           {
             "kind": "note",
-            "start": 20460,
-            "duration": 120,
+            "start": 81840,
+            "duration": 480,
             "pitch": 70,
             "lyrics": [
               {
@@ -2293,8 +2345,8 @@
           },
           {
             "kind": "note",
-            "start": 20580,
-            "duration": 60,
+            "start": 82320,
+            "duration": 240,
             "pitch": 72,
             "lyrics": [
               {
@@ -2306,8 +2358,8 @@
           },
           {
             "kind": "note",
-            "start": 20640,
-            "duration": 60,
+            "start": 82560,
+            "duration": 240,
             "pitch": 72,
             "lyrics": [
               {
@@ -2319,8 +2371,8 @@
           },
           {
             "kind": "note",
-            "start": 20700,
-            "duration": 120,
+            "start": 82800,
+            "duration": 480,
             "pitch": 70,
             "lyrics": [
               {
@@ -2332,8 +2384,8 @@
           },
           {
             "kind": "note",
-            "start": 20820,
-            "duration": 60,
+            "start": 83280,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -2345,8 +2397,8 @@
           },
           {
             "kind": "note",
-            "start": 20880,
-            "duration": 60,
+            "start": 83520,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -2358,8 +2410,8 @@
           },
           {
             "kind": "note",
-            "start": 20940,
-            "duration": 60,
+            "start": 83760,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -2371,8 +2423,8 @@
           },
           {
             "kind": "note",
-            "start": 21000,
-            "duration": 60,
+            "start": 84000,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -2384,8 +2436,8 @@
           },
           {
             "kind": "note",
-            "start": 21060,
-            "duration": 30,
+            "start": 84240,
+            "duration": 120,
             "pitch": 67,
             "lyrics": [
               {
@@ -2397,8 +2449,8 @@
           },
           {
             "kind": "note",
-            "start": 21090,
-            "duration": 30,
+            "start": 84360,
+            "duration": 120,
             "pitch": 65,
             "lyrics": [
               {
@@ -2410,8 +2462,8 @@
           },
           {
             "kind": "note",
-            "start": 21120,
-            "duration": 240,
+            "start": 84480,
+            "duration": 960,
             "pitch": 63,
             "lyrics": [
               {
@@ -2423,8 +2475,8 @@
           },
           {
             "kind": "note",
-            "start": 21360,
-            "duration": 60,
+            "start": 85440,
+            "duration": 240,
             "pitch": 60,
             "lyrics": [
               {
@@ -2436,8 +2488,8 @@
           },
           {
             "kind": "note",
-            "start": 21420,
-            "duration": 60,
+            "start": 85680,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -2449,8 +2501,8 @@
           },
           {
             "kind": "note",
-            "start": 21480,
-            "duration": 60,
+            "start": 85920,
+            "duration": 240,
             "pitch": 60,
             "lyrics": [
               {
@@ -2462,8 +2514,8 @@
           },
           {
             "kind": "note",
-            "start": 21540,
-            "duration": 60,
+            "start": 86160,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -2475,8 +2527,8 @@
           },
           {
             "kind": "note",
-            "start": 21600,
-            "duration": 30,
+            "start": 86400,
+            "duration": 120,
             "pitch": 66,
             "lyrics": [
               {
@@ -2488,8 +2540,8 @@
           },
           {
             "kind": "note",
-            "start": 21630,
-            "duration": 30,
+            "start": 86520,
+            "duration": 120,
             "pitch": 65,
             "lyrics": [
               {
@@ -2501,8 +2553,8 @@
           },
           {
             "kind": "note",
-            "start": 21660,
-            "duration": 180,
+            "start": 86640,
+            "duration": 720,
             "pitch": 63,
             "lyrics": [
               {
@@ -2514,8 +2566,8 @@
           },
           {
             "kind": "note",
-            "start": 22140,
-            "duration": 60,
+            "start": 88560,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -2527,8 +2579,8 @@
           },
           {
             "kind": "note",
-            "start": 22200,
-            "duration": 60,
+            "start": 88800,
+            "duration": 240,
             "pitch": 72,
             "lyrics": [
               {
@@ -2540,8 +2592,8 @@
           },
           {
             "kind": "note",
-            "start": 22260,
-            "duration": 60,
+            "start": 89040,
+            "duration": 240,
             "pitch": 70,
             "lyrics": [
               {
@@ -2553,8 +2605,8 @@
           },
           {
             "kind": "note",
-            "start": 22320,
-            "duration": 60,
+            "start": 89280,
+            "duration": 240,
             "pitch": 72,
             "lyrics": [
               {
@@ -2566,8 +2618,8 @@
           },
           {
             "kind": "note",
-            "start": 22380,
-            "duration": 180,
+            "start": 89520,
+            "duration": 720,
             "pitch": 75,
             "lyrics": [
               {
@@ -2579,8 +2631,8 @@
           },
           {
             "kind": "note",
-            "start": 22560,
-            "duration": 60,
+            "start": 90240,
+            "duration": 240,
             "pitch": 70,
             "lyrics": [
               {
@@ -2592,8 +2644,8 @@
           },
           {
             "kind": "note",
-            "start": 22620,
-            "duration": 60,
+            "start": 90480,
+            "duration": 240,
             "pitch": 70,
             "lyrics": [
               {
@@ -2605,8 +2657,8 @@
           },
           {
             "kind": "note",
-            "start": 22680,
-            "duration": 60,
+            "start": 90720,
+            "duration": 240,
             "pitch": 72,
             "lyrics": [
               {
@@ -2618,8 +2670,8 @@
           },
           {
             "kind": "note",
-            "start": 22740,
-            "duration": 60,
+            "start": 90960,
+            "duration": 240,
             "pitch": 70,
             "lyrics": [
               {
@@ -2631,8 +2683,8 @@
           },
           {
             "kind": "note",
-            "start": 22800,
-            "duration": 60,
+            "start": 91200,
+            "duration": 240,
             "pitch": 72,
             "lyrics": [
               {
@@ -2644,8 +2696,8 @@
           },
           {
             "kind": "note",
-            "start": 22860,
-            "duration": 180,
+            "start": 91440,
+            "duration": 720,
             "pitch": 75,
             "lyrics": [
               {
@@ -2657,8 +2709,8 @@
           },
           {
             "kind": "note",
-            "start": 23040,
-            "duration": 60,
+            "start": 92160,
+            "duration": 240,
             "pitch": 72,
             "lyrics": [
               {
@@ -2670,8 +2722,8 @@
           },
           {
             "kind": "note",
-            "start": 23100,
-            "duration": 60,
+            "start": 92400,
+            "duration": 240,
             "pitch": 72,
             "lyrics": [
               {
@@ -2683,8 +2735,8 @@
           },
           {
             "kind": "note",
-            "start": 23160,
-            "duration": 60,
+            "start": 92640,
+            "duration": 240,
             "pitch": 71,
             "lyrics": [
               {
@@ -2696,8 +2748,8 @@
           },
           {
             "kind": "note",
-            "start": 23220,
-            "duration": 60,
+            "start": 92880,
+            "duration": 240,
             "pitch": 72,
             "lyrics": [
               {
@@ -2709,8 +2761,8 @@
           },
           {
             "kind": "note",
-            "start": 23280,
-            "duration": 60,
+            "start": 93120,
+            "duration": 240,
             "pitch": 72,
             "lyrics": [
               {
@@ -2722,8 +2774,8 @@
           },
           {
             "kind": "note",
-            "start": 23340,
-            "duration": 60,
+            "start": 93360,
+            "duration": 240,
             "pitch": 75,
             "lyrics": [
               {
@@ -2735,8 +2787,8 @@
           },
           {
             "kind": "note",
-            "start": 23400,
-            "duration": 30,
+            "start": 93600,
+            "duration": 120,
             "pitch": 72,
             "lyrics": [
               {
@@ -2748,8 +2800,8 @@
           },
           {
             "kind": "note",
-            "start": 23430,
-            "duration": 90,
+            "start": 93720,
+            "duration": 360,
             "pitch": 70,
             "lyrics": [
               {
@@ -2761,8 +2813,8 @@
           },
           {
             "kind": "note",
-            "start": 23520,
-            "duration": 240,
+            "start": 94080,
+            "duration": 960,
             "pitch": 72,
             "lyrics": [
               {
@@ -2774,8 +2826,8 @@
           },
           {
             "kind": "note",
-            "start": 24300,
-            "duration": 60,
+            "start": 97200,
+            "duration": 240,
             "pitch": 70,
             "lyrics": [
               {
@@ -2787,8 +2839,8 @@
           },
           {
             "kind": "note",
-            "start": 24360,
-            "duration": 60,
+            "start": 97440,
+            "duration": 240,
             "pitch": 72,
             "lyrics": [
               {
@@ -2800,8 +2852,8 @@
           },
           {
             "kind": "note",
-            "start": 24420,
-            "duration": 60,
+            "start": 97680,
+            "duration": 240,
             "pitch": 70,
             "lyrics": [
               {
@@ -2813,8 +2865,8 @@
           },
           {
             "kind": "note",
-            "start": 24480,
-            "duration": 180,
+            "start": 97920,
+            "duration": 720,
             "pitch": 70,
             "lyrics": [
               {
@@ -2826,8 +2878,8 @@
           },
           {
             "kind": "note",
-            "start": 24660,
-            "duration": 60,
+            "start": 98640,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -2839,8 +2891,8 @@
           },
           {
             "kind": "note",
-            "start": 24720,
-            "duration": 60,
+            "start": 98880,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -2852,8 +2904,8 @@
           },
           {
             "kind": "note",
-            "start": 24780,
-            "duration": 180,
+            "start": 99120,
+            "duration": 720,
             "pitch": 63,
             "lyrics": [
               {
@@ -2865,8 +2917,8 @@
           },
           {
             "kind": "note",
-            "start": 24960,
-            "duration": 180,
+            "start": 99840,
+            "duration": 720,
             "pitch": 65,
             "lyrics": [
               {
@@ -2878,8 +2930,8 @@
           },
           {
             "kind": "note",
-            "start": 25140,
-            "duration": 60,
+            "start": 100560,
+            "duration": 240,
             "pitch": 60,
             "lyrics": [
               {
@@ -2891,8 +2943,8 @@
           },
           {
             "kind": "note",
-            "start": 25200,
-            "duration": 180,
+            "start": 100800,
+            "duration": 720,
             "pitch": 60,
             "lyrics": [
               {
@@ -2904,8 +2956,8 @@
           },
           {
             "kind": "note",
-            "start": 25380,
-            "duration": 60,
+            "start": 101520,
+            "duration": 240,
             "pitch": 60,
             "lyrics": [
               {
@@ -2917,8 +2969,8 @@
           },
           {
             "kind": "note",
-            "start": 25440,
-            "duration": 180,
+            "start": 101760,
+            "duration": 720,
             "pitch": 66,
             "lyrics": [
               {
@@ -2930,8 +2982,8 @@
           },
           {
             "kind": "note",
-            "start": 25620,
-            "duration": 60,
+            "start": 102480,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -2943,8 +2995,8 @@
           },
           {
             "kind": "note",
-            "start": 25680,
-            "duration": 60,
+            "start": 102720,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -2956,8 +3008,8 @@
           },
           {
             "kind": "note",
-            "start": 25740,
-            "duration": 60,
+            "start": 102960,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -2969,8 +3021,8 @@
           },
           {
             "kind": "note",
-            "start": 25800,
-            "duration": 120,
+            "start": 103200,
+            "duration": 480,
             "pitch": 65,
             "lyrics": [
               {
@@ -2982,8 +3034,8 @@
           },
           {
             "kind": "note",
-            "start": 25920,
-            "duration": 480,
+            "start": 103680,
+            "duration": 1920,
             "pitch": 65,
             "lyrics": [
               {
@@ -2995,8 +3047,8 @@
           },
           {
             "kind": "note",
-            "start": 28920,
-            "duration": 60,
+            "start": 115680,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -3008,8 +3060,8 @@
           },
           {
             "kind": "note",
-            "start": 28980,
-            "duration": 60,
+            "start": 115920,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -3021,8 +3073,8 @@
           },
           {
             "kind": "note",
-            "start": 29040,
-            "duration": 60,
+            "start": 116160,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -3034,8 +3086,8 @@
           },
           {
             "kind": "note",
-            "start": 29100,
-            "duration": 60,
+            "start": 116400,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -3047,8 +3099,8 @@
           },
           {
             "kind": "note",
-            "start": 29160,
-            "duration": 120,
+            "start": 116640,
+            "duration": 480,
             "pitch": 67,
             "lyrics": [
               {
@@ -3060,8 +3112,8 @@
           },
           {
             "kind": "note",
-            "start": 29280,
-            "duration": 60,
+            "start": 117120,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -3073,8 +3125,8 @@
           },
           {
             "kind": "note",
-            "start": 29340,
-            "duration": 180,
+            "start": 117360,
+            "duration": 720,
             "pitch": 67,
             "lyrics": [
               {
@@ -3086,8 +3138,8 @@
           },
           {
             "kind": "note",
-            "start": 29520,
-            "duration": 120,
+            "start": 118080,
+            "duration": 480,
             "pitch": 67,
             "lyrics": [
               {
@@ -3099,8 +3151,8 @@
           },
           {
             "kind": "note",
-            "start": 29880,
-            "duration": 60,
+            "start": 119520,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -3112,8 +3164,8 @@
           },
           {
             "kind": "note",
-            "start": 29940,
-            "duration": 60,
+            "start": 119760,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -3125,8 +3177,8 @@
           },
           {
             "kind": "note",
-            "start": 30000,
-            "duration": 60,
+            "start": 120000,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -3138,8 +3190,8 @@
           },
           {
             "kind": "note",
-            "start": 30060,
-            "duration": 60,
+            "start": 120240,
+            "duration": 240,
             "pitch": 70,
             "lyrics": [
               {
@@ -3151,8 +3203,8 @@
           },
           {
             "kind": "note",
-            "start": 30120,
-            "duration": 120,
+            "start": 120480,
+            "duration": 480,
             "pitch": 65,
             "lyrics": [
               {
@@ -3164,8 +3216,8 @@
           },
           {
             "kind": "note",
-            "start": 30240,
-            "duration": 180,
+            "start": 120960,
+            "duration": 720,
             "pitch": 67,
             "lyrics": [
               {
@@ -3177,8 +3229,8 @@
           },
           {
             "kind": "note",
-            "start": 30420,
-            "duration": 30,
+            "start": 121680,
+            "duration": 120,
             "pitch": 68,
             "lyrics": [
               {
@@ -3190,8 +3242,8 @@
           },
           {
             "kind": "note",
-            "start": 30450,
-            "duration": 30,
+            "start": 121800,
+            "duration": 120,
             "pitch": 67,
             "lyrics": [
               {
@@ -3203,8 +3255,8 @@
           },
           {
             "kind": "note",
-            "start": 30480,
-            "duration": 240,
+            "start": 121920,
+            "duration": 960,
             "pitch": 65,
             "lyrics": [
               {
@@ -3216,8 +3268,8 @@
           },
           {
             "kind": "note",
-            "start": 30900,
-            "duration": 60,
+            "start": 123600,
+            "duration": 240,
             "pitch": 60,
             "lyrics": [
               {
@@ -3229,8 +3281,8 @@
           },
           {
             "kind": "note",
-            "start": 30960,
-            "duration": 60,
+            "start": 123840,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -3242,8 +3294,8 @@
           },
           {
             "kind": "note",
-            "start": 31020,
-            "duration": 60,
+            "start": 124080,
+            "duration": 240,
             "pitch": 62,
             "lyrics": [
               {
@@ -3255,8 +3307,8 @@
           },
           {
             "kind": "note",
-            "start": 31080,
-            "duration": 60,
+            "start": 124320,
+            "duration": 240,
             "pitch": 62,
             "lyrics": [
               {
@@ -3268,8 +3320,8 @@
           },
           {
             "kind": "note",
-            "start": 31140,
-            "duration": 60,
+            "start": 124560,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -3281,8 +3333,8 @@
           },
           {
             "kind": "note",
-            "start": 31200,
-            "duration": 180,
+            "start": 124800,
+            "duration": 720,
             "pitch": 63,
             "lyrics": [
               {
@@ -3294,8 +3346,8 @@
           },
           {
             "kind": "note",
-            "start": 31380,
-            "duration": 60,
+            "start": 125520,
+            "duration": 240,
             "pitch": 62,
             "lyrics": [
               {
@@ -3307,8 +3359,8 @@
           },
           {
             "kind": "note",
-            "start": 31440,
-            "duration": 60,
+            "start": 125760,
+            "duration": 240,
             "pitch": 62,
             "lyrics": [
               {
@@ -3320,8 +3372,8 @@
           },
           {
             "kind": "note",
-            "start": 31500,
-            "duration": 180,
+            "start": 126000,
+            "duration": 720,
             "pitch": 63,
             "lyrics": [
               {
@@ -3333,8 +3385,8 @@
           },
           {
             "kind": "note",
-            "start": 31800,
-            "duration": 60,
+            "start": 127200,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -3346,8 +3398,8 @@
           },
           {
             "kind": "note",
-            "start": 31860,
-            "duration": 60,
+            "start": 127440,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -3359,8 +3411,8 @@
           },
           {
             "kind": "note",
-            "start": 31920,
-            "duration": 60,
+            "start": 127680,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -3372,8 +3424,8 @@
           },
           {
             "kind": "note",
-            "start": 31980,
-            "duration": 120,
+            "start": 127920,
+            "duration": 480,
             "pitch": 63,
             "lyrics": [
               {
@@ -3385,8 +3437,8 @@
           },
           {
             "kind": "note",
-            "start": 32100,
-            "duration": 60,
+            "start": 128400,
+            "duration": 240,
             "pitch": 66,
             "lyrics": [
               {
@@ -3398,8 +3450,8 @@
           },
           {
             "kind": "note",
-            "start": 32160,
-            "duration": 60,
+            "start": 128640,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -3411,8 +3463,8 @@
           },
           {
             "kind": "note",
-            "start": 32220,
-            "duration": 120,
+            "start": 128880,
+            "duration": 480,
             "pitch": 63,
             "lyrics": [
               {
@@ -3424,8 +3476,8 @@
           },
           {
             "kind": "note",
-            "start": 32340,
-            "duration": 60,
+            "start": 129360,
+            "duration": 240,
             "pitch": 58,
             "lyrics": [
               {
@@ -3437,8 +3489,8 @@
           },
           {
             "kind": "note",
-            "start": 32400,
-            "duration": 60,
+            "start": 129600,
+            "duration": 240,
             "pitch": 60,
             "lyrics": [
               {
@@ -3450,8 +3502,8 @@
           },
           {
             "kind": "note",
-            "start": 32460,
-            "duration": 180,
+            "start": 129840,
+            "duration": 720,
             "pitch": 63,
             "lyrics": [
               {
@@ -3463,8 +3515,8 @@
           },
           {
             "kind": "note",
-            "start": 32820,
-            "duration": 60,
+            "start": 131280,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -3476,8 +3528,8 @@
           },
           {
             "kind": "note",
-            "start": 32880,
-            "duration": 60,
+            "start": 131520,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -3489,8 +3541,8 @@
           },
           {
             "kind": "note",
-            "start": 32940,
-            "duration": 60,
+            "start": 131760,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -3502,8 +3554,8 @@
           },
           {
             "kind": "note",
-            "start": 33000,
-            "duration": 120,
+            "start": 132000,
+            "duration": 480,
             "pitch": 63,
             "lyrics": [
               {
@@ -3515,8 +3567,8 @@
           },
           {
             "kind": "note",
-            "start": 33120,
-            "duration": 60,
+            "start": 132480,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -3528,8 +3580,8 @@
           },
           {
             "kind": "note",
-            "start": 33180,
-            "duration": 120,
+            "start": 132720,
+            "duration": 480,
             "pitch": 65,
             "lyrics": [
               {
@@ -3541,8 +3593,8 @@
           },
           {
             "kind": "note",
-            "start": 33300,
-            "duration": 60,
+            "start": 133200,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -3554,8 +3606,8 @@
           },
           {
             "kind": "note",
-            "start": 33360,
-            "duration": 60,
+            "start": 133440,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -3567,8 +3619,8 @@
           },
           {
             "kind": "note",
-            "start": 33420,
-            "duration": 60,
+            "start": 133680,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -3580,8 +3632,8 @@
           },
           {
             "kind": "note",
-            "start": 33480,
-            "duration": 120,
+            "start": 133920,
+            "duration": 480,
             "pitch": 65,
             "lyrics": [
               {
@@ -3593,8 +3645,8 @@
           },
           {
             "kind": "note",
-            "start": 33720,
-            "duration": 60,
+            "start": 134880,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -3606,8 +3658,8 @@
           },
           {
             "kind": "note",
-            "start": 33780,
-            "duration": 60,
+            "start": 135120,
+            "duration": 240,
             "pitch": 70,
             "lyrics": [
               {
@@ -3619,8 +3671,8 @@
           },
           {
             "kind": "note",
-            "start": 33840,
-            "duration": 60,
+            "start": 135360,
+            "duration": 240,
             "pitch": 70,
             "lyrics": [
               {
@@ -3632,8 +3684,8 @@
           },
           {
             "kind": "note",
-            "start": 33900,
-            "duration": 180,
+            "start": 135600,
+            "duration": 720,
             "pitch": 72,
             "lyrics": [
               {
@@ -3645,8 +3697,8 @@
           },
           {
             "kind": "note",
-            "start": 34080,
-            "duration": 60,
+            "start": 136320,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -3658,8 +3710,8 @@
           },
           {
             "kind": "note",
-            "start": 34140,
-            "duration": 60,
+            "start": 136560,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -3671,8 +3723,8 @@
           },
           {
             "kind": "note",
-            "start": 34200,
-            "duration": 120,
+            "start": 136800,
+            "duration": 480,
             "pitch": 60,
             "lyrics": [
               {
@@ -3684,8 +3736,8 @@
           },
           {
             "kind": "note",
-            "start": 34680,
-            "duration": 60,
+            "start": 138720,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -3697,8 +3749,8 @@
           },
           {
             "kind": "note",
-            "start": 34740,
-            "duration": 60,
+            "start": 138960,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -3710,8 +3762,8 @@
           },
           {
             "kind": "note",
-            "start": 34800,
-            "duration": 60,
+            "start": 139200,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -3723,8 +3775,8 @@
           },
           {
             "kind": "note",
-            "start": 34860,
-            "duration": 60,
+            "start": 139440,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -3736,8 +3788,8 @@
           },
           {
             "kind": "note",
-            "start": 34920,
-            "duration": 120,
+            "start": 139680,
+            "duration": 480,
             "pitch": 70,
             "lyrics": [
               {
@@ -3749,8 +3801,8 @@
           },
           {
             "kind": "note",
-            "start": 35040,
-            "duration": 180,
+            "start": 140160,
+            "duration": 720,
             "pitch": 72,
             "lyrics": [
               {
@@ -3762,8 +3814,8 @@
           },
           {
             "kind": "note",
-            "start": 35220,
-            "duration": 60,
+            "start": 140880,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -3775,8 +3827,8 @@
           },
           {
             "kind": "note",
-            "start": 35280,
-            "duration": 60,
+            "start": 141120,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -3788,8 +3840,8 @@
           },
           {
             "kind": "note",
-            "start": 35340,
-            "duration": 180,
+            "start": 141360,
+            "duration": 720,
             "pitch": 65,
             "lyrics": [
               {
@@ -3801,8 +3853,8 @@
           },
           {
             "kind": "note",
-            "start": 35640,
-            "duration": 60,
+            "start": 142560,
+            "duration": 240,
             "pitch": 60,
             "lyrics": [
               {
@@ -3814,8 +3866,8 @@
           },
           {
             "kind": "note",
-            "start": 35700,
-            "duration": 60,
+            "start": 142800,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -3827,8 +3879,8 @@
           },
           {
             "kind": "note",
-            "start": 35760,
-            "duration": 60,
+            "start": 143040,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -3840,8 +3892,8 @@
           },
           {
             "kind": "note",
-            "start": 35820,
-            "duration": 180,
+            "start": 143280,
+            "duration": 720,
             "pitch": 63,
             "lyrics": [
               {
@@ -3853,8 +3905,8 @@
           },
           {
             "kind": "note",
-            "start": 36000,
-            "duration": 60,
+            "start": 144000,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -3866,8 +3918,8 @@
           },
           {
             "kind": "note",
-            "start": 36060,
-            "duration": 180,
+            "start": 144240,
+            "duration": 720,
             "pitch": 65,
             "lyrics": [
               {
@@ -3879,8 +3931,8 @@
           },
           {
             "kind": "note",
-            "start": 36240,
-            "duration": 240,
+            "start": 144960,
+            "duration": 960,
             "pitch": 65,
             "lyrics": [
               {
@@ -3892,8 +3944,8 @@
           },
           {
             "kind": "note",
-            "start": 37080,
-            "duration": 60,
+            "start": 148320,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -3905,8 +3957,8 @@
           },
           {
             "kind": "note",
-            "start": 37140,
-            "duration": 60,
+            "start": 148560,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -3918,8 +3970,8 @@
           },
           {
             "kind": "note",
-            "start": 37200,
-            "duration": 60,
+            "start": 148800,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -3931,8 +3983,8 @@
           },
           {
             "kind": "note",
-            "start": 37260,
-            "duration": 60,
+            "start": 149040,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -3944,8 +3996,8 @@
           },
           {
             "kind": "note",
-            "start": 37320,
-            "duration": 120,
+            "start": 149280,
+            "duration": 480,
             "pitch": 67,
             "lyrics": [
               {
@@ -3957,8 +4009,8 @@
           },
           {
             "kind": "note",
-            "start": 37440,
-            "duration": 60,
+            "start": 149760,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -3970,8 +4022,8 @@
           },
           {
             "kind": "note",
-            "start": 37500,
-            "duration": 180,
+            "start": 150000,
+            "duration": 720,
             "pitch": 67,
             "lyrics": [
               {
@@ -3983,8 +4035,8 @@
           },
           {
             "kind": "note",
-            "start": 37680,
-            "duration": 120,
+            "start": 150720,
+            "duration": 480,
             "pitch": 67,
             "lyrics": [
               {
@@ -3996,8 +4048,8 @@
           },
           {
             "kind": "note",
-            "start": 38040,
-            "duration": 60,
+            "start": 152160,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -4009,8 +4061,8 @@
           },
           {
             "kind": "note",
-            "start": 38100,
-            "duration": 60,
+            "start": 152400,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -4022,8 +4074,8 @@
           },
           {
             "kind": "note",
-            "start": 38160,
-            "duration": 60,
+            "start": 152640,
+            "duration": 240,
             "pitch": 65,
             "lyrics": [
               {
@@ -4035,8 +4087,8 @@
           },
           {
             "kind": "note",
-            "start": 38220,
-            "duration": 60,
+            "start": 152880,
+            "duration": 240,
             "pitch": 70,
             "lyrics": [
               {
@@ -4048,8 +4100,8 @@
           },
           {
             "kind": "note",
-            "start": 38280,
-            "duration": 120,
+            "start": 153120,
+            "duration": 480,
             "pitch": 65,
             "lyrics": [
               {
@@ -4061,8 +4113,8 @@
           },
           {
             "kind": "note",
-            "start": 38400,
-            "duration": 180,
+            "start": 153600,
+            "duration": 720,
             "pitch": 67,
             "lyrics": [
               {
@@ -4074,8 +4126,8 @@
           },
           {
             "kind": "note",
-            "start": 38580,
-            "duration": 30,
+            "start": 154320,
+            "duration": 120,
             "pitch": 68,
             "lyrics": [
               {
@@ -4087,8 +4139,8 @@
           },
           {
             "kind": "note",
-            "start": 38610,
-            "duration": 30,
+            "start": 154440,
+            "duration": 120,
             "pitch": 67,
             "lyrics": [
               {
@@ -4100,8 +4152,8 @@
           },
           {
             "kind": "note",
-            "start": 38640,
-            "duration": 240,
+            "start": 154560,
+            "duration": 960,
             "pitch": 65,
             "lyrics": [
               {
@@ -4113,8 +4165,8 @@
           },
           {
             "kind": "note",
-            "start": 39060,
-            "duration": 60,
+            "start": 156240,
+            "duration": 240,
             "pitch": 60,
             "lyrics": [
               {
@@ -4126,8 +4178,8 @@
           },
           {
             "kind": "note",
-            "start": 39120,
-            "duration": 60,
+            "start": 156480,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -4139,8 +4191,8 @@
           },
           {
             "kind": "note",
-            "start": 39180,
-            "duration": 60,
+            "start": 156720,
+            "duration": 240,
             "pitch": 62,
             "lyrics": [
               {
@@ -4152,8 +4204,8 @@
           },
           {
             "kind": "note",
-            "start": 39240,
-            "duration": 60,
+            "start": 156960,
+            "duration": 240,
             "pitch": 62,
             "lyrics": [
               {
@@ -4165,8 +4217,8 @@
           },
           {
             "kind": "note",
-            "start": 39300,
-            "duration": 60,
+            "start": 157200,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -4178,8 +4230,8 @@
           },
           {
             "kind": "note",
-            "start": 39360,
-            "duration": 180,
+            "start": 157440,
+            "duration": 720,
             "pitch": 63,
             "lyrics": [
               {
@@ -4191,8 +4243,8 @@
           },
           {
             "kind": "note",
-            "start": 39540,
-            "duration": 60,
+            "start": 158160,
+            "duration": 240,
             "pitch": 62,
             "lyrics": [
               {
@@ -4204,8 +4256,8 @@
           },
           {
             "kind": "note",
-            "start": 39600,
-            "duration": 60,
+            "start": 158400,
+            "duration": 240,
             "pitch": 62,
             "lyrics": [
               {
@@ -4217,8 +4269,8 @@
           },
           {
             "kind": "note",
-            "start": 39660,
-            "duration": 180,
+            "start": 158640,
+            "duration": 720,
             "pitch": 63,
             "lyrics": [
               {
@@ -4230,8 +4282,8 @@
           },
           {
             "kind": "note",
-            "start": 39960,
-            "duration": 60,
+            "start": 159840,
+            "duration": 240,
             "pitch": 63,
             "lyrics": [
               {
@@ -4243,8 +4295,8 @@
           },
           {
             "kind": "note",
-            "start": 40020,
-            "duration": 60,
+            "start": 160080,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -4256,8 +4308,8 @@
           },
           {
             "kind": "note",
-            "start": 40080,
-            "duration": 60,
+            "start": 160320,
+            "duration": 240,
             "pitch": 67,
             "lyrics": [
               {
@@ -4269,8 +4321,8 @@
           },
           {
             "kind": "note",
-            "start": 40140,
-            "duration": 120,
+            "start": 160560,
+            "duration": 480,
             "pitch": 63,
             "lyrics": [
               {
@@ -4282,8 +4334,8 @@
           },
           {
             "kind": "note",
-            "start": 40260,
-            "duration": 60,
+            "start": 161040,
+            "duration": 240,
             "pitch": 66,
             "lyrics": [
               {
@@ -4295,890 +4347,890 @@
           },
           {
             "kind": "note",
-            "start": 40320,
-            "duration": 60,
+            "start": 161280,
+            "duration": 240,
             "pitch": 65
           },
           {
             "kind": "note",
-            "start": 40380,
-            "duration": 120,
+            "start": 161520,
+            "duration": 480,
             "pitch": 63
           },
           {
             "kind": "note",
-            "start": 40500,
-            "duration": 60,
+            "start": 162000,
+            "duration": 240,
             "pitch": 58
           },
           {
             "kind": "note",
-            "start": 40560,
-            "duration": 60,
+            "start": 162240,
+            "duration": 240,
             "pitch": 60
           },
           {
             "kind": "note",
-            "start": 40620,
-            "duration": 180,
+            "start": 162480,
+            "duration": 720,
             "pitch": 63
           },
           {
             "kind": "note",
-            "start": 40980,
-            "duration": 60,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 41040,
-            "duration": 60,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 41100,
-            "duration": 60,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 41160,
-            "duration": 120,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 41280,
-            "duration": 60,
-            "pitch": 67
-          },
-          {
-            "kind": "note",
-            "start": 41340,
-            "duration": 120,
-            "pitch": 65
-          },
-          {
-            "kind": "note",
-            "start": 41460,
-            "duration": 60,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 41520,
-            "duration": 60,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 41580,
-            "duration": 60,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 41640,
-            "duration": 120,
-            "pitch": 65
-          },
-          {
-            "kind": "note",
-            "start": 41880,
-            "duration": 60,
-            "pitch": 67
-          },
-          {
-            "kind": "note",
-            "start": 41940,
-            "duration": 60,
-            "pitch": 70
-          },
-          {
-            "kind": "note",
-            "start": 42000,
-            "duration": 60,
-            "pitch": 70
-          },
-          {
-            "kind": "note",
-            "start": 42060,
-            "duration": 180,
-            "pitch": 72
-          },
-          {
-            "kind": "note",
-            "start": 42240,
-            "duration": 60,
-            "pitch": 65
-          },
-          {
-            "kind": "note",
-            "start": 42300,
-            "duration": 60,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 42360,
-            "duration": 120,
-            "pitch": 60
-          },
-          {
-            "kind": "note",
-            "start": 42840,
-            "duration": 60,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 42900,
-            "duration": 60,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 42960,
-            "duration": 60,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 43020,
-            "duration": 60,
-            "pitch": 67
-          },
-          {
-            "kind": "note",
-            "start": 43080,
-            "duration": 120,
-            "pitch": 70
-          },
-          {
-            "kind": "note",
-            "start": 43200,
-            "duration": 180,
-            "pitch": 72
-          },
-          {
-            "kind": "note",
-            "start": 43380,
-            "duration": 60,
-            "pitch": 67
-          },
-          {
-            "kind": "note",
-            "start": 43440,
-            "duration": 60,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 43500,
-            "duration": 180,
-            "pitch": 65
-          },
-          {
-            "kind": "note",
-            "start": 43800,
-            "duration": 60,
-            "pitch": 60
-          },
-          {
-            "kind": "note",
-            "start": 43860,
-            "duration": 60,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 43920,
-            "duration": 60,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 43980,
-            "duration": 180,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 45240,
-            "duration": 60,
-            "pitch": 67
-          },
-          {
-            "kind": "note",
-            "start": 45300,
-            "duration": 60,
-            "pitch": 70
-          },
-          {
-            "kind": "note",
-            "start": 45360,
-            "duration": 60,
-            "pitch": 70
-          },
-          {
-            "kind": "note",
-            "start": 45420,
-            "duration": 60,
-            "pitch": 67
-          },
-          {
-            "kind": "note",
-            "start": 45480,
-            "duration": 120,
-            "pitch": 70
-          },
-          {
-            "kind": "note",
-            "start": 45600,
-            "duration": 120,
-            "pitch": 72
-          },
-          {
-            "kind": "note",
-            "start": 45720,
-            "duration": 60,
-            "pitch": 70
-          },
-          {
-            "kind": "note",
-            "start": 45780,
-            "duration": 60,
-            "pitch": 66
-          },
-          {
-            "kind": "note",
-            "start": 45840,
-            "duration": 60,
-            "pitch": 65
-          },
-          {
-            "kind": "note",
-            "start": 45900,
-            "duration": 180,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 46260,
-            "duration": 60,
-            "pitch": 60
-          },
-          {
-            "kind": "note",
-            "start": 46320,
-            "duration": 60,
-            "pitch": 60
-          },
-          {
-            "kind": "note",
-            "start": 46380,
-            "duration": 60,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 46440,
-            "duration": 60,
-            "pitch": 60
-          },
-          {
-            "kind": "note",
-            "start": 46500,
-            "duration": 60,
-            "pitch": 66
-          },
-          {
-            "kind": "note",
-            "start": 46560,
-            "duration": 30,
-            "pitch": 67
-          },
-          {
-            "kind": "note",
-            "start": 46590,
-            "duration": 30,
-            "pitch": 65
-          },
-          {
-            "kind": "note",
-            "start": 46620,
-            "duration": 180,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 47160,
-            "duration": 60,
-            "pitch": 67
-          },
-          {
-            "kind": "note",
-            "start": 47220,
-            "duration": 60,
-            "pitch": 70
-          },
-          {
-            "kind": "note",
-            "start": 47280,
-            "duration": 60,
-            "pitch": 70
-          },
-          {
-            "kind": "note",
-            "start": 47340,
-            "duration": 120,
-            "pitch": 70
-          },
-          {
-            "kind": "note",
-            "start": 47460,
-            "duration": 60,
-            "pitch": 72
-          },
-          {
-            "kind": "note",
-            "start": 47520,
-            "duration": 60,
-            "pitch": 72
-          },
-          {
-            "kind": "note",
-            "start": 47580,
-            "duration": 120,
-            "pitch": 70
-          },
-          {
-            "kind": "note",
-            "start": 47700,
-            "duration": 60,
-            "pitch": 67
-          },
-          {
-            "kind": "note",
-            "start": 47760,
-            "duration": 60,
-            "pitch": 65
-          },
-          {
-            "kind": "note",
-            "start": 47820,
-            "duration": 60,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 47880,
-            "duration": 60,
-            "pitch": 65
-          },
-          {
-            "kind": "note",
-            "start": 47940,
-            "duration": 30,
-            "pitch": 67
-          },
-          {
-            "kind": "note",
-            "start": 47970,
-            "duration": 30,
-            "pitch": 65
-          },
-          {
-            "kind": "note",
-            "start": 48000,
+            "start": 163920,
             "duration": 240,
             "pitch": 63
           },
           {
             "kind": "note",
-            "start": 48240,
-            "duration": 60,
-            "pitch": 60
-          },
-          {
-            "kind": "note",
-            "start": 48300,
-            "duration": 60,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 48360,
-            "duration": 60,
-            "pitch": 60
-          },
-          {
-            "kind": "note",
-            "start": 48420,
-            "duration": 60,
-            "pitch": 65
-          },
-          {
-            "kind": "note",
-            "start": 48480,
-            "duration": 30,
-            "pitch": 66
-          },
-          {
-            "kind": "note",
-            "start": 48510,
-            "duration": 30,
-            "pitch": 65
-          },
-          {
-            "kind": "note",
-            "start": 48540,
-            "duration": 180,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 49020,
-            "duration": 60,
-            "pitch": 67
-          },
-          {
-            "kind": "note",
-            "start": 49080,
-            "duration": 60,
-            "pitch": 72
-          },
-          {
-            "kind": "note",
-            "start": 49140,
-            "duration": 60,
-            "pitch": 70
-          },
-          {
-            "kind": "note",
-            "start": 49200,
-            "duration": 60,
-            "pitch": 72
-          },
-          {
-            "kind": "note",
-            "start": 49260,
-            "duration": 180,
-            "pitch": 75
-          },
-          {
-            "kind": "note",
-            "start": 49440,
-            "duration": 60,
-            "pitch": 70
-          },
-          {
-            "kind": "note",
-            "start": 49500,
-            "duration": 60,
-            "pitch": 70
-          },
-          {
-            "kind": "note",
-            "start": 49560,
-            "duration": 60,
-            "pitch": 72
-          },
-          {
-            "kind": "note",
-            "start": 49620,
-            "duration": 60,
-            "pitch": 70
-          },
-          {
-            "kind": "note",
-            "start": 49680,
-            "duration": 60,
-            "pitch": 72
-          },
-          {
-            "kind": "note",
-            "start": 49740,
-            "duration": 180,
-            "pitch": 75
-          },
-          {
-            "kind": "note",
-            "start": 49920,
-            "duration": 60,
-            "pitch": 72
-          },
-          {
-            "kind": "note",
-            "start": 49980,
-            "duration": 60,
-            "pitch": 72
-          },
-          {
-            "kind": "note",
-            "start": 50040,
-            "duration": 60,
-            "pitch": 71
-          },
-          {
-            "kind": "note",
-            "start": 50100,
-            "duration": 60,
-            "pitch": 72
-          },
-          {
-            "kind": "note",
-            "start": 50160,
-            "duration": 60,
-            "pitch": 72
-          },
-          {
-            "kind": "note",
-            "start": 50220,
-            "duration": 60,
-            "pitch": 75
-          },
-          {
-            "kind": "note",
-            "start": 50280,
-            "duration": 30,
-            "pitch": 72
-          },
-          {
-            "kind": "note",
-            "start": 50310,
-            "duration": 90,
-            "pitch": 70
-          },
-          {
-            "kind": "note",
-            "start": 50400,
+            "start": 164160,
             "duration": 240,
-            "pitch": 72
+            "pitch": 63
           },
           {
             "kind": "note",
-            "start": 51180,
-            "duration": 60,
-            "pitch": 70
+            "start": 164400,
+            "duration": 240,
+            "pitch": 63
           },
           {
             "kind": "note",
-            "start": 51240,
-            "duration": 60,
-            "pitch": 72
+            "start": 164640,
+            "duration": 480,
+            "pitch": 63
           },
           {
             "kind": "note",
-            "start": 51300,
-            "duration": 60,
-            "pitch": 70
-          },
-          {
-            "kind": "note",
-            "start": 51360,
-            "duration": 180,
-            "pitch": 70
-          },
-          {
-            "kind": "note",
-            "start": 51540,
-            "duration": 60,
+            "start": 165120,
+            "duration": 240,
             "pitch": 67
           },
           {
             "kind": "note",
-            "start": 51600,
-            "duration": 60,
-            "pitch": 67
-          },
-          {
-            "kind": "note",
-            "start": 51660,
-            "duration": 180,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 51840,
-            "duration": 180,
-            "pitch": 65
-          },
-          {
-            "kind": "note",
-            "start": 52020,
-            "duration": 60,
-            "pitch": 60
-          },
-          {
-            "kind": "note",
-            "start": 52080,
-            "duration": 180,
-            "pitch": 60
-          },
-          {
-            "kind": "note",
-            "start": 52260,
-            "duration": 60,
-            "pitch": 60
-          },
-          {
-            "kind": "note",
-            "start": 52320,
-            "duration": 180,
-            "pitch": 66
-          },
-          {
-            "kind": "note",
-            "start": 52500,
-            "duration": 60,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 52560,
-            "duration": 60,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 52620,
-            "duration": 60,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 52680,
-            "duration": 120,
-            "pitch": 65
-          },
-          {
-            "kind": "note",
-            "start": 52800,
+            "start": 165360,
             "duration": 480,
             "pitch": 65
           },
           {
             "kind": "note",
-            "start": 53820,
-            "duration": 60,
+            "start": 165840,
+            "duration": 240,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 166080,
+            "duration": 240,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 166320,
+            "duration": 240,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 166560,
+            "duration": 480,
+            "pitch": 65
+          },
+          {
+            "kind": "note",
+            "start": 167520,
+            "duration": 240,
             "pitch": 67
           },
           {
             "kind": "note",
-            "start": 53880,
-            "duration": 60,
+            "start": 167760,
+            "duration": 240,
+            "pitch": 70
+          },
+          {
+            "kind": "note",
+            "start": 168000,
+            "duration": 240,
+            "pitch": 70
+          },
+          {
+            "kind": "note",
+            "start": 168240,
+            "duration": 720,
             "pitch": 72
           },
           {
             "kind": "note",
-            "start": 53940,
-            "duration": 60,
-            "pitch": 71
+            "start": 168960,
+            "duration": 240,
+            "pitch": 65
           },
           {
             "kind": "note",
-            "start": 54000,
-            "duration": 60,
+            "start": 169200,
+            "duration": 240,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 169440,
+            "duration": 480,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 171360,
+            "duration": 240,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 171600,
+            "duration": 240,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 171840,
+            "duration": 240,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 172080,
+            "duration": 240,
+            "pitch": 67
+          },
+          {
+            "kind": "note",
+            "start": 172320,
+            "duration": 480,
+            "pitch": 70
+          },
+          {
+            "kind": "note",
+            "start": 172800,
+            "duration": 720,
             "pitch": 72
           },
           {
             "kind": "note",
-            "start": 54060,
-            "duration": 180,
+            "start": 173520,
+            "duration": 240,
+            "pitch": 67
+          },
+          {
+            "kind": "note",
+            "start": 173760,
+            "duration": 240,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 174000,
+            "duration": 720,
+            "pitch": 65
+          },
+          {
+            "kind": "note",
+            "start": 175200,
+            "duration": 240,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 175440,
+            "duration": 240,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 175680,
+            "duration": 240,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 175920,
+            "duration": 720,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 180960,
+            "duration": 240,
+            "pitch": 67
+          },
+          {
+            "kind": "note",
+            "start": 181200,
+            "duration": 240,
+            "pitch": 70
+          },
+          {
+            "kind": "note",
+            "start": 181440,
+            "duration": 240,
+            "pitch": 70
+          },
+          {
+            "kind": "note",
+            "start": 181680,
+            "duration": 240,
+            "pitch": 67
+          },
+          {
+            "kind": "note",
+            "start": 181920,
+            "duration": 480,
+            "pitch": 70
+          },
+          {
+            "kind": "note",
+            "start": 182400,
+            "duration": 480,
+            "pitch": 72
+          },
+          {
+            "kind": "note",
+            "start": 182880,
+            "duration": 240,
+            "pitch": 70
+          },
+          {
+            "kind": "note",
+            "start": 183120,
+            "duration": 240,
+            "pitch": 66
+          },
+          {
+            "kind": "note",
+            "start": 183360,
+            "duration": 240,
+            "pitch": 65
+          },
+          {
+            "kind": "note",
+            "start": 183600,
+            "duration": 720,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 185040,
+            "duration": 240,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 185280,
+            "duration": 240,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 185520,
+            "duration": 240,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 185760,
+            "duration": 240,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 186000,
+            "duration": 240,
+            "pitch": 66
+          },
+          {
+            "kind": "note",
+            "start": 186240,
+            "duration": 120,
+            "pitch": 67
+          },
+          {
+            "kind": "note",
+            "start": 186360,
+            "duration": 120,
+            "pitch": 65
+          },
+          {
+            "kind": "note",
+            "start": 186480,
+            "duration": 720,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 188640,
+            "duration": 240,
+            "pitch": 67
+          },
+          {
+            "kind": "note",
+            "start": 188880,
+            "duration": 240,
+            "pitch": 70
+          },
+          {
+            "kind": "note",
+            "start": 189120,
+            "duration": 240,
+            "pitch": 70
+          },
+          {
+            "kind": "note",
+            "start": 189360,
+            "duration": 480,
+            "pitch": 70
+          },
+          {
+            "kind": "note",
+            "start": 189840,
+            "duration": 240,
+            "pitch": 72
+          },
+          {
+            "kind": "note",
+            "start": 190080,
+            "duration": 240,
+            "pitch": 72
+          },
+          {
+            "kind": "note",
+            "start": 190320,
+            "duration": 480,
+            "pitch": 70
+          },
+          {
+            "kind": "note",
+            "start": 190800,
+            "duration": 240,
+            "pitch": 67
+          },
+          {
+            "kind": "note",
+            "start": 191040,
+            "duration": 240,
+            "pitch": 65
+          },
+          {
+            "kind": "note",
+            "start": 191280,
+            "duration": 240,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 191520,
+            "duration": 240,
+            "pitch": 65
+          },
+          {
+            "kind": "note",
+            "start": 191760,
+            "duration": 120,
+            "pitch": 67
+          },
+          {
+            "kind": "note",
+            "start": 191880,
+            "duration": 120,
+            "pitch": 65
+          },
+          {
+            "kind": "note",
+            "start": 192000,
+            "duration": 960,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 192960,
+            "duration": 240,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 193200,
+            "duration": 240,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 193440,
+            "duration": 240,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 193680,
+            "duration": 240,
+            "pitch": 65
+          },
+          {
+            "kind": "note",
+            "start": 193920,
+            "duration": 120,
+            "pitch": 66
+          },
+          {
+            "kind": "note",
+            "start": 194040,
+            "duration": 120,
+            "pitch": 65
+          },
+          {
+            "kind": "note",
+            "start": 194160,
+            "duration": 720,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 196080,
+            "duration": 240,
+            "pitch": 67
+          },
+          {
+            "kind": "note",
+            "start": 196320,
+            "duration": 240,
+            "pitch": 72
+          },
+          {
+            "kind": "note",
+            "start": 196560,
+            "duration": 240,
+            "pitch": 70
+          },
+          {
+            "kind": "note",
+            "start": 196800,
+            "duration": 240,
+            "pitch": 72
+          },
+          {
+            "kind": "note",
+            "start": 197040,
+            "duration": 720,
             "pitch": 75
           },
           {
             "kind": "note",
-            "start": 54300,
-            "duration": 60,
+            "start": 197760,
+            "duration": 240,
+            "pitch": 70
+          },
+          {
+            "kind": "note",
+            "start": 198000,
+            "duration": 240,
+            "pitch": 70
+          },
+          {
+            "kind": "note",
+            "start": 198240,
+            "duration": 240,
+            "pitch": 72
+          },
+          {
+            "kind": "note",
+            "start": 198480,
+            "duration": 240,
+            "pitch": 70
+          },
+          {
+            "kind": "note",
+            "start": 198720,
+            "duration": 240,
+            "pitch": 72
+          },
+          {
+            "kind": "note",
+            "start": 198960,
+            "duration": 720,
+            "pitch": 75
+          },
+          {
+            "kind": "note",
+            "start": 199680,
+            "duration": 240,
+            "pitch": 72
+          },
+          {
+            "kind": "note",
+            "start": 199920,
+            "duration": 240,
+            "pitch": 72
+          },
+          {
+            "kind": "note",
+            "start": 200160,
+            "duration": 240,
             "pitch": 71
           },
           {
             "kind": "note",
-            "start": 54360,
-            "duration": 60,
+            "start": 200400,
+            "duration": 240,
+            "pitch": 72
+          },
+          {
+            "kind": "note",
+            "start": 200640,
+            "duration": 240,
+            "pitch": 72
+          },
+          {
+            "kind": "note",
+            "start": 200880,
+            "duration": 240,
+            "pitch": 75
+          },
+          {
+            "kind": "note",
+            "start": 201120,
+            "duration": 120,
+            "pitch": 72
+          },
+          {
+            "kind": "note",
+            "start": 201240,
+            "duration": 360,
+            "pitch": 70
+          },
+          {
+            "kind": "note",
+            "start": 201600,
+            "duration": 960,
+            "pitch": 72
+          },
+          {
+            "kind": "note",
+            "start": 204720,
+            "duration": 240,
+            "pitch": 70
+          },
+          {
+            "kind": "note",
+            "start": 204960,
+            "duration": 240,
+            "pitch": 72
+          },
+          {
+            "kind": "note",
+            "start": 205200,
+            "duration": 240,
+            "pitch": 70
+          },
+          {
+            "kind": "note",
+            "start": 205440,
+            "duration": 720,
+            "pitch": 70
+          },
+          {
+            "kind": "note",
+            "start": 206160,
+            "duration": 240,
+            "pitch": 67
+          },
+          {
+            "kind": "note",
+            "start": 206400,
+            "duration": 240,
+            "pitch": 67
+          },
+          {
+            "kind": "note",
+            "start": 206640,
+            "duration": 720,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 207360,
+            "duration": 720,
+            "pitch": 65
+          },
+          {
+            "kind": "note",
+            "start": 208080,
+            "duration": 240,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 208320,
+            "duration": 720,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 209040,
+            "duration": 240,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 209280,
+            "duration": 720,
+            "pitch": 66
+          },
+          {
+            "kind": "note",
+            "start": 210000,
+            "duration": 240,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 210240,
+            "duration": 240,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 210480,
+            "duration": 240,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 210720,
+            "duration": 480,
+            "pitch": 65
+          },
+          {
+            "kind": "note",
+            "start": 211200,
+            "duration": 1920,
+            "pitch": 65
+          },
+          {
+            "kind": "note",
+            "start": 215280,
+            "duration": 240,
+            "pitch": 67
+          },
+          {
+            "kind": "note",
+            "start": 215520,
+            "duration": 240,
+            "pitch": 72
+          },
+          {
+            "kind": "note",
+            "start": 215760,
+            "duration": 240,
+            "pitch": 71
+          },
+          {
+            "kind": "note",
+            "start": 216000,
+            "duration": 240,
+            "pitch": 72
+          },
+          {
+            "kind": "note",
+            "start": 216240,
+            "duration": 720,
+            "pitch": 75
+          },
+          {
+            "kind": "note",
+            "start": 217200,
+            "duration": 240,
+            "pitch": 71
+          },
+          {
+            "kind": "note",
+            "start": 217440,
+            "duration": 240,
             "pitch": 78
           },
           {
             "kind": "note",
-            "start": 54420,
-            "duration": 60,
+            "start": 217680,
+            "duration": 240,
             "pitch": 77
           },
           {
             "kind": "note",
-            "start": 54480,
-            "duration": 60,
+            "start": 217920,
+            "duration": 240,
             "pitch": 75
           },
           {
             "kind": "note",
-            "start": 54540,
-            "duration": 120,
+            "start": 218160,
+            "duration": 480,
             "pitch": 77
           },
           {
             "kind": "note",
-            "start": 54660,
-            "duration": 60,
+            "start": 218640,
+            "duration": 240,
             "pitch": 72
           },
           {
             "kind": "note",
-            "start": 54780,
-            "duration": 60,
+            "start": 219120,
+            "duration": 240,
             "pitch": 72
           },
           {
             "kind": "note",
-            "start": 54840,
-            "duration": 60,
+            "start": 219360,
+            "duration": 240,
             "pitch": 71
           },
           {
             "kind": "note",
-            "start": 54900,
-            "duration": 60,
+            "start": 219600,
+            "duration": 240,
             "pitch": 72
           },
           {
             "kind": "note",
-            "start": 54960,
-            "duration": 60,
+            "start": 219840,
+            "duration": 240,
             "pitch": 72
           },
           {
             "kind": "note",
-            "start": 55020,
-            "duration": 60,
+            "start": 220080,
+            "duration": 240,
             "pitch": 75
           },
           {
             "kind": "note",
-            "start": 55080,
-            "duration": 30,
+            "start": 220320,
+            "duration": 120,
             "pitch": 72
           },
           {
             "kind": "note",
-            "start": 55110,
-            "duration": 90,
+            "start": 220440,
+            "duration": 360,
             "pitch": 70
           },
           {
             "kind": "note",
-            "start": 55200,
+            "start": 220800,
+            "duration": 1920,
+            "pitch": 72
+          },
+          {
+            "kind": "note",
+            "start": 223920,
+            "duration": 240,
+            "pitch": 70
+          },
+          {
+            "kind": "note",
+            "start": 224160,
             "duration": 480,
             "pitch": 72
           },
           {
             "kind": "note",
-            "start": 55980,
-            "duration": 60,
+            "start": 224640,
+            "duration": 720,
             "pitch": 70
           },
           {
             "kind": "note",
-            "start": 56040,
-            "duration": 120,
-            "pitch": 72
-          },
-          {
-            "kind": "note",
-            "start": 56160,
-            "duration": 180,
-            "pitch": 70
-          },
-          {
-            "kind": "note",
-            "start": 56340,
-            "duration": 60,
-            "pitch": 67
-          },
-          {
-            "kind": "note",
-            "start": 56400,
-            "duration": 60,
-            "pitch": 67
-          },
-          {
-            "kind": "note",
-            "start": 56460,
-            "duration": 60,
-            "pitch": 65
-          },
-          {
-            "kind": "note",
-            "start": 56520,
-            "duration": 120,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 56640,
-            "duration": 180,
-            "pitch": 65
-          },
-          {
-            "kind": "note",
-            "start": 56820,
-            "duration": 60,
-            "pitch": 60
-          },
-          {
-            "kind": "note",
-            "start": 56880,
-            "duration": 120,
-            "pitch": 60
-          },
-          {
-            "kind": "note",
-            "start": 57060,
-            "duration": 60,
-            "pitch": 60
-          },
-          {
-            "kind": "note",
-            "start": 57120,
-            "duration": 60,
-            "pitch": 67
-          },
-          {
-            "kind": "note",
-            "start": 57180,
-            "duration": 120,
-            "pitch": 65
-          },
-          {
-            "kind": "note",
-            "start": 57300,
-            "duration": 60,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 57360,
-            "duration": 60,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 57420,
-            "duration": 60,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 57480,
-            "duration": 120,
-            "pitch": 63
-          },
-          {
-            "kind": "note",
-            "start": 57600,
+            "start": 225360,
             "duration": 240,
+            "pitch": 67
+          },
+          {
+            "kind": "note",
+            "start": 225600,
+            "duration": 240,
+            "pitch": 67
+          },
+          {
+            "kind": "note",
+            "start": 225840,
+            "duration": 240,
+            "pitch": 65
+          },
+          {
+            "kind": "note",
+            "start": 226080,
+            "duration": 480,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 226560,
+            "duration": 720,
+            "pitch": 65
+          },
+          {
+            "kind": "note",
+            "start": 227280,
+            "duration": 240,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 227520,
+            "duration": 480,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 228240,
+            "duration": 240,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 228480,
+            "duration": 240,
+            "pitch": 67
+          },
+          {
+            "kind": "note",
+            "start": 228720,
+            "duration": 480,
+            "pitch": 65
+          },
+          {
+            "kind": "note",
+            "start": 229200,
+            "duration": 240,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 229440,
+            "duration": 240,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 229680,
+            "duration": 240,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 229920,
+            "duration": 480,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 230400,
+            "duration": 960,
             "pitch": 63
           }
         ]
@@ -5186,652 +5238,694 @@
     ],
     "harmony": [
       {
-        "start": 1233,
+        "start": 1200,
         "root": 3,
         "quality": "major",
-        "duration": 1536
+        "duration": 2160
       },
       {
-        "start": 2769,
+        "start": 3360,
         "root": 8,
         "quality": "major",
         "slashBass": 3,
-        "duration": 1943
+        "duration": 2400
       },
       {
-        "start": 4712,
+        "start": 5760,
         "root": 3,
         "quality": "major",
-        "duration": 872
+        "duration": 1920
       },
       {
-        "start": 5584,
+        "start": 7680,
         "root": 8,
         "quality": "major",
         "slashBass": 3,
-        "duration": 2112
+        "duration": 2160
       },
       {
-        "start": 7696,
+        "start": 9840,
         "root": 3,
         "quality": "major",
-        "duration": 1997
+        "duration": 2160
       },
       {
-        "start": 9693,
+        "start": 12000,
         "root": 8,
         "quality": "major",
-        "duration": 1667
+        "duration": 2160
       },
       {
-        "start": 11360,
+        "start": 14160,
         "root": 10,
         "quality": "major",
         "slashBass": 2,
-        "duration": 1970
+        "duration": 2160
       },
       {
-        "start": 13330,
+        "start": 16320,
         "root": 7,
-        "quality": "major",
-        "duration": 1175
+        "quality": "minor7",
+        "duration": 2160
       },
       {
-        "start": 14505,
+        "start": 18480,
         "root": 0,
-        "quality": "major",
-        "duration": 3621
+        "quality": "minor",
+        "duration": 4320
       },
       {
-        "start": 18126,
+        "start": 22800,
         "root": 9,
-        "quality": "major",
-        "duration": 1751
+        "quality": "halfDiminished7",
+        "duration": 1920
       },
       {
-        "start": 19877,
+        "start": 24720,
         "root": 8,
         "quality": "major",
-        "duration": 2054
+        "duration": 2400
       },
       {
-        "start": 21931,
+        "start": 27120,
         "root": 3,
         "quality": "major",
         "slashBass": 10,
-        "duration": 1236
+        "duration": 1920
       },
       {
-        "start": 23167,
+        "start": 29040,
         "root": 10,
         "quality": "major",
-        "duration": 1563
+        "duration": 2400
       },
       {
-        "start": 24730,
+        "start": 31440,
         "root": 7,
         "quality": "major",
         "slashBass": 11,
-        "duration": 1728
+        "duration": 1920
       },
       {
-        "start": 26458,
+        "start": 33360,
         "root": 0,
-        "quality": "major",
-        "duration": 2008
+        "quality": "minor",
+        "duration": 2160
       },
       {
-        "start": 28466,
+        "start": 35520,
         "root": 3,
         "quality": "major",
-        "duration": 1236
+        "duration": 2160
       },
       {
-        "start": 29702,
+        "start": 37680,
         "root": 5,
-        "quality": "major",
-        "duration": 1459
+        "quality": "minor",
+        "duration": 2160
       },
       {
-        "start": 31161,
+        "start": 39840,
         "root": 8,
         "quality": "major",
-        "duration": 1682
+        "duration": 2160
       },
       {
-        "start": 32843,
+        "start": 42000,
         "root": 10,
         "quality": "major",
-        "duration": 4140
+        "duration": 4320
       },
       {
-        "start": 36983,
+        "start": 46320,
         "root": 3,
         "quality": "major",
-        "duration": 1985
+        "duration": 2160
       },
       {
-        "start": 38968,
+        "start": 48480,
         "root": 8,
         "quality": "major",
-        "duration": 1705
+        "duration": 2160
       },
       {
-        "start": 40673,
+        "start": 50640,
         "root": 10,
         "quality": "major",
         "slashBass": 2,
-        "duration": 2031
+        "duration": 2160
       },
       {
-        "start": 42704,
+        "start": 52800,
         "root": 7,
-        "quality": "major",
-        "duration": 1179
+        "quality": "dominant7",
+        "duration": 2160
       },
       {
-        "start": 43883,
+        "start": 54960,
         "root": 0,
-        "quality": "major",
-        "duration": 3291
+        "quality": "minor",
+        "duration": 2400
       },
       {
-        "start": 47174,
+        "start": 57360,
+        "root": 0,
+        "quality": "minor",
+        "slashBass": 10,
+        "duration": 1920
+      },
+      {
+        "start": 59280,
         "root": 9,
-        "quality": "major",
-        "duration": 1928
+        "quality": "minor7",
+        "duration": 2160
       },
       {
-        "start": 49102,
+        "start": 61440,
         "root": 8,
         "quality": "major",
-        "duration": 1236
+        "duration": 2160
       },
       {
-        "start": 50338,
+        "start": 63600,
         "root": 3,
         "quality": "major",
         "slashBass": 10,
-        "duration": 1344
+        "duration": 2160
       },
       {
-        "start": 51682,
+        "start": 65760,
         "root": 10,
         "quality": "major",
-        "duration": 1624
+        "duration": 2160
       },
       {
-        "start": 53306,
+        "start": 67920,
         "root": 7,
         "quality": "major",
         "slashBass": 11,
-        "duration": 1870
+        "duration": 2160
       },
       {
-        "start": 55176,
+        "start": 70080,
         "root": 0,
-        "quality": "major",
-        "duration": 2173
+        "quality": "minor",
+        "duration": 2160
       },
       {
-        "start": 57349,
+        "start": 72240,
         "root": 3,
         "quality": "major",
-        "duration": 1379
+        "duration": 2160
       },
       {
-        "start": 58728,
+        "start": 74400,
         "root": 5,
-        "quality": "major",
-        "duration": 1647
+        "quality": "minor",
+        "duration": 2160
       },
       {
-        "start": 60375,
+        "start": 76560,
         "root": 8,
         "quality": "major",
-        "duration": 1893
+        "duration": 2160
       },
       {
-        "start": 62268,
+        "start": 78720,
         "root": 3,
         "quality": "major",
-        "duration": 4339
+        "duration": 4320
       },
       {
-        "start": 66607,
+        "start": 83040,
         "root": 10,
         "quality": "major",
         "slashBass": 2,
-        "duration": 1705
+        "duration": 2160
       },
       {
-        "start": 68312,
+        "start": 85200,
         "root": 0,
-        "quality": "major",
-        "duration": 1893
+        "quality": "minor",
+        "duration": 2160
       },
       {
-        "start": 70205,
+        "start": 87360,
         "root": 5,
-        "quality": "major",
-        "duration": 2093
+        "quality": "minor",
+        "duration": 2160
       },
       {
-        "start": 72298,
+        "start": 89520,
         "root": 8,
         "quality": "major",
-        "duration": 1425
+        "duration": 2160
       },
       {
-        "start": 73723,
+        "start": 91680,
         "root": 10,
         "quality": "major",
         "slashBass": 2,
-        "duration": 2081
+        "duration": 2160
       },
       {
-        "start": 75804,
+        "start": 93840,
         "root": 0,
-        "quality": "major",
-        "duration": 1893
+        "quality": "minor",
+        "duration": 2160
       },
       {
-        "start": 77697,
+        "start": 96000,
         "root": 5,
-        "quality": "major",
-        "duration": 2093
+        "quality": "minor",
+        "duration": 2160
       },
       {
-        "start": 79790,
+        "start": 98160,
         "root": 8,
         "quality": "major",
-        "duration": 1379
+        "duration": 2160
       },
       {
-        "start": 81169,
+        "start": 100320,
         "root": 0,
-        "quality": "major",
-        "duration": 3713
+        "quality": "minor",
+        "duration": 2160
       },
       {
-        "start": 84882,
+        "start": 102480,
+        "root": 0,
+        "quality": "minor",
+        "slashBass": 10,
+        "duration": 2160
+      },
+      {
+        "start": 104640,
         "root": 9,
-        "quality": "major",
-        "duration": 1213
+        "quality": "minor",
+        "duration": 2160
       },
       {
-        "start": 86095,
+        "start": 106800,
         "root": 8,
         "quality": "major",
-        "duration": 3890
+        "duration": 4560
       },
       {
-        "start": 89985,
+        "start": 111360,
         "root": 3,
         "quality": "major",
         "slashBass": 7,
-        "duration": 1094
+        "duration": 2160
       },
       {
-        "start": 91079,
+        "start": 113520,
         "root": 8,
         "quality": "major",
-        "duration": 3644
+        "duration": 4320
       },
       {
-        "start": 94723,
+        "start": 117840,
         "root": 10,
         "quality": "major",
-        "duration": 4239
+        "duration": 4560
       },
       {
-        "start": 98962,
+        "start": 122400,
         "root": 3,
         "quality": "major",
-        "duration": 1536
+        "duration": 1920
       },
       {
-        "start": 100498,
+        "start": 124320,
         "root": 8,
         "quality": "major",
         "slashBass": 3,
-        "duration": 2185
+        "duration": 2640
       },
       {
-        "start": 102683,
+        "start": 126960,
         "root": 3,
         "quality": "major",
-        "duration": 952
+        "duration": 1680
       },
       {
-        "start": 103635,
+        "start": 128640,
         "root": 8,
         "quality": "major",
         "slashBass": 3,
-        "duration": 2135
+        "duration": 2160
       },
       {
-        "start": 105770,
+        "start": 130800,
         "root": 3,
         "quality": "major",
-        "duration": 1640
+        "duration": 2400
       },
       {
-        "start": 107410,
+        "start": 133200,
         "root": 8,
-        "quality": "major",
-        "duration": 1667
+        "quality": "major7",
+        "duration": 1920
       },
       {
-        "start": 109077,
+        "start": 135120,
         "root": 10,
         "quality": "major",
         "slashBass": 2,
-        "duration": 2028
+        "duration": 2160
       },
       {
-        "start": 111105,
+        "start": 137280,
         "root": 7,
-        "quality": "major",
-        "duration": 1476
+        "quality": "minor",
+        "duration": 2160
       },
       {
-        "start": 112581,
+        "start": 139440,
         "root": 0,
-        "quality": "major",
-        "duration": 3594
+        "quality": "minor",
+        "duration": 2160
       },
       {
-        "start": 116175,
+        "start": 141600,
+        "root": 0,
+        "quality": "minor",
+        "slashBass": 10,
+        "duration": 2160
+      },
+      {
+        "start": 143760,
         "root": 9,
-        "quality": "major",
-        "duration": 1968
+        "quality": "minor",
+        "duration": 1920
       },
       {
-        "start": 118143,
+        "start": 145680,
         "root": 8,
         "quality": "major",
-        "duration": 1974
+        "duration": 2160
       },
       {
-        "start": 120117,
+        "start": 147840,
         "root": 3,
         "quality": "major",
         "slashBass": 10,
-        "duration": 1398
+        "duration": 2160
       },
       {
-        "start": 121515,
+        "start": 150000,
         "root": 10,
         "quality": "major",
-        "duration": 1482
+        "duration": 2160
       },
       {
-        "start": 122997,
+        "start": 152160,
         "root": 7,
         "quality": "major",
         "slashBass": 11,
-        "duration": 1624
+        "duration": 2160
       },
       {
-        "start": 124621,
+        "start": 154320,
         "root": 0,
-        "quality": "major",
-        "duration": 1870
+        "quality": "minor",
+        "duration": 2160
       },
       {
-        "start": 126491,
+        "start": 156480,
         "root": 3,
         "quality": "major",
-        "duration": 2058
+        "duration": 2160
       },
       {
-        "start": 128549,
+        "start": 158640,
         "root": 5,
-        "quality": "major",
-        "duration": 1321
+        "quality": "minor7",
+        "duration": 2160
       },
       {
-        "start": 129870,
+        "start": 160800,
         "root": 8,
         "quality": "major",
-        "duration": 1624
+        "duration": 2160
       },
       {
-        "start": 131494,
+        "start": 162960,
         "root": 10,
         "quality": "major",
-        "duration": 3932
+        "duration": 4080
       },
       {
-        "start": 135426,
+        "start": 167040,
         "root": 3,
         "quality": "major",
-        "duration": 1321
+        "duration": 2400
       },
       {
-        "start": 136747,
+        "start": 169440,
         "root": 8,
         "quality": "major",
-        "duration": 1601
+        "duration": 2160
       },
       {
-        "start": 138348,
+        "start": 171600,
         "root": 10,
         "quality": "major",
         "slashBass": 2,
-        "duration": 1847
+        "duration": 2160
       },
       {
-        "start": 140195,
+        "start": 173760,
         "root": 7,
-        "quality": "major",
-        "duration": 2058
+        "quality": "minor",
+        "duration": 2160
       },
       {
-        "start": 142253,
+        "start": 175920,
         "root": 0,
-        "quality": "major",
-        "duration": 3049
+        "quality": "minor",
+        "duration": 2160
       },
       {
-        "start": 145302,
+        "start": 178080,
+        "root": 0,
+        "quality": "minor",
+        "slashBass": 10,
+        "duration": 2160
+      },
+      {
+        "start": 180240,
         "root": 9,
-        "quality": "major",
-        "duration": 1812
+        "quality": "minor",
+        "duration": 2160
       },
       {
-        "start": 147114,
+        "start": 182400,
         "root": 8,
         "quality": "major",
-        "duration": 2093
+        "duration": 2160
       },
       {
-        "start": 149207,
+        "start": 184560,
         "root": 3,
         "quality": "major",
         "slashBass": 10,
-        "duration": 1321
+        "duration": 2160
       },
       {
-        "start": 150528,
+        "start": 186720,
         "root": 10,
         "quality": "major",
-        "duration": 1647
+        "duration": 2160
       },
       {
-        "start": 152175,
+        "start": 188880,
         "root": 7,
         "quality": "major",
         "slashBass": 11,
-        "duration": 1812
+        "duration": 2160
       },
       {
-        "start": 153987,
+        "start": 191040,
         "root": 0,
-        "quality": "major",
-        "duration": 2139
+        "quality": "minor",
+        "duration": 2160
       },
       {
-        "start": 156126,
+        "start": 193200,
         "root": 3,
         "quality": "major",
-        "duration": 1356
+        "duration": 2160
       },
       {
-        "start": 157482,
+        "start": 195360,
         "root": 5,
-        "quality": "major",
-        "duration": 1601
+        "quality": "minor7",
+        "duration": 2160
       },
       {
-        "start": 159083,
+        "start": 197520,
         "root": 8,
         "quality": "major",
-        "duration": 1847
+        "duration": 2160
       },
       {
-        "start": 160930,
+        "start": 199680,
         "root": 3,
         "quality": "major",
-        "duration": 4236
+        "duration": 4320
       },
       {
-        "start": 165166,
+        "start": 204000,
         "root": 10,
         "quality": "major",
         "slashBass": 2,
-        "duration": 1624
+        "duration": 2160
       },
       {
-        "start": 166790,
+        "start": 206160,
         "root": 0,
-        "quality": "major",
-        "duration": 1847
+        "quality": "minor7",
+        "duration": 2160
       },
       {
-        "start": 168637,
+        "start": 208320,
         "root": 5,
-        "quality": "major",
-        "duration": 2173
+        "quality": "minor",
+        "duration": 2160
       },
       {
-        "start": 170810,
+        "start": 210480,
         "root": 8,
         "quality": "major",
-        "duration": 1356
+        "duration": 2160
       },
       {
-        "start": 172166,
+        "start": 212640,
         "root": 10,
         "quality": "major",
         "slashBass": 2,
-        "duration": 1601
+        "duration": 2160
       },
       {
-        "start": 173767,
+        "start": 214800,
         "root": 0,
-        "quality": "major",
-        "duration": 1847
+        "quality": "minor7",
+        "duration": 2160
       },
       {
-        "start": 175614,
+        "start": 216960,
         "root": 5,
-        "quality": "major",
-        "duration": 1989
+        "quality": "minor",
+        "duration": 1920
       },
       {
-        "start": 177603,
+        "start": 218880,
         "root": 8,
         "quality": "major",
-        "duration": 1298
+        "duration": 2160
       },
       {
-        "start": 178901,
+        "start": 221040,
         "root": 0,
-        "quality": "major",
-        "duration": 3471
+        "quality": "minor",
+        "duration": 2400
       },
       {
-        "start": 182372,
+        "start": 223440,
+        "root": 0,
+        "quality": "minor",
+        "slashBass": 10,
+        "duration": 2160
+      },
+      {
+        "start": 225600,
         "root": 9,
-        "quality": "major",
-        "duration": 2070
+        "quality": "halfDiminished7",
+        "duration": 2160
       },
       {
-        "start": 184442,
+        "start": 227760,
         "root": 8,
         "quality": "major",
-        "duration": 4345
+        "duration": 4320
       },
       {
-        "start": 188787,
+        "start": 232080,
         "root": 3,
         "quality": "major",
         "slashBass": 7,
-        "duration": 1951
+        "duration": 2160
       },
       {
-        "start": 190738,
+        "start": 234240,
         "root": 8,
         "quality": "major",
-        "duration": 3483
+        "duration": 4560
       },
       {
-        "start": 194221,
+        "start": 238800,
         "root": 10,
         "quality": "major",
-        "duration": 3928
+        "duration": 4080
       },
       {
-        "start": 198149,
+        "start": 242880,
         "root": 0,
-        "quality": "major",
-        "duration": 2903
+        "quality": "minor7",
+        "duration": 2400
       },
       {
-        "start": 201052,
+        "start": 245280,
+        "root": 0,
+        "quality": "minor",
+        "slashBass": 10,
+        "duration": 2160
+      },
+      {
+        "start": 247440,
         "root": 9,
-        "quality": "major",
-        "duration": 1763
+        "quality": "halfDiminished7",
+        "duration": 1920
       },
       {
-        "start": 202815,
+        "start": 249360,
         "root": 8,
         "quality": "major",
-        "duration": 4301
+        "duration": 4560
       },
       {
-        "start": 207116,
+        "start": 253920,
         "root": 3,
         "quality": "major",
         "slashBass": 7,
-        "duration": 1667
+        "duration": 2160
       },
       {
-        "start": 208783,
+        "start": 256080,
         "root": 8,
         "quality": "major",
-        "duration": 4251
+        "duration": 4560
       },
       {
-        "start": 213034,
+        "start": 260640,
         "root": 3,
         "quality": "major",
-        "duration": 2043
+        "duration": 2640
       },
       {
-        "start": 215077,
+        "start": 263280,
         "root": 8,
         "quality": "major",
         "slashBass": 3,
-        "duration": 5050
+        "duration": 5760
       },
       {
-        "start": 220127,
+        "start": 269040,
         "root": 3,
         "quality": "major",
-        "duration": 240
+        "duration": 960
       }
     ]
   }

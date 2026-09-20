@@ -2,10 +2,21 @@
 """
 Step 6 — MusicXML to normalized JSON.
 
-Reads working/<slug>/lead-sheet.musicxml back and emits the schemaVersion 1
-envelope the web app's loadScoreJson (src/lib/scoreLoader.ts) expects, to
-output/json/<slug>.json — the file that gets copied into the web repo's
-src/data/songs/.
+Reads working/<slug>/lead-sheet.musicxml back for the voice part, and
+working/<slug>/harmony-events.json directly for harmony, and emits the
+schemaVersion 1 envelope the web app's loadScoreJson
+(src/lib/scoreLoader.ts) expects, to output/json/<slug>.json — the file
+that gets copied into the web repo's src/data/songs/.
+
+Harmony is read from the JSON intermediate rather than re-derived from the
+assembled MusicXML: music21 writes a ChordSymbol's <harmony> tag once per
+measure it spans (splitting it at barlines the same way it splits a tied
+note), which duplicates the tag and — for a lead sheet with this many chord
+changes — was observed to corrupt the part's own measure offsets partway
+through the score on re-parse, silently truncating the harmony read back
+from it. harmony-events.json is the tick-accurate, already-tiled source
+extract_harmony.py produced it from in the first place; reading it directly
+avoids that whole round-trip.
 
 Run with:  python pipeline/musicxml_to_json.py <slug>
 """
@@ -13,31 +24,17 @@ import argparse
 import json
 from pathlib import Path
 
-from music21 import converter, harmony as m21harmony, note
+from music21 import converter, note
 
 REPO_ROOT = Path(__file__).parent.parent
 PPQ = 960
-
-QUALITY_MAP = {
-    '': 'major', 'm': 'minor', '7': 'dominant7', 'maj7': 'major7',
-    'm7': 'minor7', 'm7b5': 'halfDiminished7', 'aug': 'augmented',
-    'sus4': 'sus4', '7sus4': 'dominant7sus4', '6': 'major6',
-}
-
-
-def parse_chord_symbol(cs):
-    root_pc = cs.root().pitchClass if cs.root() else 0
-    quality = QUALITY_MAP.get(cs.chordKind, 'major') if cs.chordKind else 'major'
-    bass = cs.bass()
-    slash_bass = bass.pitchClass if bass and bass.pitchClass != root_pc else None
-    return root_pc, quality, slash_bass
 
 
 def extract_voice_part(voice_part) -> list[dict]:
     events = []
     for element in voice_part.flatten().notes:
-        start_ticks = int(round(element.offset * PPQ / 4.0))
-        dur_ticks = int(round(element.duration.quarterLength * PPQ / 4.0))
+        start_ticks = int(round(element.offset * PPQ))
+        dur_ticks = int(round(element.duration.quarterLength * PPQ))
 
         if isinstance(element, note.Note):
             lyrics = [
@@ -59,34 +56,11 @@ def extract_voice_part(voice_part) -> list[dict]:
     return events
 
 
-def extract_harmony(harmony_part) -> list[dict]:
-    events = []
-    for element in harmony_part.flatten().notes:
-        if isinstance(element, m21harmony.ChordSymbol):
-            start_ticks = int(round(element.offset * PPQ / 4.0))
-            root_pc, quality, slash_bass = parse_chord_symbol(element)
-            event = {"start": start_ticks, "root": root_pc, "quality": quality}
-            if slash_bass is not None:
-                event["slashBass"] = slash_bass
-            events.append(event)
-
-    events.sort(key=lambda e: e["start"])
-
-    # Same tiling fix as extract_harmony.py: derive duration from the next
-    # event's already-rounded start rather than from MusicXML's own float
-    # offset/duration, which can independently round the other direction
-    # and reintroduce the overlap this pipeline exists to avoid.
-    for i, event in enumerate(events):
-        event["duration"] = events[i + 1]["start"] - event["start"] if i + 1 < len(events) else PPQ // 4
-    events = [e for e in events if e["duration"] > 0]
-
-    merged = []
-    for event in events:
-        if merged and merged[-1]["root"] == event["root"] and merged[-1]["quality"] == event["quality"]:
-            merged[-1]["duration"] += event["duration"]
-        else:
-            merged.append(event)
-    return merged
+def load_harmony_events(slug: str) -> list[dict]:
+    path = REPO_ROOT / "working" / slug / "harmony-events.json"
+    if not path.exists():
+        return []
+    return json.loads(path.read_text())["harmony"]
 
 
 def build_measures(time_sig: dict, total_ticks: int) -> list[dict]:
@@ -106,12 +80,11 @@ def convert(slug: str) -> None:
     score = converter.parse(str(musicxml_path))
 
     voice_part = next((p for p in score.parts if p.id == 'voice' or p.partName == 'Voice'), None)
-    harmony_part = next((p for p in score.parts if p.id == 'harmony' or p.partName == 'Harmony'), None)
     if voice_part is None:
         raise SystemExit("ERROR: Voice part not found in MusicXML")
 
     voice_events = extract_voice_part(voice_part)
-    harmony_events = extract_harmony(harmony_part) if harmony_part is not None else []
+    harmony_events = load_harmony_events(slug)
     print(f"Voice events: {len(voice_events)}")
     print(f"Harmony events: {len(harmony_events)}")
 

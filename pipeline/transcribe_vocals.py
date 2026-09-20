@@ -47,8 +47,8 @@ def from_curated(config: dict):
     for n in voice_part.flatten().notes:
         if n.isNote:
             events.append({
-                "start": int(round(n.offset * PPQ / 4.0)),
-                "duration": int(round(n.duration.quarterLength * PPQ / 4.0)),
+                "start": int(round(n.offset * PPQ)),
+                "duration": int(round(n.duration.quarterLength * PPQ)),
                 "pitch": n.pitch.midi,
                 "velocity": 0.8,
                 "kind": "note",

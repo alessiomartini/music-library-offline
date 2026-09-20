@@ -22,6 +22,14 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).parent.parent
 PPQ = 960
 
+# Quantize chord onsets to a sixteenth-note grid. lv-chordia's raw start
+# times land at arbitrary audio-frame precision; a chord duration built
+# straight from that (see the tick-tiling comment below) produces
+# quarterLength fractions too fine for music21's MusicXML writer to notate
+# (it caps at a 2048th note). Same rationale as the eighth-note quantization
+# transcribe_vocals.py applies to basic-pitch's raw note timings.
+GRID_TICKS = PPQ // 4
+
 NOTE_TO_PC = {
     'C': 0, 'B#': 0, 'C#': 1, 'Db': 1, 'D': 2, 'D#': 3, 'Eb': 3, 'E': 4, 'Fb': 4,
     'F': 5, 'E#': 5, 'F#': 6, 'Gb': 6, 'G': 7, 'G#': 8, 'Ab': 8, 'A': 9,
@@ -102,7 +110,9 @@ def extract_harmony(slug: str) -> None:
         if parsed is None:
             continue
         root, quality, slash_bass = parsed
-        event = {"start": int(round(r["start_time"] * ticks_per_sec)), "root": root, "quality": quality}
+        raw_start = r["start_time"] * ticks_per_sec
+        start = int(round(raw_start / GRID_TICKS)) * GRID_TICKS
+        event = {"start": start, "root": root, "quality": quality}
         if slash_bass is not None:
             event["slashBass"] = slash_bass
         events.append(event)

@@ -28,7 +28,7 @@ QUALITY_TO_SYMBOL = {
 
 
 def ticks_to_ql(ticks: int) -> float:
-    return ticks / PPQ * 4.0
+    return ticks / PPQ
 
 
 def assemble(slug: str) -> None:
