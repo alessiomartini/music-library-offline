@@ -11,8 +11,13 @@
     "denominator": 4
   },
   "melodySource": {
-    "type": "curated",
-    "musicxml": "input/your-song-curated.musicxml"
+    "vocalRange": [
+      54,
+      81
+    ],
+    "firstVocalSec": 0.5,
+    "velocityThreshold": 0.3,
+    "minDurationTicks": 30
   },
   "lyrics": [
     {

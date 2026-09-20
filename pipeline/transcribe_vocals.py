@@ -2,19 +2,12 @@
 """
 Step 2 — vocal melody transcription.
 
-Produces working/<slug>/vocal-events.json. The melody source is chosen per
-song by songs/<slug>.json's "melodySource.type":
-
-  - "curated": read a manually curated MusicXML reference (the file at
-    melodySource.musicxml, relative to the repo root). Authoritative — use
-    once a curated reference exists and has been checked against the
-    recording.
-  - "basic-pitch": automatic transcription (Basic Pitch) over the vocal
-    stem, filtered by melodySource.vocalRange / firstVocalSec /
-    velocityThreshold / minDurationTicks. Use when no curated reference
-    exists yet; expect the result to need correction, same as any automatic
-    transcription (see docs/FUTURE-ARCHITECTURE.md, "Human Curation Is Part
-    of the Workflow").
+Produces working/<slug>/vocal-events.json: automatic transcription (Basic
+Pitch) over the vocal stem, filtered by songs/<slug>.json's
+melodySource.vocalRange / firstVocalSec / velocityThreshold /
+minDurationTicks. Expect the result to need correction, same as any
+automatic transcription (see docs/FUTURE-ARCHITECTURE.md, "Human Curation Is
+Part of the Workflow").
 
 Run with:  python pipeline/transcribe_vocals.py <slug>
 """
@@ -22,8 +15,9 @@ import argparse
 import json
 from pathlib import Path
 
+from constants import PPQ
+
 REPO_ROOT = Path(__file__).parent.parent
-PPQ = 960
 
 
 def load_song_config(slug: str) -> dict:
@@ -31,30 +25,6 @@ def load_song_config(slug: str) -> dict:
     if not path.exists():
         raise SystemExit(f"ERROR: no song config at {path}")
     return json.loads(path.read_text())
-
-
-def from_curated(config: dict):
-    from music21 import converter
-
-    musicxml_path = REPO_ROOT / config["melodySource"]["musicxml"]
-    if not musicxml_path.exists():
-        raise SystemExit(f"ERROR: curated melody source not found: {musicxml_path}")
-    print(f"Loading curated melody from {musicxml_path}")
-    score = converter.parse(str(musicxml_path))
-    voice_part = score.parts[0]
-
-    events = []
-    for n in voice_part.flatten().notes:
-        if n.isNote:
-            events.append({
-                "start": int(round(n.offset * PPQ)),
-                "duration": int(round(n.duration.quarterLength * PPQ)),
-                "pitch": n.pitch.midi,
-                "velocity": 0.8,
-                "kind": "note",
-            })
-    events.sort(key=lambda e: e["start"])
-    return events, config["tempoBpm"]
 
 
 def from_basic_pitch(slug: str, config: dict):
@@ -135,14 +105,7 @@ def from_basic_pitch(slug: str, config: dict):
 
 def transcribe(slug: str) -> None:
     config = load_song_config(slug)
-    source_type = config["melodySource"]["type"]
-
-    if source_type == "curated":
-        events, tempo_bpm = from_curated(config)
-    elif source_type == "basic-pitch":
-        events, tempo_bpm = from_basic_pitch(slug, config)
-    else:
-        raise SystemExit(f"ERROR: unknown melodySource.type {source_type!r}")
+    events, tempo_bpm = from_basic_pitch(slug, config)
 
     output_path = REPO_ROOT / "working" / slug / "vocal-events.json"
     output_path.write_text(json.dumps({"ppq": PPQ, "tempo_bpm": tempo_bpm, "events": events}, indent=2))
