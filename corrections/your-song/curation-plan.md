@@ -162,12 +162,55 @@ needed for later curation.
 Before JSON conversion, a curator must verify:
 
 1. that P1 is the intended reference melody for the chosen arrangement;
-2. whether the 2/4 measures should be supported in the target schema or
-   explicitly re-barred;
-3. that the deterministic tie pairing remains correct at every tie boundary;
+2. ~~whether the 2/4 measures should be supported in the target schema or
+   explicitly re-barred~~ — **resolved 2026-09-20: re-barred to uniform 4/4**,
+   see "Time-signature resolution" below;
+3. that the deterministic tie pairing remains correct at every tie boundary
+   (note: the pipeline now assigns its own tie ids in chain order rather than
+   reusing tie-001..tie-063 from this file — see
+   `pipeline/transcribe_vocals.py`'s `from_curated()` — but the underlying
+   start/stop pairing and pitch/timing continuity are unchanged);
 4. the intended key mode for the three-flat key signature;
 5. the separate harmony source and lyric source;
 6. whether any later bass or instrumental extraction is musically valuable.
+
+## Time-signature resolution (2026-09-20)
+
+Decision: re-bar to a uniform 4/4 for the v1 `Score` object, rather than
+extending the schema to support per-measure time signatures. The pipeline
+already did this by construction (`musicxml_to_json.py`'s `build_measures()`
+lays a continuous 4/4 grid over the absolute tick timeline, ignoring the
+source's own bar lines); this section makes that an explicit, verified
+decision instead of an accidental side effect.
+
+Consequence: the source's ten 2/4 bars (measures 10, 19, 26, 29, 40, 49, 56,
+59, 62, 65) don't each cost a full published measure. Two 2/4 bars in a row
+cancel out to a net one-measure deficit, so half of the ten insertions
+(19, 29, 49, 59, 65) land two beats *into* a published 4/4 measure rather
+than on one of its bar lines — the published bar grid is real 4/4 throughout
+but is offset from the source's phrase structure at those five points. No
+note actually straddles one of these off-phase bar lines (checked
+computationally against `working/your-song/vocal-events.json`: zero note
+start/end pairs cross a measure boundary), so nothing renders split or
+requires an inserted tie — the visual effect is at most an odd-looking
+rhythm relative to where a musician transcribing from a printed 2/4 bar
+would expect the barline, not a broken one.
+
+Approximate timestamps for a quick check against the recording, in case
+the phrasing there suggests a different re-bar choice would read better:
+
+| source measure (2/4) | ~seconds | published measure | offset into it |
+|---:|---:|---:|---:|
+| 10 | 30.0s | 10 | 0 beats (on the bar line) |
+| 19 | 58.3s | 18 | 2 beats in |
+| 26 | 80.0s | 25 | 0 beats (on the bar line) |
+| 29 | 88.3s | 27 | 2 beats in |
+| 40 | 123.3s | 38 | 0 beats (on the bar line) |
+| 49 | 151.7s | 46 | 2 beats in |
+| 56 | 173.3s | 53 | 0 beats (on the bar line) |
+| 59 | 181.7s | 55 | 2 beats in |
+| 62 | 190.0s | 58 | 0 beats (on the bar line) |
+| 65 | 198.3s | 60 | 2 beats in |
 
 ## Result
 

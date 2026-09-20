@@ -2,21 +2,23 @@
 """
 Step 6 — MusicXML to normalized JSON.
 
-Reads working/<slug>/lead-sheet.musicxml back for the voice part, and
-working/<slug>/harmony-events.json directly for harmony, and emits the
+Reads working/<slug>/aligned-lyrics.json and working/<slug>/harmony-events.json
+directly — not working/<slug>/lead-sheet.musicxml — and emits the
 schemaVersion 1 envelope the web app's loadScoreJson
 (src/lib/scoreLoader.ts) expects, to output/json/<slug>.json — the file
 that gets copied into the web repo's src/data/songs/.
 
-Harmony is read from the JSON intermediate rather than re-derived from the
-assembled MusicXML: music21 writes a ChordSymbol's <harmony> tag once per
-measure it spans (splitting it at barlines the same way it splits a tied
-note), which duplicates the tag and — for a lead sheet with this many chord
-changes — was observed to corrupt the part's own measure offsets partway
-through the score on re-parse, silently truncating the harmony read back
-from it. harmony-events.json is the tick-accurate, already-tiled source
-extract_harmony.py produced it from in the first place; reading it directly
-avoids that whole round-trip.
+Both parts are read from their JSON intermediates rather than re-derived
+from the assembled MusicXML. For harmony, music21 writes a ChordSymbol's
+<harmony> tag once per measure it spans (splitting it at barlines the same
+way it splits a tied note), which duplicates the tag and — for a lead sheet
+with this many chord changes — was observed to corrupt the part's own
+measure offsets partway through the score on re-parse, silently truncating
+the harmony read back from it. The JSON intermediates are the tick-accurate
+sources extract_harmony.py/align_lyrics.py already produced; reading them
+directly avoids that whole class of round-trip bug. lead-sheet.musicxml is
+still written by assemble_musicxml.py and useful for visual inspection, but
+is no longer this step's input.
 
 Run with:  python pipeline/musicxml_to_json.py <slug>
 """
@@ -24,35 +26,27 @@ import argparse
 import json
 from pathlib import Path
 
-from music21 import converter, note
+from constants import PPQ
 
 REPO_ROOT = Path(__file__).parent.parent
-PPQ = 960
 
 
-def extract_voice_part(voice_part) -> list[dict]:
+def build_voice_events(aligned: list[dict]) -> list[dict]:
     events = []
-    for element in voice_part.flatten().notes:
-        start_ticks = int(round(element.offset * PPQ))
-        dur_ticks = int(round(element.duration.quarterLength * PPQ))
+    previous_end = None
+    for entry in aligned:
+        start, duration = entry["start"], entry["duration"]
+        if previous_end is not None and start > previous_end:
+            events.append({"kind": "rest", "start": previous_end, "duration": start - previous_end})
 
-        if isinstance(element, note.Note):
-            lyrics = [
-                {
-                    "verse": f"verse{ly.number}" if ly.number else "verse1",
-                    "text": ly.text,
-                    "syllabic": ly.syllabic if ly.syllabic else "single",
-                }
-                for ly in element.lyrics
-            ]
-            event = {"kind": "note", "start": start_ticks, "duration": dur_ticks, "pitch": element.pitch.midi}
-            if lyrics:
-                event["lyrics"] = lyrics
-            events.append(event)
-        elif isinstance(element, note.Rest):
-            events.append({"kind": "rest", "start": start_ticks, "duration": dur_ticks})
-
-    events.sort(key=lambda e: e["start"])
+        event = {"kind": "note", "start": start, "duration": duration, "pitch": entry["pitch"]}
+        if entry.get("lyric"):
+            lyric = entry["lyric"]
+            event["lyrics"] = [{"verse": lyric["verse"], "text": lyric["text"], "syllabic": lyric.get("syllabic", "single")}]
+        if "tie" in entry:
+            event["tie"] = entry["tie"]
+        events.append(event)
+        previous_end = start + duration
     return events
 
 
@@ -75,15 +69,10 @@ def build_measures(time_sig: dict, total_ticks: int) -> list[dict]:
 
 def convert(slug: str) -> None:
     config = json.loads((REPO_ROOT / "songs" / f"{slug}.json").read_text())
-    musicxml_path = REPO_ROOT / "working" / slug / "lead-sheet.musicxml"
-    print("Loading MusicXML...")
-    score = converter.parse(str(musicxml_path))
+    working_dir = REPO_ROOT / "working" / slug
+    aligned = json.loads((working_dir / "aligned-lyrics.json").read_text())["aligned"]
 
-    voice_part = next((p for p in score.parts if p.id == 'voice' or p.partName == 'Voice'), None)
-    if voice_part is None:
-        raise SystemExit("ERROR: Voice part not found in MusicXML")
-
-    voice_events = extract_voice_part(voice_part)
+    voice_events = build_voice_events(aligned)
     harmony_events = load_harmony_events(slug)
     print(f"Voice events: {len(voice_events)}")
     print(f"Harmony events: {len(harmony_events)}")

@@ -19,8 +19,9 @@ import json
 import os
 from pathlib import Path
 
+from constants import PPQ
+
 REPO_ROOT = Path(__file__).parent.parent
-PPQ = 960
 
 # Quantize chord onsets to a sixteenth-note grid. lv-chordia's raw start
 # times land at arbitrary audio-frame precision; a chord duration built
@@ -88,6 +89,38 @@ def parse_chord_label(label: str, warnings: list[str]):
     return root_pc, quality, slash_bass
 
 
+def retile_durations(events: list[dict], final_duration: int) -> list[dict]:
+    """Derive each event's duration from the next event's start (see the
+    tick-tiling note below); the last event gets `final_duration`."""
+    for i, event in enumerate(events):
+        event["duration"] = events[i + 1]["start"] - event["start"] if i + 1 < len(events) else final_duration
+    return [e for e in events if e["duration"] > 0]
+
+
+def dedupe_adjacent_within_measure(events: list[dict], measure_length_ticks: int) -> list[dict]:
+    """Drop a chord event that repeats the one immediately before it, but
+    only when both land in the same measure (e.g. a bar reading A A C D
+    becomes A C D). A repeat that crosses a measure boundary — the same
+    chord restated at the top of a new bar, e.g. bar N ending on D and bar
+    N+1 starting on D again — is left alone: that's the ordinary way a
+    chart shows the harmony continuing into a new measure, not a duplicate
+    to clean up. This also absorbs the common case of two adjacent
+    lv-chordia segments coming out identical from recognizer noise (e.g. a
+    dropped no-chord segment) when they land in the same bar.
+    """
+    deduped = []
+    for event in events:
+        if deduped:
+            previous = deduped[-1]
+            same_chord = (previous["root"] == event["root"] and previous["quality"] == event["quality"]
+                          and previous.get("slashBass") == event.get("slashBass"))
+            same_measure = (previous["start"] // measure_length_ticks) == (event["start"] // measure_length_ticks)
+            if same_chord and same_measure:
+                continue
+        deduped.append(event)
+    return deduped
+
+
 def extract_harmony(slug: str) -> None:
     config = json.loads((REPO_ROOT / "songs" / f"{slug}.json").read_text())
     accompaniment = REPO_ROOT / "working" / slug / "accompaniment.wav"
@@ -128,31 +161,28 @@ def extract_harmony(slug: str) -> None:
     # side of .5, producing stray one-tick gaps/overlaps between consecutive
     # chords (see FUTURE-ARCHITECTURE.md, "Harmony tick-tiling"). Deriving
     # duration this way guarantees exact tiling by construction.
-    for i, event in enumerate(events):
-        if i + 1 < len(events):
-            event["duration"] = events[i + 1]["start"] - event["start"]
-        else:
-            event["duration"] = PPQ  # one beat for the final chord
-
-    dropped = sum(1 for e in events if e["duration"] <= 0)
-    if dropped:
-        print(f"Dropping {dropped} zero/negative-duration event(s) from coincident-start rounding")
+    events = retile_durations(events, final_duration=PPQ)
+    dropped_count = len(events)
     events = [e for e in events if e["duration"] > 0]
+    dropped_count -= len(events)
+    if dropped_count:
+        print(f"Dropping {dropped_count} zero/negative-duration event(s) from coincident-start rounding")
 
-    # Merge consecutive identical chords. lv-chordia's HMM decoding already
-    # avoids most flutter, but a dropped N/X segment or a quality
-    # approximation can still leave two adjacent segments identical.
-    merged = []
-    for event in events:
-        if (merged and merged[-1]["root"] == event["root"] and merged[-1]["quality"] == event["quality"]
-                and merged[-1].get("slashBass") == event.get("slashBass")):
-            merged[-1]["duration"] += event["duration"]
-        else:
-            merged.append(event)
+    # Drop a chord that just repeats the previous one within the same bar
+    # (lv-chordia's HMM decoding already avoids most flutter, but a dropped
+    # N/X segment or a quality approximation can still leave two adjacent
+    # segments identical) — but not across a bar line, where the repeat is
+    # a legitimate restatement of the still-current harmony.
+    ts = config["timeSignature"]
+    measure_length_ticks = ts["numerator"] * PPQ * 4 // ts["denominator"]
+    before_dedupe = len(events)
+    merged = dedupe_adjacent_within_measure(events, measure_length_ticks)
+    merged = retile_durations(merged, final_duration=PPQ)
+    print(f"Deduped same-bar repeats: {before_dedupe} -> {len(merged)} events")
 
     output_path = REPO_ROOT / "working" / slug / "harmony-events.json"
     output_path.write_text(json.dumps({"ppq": PPQ, "tempo_bpm": tempo_bpm, "harmony": merged}, indent=2))
-    print(f"{len(merged)} harmony events (merged from {len(events)}) -> {output_path}")
+    print(f"{len(merged)} harmony events -> {output_path}")
 
 
 if __name__ == "__main__":

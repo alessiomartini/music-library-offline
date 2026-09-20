@@ -20,6 +20,7 @@ source recording (input/<slug>.mp3)
      Basic Pitch transcription — chosen per song)
   -> lyric alignment (from the song's lyrics list)
   -> harmony extraction from accompaniment (lv-chordia, ML chord recognition)
+  -> instrumental transcription from accompaniment (automatic Basic Pitch)
   -> MusicXML assembly (music21)
   -> normalized JSON (schemaVersion 1 envelope)
   -> transfer to the web repository (src/data/songs/<slug>.json)
@@ -77,18 +78,33 @@ song-specific. Run them in order for a new or re-transcribed song:
      need correction, same as any automatic transcription (see
      `docs/FUTURE-ARCHITECTURE.md`, "Human Curation Is Part of the
      Workflow" — not yet done for this song).
-3. `align_lyrics.py <slug>` — sequentially assigns each syllable in the song
-   config's `lyrics` to the next vocal note event, in order. A simple
-   heuristic: it doesn't detect melismas or elisions on its own — mark those
-   in the song config by hand.
+3. `align_lyrics.py <slug>` — assigns each syllable in the song config's
+   `lyrics` to the next vocal note event, in order within each verse
+   (resetting at verse boundaries rather than drifting across the whole
+   song), skipping tied continuation notes. A simple heuristic: it does not
+   detect a real melisma (one syllable held across several *different*
+   pitches, no tie) within a verse — mark those in the song config by hand.
 4. `extract_harmony.py <slug>` — chord recognition on the accompaniment stem
    via **lv-chordia** (see below). Duration is derived from the next
    event's already-rounded start, not rounded independently — see "Harmony
-   tick-tiling" below.
-5. `assemble_musicxml.py <slug>` — assembles voice + harmony into MusicXML
-   via `music21`, using the song config's metadata.
-6. `musicxml_to_json.py <slug>` — reads the MusicXML back and emits the
-   `schemaVersion: 1` normalized JSON envelope the web repo's
+   tick-tiling" below. A chord event that repeats the one immediately
+   before it is dropped, but only when both land in the same measure (e.g.
+   a bar reading A A C D becomes A C D); a repeat that crosses a measure
+   boundary is left alone, since that's the ordinary way a chart shows the
+   harmony continuing into a new measure, not a duplicate to clean up.
+5. `transcribe_instrumental.py <slug>` — automatic polyphonic transcription
+   (Basic Pitch) of the accompaniment stem, filtered by
+   `instrumentalSource.pitchRange` / `velocityThreshold` /
+   `minDurationTicks`. This is an independent transcription of the
+   accompaniment audio, not a reduction of the harmony analysis — expect it
+   to need correction, same as any automatic transcription.
+6. `assemble_musicxml.py <slug>` — assembles voice, instrumental, and
+   harmony into several MusicXML views via `music21` (see below), using the
+   song config's metadata.
+7. `musicxml_to_json.py <slug>` — reads `vocal-events.json` +
+   `aligned-lyrics.json` and `harmony-events.json` directly (not the
+   assembled MusicXML — see "Why the JSON step bypasses MusicXML" below)
+   and emits the `schemaVersion: 1` normalized JSON envelope the web repo's
    `loadScoreJson` expects, to `output/json/<slug>.json`.
 
 Example, for a song already separated:
@@ -97,9 +113,46 @@ Example, for a song already separated:
 python pipeline/transcribe_vocals.py your-song
 python pipeline/align_lyrics.py your-song
 python pipeline/extract_harmony.py your-song
+python pipeline/transcribe_instrumental.py your-song
 python pipeline/assemble_musicxml.py your-song
 python pipeline/musicxml_to_json.py your-song
 ```
+
+## MusicXML assembly output
+
+`assemble_musicxml.py` writes five files to `working/<slug>/`, all padded so
+every part in a given file ends on the same final measure (see "Why the
+JSON step bypasses MusicXML" below for why padding matters):
+
+- `voice.musicxml` — voice only.
+- `instrumental.musicxml` — the transcribed accompaniment only.
+- `harmony.musicxml` — chord symbols only, no noteheads.
+- `full-score.musicxml` — all three parts together, for a full read.
+- `lead-sheet.musicxml` — voice + harmony only; this is the pair that
+  corresponds to what gets published (`musicxml_to_json.py` doesn't read
+  the instrumental part at all — it's not part of the `Score` schema yet,
+  see `docs/FUTURE-ARCHITECTURE.md`'s "Bass/instrumental parts").
+
+## Why the JSON step bypasses MusicXML
+
+`musicxml_to_json.py` reads voice and harmony from their JSON intermediates
+(`vocal-events.json`/`aligned-lyrics.json`, `harmony-events.json`) rather
+than re-parsing `lead-sheet.musicxml`. Two music21 round-trip issues drove
+this:
+
+- A ChordSymbol's `<harmony>` tag gets re-emitted once per measure it
+  spans, the same way a tied note is split at a barline. With this many
+  chord changes, re-parsing that duplicated the tag and corrupted the
+  harmony part's own offsets partway through the score, silently
+  truncating the harmony read back from it.
+- A single Rest spanning several empty measures (e.g. Voice padded out to
+  match Harmony's length) made `makeMeasures()` emit a duplicated
+  whole-measure rest in the final measure instead of one correctly sized
+  one — most notation software reports that as an incomplete/overfull
+  measure. `assemble_musicxml.py` works around this for its own MusicXML
+  output by padding one measure-length Rest at a time instead of one long
+  one, but the JSON step sidesteps the whole class of issue by not
+  round-tripping through MusicXML at all.
 
 ## Harmony extraction: lv-chordia
 
@@ -157,7 +210,7 @@ for absent optional fields (`tie`, `melisma`, `elision`, `lyrics`,
 2. Write `songs/<slug>.json` (see the two existing files for the shape):
    metadata, `melodySource` (curated MusicXML path, or `basic-pitch` with
    its vocal range), and syllabified `lyrics`.
-3. Run the six pipeline steps in order (above).
+3. Run the seven pipeline steps in order (above).
 4. Inspect `working/<slug>/lead-sheet.musicxml` and `output/json/<slug>.json`
    before transferring — automatic transcription and chord recognition are
    both expected to need correction; see `docs/FUTURE-ARCHITECTURE.md`'s
