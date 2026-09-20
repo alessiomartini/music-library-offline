@@ -60,7 +60,6 @@ def from_curated(config: dict):
 def from_basic_pitch(slug: str, config: dict):
     from basic_pitch.inference import predict
     from basic_pitch import ICASSP_2022_MODEL_PATH
-    import pretty_midi
 
     vocals_wav = REPO_ROOT / "working" / slug / "vocals.wav"
     midi_out = REPO_ROOT / "working" / slug / "vocal-midi.mid"
@@ -91,9 +90,15 @@ def from_basic_pitch(slug: str, config: dict):
     raw = [n for n in raw if n["velocity"] >= velocity_threshold]
     print(f"Raw notes: {before} -> after filters: {len(raw)}")
 
-    pm = pretty_midi.PrettyMIDI(str(midi_out))
-    tempo_changes = pm.get_tempo_changes()
-    tempo_bpm = float(tempo_changes[1][0]) if len(tempo_changes[1]) > 0 else config["tempoBpm"]
+    # Basic Pitch's raw note_events start/end times are real seconds, tied
+    # to the actual recording — never to a musical tempo. The tempo baked
+    # into the MIDI it writes is PrettyMIDI's meaningless default (120bpm),
+    # not a detected value, so reading it back here silently rescaled every
+    # note's tick position by song_tempo/120 and made the vocal timeline
+    # drift out of sync with the harmony/measure grid (both built from the
+    # song config's real tempo) over the course of the song. Always convert
+    # using the song's actual tempo instead.
+    tempo_bpm = config["tempoBpm"]
     seconds_per_tick = 60.0 / (tempo_bpm * PPQ)
 
     events = []

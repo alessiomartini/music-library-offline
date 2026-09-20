@@ -23,15 +23,15 @@
     </scaling>
   </defaults>
   <part-list>
-    <score-part id="P9979bdd1522479a546b9cb8a766e5f3b">
+    <score-part id="P588043fae57a4c9745a770d5a3716d80">
       <part-name>Voice</part-name>
     </score-part>
-    <score-part id="Pdd8f39a7e14241f1b1da9800c7d536e1">
+    <score-part id="Pcd0165bc58aad9a541733f09cab2dfcf">
       <part-name>Harmony</part-name>
     </score-part>
   </part-list>
   <!--=========================== Part 1 ===========================-->
-  <part id="P9979bdd1522479a546b9cb8a766e5f3b">
+  <part id="P588043fae57a4c9745a770d5a3716d80">
     <!--========================= Measure 1 ==========================-->
     <measure implicit="no" number="1">
       <attributes>
@@ -7150,7 +7150,7 @@
     </measure>
   </part>
   <!--=========================== Part 2 ===========================-->
-  <part id="Pdd8f39a7e14241f1b1da9800c7d536e1">
+  <part id="Pcd0165bc58aad9a541733f09cab2dfcf">
     <!--========================= Measure 1 ==========================-->
     <measure implicit="no" number="1">
       <attributes>

@@ -3,7 +3,7 @@
   "aligned": [
     {
       "event_index": 0,
-      "start": 2400,
+      "start": 1920,
       "duration": 480,
       "pitch": 49,
       "lyric": {
@@ -14,8 +14,8 @@
     },
     {
       "event_index": 1,
-      "start": 2880,
-      "duration": 240,
+      "start": 2400,
+      "duration": 480,
       "pitch": 49,
       "lyric": {
         "verse": "verse1",
@@ -25,8 +25,8 @@
     },
     {
       "event_index": 2,
-      "start": 3360,
-      "duration": 240,
+      "start": 2880,
+      "duration": 480,
       "pitch": 50,
       "lyric": {
         "verse": "verse1",
@@ -36,7 +36,7 @@
     },
     {
       "event_index": 3,
-      "start": 3600,
+      "start": 3360,
       "duration": 240,
       "pitch": 53,
       "lyric": {
@@ -59,7 +59,7 @@
     {
       "event_index": 5,
       "start": 4320,
-      "duration": 480,
+      "duration": 240,
       "pitch": 54,
       "lyric": {
         "verse": "verse1",
@@ -69,8 +69,8 @@
     },
     {
       "event_index": 6,
-      "start": 4800,
-      "duration": 480,
+      "start": 4560,
+      "duration": 240,
       "pitch": 54,
       "lyric": {
         "verse": "verse1",
@@ -80,8 +80,8 @@
     },
     {
       "event_index": 7,
-      "start": 10560,
-      "duration": 480,
+      "start": 10080,
+      "duration": 240,
       "pitch": 54,
       "lyric": {
         "verse": "verse1",
@@ -91,8 +91,8 @@
     },
     {
       "event_index": 8,
-      "start": 11040,
-      "duration": 480,
+      "start": 10560,
+      "duration": 240,
       "pitch": 58,
       "lyric": {
         "verse": "verse1",
@@ -102,8 +102,8 @@
     },
     {
       "event_index": 9,
-      "start": 11520,
-      "duration": 480,
+      "start": 10800,
+      "duration": 240,
       "pitch": 57,
       "lyric": {
         "verse": "verse1",
@@ -113,8 +113,8 @@
     },
     {
       "event_index": 10,
-      "start": 12000,
-      "duration": 240,
+      "start": 11040,
+      "duration": 480,
       "pitch": 56,
       "lyric": {
         "verse": "verse1",
@@ -124,8 +124,8 @@
     },
     {
       "event_index": 11,
-      "start": 12480,
-      "duration": 480,
+      "start": 12000,
+      "duration": 240,
       "pitch": 54,
       "lyric": {
         "verse": "verse1",
@@ -135,8 +135,8 @@
     },
     {
       "event_index": 12,
-      "start": 12960,
-      "duration": 480,
+      "start": 12240,
+      "duration": 240,
       "pitch": 52,
       "lyric": {
         "verse": "verse1",
@@ -146,7 +146,7 @@
     },
     {
       "event_index": 13,
-      "start": 13440,
+      "start": 12480,
       "duration": 480,
       "pitch": 51,
       "lyric": {
@@ -157,7 +157,7 @@
     },
     {
       "event_index": 14,
-      "start": 13920,
+      "start": 12960,
       "duration": 240,
       "pitch": 53,
       "lyric": {
@@ -168,7 +168,7 @@
     },
     {
       "event_index": 15,
-      "start": 14400,
+      "start": 13440,
       "duration": 240,
       "pitch": 56,
       "lyric": {
@@ -179,7 +179,7 @@
     },
     {
       "event_index": 16,
-      "start": 14880,
+      "start": 13920,
       "duration": 240,
       "pitch": 53,
       "lyric": {
@@ -190,8 +190,8 @@
     },
     {
       "event_index": 17,
-      "start": 16800,
-      "duration": 480,
+      "start": 15840,
+      "duration": 240,
       "pitch": 49,
       "lyric": {
         "verse": "verse1",
@@ -201,8 +201,8 @@
     },
     {
       "event_index": 18,
-      "start": 17280,
-      "duration": 480,
+      "start": 16320,
+      "duration": 240,
       "pitch": 50,
       "lyric": {
         "verse": "verse1",
@@ -212,8 +212,8 @@
     },
     {
       "event_index": 19,
-      "start": 18720,
-      "duration": 240,
+      "start": 17280,
+      "duration": 480,
       "pitch": 58,
       "lyric": {
         "verse": "verse1",
@@ -223,7 +223,7 @@
     },
     {
       "event_index": 20,
-      "start": 19200,
+      "start": 17760,
       "duration": 1920,
       "pitch": 62,
       "lyric": {
@@ -234,7 +234,7 @@
     },
     {
       "event_index": 21,
-      "start": 21120,
+      "start": 19680,
       "duration": 960,
       "pitch": 61,
       "lyric": {
@@ -245,7 +245,7 @@
     },
     {
       "event_index": 22,
-      "start": 22080,
+      "start": 20640,
       "duration": 1440,
       "pitch": 61,
       "lyric": {
@@ -256,7 +256,7 @@
     },
     {
       "event_index": 23,
-      "start": 23520,
+      "start": 22080,
       "duration": 480,
       "pitch": 61,
       "lyric": {
@@ -267,8 +267,8 @@
     },
     {
       "event_index": 24,
-      "start": 25440,
-      "duration": 480,
+      "start": 24000,
+      "duration": 240,
       "pitch": 59,
       "lyric": {
         "verse": "verse1",
@@ -278,8 +278,8 @@
     },
     {
       "event_index": 25,
-      "start": 25920,
-      "duration": 480,
+      "start": 24240,
+      "duration": 240,
       "pitch": 57,
       "lyric": {
         "verse": "verse1",
@@ -289,8 +289,8 @@
     },
     {
       "event_index": 26,
-      "start": 26400,
-      "duration": 240,
+      "start": 24480,
+      "duration": 480,
       "pitch": 57,
       "lyric": {
         "verse": "verse1",
@@ -300,8 +300,8 @@
     },
     {
       "event_index": 27,
-      "start": 26880,
-      "duration": 480,
+      "start": 25440,
+      "duration": 240,
       "pitch": 55,
       "lyric": {
         "verse": "verse1",
@@ -311,8 +311,8 @@
     },
     {
       "event_index": 28,
-      "start": 27360,
-      "duration": 480,
+      "start": 25680,
+      "duration": 240,
       "pitch": 55,
       "lyric": {
         "verse": "verse1",
@@ -322,7 +322,7 @@
     },
     {
       "event_index": 29,
-      "start": 27840,
+      "start": 25920,
       "duration": 240,
       "pitch": 53,
       "lyric": {
@@ -333,7 +333,7 @@
     },
     {
       "event_index": 30,
-      "start": 28080,
+      "start": 26400,
       "duration": 240,
       "pitch": 52,
       "lyric": {
@@ -344,8 +344,8 @@
     },
     {
       "event_index": 31,
-      "start": 28320,
-      "duration": 480,
+      "start": 26640,
+      "duration": 240,
       "pitch": 55,
       "lyric": {
         "verse": "verse1",
@@ -355,7 +355,7 @@
     },
     {
       "event_index": 32,
-      "start": 28800,
+      "start": 26880,
       "duration": 960,
       "pitch": 55,
       "lyric": {
@@ -366,7 +366,7 @@
     },
     {
       "event_index": 33,
-      "start": 29760,
+      "start": 27840,
       "duration": 480,
       "pitch": 54,
       "lyric": {
@@ -377,7 +377,7 @@
     },
     {
       "event_index": 34,
-      "start": 30240,
+      "start": 28320,
       "duration": 480,
       "pitch": 52,
       "lyric": {
@@ -388,7 +388,7 @@
     },
     {
       "event_index": 35,
-      "start": 30720,
+      "start": 28800,
       "duration": 240,
       "pitch": 54,
       "lyric": {
@@ -399,8 +399,8 @@
     },
     {
       "event_index": 36,
-      "start": 31200,
-      "duration": 480,
+      "start": 29280,
+      "duration": 240,
       "pitch": 57,
       "lyric": {
         "verse": "chorus1",
@@ -410,8 +410,8 @@
     },
     {
       "event_index": 37,
-      "start": 31680,
-      "duration": 480,
+      "start": 29520,
+      "duration": 240,
       "pitch": 57,
       "lyric": {
         "verse": "chorus1",
@@ -421,8 +421,8 @@
     },
     {
       "event_index": 38,
-      "start": 33600,
-      "duration": 240,
+      "start": 31200,
+      "duration": 480,
       "pitch": 59,
       "lyric": {
         "verse": "chorus1",
@@ -432,8 +432,8 @@
     },
     {
       "event_index": 39,
-      "start": 34080,
-      "duration": 240,
+      "start": 31680,
+      "duration": 480,
       "pitch": 57,
       "lyric": {
         "verse": "chorus1",
@@ -443,8 +443,8 @@
     },
     {
       "event_index": 40,
-      "start": 34560,
-      "duration": 240,
+      "start": 32160,
+      "duration": 480,
       "pitch": 57,
       "lyric": {
         "verse": "chorus1",
@@ -454,7 +454,7 @@
     },
     {
       "event_index": 41,
-      "start": 35040,
+      "start": 32640,
       "duration": 480,
       "pitch": 64,
       "lyric": {
@@ -465,7 +465,7 @@
     },
     {
       "event_index": 42,
-      "start": 35520,
+      "start": 33120,
       "duration": 480,
       "pitch": 64,
       "lyric": {
@@ -476,7 +476,7 @@
     },
     {
       "event_index": 43,
-      "start": 36000,
+      "start": 33600,
       "duration": 480,
       "pitch": 64,
       "lyric": {
@@ -487,7 +487,7 @@
     },
     {
       "event_index": 44,
-      "start": 36960,
+      "start": 34560,
       "duration": 480,
       "pitch": 61,
       "lyric": {
@@ -498,7 +498,7 @@
     },
     {
       "event_index": 45,
-      "start": 37440,
+      "start": 35040,
       "duration": 240,
       "pitch": 61,
       "lyric": {
@@ -509,7 +509,7 @@
     },
     {
       "event_index": 46,
-      "start": 37680,
+      "start": 35280,
       "duration": 240,
       "pitch": 61,
       "lyric": {
@@ -520,7 +520,7 @@
     },
     {
       "event_index": 47,
-      "start": 37920,
+      "start": 35520,
       "duration": 480,
       "pitch": 61,
       "lyric": {
@@ -531,8 +531,8 @@
     },
     {
       "event_index": 48,
-      "start": 38880,
-      "duration": 480,
+      "start": 36480,
+      "duration": 240,
       "pitch": 59,
       "lyric": {
         "verse": "chorus1",
@@ -542,8 +542,8 @@
     },
     {
       "event_index": 49,
-      "start": 39360,
-      "duration": 480,
+      "start": 36720,
+      "duration": 240,
       "pitch": 58,
       "lyric": {
         "verse": "chorus1",
@@ -553,8 +553,8 @@
     },
     {
       "event_index": 50,
-      "start": 40800,
-      "duration": 240,
+      "start": 37920,
+      "duration": 480,
       "pitch": 62,
       "lyric": {
         "verse": "chorus1",
@@ -564,8 +564,8 @@
     },
     {
       "event_index": 51,
-      "start": 41280,
-      "duration": 480,
+      "start": 38880,
+      "duration": 240,
       "pitch": 61,
       "lyric": {
         "verse": "chorus1",
@@ -575,8 +575,8 @@
     },
     {
       "event_index": 52,
-      "start": 41760,
-      "duration": 480,
+      "start": 39120,
+      "duration": 240,
       "pitch": 61,
       "lyric": {
         "verse": "chorus1",
@@ -586,7 +586,7 @@
     },
     {
       "event_index": 53,
-      "start": 42240,
+      "start": 39360,
       "duration": 480,
       "pitch": 61,
       "lyric": {
@@ -597,7 +597,7 @@
     },
     {
       "event_index": 54,
-      "start": 43200,
+      "start": 40320,
       "duration": 960,
       "pitch": 59,
       "lyric": {
@@ -608,7 +608,7 @@
     },
     {
       "event_index": 55,
-      "start": 44160,
+      "start": 41280,
       "duration": 480,
       "pitch": 61,
       "lyric": {
@@ -619,7 +619,7 @@
     },
     {
       "event_index": 56,
-      "start": 45120,
+      "start": 42240,
       "duration": 480,
       "pitch": 57,
       "lyric": {
@@ -630,8 +630,8 @@
     },
     {
       "event_index": 57,
-      "start": 45600,
-      "duration": 480,
+      "start": 42720,
+      "duration": 240,
       "pitch": 57,
       "lyric": {
         "verse": "chorus1",
@@ -641,7 +641,7 @@
     },
     {
       "event_index": 58,
-      "start": 46080,
+      "start": 42960,
       "duration": 240,
       "pitch": 57,
       "lyric": {
@@ -652,7 +652,7 @@
     },
     {
       "event_index": 59,
-      "start": 46320,
+      "start": 43200,
       "duration": 240,
       "pitch": 57,
       "lyric": {
@@ -663,8 +663,8 @@
     },
     {
       "event_index": 60,
-      "start": 46560,
-      "duration": 480,
+      "start": 43440,
+      "duration": 240,
       "pitch": 57,
       "lyric": {
         "verse": "chorus1",
@@ -674,7 +674,7 @@
     },
     {
       "event_index": 61,
-      "start": 47040,
+      "start": 43680,
       "duration": 480,
       "pitch": 57,
       "lyric": {
@@ -685,7 +685,7 @@
     },
     {
       "event_index": 62,
-      "start": 47520,
+      "start": 44160,
       "duration": 480,
       "pitch": 57,
       "lyric": {
@@ -696,7 +696,7 @@
     },
     {
       "event_index": 63,
-      "start": 48000,
+      "start": 44640,
       "duration": 480,
       "pitch": 57,
       "lyric": {
@@ -707,7 +707,7 @@
     },
     {
       "event_index": 64,
-      "start": 54720,
+      "start": 50880,
       "duration": 960,
       "pitch": 57,
       "lyric": {
@@ -718,7 +718,7 @@
     },
     {
       "event_index": 65,
-      "start": 56160,
+      "start": 52320,
       "duration": 480,
       "pitch": 54,
       "lyric": {
@@ -729,7 +729,7 @@
     },
     {
       "event_index": 66,
-      "start": 56640,
+      "start": 52800,
       "duration": 480,
       "pitch": 51,
       "lyric": {
@@ -740,7 +740,7 @@
     },
     {
       "event_index": 67,
-      "start": 57600,
+      "start": 53760,
       "duration": 480,
       "pitch": 54,
       "lyric": {
@@ -751,7 +751,7 @@
     },
     {
       "event_index": 68,
-      "start": 58080,
+      "start": 54240,
       "duration": 480,
       "pitch": 55,
       "lyric": {
@@ -762,8 +762,8 @@
     },
     {
       "event_index": 69,
-      "start": 58560,
-      "duration": 480,
+      "start": 54720,
+      "duration": 240,
       "pitch": 54,
       "lyric": {
         "verse": "verse2",
@@ -773,7 +773,7 @@
     },
     {
       "event_index": 70,
-      "start": 59040,
+      "start": 54960,
       "duration": 240,
       "pitch": 54,
       "lyric": {
@@ -784,8 +784,8 @@
     },
     {
       "event_index": 71,
-      "start": 60000,
-      "duration": 240,
+      "start": 55680,
+      "duration": 480,
       "pitch": 57,
       "lyric": {
         "verse": "verse2",
@@ -795,8 +795,8 @@
     },
     {
       "event_index": 72,
-      "start": 60240,
-      "duration": 240,
+      "start": 56160,
+      "duration": 480,
       "pitch": 57,
       "lyric": {
         "verse": "verse2",
@@ -806,7 +806,7 @@
     },
     {
       "event_index": 73,
-      "start": 61920,
+      "start": 57600,
       "duration": 480,
       "pitch": 57,
       "lyric": {
@@ -817,8 +817,8 @@
     },
     {
       "event_index": 74,
-      "start": 62400,
-      "duration": 240,
+      "start": 58080,
+      "duration": 480,
       "pitch": 59,
       "lyric": {
         "verse": "verse2",
@@ -828,7 +828,7 @@
     },
     {
       "event_index": 75,
-      "start": 62880,
+      "start": 58560,
       "duration": 480,
       "pitch": 56,
       "lyric": {
@@ -839,8 +839,8 @@
     },
     {
       "event_index": 76,
-      "start": 63840,
-      "duration": 480,
+      "start": 60000,
+      "duration": 240,
       "pitch": 64,
       "lyric": {
         "verse": "verse2",
@@ -850,7 +850,7 @@
     },
     {
       "event_index": 77,
-      "start": 64800,
+      "start": 60480,
       "duration": 480,
       "pitch": 50,
       "lyric": {
@@ -861,7 +861,7 @@
     },
     {
       "event_index": 78,
-      "start": 65280,
+      "start": 60960,
       "duration": 480,
       "pitch": 61,
       "lyric": {
@@ -872,7 +872,7 @@
     },
     {
       "event_index": 79,
-      "start": 65760,
+      "start": 61440,
       "duration": 480,
       "pitch": 62,
       "lyric": {
@@ -883,7 +883,7 @@
     },
     {
       "event_index": 80,
-      "start": 66240,
+      "start": 61920,
       "duration": 480,
       "pitch": 61,
       "lyric": {
@@ -894,7 +894,7 @@
     },
     {
       "event_index": 81,
-      "start": 66720,
+      "start": 62400,
       "duration": 480,
       "pitch": 62,
       "lyric": {
@@ -905,8 +905,8 @@
     },
     {
       "event_index": 82,
-      "start": 67680,
-      "duration": 480,
+      "start": 63360,
+      "duration": 240,
       "pitch": 59,
       "lyric": {
         "verse": "verse2",
@@ -916,8 +916,8 @@
     },
     {
       "event_index": 83,
-      "start": 68160,
-      "duration": 480,
+      "start": 63600,
+      "duration": 240,
       "pitch": 59,
       "lyric": {
         "verse": "verse2",
@@ -927,8 +927,8 @@
     },
     {
       "event_index": 84,
-      "start": 69120,
-      "duration": 480,
+      "start": 64800,
+      "duration": 240,
       "pitch": 64,
       "lyric": {
         "verse": "verse2",
@@ -938,8 +938,8 @@
     },
     {
       "event_index": 85,
-      "start": 69600,
-      "duration": 480,
+      "start": 65040,
+      "duration": 240,
       "pitch": 62,
       "lyric": {
         "verse": "verse2",
@@ -949,7 +949,7 @@
     },
     {
       "event_index": 86,
-      "start": 70080,
+      "start": 65280,
       "duration": 1440,
       "pitch": 61,
       "lyric": {
@@ -960,8 +960,8 @@
     },
     {
       "event_index": 87,
-      "start": 71520,
-      "duration": 1440,
+      "start": 66720,
+      "duration": 960,
       "pitch": 59,
       "lyric": {
         "verse": "verse2",
@@ -971,7 +971,7 @@
     },
     {
       "event_index": 88,
-      "start": 72960,
+      "start": 68160,
       "duration": 480,
       "pitch": 61,
       "lyric": {
@@ -982,8 +982,8 @@
     },
     {
       "event_index": 89,
-      "start": 73920,
-      "duration": 480,
+      "start": 69120,
+      "duration": 240,
       "pitch": 57,
       "lyric": {
         "verse": "verse2",
@@ -993,8 +993,8 @@
     },
     {
       "event_index": 90,
-      "start": 74400,
-      "duration": 480,
+      "start": 69360,
+      "duration": 720,
       "pitch": 57,
       "lyric": {
         "verse": "verse2",
@@ -1004,7 +1004,7 @@
     },
     {
       "event_index": 91,
-      "start": 74880,
+      "start": 70080,
       "duration": 960,
       "pitch": 57,
       "lyric": {
@@ -1015,8 +1015,8 @@
     },
     {
       "event_index": 92,
-      "start": 75840,
-      "duration": 480,
+      "start": 71040,
+      "duration": 240,
       "pitch": 57,
       "lyric": {
         "verse": "verse2",
@@ -1026,8 +1026,8 @@
     },
     {
       "event_index": 93,
-      "start": 76320,
-      "duration": 480,
+      "start": 71280,
+      "duration": 240,
       "pitch": 57,
       "lyric": {
         "verse": "verse2",
@@ -1037,7 +1037,7 @@
     },
     {
       "event_index": 94,
-      "start": 76800,
+      "start": 71520,
       "duration": 480,
       "pitch": 57,
       "lyric": {
@@ -1048,7 +1048,7 @@
     },
     {
       "event_index": 95,
-      "start": 77280,
+      "start": 72000,
       "duration": 480,
       "pitch": 57,
       "lyric": {
@@ -1059,7 +1059,7 @@
     },
     {
       "event_index": 96,
-      "start": 78720,
+      "start": 73440,
       "duration": 480,
       "pitch": 57,
       "lyric": {
@@ -1070,8 +1070,8 @@
     },
     {
       "event_index": 97,
-      "start": 83040,
-      "duration": 240,
+      "start": 77280,
+      "duration": 480,
       "pitch": 65,
       "lyric": {
         "verse": "verse2",
@@ -1081,8 +1081,8 @@
     },
     {
       "event_index": 98,
-      "start": 83520,
-      "duration": 480,
+      "start": 78240,
+      "duration": 240,
       "pitch": 66,
       "lyric": {
         "verse": "verse2",
@@ -1092,7 +1092,7 @@
     },
     {
       "event_index": 99,
-      "start": 84480,
+      "start": 78720,
       "duration": 480,
       "pitch": 66,
       "lyric": {
@@ -1103,7 +1103,7 @@
     },
     {
       "event_index": 100,
-      "start": 84960,
+      "start": 79200,
       "duration": 960,
       "pitch": 66,
       "lyric": {
@@ -1114,7 +1114,7 @@
     },
     {
       "event_index": 101,
-      "start": 86400,
+      "start": 80640,
       "duration": 480,
       "pitch": 69,
       "lyric": {
@@ -1125,8 +1125,8 @@
     },
     {
       "event_index": 102,
-      "start": 86880,
-      "duration": 480,
+      "start": 81120,
+      "duration": 240,
       "pitch": 68,
       "lyric": {
         "verse": "verse2",
@@ -1136,7 +1136,7 @@
     },
     {
       "event_index": 103,
-      "start": 87360,
+      "start": 81600,
       "duration": 480,
       "pitch": 66,
       "lyric": {
@@ -1147,8 +1147,8 @@
     },
     {
       "event_index": 104,
-      "start": 87840,
-      "duration": 480,
+      "start": 82080,
+      "duration": 240,
       "pitch": 64,
       "lyric": {
         "verse": "chorus2",
@@ -1158,7 +1158,7 @@
     },
     {
       "event_index": 105,
-      "start": 88320,
+      "start": 82560,
       "duration": 240,
       "pitch": 62,
       "lyric": {
@@ -1169,7 +1169,7 @@
     },
     {
       "event_index": 106,
-      "start": 88560,
+      "start": 82800,
       "duration": 240,
       "pitch": 50,
       "lyric": {
@@ -1180,7 +1180,7 @@
     },
     {
       "event_index": 107,
-      "start": 88800,
+      "start": 83040,
       "duration": 480,
       "pitch": 64,
       "lyric": {
@@ -1191,8 +1191,8 @@
     },
     {
       "event_index": 108,
-      "start": 89280,
-      "duration": 480,
+      "start": 83520,
+      "duration": 240,
       "pitch": 64,
       "lyric": {
         "verse": "chorus2",
@@ -1202,7 +1202,7 @@
     },
     {
       "event_index": 109,
-      "start": 90240,
+      "start": 84000,
       "duration": 480,
       "pitch": 64,
       "lyric": {
@@ -1213,8 +1213,8 @@
     },
     {
       "event_index": 110,
-      "start": 90720,
-      "duration": 960,
+      "start": 84960,
+      "duration": 480,
       "pitch": 66,
       "lyric": {
         "verse": "chorus2",
@@ -1224,7 +1224,7 @@
     },
     {
       "event_index": 111,
-      "start": 92160,
+      "start": 85920,
       "duration": 480,
       "pitch": 62,
       "lyric": {
@@ -1235,8 +1235,8 @@
     },
     {
       "event_index": 112,
-      "start": 94560,
-      "duration": 480,
+      "start": 87840,
+      "duration": 960,
       "pitch": 66,
       "lyric": {
         "verse": "chorus2",
@@ -1246,7 +1246,7 @@
     },
     {
       "event_index": 113,
-      "start": 96480,
+      "start": 90240,
       "duration": 1440,
       "pitch": 61,
       "lyric": {
@@ -1257,8 +1257,8 @@
     },
     {
       "event_index": 114,
-      "start": 97920,
-      "duration": 480,
+      "start": 91680,
+      "duration": 240,
       "pitch": 61,
       "lyric": {
         "verse": "chorus2",
@@ -1268,7 +1268,7 @@
     },
     {
       "event_index": 115,
-      "start": 99360,
+      "start": 92640,
       "duration": 240,
       "pitch": 59,
       "lyric": {
@@ -1279,7 +1279,7 @@
     },
     {
       "event_index": 116,
-      "start": 99600,
+      "start": 92880,
       "duration": 240,
       "pitch": 59,
       "lyric": {
@@ -1290,8 +1290,8 @@
     },
     {
       "event_index": 117,
-      "start": 99840,
-      "duration": 480,
+      "start": 93600,
+      "duration": 240,
       "pitch": 64,
       "lyric": {
         "verse": "chorus2",
@@ -1301,7 +1301,7 @@
     },
     {
       "event_index": 118,
-      "start": 100800,
+      "start": 94080,
       "duration": 480,
       "pitch": 62,
       "lyric": {
@@ -1312,7 +1312,7 @@
     },
     {
       "event_index": 119,
-      "start": 101280,
+      "start": 94560,
       "duration": 240,
       "pitch": 61,
       "lyric": {
@@ -1323,7 +1323,7 @@
     },
     {
       "event_index": 120,
-      "start": 101520,
+      "start": 94800,
       "duration": 240,
       "pitch": 61,
       "lyric": {
@@ -1334,8 +1334,8 @@
     },
     {
       "event_index": 121,
-      "start": 102240,
-      "duration": 960,
+      "start": 95520,
+      "duration": 480,
       "pitch": 59,
       "lyric": {
         "verse": "chorus2",
@@ -1345,8 +1345,8 @@
     },
     {
       "event_index": 122,
-      "start": 103200,
-      "duration": 480,
+      "start": 96480,
+      "duration": 240,
       "pitch": 64,
       "lyric": {
         "verse": "chorus2",
@@ -1356,7 +1356,7 @@
     },
     {
       "event_index": 123,
-      "start": 103680,
+      "start": 96960,
       "duration": 960,
       "pitch": 61,
       "lyric": {
@@ -1367,8 +1367,8 @@
     },
     {
       "event_index": 124,
-      "start": 104640,
-      "duration": 960,
+      "start": 97920,
+      "duration": 480,
       "pitch": 62,
       "lyric": {
         "verse": "chorus2",
@@ -1378,8 +1378,8 @@
     },
     {
       "event_index": 125,
-      "start": 105600,
-      "duration": 240,
+      "start": 98400,
+      "duration": 480,
       "pitch": 61,
       "lyric": {
         "verse": "chorus2",
@@ -1389,8 +1389,8 @@
     },
     {
       "event_index": 126,
-      "start": 105840,
-      "duration": 720,
+      "start": 98880,
+      "duration": 480,
       "pitch": 59,
       "lyric": {
         "verse": "chorus2",
@@ -1400,7 +1400,7 @@
     },
     {
       "event_index": 127,
-      "start": 106560,
+      "start": 99360,
       "duration": 480,
       "pitch": 59,
       "lyric": {
@@ -1411,8 +1411,8 @@
     },
     {
       "event_index": 128,
-      "start": 107040,
-      "duration": 240,
+      "start": 99840,
+      "duration": 480,
       "pitch": 59,
       "lyric": {
         "verse": "chorus2",
@@ -1422,7 +1422,7 @@
     },
     {
       "event_index": 129,
-      "start": 110880,
+      "start": 103200,
       "duration": 480,
       "pitch": 57,
       "lyric": {
@@ -1433,7 +1433,7 @@
     },
     {
       "event_index": 130,
-      "start": 115200,
+      "start": 107520,
       "duration": 480,
       "pitch": 66,
       "lyric": {
@@ -1444,8 +1444,8 @@
     },
     {
       "event_index": 131,
-      "start": 116640,
-      "duration": 240,
+      "start": 108480,
+      "duration": 480,
       "pitch": 66,
       "lyric": {
         "verse": "chorus2",
@@ -1455,8 +1455,8 @@
     },
     {
       "event_index": 132,
-      "start": 116880,
-      "duration": 720,
+      "start": 108960,
+      "duration": 480,
       "pitch": 66,
       "lyric": {
         "verse": "chorus2",
@@ -1466,8 +1466,8 @@
     },
     {
       "event_index": 133,
-      "start": 117600,
-      "duration": 240,
+      "start": 109440,
+      "duration": 480,
       "pitch": 66,
       "lyric": {
         "verse": "chorus2",
@@ -1477,8 +1477,8 @@
     },
     {
       "event_index": 134,
-      "start": 117840,
-      "duration": 240,
+      "start": 109920,
+      "duration": 480,
       "pitch": 66,
       "lyric": {
         "verse": "chorus2",
@@ -1488,7 +1488,7 @@
     },
     {
       "event_index": 135,
-      "start": 118080,
+      "start": 110400,
       "duration": 240,
       "pitch": 54,
       "lyric": {
@@ -1499,7 +1499,7 @@
     },
     {
       "event_index": 136,
-      "start": 118320,
+      "start": 110640,
       "duration": 240,
       "pitch": 69,
       "lyric": {
@@ -1510,8 +1510,8 @@
     },
     {
       "event_index": 137,
-      "start": 119040,
-      "duration": 960,
+      "start": 111360,
+      "duration": 480,
       "pitch": 66,
       "lyric": {
         "verse": "chorus2",
@@ -1521,8 +1521,8 @@
     },
     {
       "event_index": 138,
-      "start": 120000,
-      "duration": 480,
+      "start": 112320,
+      "duration": 240,
       "pitch": 62,
       "lyric": {
         "verse": "chorus2",
@@ -1532,8 +1532,8 @@
     },
     {
       "event_index": 139,
-      "start": 120480,
-      "duration": 480,
+      "start": 112560,
+      "duration": 720,
       "pitch": 64,
       "lyric": {
         "verse": "bridge",
@@ -1543,8 +1543,8 @@
     },
     {
       "event_index": 140,
-      "start": 120960,
-      "duration": 480,
+      "start": 113280,
+      "duration": 240,
       "pitch": 65,
       "lyric": {
         "verse": "bridge",
@@ -1554,8 +1554,8 @@
     },
     {
       "event_index": 141,
-      "start": 121440,
-      "duration": 480,
+      "start": 113520,
+      "duration": 240,
       "pitch": 64,
       "lyric": {
         "verse": "bridge",
@@ -1565,7 +1565,7 @@
     },
     {
       "event_index": 142,
-      "start": 122400,
+      "start": 114240,
       "duration": 480,
       "pitch": 66,
       "lyric": {
@@ -1576,7 +1576,7 @@
     },
     {
       "event_index": 143,
-      "start": 124320,
+      "start": 116160,
       "duration": 480,
       "pitch": 62,
       "lyric": {
@@ -1587,7 +1587,7 @@
     },
     {
       "event_index": 144,
-      "start": 124800,
+      "start": 116640,
       "duration": 480,
       "pitch": 63,
       "lyric": {
@@ -1598,8 +1598,8 @@
     },
     {
       "event_index": 145,
-      "start": 125280,
-      "duration": 480,
+      "start": 117120,
+      "duration": 240,
       "pitch": 63,
       "lyric": {
         "verse": "bridge",
@@ -1609,8 +1609,8 @@
     },
     {
       "event_index": 146,
-      "start": 125760,
-      "duration": 480,
+      "start": 117360,
+      "duration": 240,
       "pitch": 63,
       "lyric": {
         "verse": "bridge",
@@ -1620,8 +1620,8 @@
     },
     {
       "event_index": 147,
-      "start": 126720,
-      "duration": 240,
+      "start": 118080,
+      "duration": 480,
       "pitch": 67,
       "lyric": {
         "verse": "bridge",
@@ -1631,8 +1631,8 @@
     },
     {
       "event_index": 148,
-      "start": 128640,
-      "duration": 240,
+      "start": 120000,
+      "duration": 480,
       "pitch": 61,
       "lyric": {
         "verse": "bridge",
@@ -1642,8 +1642,8 @@
     },
     {
       "event_index": 149,
-      "start": 128880,
-      "duration": 720,
+      "start": 120480,
+      "duration": 480,
       "pitch": 61,
       "lyric": {
         "verse": "bridge",
@@ -1653,7 +1653,7 @@
     },
     {
       "event_index": 150,
-      "start": 129600,
+      "start": 120960,
       "duration": 240,
       "pitch": 61,
       "lyric": {
@@ -1664,7 +1664,7 @@
     },
     {
       "event_index": 151,
-      "start": 130560,
+      "start": 121920,
       "duration": 240,
       "pitch": 62,
       "lyric": {
@@ -1675,7 +1675,7 @@
     },
     {
       "event_index": 152,
-      "start": 131040,
+      "start": 122400,
       "duration": 480,
       "pitch": 59,
       "lyric": {
@@ -1686,8 +1686,8 @@
     },
     {
       "event_index": 153,
-      "start": 131520,
-      "duration": 480,
+      "start": 122880,
+      "duration": 240,
       "pitch": 59,
       "lyric": {
         "verse": "bridge",
@@ -1697,8 +1697,8 @@
     },
     {
       "event_index": 154,
-      "start": 132000,
-      "duration": 480,
+      "start": 123360,
+      "duration": 240,
       "pitch": 64,
       "lyric": {
         "verse": "bridge",
@@ -1708,8 +1708,8 @@
     },
     {
       "event_index": 155,
-      "start": 132480,
-      "duration": 480,
+      "start": 123840,
+      "duration": 240,
       "pitch": 62,
       "lyric": {
         "verse": "bridge",
@@ -1719,8 +1719,8 @@
     },
     {
       "event_index": 156,
-      "start": 132960,
-      "duration": 480,
+      "start": 124080,
+      "duration": 240,
       "pitch": 61,
       "lyric": {
         "verse": "bridge",
@@ -1730,8 +1730,8 @@
     },
     {
       "event_index": 157,
-      "start": 133440,
-      "duration": 240,
+      "start": 124320,
+      "duration": 480,
       "pitch": 61,
       "lyric": {
         "verse": "bridge",
@@ -1741,7 +1741,7 @@
     },
     {
       "event_index": 158,
-      "start": 133680,
+      "start": 124800,
       "duration": 240,
       "pitch": 61,
       "lyric": {
@@ -1752,8 +1752,8 @@
     },
     {
       "event_index": 159,
-      "start": 134400,
-      "duration": 240,
+      "start": 125280,
+      "duration": 480,
       "pitch": 59,
       "lyric": {
         "verse": "bridge",
@@ -1763,7 +1763,7 @@
     },
     {
       "event_index": 160,
-      "start": 134640,
+      "start": 125760,
       "duration": 240,
       "pitch": 60,
       "lyric": {
@@ -1774,8 +1774,8 @@
     },
     {
       "event_index": 161,
-      "start": 134880,
-      "duration": 480,
+      "start": 126240,
+      "duration": 240,
       "pitch": 64,
       "lyric": {
         "verse": "bridge",
@@ -1785,8 +1785,8 @@
     },
     {
       "event_index": 162,
-      "start": 135360,
-      "duration": 960,
+      "start": 126480,
+      "duration": 720,
       "pitch": 61,
       "lyric": {
         "verse": "bridge",
@@ -1796,8 +1796,8 @@
     },
     {
       "event_index": 163,
-      "start": 136320,
-      "duration": 960,
+      "start": 127680,
+      "duration": 480,
       "pitch": 63,
       "lyric": {
         "verse": "bridge",
@@ -1807,7 +1807,7 @@
     },
     {
       "event_index": 164,
-      "start": 137760,
+      "start": 128640,
       "duration": 960,
       "pitch": 60,
       "lyric": {
@@ -1818,7 +1818,7 @@
     },
     {
       "event_index": 165,
-      "start": 138720,
+      "start": 129600,
       "duration": 240,
       "pitch": 59,
       "lyric": {
@@ -1829,7 +1829,7 @@
     },
     {
       "event_index": 166,
-      "start": 138960,
+      "start": 129840,
       "duration": 240,
       "pitch": 59,
       "lyric": {
@@ -1840,8 +1840,8 @@
     },
     {
       "event_index": 167,
-      "start": 139200,
-      "duration": 480,
+      "start": 130080,
+      "duration": 240,
       "pitch": 59,
       "lyric": {
         "verse": "bridge",
@@ -1851,8 +1851,8 @@
     },
     {
       "event_index": 168,
-      "start": 139680,
-      "duration": 480,
+      "start": 130320,
+      "duration": 720,
       "pitch": 59,
       "lyric": {
         "verse": "bridge",
@@ -1862,7 +1862,7 @@
     },
     {
       "event_index": 169,
-      "start": 144480,
+      "start": 134880,
       "duration": 480,
       "pitch": 48,
       "lyric": {
@@ -1873,8 +1873,8 @@
     },
     {
       "event_index": 170,
-      "start": 144960,
-      "duration": 480,
+      "start": 135360,
+      "duration": 240,
       "pitch": 49,
       "lyric": {
         "verse": "bridge",
@@ -1884,8 +1884,8 @@
     },
     {
       "event_index": 171,
-      "start": 145440,
-      "duration": 480,
+      "start": 135840,
+      "duration": 240,
       "pitch": 50,
       "lyric": {
         "verse": "bridge",
@@ -1895,8 +1895,8 @@
     },
     {
       "event_index": 172,
-      "start": 146400,
-      "duration": 240,
+      "start": 136320,
+      "duration": 480,
       "pitch": 54,
       "lyric": {
         "verse": "bridge",
@@ -1906,8 +1906,8 @@
     },
     {
       "event_index": 173,
-      "start": 146640,
-      "duration": 240,
+      "start": 136800,
+      "duration": 480,
       "pitch": 54,
       "lyric": {
         "verse": "bridge",
@@ -1917,8 +1917,8 @@
     },
     {
       "event_index": 174,
-      "start": 153120,
-      "duration": 240,
+      "start": 142560,
+      "duration": 480,
       "pitch": 55,
       "lyric": {
         "verse": "chorus3",
@@ -1928,8 +1928,8 @@
     },
     {
       "event_index": 175,
-      "start": 153360,
-      "duration": 240,
+      "start": 143040,
+      "duration": 480,
       "pitch": 55,
       "lyric": {
         "verse": "chorus3",
@@ -1939,7 +1939,7 @@
     },
     {
       "event_index": 176,
-      "start": 153600,
+      "start": 143520,
       "duration": 480,
       "pitch": 57,
       "lyric": {
@@ -1950,8 +1950,8 @@
     },
     {
       "event_index": 177,
-      "start": 154080,
-      "duration": 480,
+      "start": 144000,
+      "duration": 240,
       "pitch": 56,
       "lyric": {
         "verse": "chorus3",
@@ -1961,8 +1961,8 @@
     },
     {
       "event_index": 178,
-      "start": 154560,
-      "duration": 480,
+      "start": 144480,
+      "duration": 240,
       "pitch": 55,
       "lyric": {
         "verse": "chorus3",
@@ -1972,8 +1972,8 @@
     },
     {
       "event_index": 179,
-      "start": 155040,
-      "duration": 480,
+      "start": 144720,
+      "duration": 240,
       "pitch": 54,
       "lyric": {
         "verse": "chorus3",
@@ -1983,8 +1983,8 @@
     },
     {
       "event_index": 180,
-      "start": 155520,
-      "duration": 240,
+      "start": 144960,
+      "duration": 480,
       "pitch": 51,
       "lyric": {
         "verse": "chorus3",
@@ -1994,8 +1994,8 @@
     },
     {
       "event_index": 181,
-      "start": 155760,
-      "duration": 240,
+      "start": 145440,
+      "duration": 480,
       "pitch": 51,
       "lyric": {
         "verse": "chorus3",
@@ -2005,8 +2005,8 @@
     },
     {
       "event_index": 182,
-      "start": 156480,
-      "duration": 480,
+      "start": 146400,
+      "duration": 240,
       "pitch": 55,
       "lyric": {
         "verse": "chorus3",
@@ -2016,8 +2016,8 @@
     },
     {
       "event_index": 183,
-      "start": 156960,
-      "duration": 480,
+      "start": 146640,
+      "duration": 240,
       "pitch": 53,
       "lyric": {
         "verse": "chorus3",
@@ -2027,7 +2027,7 @@
     },
     {
       "event_index": 184,
-      "start": 159360,
+      "start": 148800,
       "duration": 240,
       "pitch": 50,
       "lyric": {
@@ -2038,7 +2038,7 @@
     },
     {
       "event_index": 185,
-      "start": 160320,
+      "start": 149760,
       "duration": 480,
       "pitch": 57,
       "lyric": {
@@ -2049,8 +2049,8 @@
     },
     {
       "event_index": 186,
-      "start": 161280,
-      "duration": 240,
+      "start": 150240,
+      "duration": 480,
       "pitch": 62,
       "lyric": {
         "verse": "chorus3",
@@ -2060,8 +2060,8 @@
     },
     {
       "event_index": 187,
-      "start": 161520,
-      "duration": 720,
+      "start": 150720,
+      "duration": 480,
       "pitch": 62,
       "lyric": {
         "verse": "chorus3",
@@ -2071,7 +2071,7 @@
     },
     {
       "event_index": 188,
-      "start": 162240,
+      "start": 151200,
       "duration": 480,
       "pitch": 62,
       "lyric": {
@@ -2082,7 +2082,7 @@
     },
     {
       "event_index": 189,
-      "start": 162720,
+      "start": 151680,
       "duration": 480,
       "pitch": 62,
       "lyric": {
@@ -2093,8 +2093,8 @@
     },
     {
       "event_index": 190,
-      "start": 163200,
-      "duration": 960,
+      "start": 152160,
+      "duration": 1440,
       "pitch": 61,
       "lyric": {
         "verse": "chorus3",
@@ -2104,8 +2104,8 @@
     },
     {
       "event_index": 191,
-      "start": 164160,
-      "duration": 480,
+      "start": 153600,
+      "duration": 240,
       "pitch": 61,
       "lyric": {
         "verse": "chorus3",
@@ -2115,8 +2115,8 @@
     },
     {
       "event_index": 192,
-      "start": 164640,
-      "duration": 960,
+      "start": 153840,
+      "duration": 720,
       "pitch": 61,
       "lyric": {
         "verse": "chorus3",
@@ -2126,7 +2126,7 @@
     },
     {
       "event_index": 193,
-      "start": 165600,
+      "start": 154560,
       "duration": 480,
       "pitch": 61,
       "lyric": {
@@ -2137,7 +2137,7 @@
     },
     {
       "event_index": 194,
-      "start": 167040,
+      "start": 156000,
       "duration": 480,
       "pitch": 58,
       "lyric": {
@@ -2148,7 +2148,7 @@
     },
     {
       "event_index": 195,
-      "start": 167520,
+      "start": 156480,
       "duration": 480,
       "pitch": 58,
       "lyric": {
@@ -2159,8 +2159,8 @@
     },
     {
       "event_index": 196,
-      "start": 168480,
-      "duration": 480,
+      "start": 157440,
+      "duration": 240,
       "pitch": 57,
       "lyric": {
         "verse": "chorus3",
@@ -2170,8 +2170,8 @@
     },
     {
       "event_index": 197,
-      "start": 168960,
-      "duration": 480,
+      "start": 157920,
+      "duration": 240,
       "pitch": 55,
       "lyric": {
         "verse": "chorus3",
@@ -2181,8 +2181,8 @@
     },
     {
       "event_index": 198,
-      "start": 169440,
-      "duration": 480,
+      "start": 158400,
+      "duration": 240,
       "pitch": 52,
       "lyric": {
         "verse": "chorus3",
@@ -2192,8 +2192,8 @@
     },
     {
       "event_index": 199,
-      "start": 169920,
-      "duration": 480,
+      "start": 158640,
+      "duration": 240,
       "pitch": 52,
       "lyric": {
         "verse": "chorus3",
@@ -2203,8 +2203,8 @@
     },
     {
       "event_index": 200,
-      "start": 171360,
-      "duration": 240,
+      "start": 159840,
+      "duration": 480,
       "pitch": 55,
       "lyric": {
         "verse": "chorus3",
@@ -2214,7 +2214,7 @@
     },
     {
       "event_index": 201,
-      "start": 171600,
+      "start": 160320,
       "duration": 240,
       "pitch": 55,
       "lyric": {
@@ -2225,8 +2225,8 @@
     },
     {
       "event_index": 202,
-      "start": 171840,
-      "duration": 480,
+      "start": 160800,
+      "duration": 240,
       "pitch": 54,
       "lyric": {
         "verse": "chorus3",
@@ -2236,8 +2236,8 @@
     },
     {
       "event_index": 203,
-      "start": 172320,
-      "duration": 480,
+      "start": 161040,
+      "duration": 240,
       "pitch": 53,
       "lyric": {
         "verse": "chorus3",
@@ -2247,7 +2247,7 @@
     },
     {
       "event_index": 204,
-      "start": 173280,
+      "start": 161760,
       "duration": 480,
       "pitch": 57,
       "lyric": {
@@ -2258,7 +2258,7 @@
     },
     {
       "event_index": 205,
-      "start": 174240,
+      "start": 162720,
       "duration": 480,
       "pitch": 54,
       "lyric": {
@@ -2269,7 +2269,7 @@
     },
     {
       "event_index": 206,
-      "start": 175200,
+      "start": 163680,
       "duration": 480,
       "pitch": 59,
       "lyric": {
@@ -2280,8 +2280,8 @@
     },
     {
       "event_index": 207,
-      "start": 175680,
-      "duration": 480,
+      "start": 164160,
+      "duration": 240,
       "pitch": 59,
       "lyric": {
         "verse": "chorus3",
@@ -2291,8 +2291,8 @@
     },
     {
       "event_index": 208,
-      "start": 176640,
-      "duration": 240,
+      "start": 164640,
+      "duration": 480,
       "pitch": 56,
       "lyric": {
         "verse": "chorus3",
@@ -2302,945 +2302,945 @@
     },
     {
       "event_index": 209,
-      "start": 177600,
+      "start": 165600,
       "duration": 480,
       "pitch": 64,
       "lyric": null
     },
     {
       "event_index": 210,
-      "start": 178560,
+      "start": 166560,
       "duration": 480,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 211,
-      "start": 179040,
+      "start": 167040,
       "duration": 480,
       "pitch": 62,
       "lyric": null
     },
     {
       "event_index": 212,
-      "start": 179520,
+      "start": 167520,
       "duration": 480,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 213,
-      "start": 180000,
-      "duration": 960,
+      "start": 168000,
+      "duration": 480,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 214,
-      "start": 180960,
-      "duration": 240,
+      "start": 168480,
+      "duration": 480,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 215,
-      "start": 181200,
-      "duration": 240,
+      "start": 168960,
+      "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 216,
-      "start": 181440,
+      "start": 169440,
       "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 217,
-      "start": 182880,
-      "duration": 240,
+      "start": 170400,
+      "duration": 480,
       "pitch": 64,
       "lyric": null
     },
     {
       "event_index": 218,
-      "start": 183120,
-      "duration": 1200,
+      "start": 170880,
+      "duration": 1440,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 219,
-      "start": 184320,
-      "duration": 960,
+      "start": 172320,
+      "duration": 480,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 220,
-      "start": 185280,
+      "start": 172800,
       "duration": 960,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 221,
-      "start": 186240,
+      "start": 173760,
       "duration": 480,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 222,
-      "start": 186720,
-      "duration": 240,
+      "start": 174240,
+      "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 223,
-      "start": 187200,
+      "start": 174720,
       "duration": 480,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 224,
-      "start": 187680,
+      "start": 175200,
       "duration": 480,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 225,
-      "start": 188160,
+      "start": 175680,
       "duration": 480,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 226,
-      "start": 188640,
+      "start": 176160,
       "duration": 960,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 227,
-      "start": 189600,
-      "duration": 480,
+      "start": 177120,
+      "duration": 240,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 228,
-      "start": 190080,
-      "duration": 480,
+      "start": 177360,
+      "duration": 720,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 229,
-      "start": 195840,
+      "start": 182880,
       "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 230,
-      "start": 196320,
+      "start": 183360,
       "duration": 480,
       "pitch": 58,
       "lyric": null
     },
     {
       "event_index": 231,
-      "start": 197760,
+      "start": 184320,
       "duration": 480,
       "pitch": 56,
       "lyric": null
     },
     {
       "event_index": 232,
-      "start": 198240,
-      "duration": 240,
+      "start": 184800,
+      "duration": 480,
       "pitch": 54,
       "lyric": null
     },
     {
       "event_index": 233,
-      "start": 198480,
+      "start": 185280,
       "duration": 240,
       "pitch": 52,
       "lyric": null
     },
     {
       "event_index": 234,
-      "start": 198720,
-      "duration": 480,
+      "start": 185520,
+      "duration": 240,
       "pitch": 51,
       "lyric": null
     },
     {
       "event_index": 235,
-      "start": 199680,
+      "start": 186240,
       "duration": 480,
       "pitch": 55,
       "lyric": null
     },
     {
       "event_index": 236,
-      "start": 200160,
-      "duration": 240,
+      "start": 186720,
+      "duration": 480,
       "pitch": 55,
       "lyric": null
     },
     {
       "event_index": 237,
-      "start": 200640,
+      "start": 187200,
       "duration": 240,
       "pitch": 54,
       "lyric": null
     },
     {
       "event_index": 238,
-      "start": 200880,
+      "start": 187440,
       "duration": 240,
       "pitch": 52,
       "lyric": null
     },
     {
       "event_index": 239,
-      "start": 201600,
+      "start": 188160,
       "duration": 240,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 240,
-      "start": 201840,
+      "start": 188400,
       "duration": 240,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 241,
-      "start": 202080,
+      "start": 188640,
       "duration": 480,
       "pitch": 56,
       "lyric": null
     },
     {
       "event_index": 242,
-      "start": 203520,
-      "duration": 480,
+      "start": 190080,
+      "duration": 240,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 243,
-      "start": 204000,
+      "start": 190320,
       "duration": 240,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 244,
-      "start": 204480,
-      "duration": 480,
+      "start": 191040,
+      "duration": 240,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 245,
-      "start": 204960,
-      "duration": 480,
+      "start": 191520,
+      "duration": 240,
       "pitch": 58,
       "lyric": null
     },
     {
       "event_index": 246,
-      "start": 205920,
+      "start": 192000,
       "duration": 240,
       "pitch": 65,
       "lyric": null
     },
     {
       "event_index": 247,
-      "start": 206400,
+      "start": 192480,
       "duration": 960,
       "pitch": 62,
       "lyric": null
     },
     {
       "event_index": 248,
-      "start": 207360,
+      "start": 193440,
       "duration": 480,
       "pitch": 62,
       "lyric": null
     },
     {
       "event_index": 249,
-      "start": 207840,
+      "start": 193920,
       "duration": 480,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 250,
-      "start": 208320,
+      "start": 194400,
       "duration": 480,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 251,
-      "start": 208800,
+      "start": 194880,
       "duration": 240,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 252,
-      "start": 209040,
+      "start": 195120,
       "duration": 240,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 253,
-      "start": 209280,
+      "start": 195360,
       "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 254,
-      "start": 209760,
+      "start": 195840,
       "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 255,
-      "start": 210720,
+      "start": 196800,
       "duration": 480,
       "pitch": 64,
       "lyric": null
     },
     {
       "event_index": 256,
-      "start": 211200,
-      "duration": 1440,
+      "start": 197280,
+      "duration": 960,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 257,
-      "start": 212640,
-      "duration": 240,
+      "start": 198240,
+      "duration": 480,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 258,
-      "start": 212880,
+      "start": 198720,
       "duration": 240,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 259,
-      "start": 213120,
+      "start": 198960,
       "duration": 240,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 260,
-      "start": 213360,
-      "duration": 240,
+      "start": 199200,
+      "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 261,
-      "start": 213600,
-      "duration": 480,
+      "start": 199680,
+      "duration": 240,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 262,
-      "start": 214080,
-      "duration": 480,
+      "start": 199920,
+      "duration": 240,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 263,
-      "start": 214560,
+      "start": 200160,
       "duration": 480,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 264,
-      "start": 215040,
+      "start": 200640,
       "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 265,
-      "start": 215520,
+      "start": 201120,
       "duration": 480,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 266,
-      "start": 216000,
+      "start": 201600,
       "duration": 240,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 267,
-      "start": 216240,
+      "start": 201840,
       "duration": 240,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 268,
-      "start": 216480,
+      "start": 202080,
       "duration": 960,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 269,
-      "start": 217440,
-      "duration": 480,
+      "start": 203040,
+      "duration": 240,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 270,
-      "start": 217920,
-      "duration": 960,
+      "start": 203280,
+      "duration": 1200,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 271,
-      "start": 225120,
-      "duration": 240,
+      "start": 209760,
+      "duration": 480,
       "pitch": 66,
       "lyric": null
     },
     {
       "event_index": 272,
-      "start": 225600,
+      "start": 210720,
       "duration": 1440,
       "pitch": 66,
       "lyric": null
     },
     {
       "event_index": 273,
-      "start": 227040,
+      "start": 212160,
       "duration": 240,
       "pitch": 54,
       "lyric": null
     },
     {
       "event_index": 274,
-      "start": 227280,
+      "start": 212400,
       "duration": 240,
       "pitch": 66,
       "lyric": null
     },
     {
       "event_index": 275,
-      "start": 227520,
-      "duration": 480,
+      "start": 212640,
+      "duration": 240,
       "pitch": 69,
       "lyric": null
     },
     {
       "event_index": 276,
-      "start": 228000,
-      "duration": 480,
+      "start": 212880,
+      "duration": 240,
       "pitch": 69,
       "lyric": null
     },
     {
       "event_index": 277,
-      "start": 228480,
-      "duration": 480,
+      "start": 213600,
+      "duration": 240,
       "pitch": 66,
       "lyric": null
     },
     {
       "event_index": 278,
-      "start": 229440,
+      "start": 214080,
       "duration": 480,
       "pitch": 62,
       "lyric": null
     },
     {
       "event_index": 279,
-      "start": 229920,
+      "start": 214560,
       "duration": 960,
       "pitch": 64,
       "lyric": null
     },
     {
       "event_index": 280,
-      "start": 232320,
+      "start": 216480,
       "duration": 480,
       "pitch": 66,
       "lyric": null
     },
     {
       "event_index": 281,
-      "start": 233280,
+      "start": 217440,
       "duration": 480,
       "pitch": 62,
       "lyric": null
     },
     {
       "event_index": 282,
-      "start": 233760,
-      "duration": 240,
+      "start": 217920,
+      "duration": 480,
       "pitch": 62,
       "lyric": null
     },
     {
       "event_index": 283,
-      "start": 235680,
+      "start": 219840,
       "duration": 480,
       "pitch": 66,
       "lyric": null
     },
     {
       "event_index": 284,
-      "start": 236160,
+      "start": 220320,
       "duration": 480,
       "pitch": 64,
       "lyric": null
     },
     {
       "event_index": 285,
-      "start": 237120,
+      "start": 221280,
       "duration": 240,
       "pitch": 73,
       "lyric": null
     },
     {
       "event_index": 286,
-      "start": 237360,
+      "start": 221520,
       "duration": 240,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 287,
-      "start": 237600,
+      "start": 221760,
       "duration": 240,
       "pitch": 60,
       "lyric": null
     },
     {
       "event_index": 288,
-      "start": 238080,
+      "start": 222240,
       "duration": 240,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 289,
-      "start": 238320,
+      "start": 222480,
       "duration": 240,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 290,
-      "start": 238560,
-      "duration": 480,
+      "start": 222720,
+      "duration": 240,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 291,
-      "start": 239040,
+      "start": 222960,
       "duration": 240,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 292,
-      "start": 239280,
-      "duration": 240,
+      "start": 223200,
+      "duration": 480,
       "pitch": 49,
       "lyric": null
     },
     {
       "event_index": 293,
-      "start": 239520,
+      "start": 223680,
       "duration": 480,
       "pitch": 60,
       "lyric": null
     },
     {
       "event_index": 294,
-      "start": 240480,
+      "start": 224640,
       "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 295,
-      "start": 241920,
+      "start": 225600,
       "duration": 240,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 296,
-      "start": 242160,
+      "start": 225840,
       "duration": 720,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 297,
-      "start": 242880,
+      "start": 226560,
       "duration": 480,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 298,
-      "start": 243360,
+      "start": 227040,
       "duration": 960,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 299,
-      "start": 244320,
+      "start": 228000,
       "duration": 480,
       "pitch": 63,
       "lyric": null
     },
     {
       "event_index": 300,
-      "start": 244800,
+      "start": 228480,
       "duration": 960,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 301,
-      "start": 245760,
+      "start": 229440,
       "duration": 480,
       "pitch": 62,
       "lyric": null
     },
     {
       "event_index": 302,
-      "start": 246240,
+      "start": 229920,
       "duration": 480,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 303,
-      "start": 246720,
-      "duration": 960,
+      "start": 230400,
+      "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 304,
-      "start": 247680,
-      "duration": 240,
+      "start": 230880,
+      "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 305,
-      "start": 247920,
-      "duration": 720,
+      "start": 231360,
+      "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 306,
-      "start": 248640,
+      "start": 231840,
       "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 307,
-      "start": 256320,
+      "start": 239040,
       "duration": 480,
       "pitch": 66,
       "lyric": null
     },
     {
       "event_index": 308,
-      "start": 256800,
-      "duration": 480,
+      "start": 240000,
+      "duration": 240,
       "pitch": 66,
       "lyric": null
     },
     {
       "event_index": 309,
-      "start": 257280,
-      "duration": 480,
+      "start": 240240,
+      "duration": 240,
       "pitch": 66,
       "lyric": null
     },
     {
       "event_index": 310,
-      "start": 257760,
+      "start": 240480,
       "duration": 480,
       "pitch": 66,
       "lyric": null
     },
     {
       "event_index": 311,
-      "start": 258240,
+      "start": 240960,
       "duration": 480,
       "pitch": 66,
       "lyric": null
     },
     {
       "event_index": 312,
-      "start": 259200,
+      "start": 241920,
       "duration": 480,
       "pitch": 69,
       "lyric": null
     },
     {
       "event_index": 313,
-      "start": 259680,
+      "start": 242400,
       "duration": 480,
       "pitch": 66,
       "lyric": null
     },
     {
       "event_index": 314,
-      "start": 261120,
-      "duration": 1440,
+      "start": 243840,
+      "duration": 960,
       "pitch": 64,
       "lyric": null
     },
     {
       "event_index": 315,
-      "start": 263040,
+      "start": 245280,
       "duration": 480,
       "pitch": 65,
       "lyric": null
     },
     {
       "event_index": 316,
-      "start": 264960,
-      "duration": 240,
+      "start": 247200,
+      "duration": 480,
       "pitch": 63,
       "lyric": null
     },
     {
       "event_index": 317,
-      "start": 265200,
-      "duration": 720,
+      "start": 247680,
+      "duration": 480,
       "pitch": 62,
       "lyric": null
     },
     {
       "event_index": 318,
-      "start": 265920,
+      "start": 248160,
       "duration": 480,
       "pitch": 63,
       "lyric": null
     },
     {
       "event_index": 319,
-      "start": 266400,
+      "start": 248640,
       "duration": 240,
       "pitch": 63,
       "lyric": null
     },
     {
       "event_index": 320,
-      "start": 268320,
-      "duration": 240,
+      "start": 250080,
+      "duration": 480,
       "pitch": 62,
       "lyric": null
     },
     {
       "event_index": 321,
-      "start": 268800,
+      "start": 251040,
       "duration": 480,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 322,
-      "start": 269280,
+      "start": 251520,
       "duration": 480,
       "pitch": 49,
       "lyric": null
     },
     {
       "event_index": 323,
-      "start": 271200,
-      "duration": 240,
+      "start": 252960,
+      "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 324,
-      "start": 271440,
+      "start": 253440,
       "duration": 240,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 325,
-      "start": 271680,
-      "duration": 480,
+      "start": 253680,
+      "duration": 240,
       "pitch": 60,
       "lyric": null
     },
     {
       "event_index": 326,
-      "start": 272160,
+      "start": 253920,
       "duration": 480,
       "pitch": 64,
       "lyric": null
     },
     {
       "event_index": 327,
-      "start": 272640,
+      "start": 254400,
       "duration": 480,
       "pitch": 62,
       "lyric": null
     },
     {
       "event_index": 328,
-      "start": 273120,
-      "duration": 480,
+      "start": 255360,
+      "duration": 240,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 329,
-      "start": 273600,
-      "duration": 480,
+      "start": 255600,
+      "duration": 240,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 330,
-      "start": 274080,
+      "start": 255840,
       "duration": 480,
       "pitch": 60,
       "lyric": null
     },
     {
       "event_index": 331,
-      "start": 274560,
+      "start": 256320,
       "duration": 480,
       "pitch": 60,
       "lyric": null
     },
     {
       "event_index": 332,
-      "start": 275040,
+      "start": 256800,
       "duration": 480,
       "pitch": 64,
       "lyric": null
     },
     {
       "event_index": 333,
-      "start": 276000,
-      "duration": 480,
+      "start": 257280,
+      "duration": 960,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 334,
-      "start": 276480,
+      "start": 258240,
       "duration": 480,
       "pitch": 62,
       "lyric": null
     },
     {
       "event_index": 335,
-      "start": 276960,
+      "start": 258720,
       "duration": 480,
       "pitch": 62,
       "lyric": null
     },
     {
       "event_index": 336,
-      "start": 277920,
+      "start": 259200,
       "duration": 480,
       "pitch": 60,
       "lyric": null
     },
     {
       "event_index": 337,
-      "start": 278400,
+      "start": 259680,
       "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 338,
-      "start": 278880,
+      "start": 260160,
       "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 339,
-      "start": 279360,
-      "duration": 480,
-      "pitch": 59,
-      "lyric": null
-    },
-    {
-      "event_index": 340,
-      "start": 279840,
-      "duration": 480,
-      "pitch": 60,
-      "lyric": null
-    },
-    {
-      "event_index": 341,
-      "start": 280320,
+      "start": 260640,
       "duration": 960,
       "pitch": 59,
       "lyric": null
     },
     {
+      "event_index": 340,
+      "start": 261600,
+      "duration": 240,
+      "pitch": 60,
+      "lyric": null
+    },
+    {
+      "event_index": 341,
+      "start": 261840,
+      "duration": 240,
+      "pitch": 59,
+      "lyric": null
+    },
+    {
       "event_index": 342,
-      "start": 283200,
+      "start": 264480,
       "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 343,
-      "start": 283680,
+      "start": 264960,
       "duration": 240,
       "pitch": 52,
       "lyric": null
