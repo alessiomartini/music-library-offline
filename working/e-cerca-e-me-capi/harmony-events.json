@@ -1,1046 +1,565 @@
 {
   "ppq": 960,
-  "tempo_bpm": 112.34714673913044,
+  "tempo_bpm": 112,
   "harmony": [
     {
-      "start": 1983,
-      "root": 11,
-      "quality": "dominant7",
-      "slashBass": null,
-      "confidence": 0.4503502734005451,
-      "duration": 960
-    },
-    {
-      "start": 2943,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.4258119687438011,
-      "duration": 960
-    },
-    {
-      "start": 3903,
+      "start": 4372,
       "root": 2,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.4800252728164196,
-      "duration": 4048
+      "quality": "major",
+      "duration": 3531
     },
     {
-      "start": 7951,
+      "start": 7903,
       "root": 11,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.5691287331283092,
-      "duration": 939
+      "quality": "minor",
+      "duration": 4032
     },
     {
-      "start": 8890,
-      "root": 11,
-      "quality": "dominant7",
-      "slashBass": null,
-      "confidence": 0.6745582893490791,
-      "duration": 2046
+      "start": 11935,
+      "root": 4,
+      "quality": "minor",
+      "duration": 1917
     },
     {
-      "start": 10936,
+      "start": 13852,
       "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.547254852950573,
+      "quality": "minor",
+      "duration": 2258
+    },
+    {
+      "start": 16110,
+      "root": 11,
+      "quality": "minor",
+      "duration": 1577
+    },
+    {
+      "start": 17687,
+      "root": 7,
+      "quality": "major",
+      "duration": 1917
+    },
+    {
+      "start": 19604,
+      "root": 6,
+      "quality": "minor",
+      "duration": 4032
+    },
+    {
+      "start": 23636,
+      "root": 4,
+      "quality": "minor",
+      "duration": 1954
+    },
+    {
+      "start": 25590,
+      "root": 9,
+      "quality": "major",
+      "duration": 1989
+    },
+    {
+      "start": 27579,
+      "root": 2,
+      "quality": "major",
+      "duration": 1720
+    },
+    {
+      "start": 29299,
+      "root": 4,
+      "quality": "minor",
+      "duration": 2079
+    },
+    {
+      "start": 31378,
+      "root": 9,
+      "quality": "major",
+      "duration": 1828
+    },
+    {
+      "start": 33206,
+      "root": 11,
+      "quality": "minor",
+      "duration": 1917
+    },
+    {
+      "start": 35123,
+      "root": 6,
+      "quality": "minor",
+      "duration": 1362
+    },
+    {
+      "start": 36485,
+      "root": 7,
+      "quality": "major",
+      "duration": 2419
+    },
+    {
+      "start": 38904,
+      "root": 6,
+      "quality": "minor",
+      "duration": 1380
+    },
+    {
+      "start": 40284,
+      "root": 7,
+      "quality": "major",
+      "duration": 2401
+    },
+    {
+      "start": 42685,
+      "root": 6,
+      "quality": "minor",
+      "duration": 8047
+    },
+    {
+      "start": 50732,
+      "root": 4,
+      "quality": "major",
+      "duration": 1863
+    },
+    {
+      "start": 52595,
+      "root": 9,
+      "quality": "major",
+      "duration": 2294
+    },
+    {
+      "start": 54889,
+      "root": 2,
+      "quality": "major",
+      "duration": 1201
+    },
+    {
+      "start": 56090,
+      "root": 4,
+      "quality": "minor",
+      "duration": 2007
+    },
+    {
+      "start": 58097,
+      "root": 9,
+      "quality": "major",
       "duration": 1899
     },
     {
-      "start": 12835,
-      "root": 4,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.5352509506046772,
-      "duration": 960
-    },
-    {
-      "start": 13795,
+      "start": 59996,
       "root": 11,
-      "quality": "sus4",
-      "slashBass": null,
-      "confidence": 0.5414425656199455,
-      "duration": 1002
+      "quality": "minor",
+      "duration": 1828
     },
     {
-      "start": 14797,
+      "start": 61824,
       "root": 6,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.6352413892745972,
-      "duration": 1001
+      "quality": "minor",
+      "duration": 1380
     },
     {
-      "start": 15798,
-      "root": 11,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.5376381911337376,
-      "duration": 919
-    },
-    {
-      "start": 16717,
-      "root": 11,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.6488686464726925,
-      "duration": 1022
-    },
-    {
-      "start": 17739,
+      "start": 63204,
       "root": 7,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.6052617318928242,
-      "duration": 3068
+      "quality": "major",
+      "duration": 2491
     },
     {
-      "start": 20807,
+      "start": 65695,
       "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.6230102889239788,
-      "duration": 3840
+      "quality": "minor",
+      "duration": 1666
     },
     {
-      "start": 24647,
+      "start": 67361,
+      "root": 7,
+      "quality": "major",
+      "duration": 2043
+    },
+    {
+      "start": 69404,
+      "root": 6,
+      "quality": "minor",
+      "duration": 3871
+    },
+    {
+      "start": 73275,
       "root": 4,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.5809210166335106,
-      "duration": 939
+      "quality": "minor",
+      "duration": 2204
     },
     {
-      "start": 25586,
+      "start": 75479,
       "root": 9,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.533770103007555,
-      "duration": 939
+      "quality": "major",
+      "duration": 2007
     },
     {
-      "start": 26525,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.6525170616805553,
-      "duration": 1023
-    },
-    {
-      "start": 27548,
+      "start": 77486,
       "root": 2,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.6057909950613976,
-      "duration": 1941
+      "quality": "major",
+      "duration": 5358
     },
     {
-      "start": 29489,
+      "start": 82844,
       "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.4820449650287628,
-      "duration": 960
+      "quality": "minor",
+      "duration": 2007
     },
     {
-      "start": 30449,
-      "root": 4,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.557961955666542,
-      "duration": 939
-    },
-    {
-      "start": 31388,
-      "root": 6,
-      "quality": "halfDiminished7",
-      "slashBass": null,
-      "confidence": 0.521967900916934,
-      "duration": 918
-    },
-    {
-      "start": 32306,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.583038080483675,
-      "duration": 1002
-    },
-    {
-      "start": 33308,
+      "start": 84851,
       "root": 11,
-      "quality": "dominant7",
-      "slashBass": null,
-      "confidence": 0.5242538005113602,
-      "duration": 897
+      "quality": "minor",
+      "duration": 3781
     },
     {
-      "start": 34205,
-      "root": 11,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.6340698041021824,
-      "duration": 1962
-    },
-    {
-      "start": 36167,
+      "start": 88632,
       "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.553958136588335,
-      "duration": 939
+      "quality": "minor",
+      "duration": 3781
     },
     {
-      "start": 37106,
+      "start": 92413,
       "root": 7,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.5727786682546139,
-      "duration": 2880
+      "quality": "major",
+      "duration": 4749
     },
     {
-      "start": 39986,
+      "start": 97162,
       "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.540387187153101,
-      "duration": 1023
+      "quality": "minor",
+      "duration": 2043
     },
     {
-      "start": 41009,
-      "root": 7,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.5796515494585037,
-      "duration": 2880
-    },
-    {
-      "start": 43889,
-      "root": 6,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.6767698302865028,
-      "duration": 981
-    },
-    {
-      "start": 44870,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.633770439773798,
-      "duration": 3965
-    },
-    {
-      "start": 48835,
-      "root": 2,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.6588046029210091,
-      "duration": 1002
-    },
-    {
-      "start": 49837,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.6099525280296803,
-      "duration": 1899
-    },
-    {
-      "start": 51736,
+      "start": 99205,
       "root": 4,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.6294070743024349,
-      "duration": 960
+      "quality": "minor",
+      "duration": 4122
     },
     {
-      "start": 52696,
-      "root": 4,
-      "quality": "sus4",
-      "slashBass": null,
-      "confidence": 0.5716812461614609,
-      "duration": 918
-    },
-    {
-      "start": 53614,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.6211881414055824,
-      "duration": 960
-    },
-    {
-      "start": 54574,
-      "root": 2,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.5726658180356026,
-      "duration": 1753
-    },
-    {
-      "start": 56327,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.48705295473337173,
-      "duration": 939
-    },
-    {
-      "start": 57266,
-      "root": 4,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.5431553646922112,
-      "duration": 939
-    },
-    {
-      "start": 58205,
-      "root": 6,
-      "quality": "halfDiminished7",
-      "slashBass": null,
-      "confidence": 0.48038285225629807,
-      "duration": 960
-    },
-    {
-      "start": 59165,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.5788133107125759,
-      "duration": 960
-    },
-    {
-      "start": 60125,
-      "root": 11,
-      "quality": "dominant7",
-      "slashBass": null,
-      "confidence": 0.5762113444507122,
-      "duration": 918
-    },
-    {
-      "start": 61043,
-      "root": 11,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.6331518739461899,
-      "duration": 1900
-    },
-    {
-      "start": 62943,
-      "root": 7,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.5564875062555075,
-      "duration": 3777
-    },
-    {
-      "start": 66720,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.5996743589639664,
-      "duration": 918
-    },
-    {
-      "start": 67638,
-      "root": 7,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.5457622297108173,
-      "duration": 2985
-    },
-    {
-      "start": 70623,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.6242003217339516,
-      "duration": 3881
-    },
-    {
-      "start": 74504,
-      "root": 4,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.6992805227637291,
-      "duration": 1086
-    },
-    {
-      "start": 75590,
+      "start": 103327,
       "root": 9,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.5731491427868605,
-      "duration": 939
+      "quality": "major",
+      "duration": 3906
     },
     {
-      "start": 76529,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.6387458518147469,
-      "duration": 981
-    },
-    {
-      "start": 77510,
+      "start": 107233,
       "root": 2,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.5616380870342255,
-      "duration": 5655
+      "quality": "major",
+      "duration": 5448
     },
     {
-      "start": 83165,
-      "root": 6,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.5870592631399632,
-      "duration": 1878
-    },
-    {
-      "start": 85043,
-      "root": 11,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.5961272865533829,
-      "duration": 981
-    },
-    {
-      "start": 86024,
-      "root": 11,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.6593787893652916,
-      "duration": 3778
-    },
-    {
-      "start": 89802,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.644057359546423,
-      "duration": 2963
-    },
-    {
-      "start": 92765,
+      "start": 112681,
       "root": 7,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.5211015082895756,
-      "duration": 5885
+      "quality": "major",
+      "duration": 1953
     },
     {
-      "start": 98650,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.6134831570088863,
-      "duration": 1879
-    },
-    {
-      "start": 100529,
-      "root": 4,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.7041312791407108,
-      "duration": 1064
-    },
-    {
-      "start": 101593,
-      "root": 0,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.6902070008218288,
-      "duration": 960
-    },
-    {
-      "start": 102553,
-      "root": 4,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.6613959260284901,
-      "duration": 1023
-    },
-    {
-      "start": 103576,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.6054997704923153,
-      "duration": 1961
-    },
-    {
-      "start": 105537,
-      "root": 4,
-      "quality": "sus4",
-      "slashBass": null,
-      "confidence": 0.5957026928663254,
-      "duration": 1900
-    },
-    {
-      "start": 107437,
+      "start": 114634,
       "root": 11,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.4986024871468544,
-      "duration": 960
+      "quality": "minor",
+      "duration": 3871
     },
     {
-      "start": 108397,
+      "start": 118505,
+      "root": 6,
+      "quality": "minor",
+      "duration": 3781
+    },
+    {
+      "start": 122286,
+      "root": 7,
+      "quality": "major",
+      "duration": 1380
+    },
+    {
+      "start": 123666,
+      "root": 6,
+      "quality": "minor",
+      "duration": 1380
+    },
+    {
+      "start": 125046,
+      "root": 7,
+      "quality": "major",
+      "duration": 1451
+    },
+    {
+      "start": 126497,
+      "root": 6,
+      "quality": "minor",
+      "duration": 2545
+    },
+    {
+      "start": 129042,
+      "root": 4,
+      "quality": "minor",
+      "duration": 7652
+    },
+    {
+      "start": 136694,
       "root": 2,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.5999568328261375,
-      "duration": 4758
+      "quality": "major",
+      "duration": 4193
     },
     {
-      "start": 113155,
-      "root": 6,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.5669423639774323,
-      "duration": 1857
-    },
-    {
-      "start": 115012,
-      "root": 7,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.5931807309389114,
-      "duration": 918
-    },
-    {
-      "start": 115930,
+      "start": 140887,
       "root": 11,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.6706031113862991,
-      "duration": 3778
+      "quality": "minor",
+      "duration": 2043
     },
     {
-      "start": 119708,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.6293098106980324,
-      "duration": 2984
+      "start": 142930,
+      "root": 11,
+      "quality": "minor",
+      "slashBass": 6,
+      "duration": 1792
     },
     {
-      "start": 122692,
-      "root": 7,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.5056195743381977,
-      "duration": 4696
-    },
-    {
-      "start": 127388,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.5729464031755924,
-      "duration": 2817
-    },
-    {
-      "start": 130205,
+      "start": 144722,
       "root": 4,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.626162838190794,
+      "quality": "minor",
+      "duration": 1953
+    },
+    {
+      "start": 146675,
+      "root": 6,
+      "quality": "minor",
+      "duration": 1828
+    },
+    {
+      "start": 148503,
+      "root": 11,
+      "quality": "minor",
+      "duration": 1917
+    },
+    {
+      "start": 150420,
+      "root": 7,
+      "quality": "major",
+      "duration": 1954
+    },
+    {
+      "start": 152374,
+      "root": 6,
+      "quality": "minor",
+      "duration": 3906
+    },
+    {
+      "start": 156280,
+      "root": 4,
+      "quality": "minor",
+      "duration": 2043
+    },
+    {
+      "start": 158323,
+      "root": 9,
+      "quality": "major",
+      "duration": 2258
+    },
+    {
+      "start": 160581,
+      "root": 2,
+      "quality": "major",
+      "duration": 1362
+    },
+    {
+      "start": 161943,
+      "root": 4,
+      "quality": "minor",
+      "duration": 2007
+    },
+    {
+      "start": 163950,
+      "root": 9,
+      "quality": "major",
+      "duration": 1828
+    },
+    {
+      "start": 165778,
+      "root": 11,
+      "quality": "minor",
+      "duration": 1953
+    },
+    {
+      "start": 167731,
+      "root": 6,
+      "quality": "minor",
+      "duration": 1255
+    },
+    {
+      "start": 168986,
+      "root": 7,
+      "quality": "major",
+      "duration": 6110
+    },
+    {
+      "start": 175096,
+      "root": 6,
+      "quality": "minor",
+      "duration": 7706
+    },
+    {
+      "start": 182802,
+      "root": 4,
+      "quality": "minor",
+      "duration": 1989
+    },
+    {
+      "start": 184791,
+      "root": 9,
+      "quality": "major",
+      "duration": 1792
+    },
+    {
+      "start": 186583,
+      "root": 2,
+      "quality": "major",
+      "duration": 1828
+    },
+    {
+      "start": 188411,
+      "root": 4,
+      "quality": "minor",
+      "duration": 1864
+    },
+    {
+      "start": 190275,
+      "root": 9,
+      "quality": "major",
+      "duration": 1845
+    },
+    {
+      "start": 192120,
+      "root": 11,
+      "quality": "minor",
+      "duration": 1989
+    },
+    {
+      "start": 194109,
+      "root": 6,
+      "quality": "minor",
+      "duration": 1165
+    },
+    {
+      "start": 195274,
+      "root": 7,
+      "quality": "major",
+      "duration": 6201
+    },
+    {
+      "start": 201475,
+      "root": 6,
+      "quality": "minor",
+      "duration": 3870
+    },
+    {
+      "start": 205345,
+      "root": 4,
+      "quality": "minor",
+      "duration": 2079
+    },
+    {
+      "start": 207424,
+      "root": 9,
+      "quality": "major",
+      "duration": 1882
+    },
+    {
+      "start": 209306,
+      "root": 2,
+      "quality": "major",
+      "duration": 5358
+    },
+    {
+      "start": 214664,
+      "root": 6,
+      "quality": "minor",
+      "duration": 1953
+    },
+    {
+      "start": 216617,
+      "root": 11,
+      "quality": "minor",
+      "duration": 3924
+    },
+    {
+      "start": 220541,
+      "root": 6,
+      "quality": "minor",
+      "duration": 3531
+    },
+    {
+      "start": 224072,
+      "root": 7,
+      "quality": "major",
+      "duration": 4372
+    },
+    {
+      "start": 228444,
+      "root": 6,
+      "quality": "minor",
+      "duration": 2366
+    },
+    {
+      "start": 230810,
+      "root": 4,
+      "quality": "major",
+      "duration": 4032
+    },
+    {
+      "start": 234842,
+      "root": 9,
+      "quality": "major",
       "duration": 3673
     },
     {
-      "start": 133878,
-      "root": 4,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.5696725770831108,
-      "duration": 898
-    },
-    {
-      "start": 134776,
-      "root": 11,
-      "quality": "dominant7",
-      "slashBass": null,
-      "confidence": 0.46469467133283615,
-      "duration": 939
-    },
-    {
-      "start": 135715,
+      "start": 238515,
       "root": 2,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.4554096981883049,
-      "duration": 5593
+      "quality": "major",
+      "duration": 5448
     },
     {
-      "start": 141308,
+      "start": 243963,
+      "root": 6,
+      "quality": "minor",
+      "duration": 1864
+    },
+    {
+      "start": 245827,
       "root": 11,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.592119425535202,
+      "quality": "minor",
+      "duration": 3584
+    },
+    {
+      "start": 249411,
+      "root": 6,
+      "quality": "minor",
+      "duration": 3745
+    },
+    {
+      "start": 253156,
+      "root": 7,
+      "quality": "major",
+      "duration": 1380
+    },
+    {
+      "start": 254536,
+      "root": 6,
+      "quality": "minor",
+      "duration": 1290
+    },
+    {
+      "start": 255826,
+      "root": 7,
+      "quality": "major",
+      "duration": 1326
+    },
+    {
+      "start": 257152,
+      "root": 6,
+      "quality": "minor",
+      "duration": 2580
+    },
+    {
+      "start": 259732,
+      "root": 4,
+      "quality": "major",
       "duration": 960
-    },
-    {
-      "start": 142268,
-      "root": 11,
-      "quality": "dominant7",
-      "slashBass": null,
-      "confidence": 0.6481756195425987,
-      "duration": 2859
-    },
-    {
-      "start": 145127,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.5154998153448105,
-      "duration": 876
-    },
-    {
-      "start": 146003,
-      "root": 4,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.569464173167944,
-      "duration": 1002
-    },
-    {
-      "start": 147005,
-      "root": 7,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.5309218019247055,
-      "duration": 939
-    },
-    {
-      "start": 147944,
-      "root": 6,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.6277732402086258,
-      "duration": 1023
-    },
-    {
-      "start": 148967,
-      "root": 11,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.5290664024651051,
-      "duration": 876
-    },
-    {
-      "start": 149843,
-      "root": 11,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.6310865320265293,
-      "duration": 1023
-    },
-    {
-      "start": 150866,
-      "root": 7,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.6408701986074448,
-      "duration": 2880
-    },
-    {
-      "start": 153746,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.631870687007904,
-      "duration": 4049
-    },
-    {
-      "start": 157795,
-      "root": 4,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.6070425361394882,
-      "duration": 918
-    },
-    {
-      "start": 158713,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.5737842246890068,
-      "duration": 1878
-    },
-    {
-      "start": 160591,
-      "root": 2,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.5778720453381538,
-      "duration": 1899
-    },
-    {
-      "start": 162490,
-      "root": 4,
-      "quality": "dominant7",
-      "slashBass": null,
-      "confidence": 0.4983559548854828,
-      "duration": 960
-    },
-    {
-      "start": 163450,
-      "root": 4,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.626597449183464,
-      "duration": 1002
-    },
-    {
-      "start": 164452,
-      "root": 6,
-      "quality": "halfDiminished7",
-      "slashBass": null,
-      "confidence": 0.5627977773547173,
-      "duration": 877
-    },
-    {
-      "start": 165329,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.5814328640699387,
-      "duration": 939
-    },
-    {
-      "start": 166268,
-      "root": 11,
-      "quality": "dominant7",
-      "slashBass": null,
-      "confidence": 0.556927677243948,
-      "duration": 897
-    },
-    {
-      "start": 167165,
-      "root": 11,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.6506813503801823,
-      "duration": 1941
-    },
-    {
-      "start": 169106,
-      "root": 7,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.548325028270483,
-      "duration": 7409
-    },
-    {
-      "start": 176515,
-      "root": 6,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.6418315432965755,
-      "duration": 1022
-    },
-    {
-      "start": 177537,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.603838499635458,
-      "duration": 6762
-    },
-    {
-      "start": 184299,
-      "root": 4,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.6458004340529442,
-      "duration": 981
-    },
-    {
-      "start": 185280,
-      "root": 4,
-      "quality": "sus4",
-      "slashBass": null,
-      "confidence": 0.5847796127200127,
-      "duration": 897
-    },
-    {
-      "start": 186177,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.6128805354237556,
-      "duration": 981
-    },
-    {
-      "start": 187158,
-      "root": 2,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.5772271007299423,
-      "duration": 1816
-    },
-    {
-      "start": 188974,
-      "root": 4,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.5119308121502399,
-      "duration": 897
-    },
-    {
-      "start": 189871,
-      "root": 0,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.5794882066547871,
-      "duration": 1002
-    },
-    {
-      "start": 190873,
-      "root": 6,
-      "quality": "halfDiminished7",
-      "slashBass": null,
-      "confidence": 0.5196975059807301,
-      "duration": 897
-    },
-    {
-      "start": 191770,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.6004789881408215,
-      "duration": 940
-    },
-    {
-      "start": 192710,
-      "root": 11,
-      "quality": "dominant7",
-      "slashBass": null,
-      "confidence": 0.5279853083193302,
-      "duration": 2817
-    },
-    {
-      "start": 195527,
-      "root": 7,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.5603264942765236,
-      "duration": 7430
-    },
-    {
-      "start": 202957,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.6246998608112335,
-      "duration": 3067
-    },
-    {
-      "start": 206024,
-      "root": 1,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.5604193322360516,
-      "duration": 877
-    },
-    {
-      "start": 206901,
-      "root": 4,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.6880526356399059,
-      "duration": 1085
-    },
-    {
-      "start": 207986,
-      "root": 4,
-      "quality": "sus4",
-      "slashBass": null,
-      "confidence": 0.5403777956962585,
-      "duration": 918
-    },
-    {
-      "start": 208904,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.6379026100039482,
-      "duration": 960
-    },
-    {
-      "start": 209864,
-      "root": 2,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.5425033383071423,
-      "duration": 6428
-    },
-    {
-      "start": 216292,
-      "root": 6,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.6549891866743565,
-      "duration": 1002
-    },
-    {
-      "start": 217294,
-      "root": 11,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.5891821905970573,
-      "duration": 4779
-    },
-    {
-      "start": 222073,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.618013508617878,
-      "duration": 2776
-    },
-    {
-      "start": 224849,
-      "root": 7,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.5832702033221722,
-      "duration": 4800
-    },
-    {
-      "start": 229649,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.5734239257872105,
-      "duration": 2817
-    },
-    {
-      "start": 232466,
-      "root": 4,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.6340788565576077,
-      "duration": 1044
-    },
-    {
-      "start": 233510,
-      "root": 0,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.631814032793045,
-      "duration": 980
-    },
-    {
-      "start": 234490,
-      "root": 11,
-      "quality": "sus4",
-      "slashBass": null,
-      "confidence": 0.6366626843810081,
-      "duration": 981
-    },
-    {
-      "start": 235471,
-      "root": 6,
-      "quality": "halfDiminished7",
-      "slashBass": null,
-      "confidence": 0.5596981160342693,
-      "duration": 919
-    },
-    {
-      "start": 236390,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.6558285839855671,
-      "duration": 980
-    },
-    {
-      "start": 237370,
-      "root": 4,
-      "quality": "sus4",
-      "slashBass": null,
-      "confidence": 0.6070844903588295,
-      "duration": 1837
-    },
-    {
-      "start": 239207,
-      "root": 11,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.4769657030701637,
-      "duration": 981
-    },
-    {
-      "start": 240188,
-      "root": 2,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.6519434079527855,
-      "duration": 5447
-    },
-    {
-      "start": 245635,
-      "root": 6,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.6484146863222122,
-      "duration": 960
-    },
-    {
-      "start": 246595,
-      "root": 6,
-      "quality": "sus4",
-      "slashBass": null,
-      "confidence": 0.5553742349147797,
-      "duration": 897
-    },
-    {
-      "start": 247492,
-      "root": 11,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.6524475887417793,
-      "duration": 3631
-    },
-    {
-      "start": 251123,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.5948715321719646,
-      "duration": 2964
-    },
-    {
-      "start": 254087,
-      "root": 7,
-      "quality": "major7",
-      "slashBass": null,
-      "confidence": 0.4971051439642906,
-      "duration": 4925
-    },
-    {
-      "start": 259012,
-      "root": 6,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.6588012352585793,
-      "duration": 3026
-    },
-    {
-      "start": 262038,
-      "root": 4,
-      "quality": "minor7",
-      "slashBass": null,
-      "confidence": 0.6536771655082703,
-      "duration": 1962
     }
   ]
 }

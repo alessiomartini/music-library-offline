@@ -1,0 +1,891 @@
+{
+  "slug": "e-cerca-e-me-capi",
+  "title": "E cerca 'e me capi",
+  "composer": "Pino Daniele",
+  "lyricist": "Pino Daniele",
+  "originalKey": "Bb",
+  "mode": "major",
+  "tempoBpm": 112,
+  "timeSignature": {
+    "numerator": 4,
+    "denominator": 4
+  },
+  "melodySource": {
+    "type": "basic-pitch",
+    "vocalRange": [
+      48,
+      76
+    ],
+    "firstVocalSec": 0.5,
+    "velocityThreshold": 0.3,
+    "minDurationTicks": 30
+  },
+  "lyrics": [
+    {
+      "verse": "verse1",
+      "syllables": [
+        {
+          "text": "E",
+          "syllabic": "single"
+        },
+        {
+          "text": "cer",
+          "syllabic": "begin"
+        },
+        {
+          "text": "ca",
+          "syllabic": "middle"
+        },
+        {
+          "text": "e",
+          "syllabic": "end"
+        },
+        {
+          "text": "me",
+          "syllabic": "single"
+        },
+        {
+          "text": "ca",
+          "syllabic": "begin"
+        },
+        {
+          "text": "pi",
+          "syllabic": "end"
+        },
+        {
+          "text": "chi",
+          "syllabic": "single"
+        },
+        {
+          "text": "sa",
+          "syllabic": "single"
+        },
+        {
+          "text": "pe",
+          "syllabic": "single"
+        },
+        {
+          "text": "che",
+          "syllabic": "single"
+        },
+        {
+          "text": "co",
+          "syllabic": "single"
+        },
+        {
+          "text": "sa",
+          "syllabic": "single"
+        },
+        {
+          "text": "è",
+          "syllabic": "single"
+        },
+        {
+          "text": "l'a",
+          "syllabic": "single"
+        },
+        {
+          "text": "mo",
+          "syllabic": "begin"
+        },
+        {
+          "text": "re",
+          "syllabic": "end"
+        },
+        {
+          "text": "che",
+          "syllabic": "single"
+        },
+        {
+          "text": "non",
+          "syllabic": "single"
+        },
+        {
+          "text": "si",
+          "syllabic": "single"
+        },
+        {
+          "text": "di",
+          "syllabic": "begin"
+        },
+        {
+          "text": "men",
+          "syllabic": "middle"
+        },
+        {
+          "text": "ti",
+          "syllabic": "middle"
+        },
+        {
+          "text": "ca",
+          "syllabic": "end"
+        },
+        {
+          "text": "ma",
+          "syllabic": "single"
+        },
+        {
+          "text": "ti",
+          "syllabic": "single"
+        },
+        {
+          "text": "pren",
+          "syllabic": "begin"
+        },
+        {
+          "text": "de",
+          "syllabic": "end"
+        },
+        {
+          "text": "e",
+          "syllabic": "single"
+        },
+        {
+          "text": "ti",
+          "syllabic": "single"
+        },
+        {
+          "text": "por",
+          "syllabic": "begin"
+        },
+        {
+          "text": "ta",
+          "syllabic": "middle"
+        },
+        {
+          "text": "via",
+          "syllabic": "end"
+        }
+      ]
+    },
+    {
+      "verse": "chorus1",
+      "syllables": [
+        {
+          "text": "E",
+          "syllabic": "single"
+        },
+        {
+          "text": "cer",
+          "syllabic": "begin"
+        },
+        {
+          "text": "ca",
+          "syllabic": "middle"
+        },
+        {
+          "text": "e",
+          "syllabic": "end"
+        },
+        {
+          "text": "me",
+          "syllabic": "single"
+        },
+        {
+          "text": "ca",
+          "syllabic": "begin"
+        },
+        {
+          "text": "pi",
+          "syllabic": "end"
+        },
+        {
+          "text": "se",
+          "syllabic": "single"
+        },
+        {
+          "text": "po",
+          "syllabic": "begin"
+        },
+        {
+          "text": "sso",
+          "syllabic": "end"
+        },
+        {
+          "text": "sta",
+          "syllabic": "single"
+        },
+        {
+          "text": "vo",
+          "syllabic": "single"
+        },
+        {
+          "text": "tan",
+          "syllabic": "begin"
+        },
+        {
+          "text": "to",
+          "syllabic": "end"
+        },
+        {
+          "text": "ma",
+          "syllabic": "single"
+        },
+        {
+          "text": "le",
+          "syllabic": "single"
+        },
+        {
+          "text": "per",
+          "syllabic": "single"
+        },
+        {
+          "text": "un",
+          "syllabic": "single"
+        },
+        {
+          "text": "ba",
+          "syllabic": "begin"
+        },
+        {
+          "text": "cio",
+          "syllabic": "end"
+        },
+        {
+          "text": "che",
+          "syllabic": "single"
+        },
+        {
+          "text": "non",
+          "syllabic": "single"
+        },
+        {
+          "text": "ho",
+          "syllabic": "single"
+        },
+        {
+          "text": "da",
+          "syllabic": "begin"
+        },
+        {
+          "text": "to",
+          "syllabic": "end"
+        },
+        {
+          "text": "ma",
+          "syllabic": "single"
+        },
+        {
+          "text": "il",
+          "syllabic": "single"
+        },
+        {
+          "text": "tem",
+          "syllabic": "begin"
+        },
+        {
+          "text": "po",
+          "syllabic": "end"
+        },
+        {
+          "text": "pas",
+          "syllabic": "begin"
+        },
+        {
+          "text": "sa",
+          "syllabic": "end"
+        },
+        {
+          "text": "e",
+          "syllabic": "single"
+        },
+        {
+          "text": "non",
+          "syllabic": "single"
+        },
+        {
+          "text": "tor",
+          "syllabic": "begin"
+        },
+        {
+          "text": "na",
+          "syllabic": "end"
+        }
+      ]
+    },
+    {
+      "verse": "verse2",
+      "syllables": [
+        {
+          "text": "Nun",
+          "syllabic": "single"
+        },
+        {
+          "text": "te",
+          "syllabic": "single"
+        },
+        {
+          "text": "ne",
+          "syllabic": "single"
+        },
+        {
+          "text": "vai",
+          "syllabic": "single"
+        },
+        {
+          "text": "sen",
+          "syllabic": "begin"
+        },
+        {
+          "text": "za",
+          "syllabic": "end"
+        },
+        {
+          "text": "di",
+          "syllabic": "single"
+        },
+        {
+          "text": "me",
+          "syllabic": "single"
+        },
+        {
+          "text": "las",
+          "syllabic": "begin"
+        },
+        {
+          "text": "san",
+          "syllabic": "end"
+        },
+        {
+          "text": "do",
+          "syllabic": "single"
+        },
+        {
+          "text": "un",
+          "syllabic": "single"
+        },
+        {
+          "text": "vuo",
+          "syllabic": "begin"
+        },
+        {
+          "text": "to",
+          "syllabic": "end"
+        },
+        {
+          "text": "che",
+          "syllabic": "single"
+        },
+        {
+          "text": "non",
+          "syllabic": "single"
+        },
+        {
+          "text": "si",
+          "syllabic": "single"
+        },
+        {
+          "text": "co",
+          "syllabic": "begin"
+        },
+        {
+          "text": "lma",
+          "syllabic": "end"
+        },
+        {
+          "text": "ma",
+          "syllabic": "single"
+        },
+        {
+          "text": "io",
+          "syllabic": "single"
+        },
+        {
+          "text": "so",
+          "syllabic": "single"
+        },
+        {
+          "text": "che",
+          "syllabic": "single"
+        },
+        {
+          "text": "tor",
+          "syllabic": "begin"
+        },
+        {
+          "text": "ne",
+          "syllabic": "middle"
+        },
+        {
+          "text": "rai",
+          "syllabic": "end"
+        },
+        {
+          "text": "per",
+          "syllabic": "single"
+        },
+        {
+          "text": "ché",
+          "syllabic": "single"
+        },
+        {
+          "text": "l'a",
+          "syllabic": "single"
+        },
+        {
+          "text": "mo",
+          "syllabic": "begin"
+        },
+        {
+          "text": "re",
+          "syllabic": "end"
+        },
+        {
+          "text": "non",
+          "syllabic": "single"
+        },
+        {
+          "text": "si",
+          "syllabic": "single"
+        },
+        {
+          "text": "fer",
+          "syllabic": "begin"
+        },
+        {
+          "text": "ma",
+          "syllabic": "middle"
+        },
+        {
+          "text": "mai",
+          "syllabic": "end"
+        }
+      ]
+    },
+    {
+      "verse": "chorus2",
+      "syllables": [
+        {
+          "text": "E",
+          "syllabic": "single"
+        },
+        {
+          "text": "cer",
+          "syllabic": "begin"
+        },
+        {
+          "text": "ca",
+          "syllabic": "middle"
+        },
+        {
+          "text": "e",
+          "syllabic": "end"
+        },
+        {
+          "text": "me",
+          "syllabic": "single"
+        },
+        {
+          "text": "ca",
+          "syllabic": "begin"
+        },
+        {
+          "text": "pi",
+          "syllabic": "end"
+        },
+        {
+          "text": "se",
+          "syllabic": "single"
+        },
+        {
+          "text": "pos",
+          "syllabic": "begin"
+        },
+        {
+          "text": "so",
+          "syllabic": "end"
+        },
+        {
+          "text": "sta",
+          "syllabic": "single"
+        },
+        {
+          "text": "vo",
+          "syllabic": "single"
+        },
+        {
+          "text": "tan",
+          "syllabic": "begin"
+        },
+        {
+          "text": "to",
+          "syllabic": "end"
+        },
+        {
+          "text": "ma",
+          "syllabic": "single"
+        },
+        {
+          "text": "le",
+          "syllabic": "single"
+        },
+        {
+          "text": "per",
+          "syllabic": "single"
+        },
+        {
+          "text": "un",
+          "syllabic": "single"
+        },
+        {
+          "text": "ba",
+          "syllabic": "begin"
+        },
+        {
+          "text": "cio",
+          "syllabic": "end"
+        },
+        {
+          "text": "che",
+          "syllabic": "single"
+        },
+        {
+          "text": "non",
+          "syllabic": "single"
+        },
+        {
+          "text": "ho",
+          "syllabic": "single"
+        },
+        {
+          "text": "da",
+          "syllabic": "begin"
+        },
+        {
+          "text": "to",
+          "syllabic": "end"
+        },
+        {
+          "text": "ma",
+          "syllabic": "single"
+        },
+        {
+          "text": "il",
+          "syllabic": "single"
+        },
+        {
+          "text": "tem",
+          "syllabic": "begin"
+        },
+        {
+          "text": "po",
+          "syllabic": "end"
+        },
+        {
+          "text": "pas",
+          "syllabic": "begin"
+        },
+        {
+          "text": "sa",
+          "syllabic": "end"
+        },
+        {
+          "text": "e",
+          "syllabic": "single"
+        },
+        {
+          "text": "non",
+          "syllabic": "single"
+        },
+        {
+          "text": "tor",
+          "syllabic": "begin"
+        },
+        {
+          "text": "na",
+          "syllabic": "end"
+        }
+      ]
+    },
+    {
+      "verse": "bridge",
+      "syllables": [
+        {
+          "text": "E",
+          "syllabic": "single"
+        },
+        {
+          "text": "for",
+          "syllabic": "begin"
+        },
+        {
+          "text": "se",
+          "syllabic": "end"
+        },
+        {
+          "text": "un",
+          "syllabic": "single"
+        },
+        {
+          "text": "gior",
+          "syllabic": "begin"
+        },
+        {
+          "text": "no",
+          "syllabic": "end"
+        },
+        {
+          "text": "ca",
+          "syllabic": "begin"
+        },
+        {
+          "text": "pri",
+          "syllabic": "middle"
+        },
+        {
+          "text": "rai",
+          "syllabic": "end"
+        },
+        {
+          "text": "che",
+          "syllabic": "single"
+        },
+        {
+          "text": "io",
+          "syllabic": "single"
+        },
+        {
+          "text": "so",
+          "syllabic": "single"
+        },
+        {
+          "text": "no",
+          "syllabic": "single"
+        },
+        {
+          "text": "qui",
+          "syllabic": "single"
+        },
+        {
+          "text": "ad",
+          "syllabic": "begin"
+        },
+        {
+          "text": "as",
+          "syllabic": "middle"
+        },
+        {
+          "text": "pet",
+          "syllabic": "middle"
+        },
+        {
+          "text": "tar",
+          "syllabic": "middle"
+        },
+        {
+          "text": "ti",
+          "syllabic": "end"
+        },
+        {
+          "text": "e",
+          "syllabic": "single"
+        },
+        {
+          "text": "all'o",
+          "syllabic": "begin"
+        },
+        {
+          "text": "ra",
+          "syllabic": "end"
+        },
+        {
+          "text": "sa",
+          "syllabic": "single"
+        },
+        {
+          "text": "rai",
+          "syllabic": "single"
+        },
+        {
+          "text": "che",
+          "syllabic": "single"
+        },
+        {
+          "text": "non",
+          "syllabic": "single"
+        },
+        {
+          "text": "c'è",
+          "syllabic": "single"
+        },
+        {
+          "text": "nien",
+          "syllabic": "begin"
+        },
+        {
+          "text": "te",
+          "syllabic": "end"
+        },
+        {
+          "text": "di",
+          "syllabic": "single"
+        },
+        {
+          "text": "più",
+          "syllabic": "single"
+        },
+        {
+          "text": "for",
+          "syllabic": "begin"
+        },
+        {
+          "text": "te",
+          "syllabic": "end"
+        },
+        {
+          "text": "di",
+          "syllabic": "single"
+        },
+        {
+          "text": "me",
+          "syllabic": "single"
+        }
+      ]
+    },
+    {
+      "verse": "chorus3",
+      "syllables": [
+        {
+          "text": "E",
+          "syllabic": "single"
+        },
+        {
+          "text": "cer",
+          "syllabic": "begin"
+        },
+        {
+          "text": "ca",
+          "syllabic": "middle"
+        },
+        {
+          "text": "e",
+          "syllabic": "end"
+        },
+        {
+          "text": "me",
+          "syllabic": "single"
+        },
+        {
+          "text": "ca",
+          "syllabic": "begin"
+        },
+        {
+          "text": "pi",
+          "syllabic": "end"
+        },
+        {
+          "text": "se",
+          "syllabic": "single"
+        },
+        {
+          "text": "pos",
+          "syllabic": "begin"
+        },
+        {
+          "text": "so",
+          "syllabic": "end"
+        },
+        {
+          "text": "sta",
+          "syllabic": "single"
+        },
+        {
+          "text": "vo",
+          "syllabic": "single"
+        },
+        {
+          "text": "tan",
+          "syllabic": "begin"
+        },
+        {
+          "text": "to",
+          "syllabic": "end"
+        },
+        {
+          "text": "ma",
+          "syllabic": "single"
+        },
+        {
+          "text": "le",
+          "syllabic": "single"
+        },
+        {
+          "text": "per",
+          "syllabic": "single"
+        },
+        {
+          "text": "un",
+          "syllabic": "single"
+        },
+        {
+          "text": "ba",
+          "syllabic": "begin"
+        },
+        {
+          "text": "cio",
+          "syllabic": "end"
+        },
+        {
+          "text": "che",
+          "syllabic": "single"
+        },
+        {
+          "text": "non",
+          "syllabic": "single"
+        },
+        {
+          "text": "ho",
+          "syllabic": "single"
+        },
+        {
+          "text": "da",
+          "syllabic": "begin"
+        },
+        {
+          "text": "to",
+          "syllabic": "end"
+        },
+        {
+          "text": "ma",
+          "syllabic": "single"
+        },
+        {
+          "text": "il",
+          "syllabic": "single"
+        },
+        {
+          "text": "tem",
+          "syllabic": "begin"
+        },
+        {
+          "text": "po",
+          "syllabic": "end"
+        },
+        {
+          "text": "pas",
+          "syllabic": "begin"
+        },
+        {
+          "text": "sa",
+          "syllabic": "end"
+        },
+        {
+          "text": "e",
+          "syllabic": "single"
+        },
+        {
+          "text": "non",
+          "syllabic": "single"
+        },
+        {
+          "text": "tor",
+          "syllabic": "begin"
+        },
+        {
+          "text": "na",
+          "syllabic": "end"
+        }
+      ]
+    }
+  ]
+}

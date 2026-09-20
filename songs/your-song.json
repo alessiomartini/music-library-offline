@@ -1,0 +1,1298 @@
+{
+  "slug": "your-song",
+  "title": "Your Song",
+  "composer": "Elton John",
+  "lyricist": "Bernie Taupin",
+  "originalKey": "Eb",
+  "mode": "major",
+  "tempoBpm": 72,
+  "timeSignature": {
+    "numerator": 4,
+    "denominator": 4
+  },
+  "melodySource": {
+    "type": "curated",
+    "musicxml": "working/your-song/curated.musicxml"
+  },
+  "lyrics": [
+    {
+      "verse": "verse1",
+      "syllables": [
+        {
+          "text": "It's",
+          "syllabic": "single"
+        },
+        {
+          "text": "a",
+          "syllabic": "single"
+        },
+        {
+          "text": "lit",
+          "syllabic": "begin"
+        },
+        {
+          "text": "tle",
+          "syllabic": "end"
+        },
+        {
+          "text": "bit",
+          "syllabic": "single"
+        },
+        {
+          "text": "fun",
+          "syllabic": "begin"
+        },
+        {
+          "text": "ny",
+          "syllabic": "end"
+        },
+        {
+          "text": "this",
+          "syllabic": "single"
+        },
+        {
+          "text": "fee",
+          "syllabic": "begin"
+        },
+        {
+          "text": "ling",
+          "syllabic": "end"
+        },
+        {
+          "text": "in",
+          "syllabic": "single"
+        },
+        {
+          "text": "side",
+          "syllabic": "single"
+        },
+        {
+          "text": "I'm",
+          "syllabic": "single"
+        },
+        {
+          "text": "not",
+          "syllabic": "single"
+        },
+        {
+          "text": "one",
+          "syllabic": "single"
+        },
+        {
+          "text": "of",
+          "syllabic": "single"
+        },
+        {
+          "text": "those",
+          "syllabic": "single"
+        },
+        {
+          "text": "who",
+          "syllabic": "single"
+        },
+        {
+          "text": "can",
+          "syllabic": "single"
+        },
+        {
+          "text": "eas",
+          "syllabic": "begin"
+        },
+        {
+          "text": "i",
+          "syllabic": "middle"
+        },
+        {
+          "text": "ly",
+          "syllabic": "end"
+        },
+        {
+          "text": "hide",
+          "syllabic": "single"
+        },
+        {
+          "text": "I",
+          "syllabic": "single"
+        },
+        {
+          "text": "don't",
+          "syllabic": "single"
+        },
+        {
+          "text": "have",
+          "syllabic": "single"
+        },
+        {
+          "text": "much",
+          "syllabic": "single"
+        },
+        {
+          "text": "mo",
+          "syllabic": "begin"
+        },
+        {
+          "text": "ney",
+          "syllabic": "end"
+        },
+        {
+          "text": "but",
+          "syllabic": "single"
+        },
+        {
+          "text": "boy",
+          "syllabic": "single"
+        },
+        {
+          "text": "if",
+          "syllabic": "single"
+        },
+        {
+          "text": "I",
+          "syllabic": "single"
+        },
+        {
+          "text": "did",
+          "syllabic": "single"
+        },
+        {
+          "text": "I'd",
+          "syllabic": "single"
+        },
+        {
+          "text": "buy",
+          "syllabic": "single"
+        },
+        {
+          "text": "a",
+          "syllabic": "single"
+        },
+        {
+          "text": "big",
+          "syllabic": "single"
+        },
+        {
+          "text": "house",
+          "syllabic": "single"
+        },
+        {
+          "text": "where",
+          "syllabic": "single"
+        },
+        {
+          "text": "we",
+          "syllabic": "single"
+        },
+        {
+          "text": "both",
+          "syllabic": "single"
+        },
+        {
+          "text": "could",
+          "syllabic": "single"
+        },
+        {
+          "text": "live",
+          "syllabic": "single"
+        }
+      ]
+    },
+    {
+      "verse": "verse2",
+      "syllables": [
+        {
+          "text": "If",
+          "syllabic": "single"
+        },
+        {
+          "text": "I",
+          "syllabic": "single"
+        },
+        {
+          "text": "was",
+          "syllabic": "single"
+        },
+        {
+          "text": "a",
+          "syllabic": "single"
+        },
+        {
+          "text": "sculp",
+          "syllabic": "begin"
+        },
+        {
+          "text": "tor",
+          "syllabic": "end"
+        },
+        {
+          "text": "but",
+          "syllabic": "single"
+        },
+        {
+          "text": "then",
+          "syllabic": "single"
+        },
+        {
+          "text": "a",
+          "syllabic": "single"
+        },
+        {
+          "text": "gain",
+          "syllabic": "single"
+        },
+        {
+          "text": "no",
+          "syllabic": "single"
+        },
+        {
+          "text": "or",
+          "syllabic": "single"
+        },
+        {
+          "text": "a",
+          "syllabic": "single"
+        },
+        {
+          "text": "man",
+          "syllabic": "single"
+        },
+        {
+          "text": "who",
+          "syllabic": "single"
+        },
+        {
+          "text": "makes",
+          "syllabic": "single"
+        },
+        {
+          "text": "po",
+          "syllabic": "begin"
+        },
+        {
+          "text": "tions",
+          "syllabic": "end"
+        },
+        {
+          "text": "in",
+          "syllabic": "single"
+        },
+        {
+          "text": "a",
+          "syllabic": "single"
+        },
+        {
+          "text": "tra",
+          "syllabic": "begin"
+        },
+        {
+          "text": "vel",
+          "syllabic": "middle"
+        },
+        {
+          "text": "ling",
+          "syllabic": "end"
+        },
+        {
+          "text": "show",
+          "syllabic": "single"
+        },
+        {
+          "text": "I",
+          "syllabic": "single"
+        },
+        {
+          "text": "know",
+          "syllabic": "single"
+        },
+        {
+          "text": "it's",
+          "syllabic": "single"
+        },
+        {
+          "text": "not",
+          "syllabic": "single"
+        },
+        {
+          "text": "much",
+          "syllabic": "single"
+        },
+        {
+          "text": "but",
+          "syllabic": "single"
+        },
+        {
+          "text": "it's",
+          "syllabic": "single"
+        },
+        {
+          "text": "the",
+          "syllabic": "single"
+        },
+        {
+          "text": "best",
+          "syllabic": "single"
+        },
+        {
+          "text": "I",
+          "syllabic": "single"
+        },
+        {
+          "text": "can",
+          "syllabic": "single"
+        },
+        {
+          "text": "do",
+          "syllabic": "single"
+        },
+        {
+          "text": "My",
+          "syllabic": "single"
+        },
+        {
+          "text": "gift",
+          "syllabic": "single"
+        },
+        {
+          "text": "is",
+          "syllabic": "single"
+        },
+        {
+          "text": "my",
+          "syllabic": "single"
+        },
+        {
+          "text": "song",
+          "syllabic": "single"
+        },
+        {
+          "text": "and",
+          "syllabic": "single"
+        },
+        {
+          "text": "this",
+          "syllabic": "single"
+        },
+        {
+          "text": "one's",
+          "syllabic": "single"
+        },
+        {
+          "text": "for",
+          "syllabic": "single"
+        },
+        {
+          "text": "you",
+          "syllabic": "single"
+        }
+      ]
+    },
+    {
+      "verse": "chorus1",
+      "syllables": [
+        {
+          "text": "And",
+          "syllabic": "single"
+        },
+        {
+          "text": "you",
+          "syllabic": "single"
+        },
+        {
+          "text": "can",
+          "syllabic": "single"
+        },
+        {
+          "text": "tell",
+          "syllabic": "single"
+        },
+        {
+          "text": "ev",
+          "syllabic": "begin"
+        },
+        {
+          "text": "ry",
+          "syllabic": "middle"
+        },
+        {
+          "text": "bo",
+          "syllabic": "middle"
+        },
+        {
+          "text": "dy",
+          "syllabic": "end"
+        },
+        {
+          "text": "this",
+          "syllabic": "single"
+        },
+        {
+          "text": "is",
+          "syllabic": "single"
+        },
+        {
+          "text": "your",
+          "syllabic": "single"
+        },
+        {
+          "text": "song",
+          "syllabic": "single"
+        },
+        {
+          "text": "It",
+          "syllabic": "single"
+        },
+        {
+          "text": "may",
+          "syllabic": "single"
+        },
+        {
+          "text": "be",
+          "syllabic": "single"
+        },
+        {
+          "text": "qui",
+          "syllabic": "begin"
+        },
+        {
+          "text": "te",
+          "syllabic": "end"
+        },
+        {
+          "text": "sim",
+          "syllabic": "begin"
+        },
+        {
+          "text": "ple",
+          "syllabic": "end"
+        },
+        {
+          "text": "but",
+          "syllabic": "single"
+        },
+        {
+          "text": "now",
+          "syllabic": "single"
+        },
+        {
+          "text": "that",
+          "syllabic": "single"
+        },
+        {
+          "text": "it's",
+          "syllabic": "single"
+        },
+        {
+          "text": "done",
+          "syllabic": "single"
+        },
+        {
+          "text": "I",
+          "syllabic": "single"
+        },
+        {
+          "text": "hope",
+          "syllabic": "single"
+        },
+        {
+          "text": "you",
+          "syllabic": "single"
+        },
+        {
+          "text": "don't",
+          "syllabic": "single"
+        },
+        {
+          "text": "mind",
+          "syllabic": "single"
+        },
+        {
+          "text": "I",
+          "syllabic": "single"
+        },
+        {
+          "text": "hope",
+          "syllabic": "single"
+        },
+        {
+          "text": "you",
+          "syllabic": "single"
+        },
+        {
+          "text": "don't",
+          "syllabic": "single"
+        },
+        {
+          "text": "mind",
+          "syllabic": "single"
+        },
+        {
+          "text": "that",
+          "syllabic": "single"
+        },
+        {
+          "text": "I",
+          "syllabic": "single"
+        },
+        {
+          "text": "put",
+          "syllabic": "single"
+        },
+        {
+          "text": "down",
+          "syllabic": "single"
+        },
+        {
+          "text": "in",
+          "syllabic": "single"
+        },
+        {
+          "text": "words",
+          "syllabic": "single"
+        },
+        {
+          "text": "how",
+          "syllabic": "single"
+        },
+        {
+          "text": "won",
+          "syllabic": "begin"
+        },
+        {
+          "text": "der",
+          "syllabic": "end"
+        },
+        {
+          "text": "ful",
+          "syllabic": "single"
+        },
+        {
+          "text": "life",
+          "syllabic": "single"
+        },
+        {
+          "text": "is",
+          "syllabic": "single"
+        },
+        {
+          "text": "while",
+          "syllabic": "single"
+        },
+        {
+          "text": "you're",
+          "syllabic": "single"
+        },
+        {
+          "text": "in",
+          "syllabic": "single"
+        },
+        {
+          "text": "the",
+          "syllabic": "single"
+        },
+        {
+          "text": "world",
+          "syllabic": "single"
+        }
+      ]
+    },
+    {
+      "verse": "verse3",
+      "syllables": [
+        {
+          "text": "I",
+          "syllabic": "single"
+        },
+        {
+          "text": "sat",
+          "syllabic": "single"
+        },
+        {
+          "text": "on",
+          "syllabic": "single"
+        },
+        {
+          "text": "the",
+          "syllabic": "single"
+        },
+        {
+          "text": "roof",
+          "syllabic": "single"
+        },
+        {
+          "text": "and",
+          "syllabic": "single"
+        },
+        {
+          "text": "kicked",
+          "syllabic": "single"
+        },
+        {
+          "text": "off",
+          "syllabic": "single"
+        },
+        {
+          "text": "the",
+          "syllabic": "single"
+        },
+        {
+          "text": "moss",
+          "syllabic": "single"
+        },
+        {
+          "text": "well",
+          "syllabic": "single"
+        },
+        {
+          "text": "a",
+          "syllabic": "single"
+        },
+        {
+          "text": "few",
+          "syllabic": "single"
+        },
+        {
+          "text": "of",
+          "syllabic": "single"
+        },
+        {
+          "text": "the",
+          "syllabic": "single"
+        },
+        {
+          "text": "verses",
+          "syllabic": "single"
+        },
+        {
+          "text": "well",
+          "syllabic": "single"
+        },
+        {
+          "text": "they've",
+          "syllabic": "single"
+        },
+        {
+          "text": "got",
+          "syllabic": "single"
+        },
+        {
+          "text": "me",
+          "syllabic": "single"
+        },
+        {
+          "text": "quite",
+          "syllabic": "single"
+        },
+        {
+          "text": "cross",
+          "syllabic": "single"
+        },
+        {
+          "text": "but",
+          "syllabic": "single"
+        },
+        {
+          "text": "the",
+          "syllabic": "single"
+        },
+        {
+          "text": "sun",
+          "syllabic": "single"
+        },
+        {
+          "text": "been",
+          "syllabic": "single"
+        },
+        {
+          "text": "qui",
+          "syllabic": "begin"
+        },
+        {
+          "text": "te",
+          "syllabic": "end"
+        },
+        {
+          "text": "kind",
+          "syllabic": "single"
+        },
+        {
+          "text": "while",
+          "syllabic": "single"
+        },
+        {
+          "text": "I",
+          "syllabic": "single"
+        },
+        {
+          "text": "wrote",
+          "syllabic": "single"
+        },
+        {
+          "text": "this",
+          "syllabic": "single"
+        },
+        {
+          "text": "song",
+          "syllabic": "single"
+        },
+        {
+          "text": "it's",
+          "syllabic": "single"
+        },
+        {
+          "text": "for",
+          "syllabic": "single"
+        },
+        {
+          "text": "peo",
+          "syllabic": "begin"
+        },
+        {
+          "text": "ple",
+          "syllabic": "end"
+        },
+        {
+          "text": "like",
+          "syllabic": "single"
+        },
+        {
+          "text": "you",
+          "syllabic": "single"
+        },
+        {
+          "text": "that",
+          "syllabic": "single"
+        },
+        {
+          "text": "keep",
+          "syllabic": "single"
+        },
+        {
+          "text": "it",
+          "syllabic": "single"
+        },
+        {
+          "text": "turn",
+          "syllabic": "begin"
+        },
+        {
+          "text": "ing",
+          "syllabic": "end"
+        },
+        {
+          "text": "on",
+          "syllabic": "single"
+        }
+      ]
+    },
+    {
+      "verse": "chorus2",
+      "syllables": [
+        {
+          "text": "So",
+          "syllabic": "single"
+        },
+        {
+          "text": "ex",
+          "syllabic": "begin"
+        },
+        {
+          "text": "cuse",
+          "syllabic": "end"
+        },
+        {
+          "text": "me",
+          "syllabic": "single"
+        },
+        {
+          "text": "for",
+          "syllabic": "single"
+        },
+        {
+          "text": "get",
+          "syllabic": "begin"
+        },
+        {
+          "text": "ting",
+          "syllabic": "end"
+        },
+        {
+          "text": "but",
+          "syllabic": "single"
+        },
+        {
+          "text": "these",
+          "syllabic": "single"
+        },
+        {
+          "text": "things",
+          "syllabic": "single"
+        },
+        {
+          "text": "I",
+          "syllabic": "single"
+        },
+        {
+          "text": "do",
+          "syllabic": "single"
+        },
+        {
+          "text": "you",
+          "syllabic": "single"
+        },
+        {
+          "text": "see",
+          "syllabic": "single"
+        },
+        {
+          "text": "I've",
+          "syllabic": "single"
+        },
+        {
+          "text": "for",
+          "syllabic": "single"
+        },
+        {
+          "text": "got",
+          "syllabic": "begin"
+        },
+        {
+          "text": "ten",
+          "syllabic": "end"
+        },
+        {
+          "text": "if",
+          "syllabic": "single"
+        },
+        {
+          "text": "they're",
+          "syllabic": "single"
+        },
+        {
+          "text": "green",
+          "syllabic": "single"
+        },
+        {
+          "text": "or",
+          "syllabic": "single"
+        },
+        {
+          "text": "they're",
+          "syllabic": "single"
+        },
+        {
+          "text": "blue",
+          "syllabic": "single"
+        },
+        {
+          "text": "an",
+          "syllabic": "begin"
+        },
+        {
+          "text": "y",
+          "syllabic": "end"
+        },
+        {
+          "text": "way",
+          "syllabic": "single"
+        },
+        {
+          "text": "the",
+          "syllabic": "single"
+        },
+        {
+          "text": "thing",
+          "syllabic": "single"
+        },
+        {
+          "text": "is",
+          "syllabic": "single"
+        },
+        {
+          "text": "what",
+          "syllabic": "single"
+        },
+        {
+          "text": "I",
+          "syllabic": "single"
+        },
+        {
+          "text": "re",
+          "syllabic": "begin"
+        },
+        {
+          "text": "al",
+          "syllabic": "middle"
+        },
+        {
+          "text": "ly",
+          "syllabic": "end"
+        },
+        {
+          "text": "mean",
+          "syllabic": "single"
+        },
+        {
+          "text": "yours",
+          "syllabic": "single"
+        },
+        {
+          "text": "are",
+          "syllabic": "single"
+        },
+        {
+          "text": "the",
+          "syllabic": "single"
+        },
+        {
+          "text": "sweet",
+          "syllabic": "begin"
+        },
+        {
+          "text": "est",
+          "syllabic": "end"
+        },
+        {
+          "text": "eyes",
+          "syllabic": "single"
+        },
+        {
+          "text": "I've",
+          "syllabic": "single"
+        },
+        {
+          "text": "ev",
+          "syllabic": "begin"
+        },
+        {
+          "text": "er",
+          "syllabic": "end"
+        },
+        {
+          "text": "seen",
+          "syllabic": "single"
+        }
+      ]
+    },
+    {
+      "verse": "chorus3",
+      "syllables": [
+        {
+          "text": "And",
+          "syllabic": "single"
+        },
+        {
+          "text": "you",
+          "syllabic": "single"
+        },
+        {
+          "text": "can",
+          "syllabic": "single"
+        },
+        {
+          "text": "tell",
+          "syllabic": "single"
+        },
+        {
+          "text": "ev",
+          "syllabic": "begin"
+        },
+        {
+          "text": "ry",
+          "syllabic": "middle"
+        },
+        {
+          "text": "bo",
+          "syllabic": "middle"
+        },
+        {
+          "text": "dy",
+          "syllabic": "end"
+        },
+        {
+          "text": "this",
+          "syllabic": "single"
+        },
+        {
+          "text": "is",
+          "syllabic": "single"
+        },
+        {
+          "text": "your",
+          "syllabic": "single"
+        },
+        {
+          "text": "song",
+          "syllabic": "single"
+        },
+        {
+          "text": "It",
+          "syllabic": "single"
+        },
+        {
+          "text": "may",
+          "syllabic": "single"
+        },
+        {
+          "text": "be",
+          "syllabic": "single"
+        },
+        {
+          "text": "qui",
+          "syllabic": "begin"
+        },
+        {
+          "text": "te",
+          "syllabic": "end"
+        },
+        {
+          "text": "sim",
+          "syllabic": "begin"
+        },
+        {
+          "text": "ple",
+          "syllabic": "end"
+        },
+        {
+          "text": "but",
+          "syllabic": "single"
+        },
+        {
+          "text": "now",
+          "syllabic": "single"
+        },
+        {
+          "text": "that",
+          "syllabic": "single"
+        },
+        {
+          "text": "it's",
+          "syllabic": "single"
+        },
+        {
+          "text": "done",
+          "syllabic": "single"
+        },
+        {
+          "text": "I",
+          "syllabic": "single"
+        },
+        {
+          "text": "hope",
+          "syllabic": "single"
+        },
+        {
+          "text": "you",
+          "syllabic": "single"
+        },
+        {
+          "text": "don't",
+          "syllabic": "single"
+        },
+        {
+          "text": "mind",
+          "syllabic": "single"
+        },
+        {
+          "text": "I",
+          "syllabic": "single"
+        },
+        {
+          "text": "hope",
+          "syllabic": "single"
+        },
+        {
+          "text": "you",
+          "syllabic": "single"
+        },
+        {
+          "text": "don't",
+          "syllabic": "single"
+        },
+        {
+          "text": "mind",
+          "syllabic": "single"
+        },
+        {
+          "text": "that",
+          "syllabic": "single"
+        },
+        {
+          "text": "I",
+          "syllabic": "single"
+        },
+        {
+          "text": "put",
+          "syllabic": "single"
+        },
+        {
+          "text": "down",
+          "syllabic": "single"
+        },
+        {
+          "text": "in",
+          "syllabic": "single"
+        },
+        {
+          "text": "words",
+          "syllabic": "single"
+        },
+        {
+          "text": "how",
+          "syllabic": "single"
+        },
+        {
+          "text": "won",
+          "syllabic": "begin"
+        },
+        {
+          "text": "der",
+          "syllabic": "end"
+        },
+        {
+          "text": "ful",
+          "syllabic": "single"
+        },
+        {
+          "text": "life",
+          "syllabic": "single"
+        },
+        {
+          "text": "is",
+          "syllabic": "single"
+        },
+        {
+          "text": "while",
+          "syllabic": "single"
+        },
+        {
+          "text": "you're",
+          "syllabic": "single"
+        },
+        {
+          "text": "in",
+          "syllabic": "single"
+        },
+        {
+          "text": "the",
+          "syllabic": "single"
+        },
+        {
+          "text": "world",
+          "syllabic": "single"
+        }
+      ]
+    },
+    {
+      "verse": "outro",
+      "syllables": [
+        {
+          "text": "I",
+          "syllabic": "single"
+        },
+        {
+          "text": "hope",
+          "syllabic": "single"
+        },
+        {
+          "text": "you",
+          "syllabic": "single"
+        },
+        {
+          "text": "don't",
+          "syllabic": "single"
+        },
+        {
+          "text": "mind",
+          "syllabic": "single"
+        },
+        {
+          "text": "I",
+          "syllabic": "single"
+        },
+        {
+          "text": "hope",
+          "syllabic": "single"
+        },
+        {
+          "text": "you",
+          "syllabic": "single"
+        },
+        {
+          "text": "don't",
+          "syllabic": "single"
+        },
+        {
+          "text": "mind",
+          "syllabic": "single"
+        },
+        {
+          "text": "that",
+          "syllabic": "single"
+        },
+        {
+          "text": "I",
+          "syllabic": "single"
+        },
+        {
+          "text": "put",
+          "syllabic": "single"
+        },
+        {
+          "text": "down",
+          "syllabic": "single"
+        },
+        {
+          "text": "in",
+          "syllabic": "single"
+        },
+        {
+          "text": "words",
+          "syllabic": "single"
+        },
+        {
+          "text": "how",
+          "syllabic": "single"
+        },
+        {
+          "text": "won",
+          "syllabic": "begin"
+        },
+        {
+          "text": "der",
+          "syllabic": "end"
+        },
+        {
+          "text": "ful",
+          "syllabic": "single"
+        },
+        {
+          "text": "life",
+          "syllabic": "single"
+        },
+        {
+          "text": "is",
+          "syllabic": "single"
+        },
+        {
+          "text": "while",
+          "syllabic": "single"
+        },
+        {
+          "text": "you're",
+          "syllabic": "single"
+        },
+        {
+          "text": "in",
+          "syllabic": "single"
+        },
+        {
+          "text": "the",
+          "syllabic": "single"
+        },
+        {
+          "text": "world",
+          "syllabic": "single"
+        }
+      ]
+    }
+  ]
+}

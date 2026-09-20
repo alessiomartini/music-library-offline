@@ -13,6 +13,11 @@ dependencies = [
     "scipy>=1.10.0",
     "librosa>=0.10.0",
     "pretty-midi>=0.2.10",
+    "basic-pitch>=0.4.0",
+    "lv-chordia>=1.1.0",
+    # pydub (an lv-chordia dependency) still imports stdlib `audioop`, which
+    # Python 3.13+ removed (PEP 594); this backport keeps it importable.
+    "audioop-lts>=0.2.0; python_version >= '3.13'",
 ]
 
 [build-system]

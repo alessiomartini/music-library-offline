@@ -239,202 +239,10 @@
       {
         "start": 218880,
         "duration": 3840
-      },
-      {
-        "start": 222720,
-        "duration": 3840
-      },
-      {
-        "start": 226560,
-        "duration": 3840
-      },
-      {
-        "start": 230400,
-        "duration": 3840
-      },
-      {
-        "start": 234240,
-        "duration": 3840
-      },
-      {
-        "start": 238080,
-        "duration": 3840
-      },
-      {
-        "start": 241920,
-        "duration": 3840
-      },
-      {
-        "start": 245760,
-        "duration": 3840
-      },
-      {
-        "start": 249600,
-        "duration": 3840
-      },
-      {
-        "start": 253440,
-        "duration": 3840
-      },
-      {
-        "start": 257280,
-        "duration": 3840
-      },
-      {
-        "start": 261120,
-        "duration": 3840
-      },
-      {
-        "start": 264960,
-        "duration": 3840
-      },
-      {
-        "start": 268800,
-        "duration": 3840
-      },
-      {
-        "start": 272640,
-        "duration": 3840
-      },
-      {
-        "start": 276480,
-        "duration": 3840
-      },
-      {
-        "start": 280320,
-        "duration": 3840
-      },
-      {
-        "start": 284160,
-        "duration": 3840
-      },
-      {
-        "start": 288000,
-        "duration": 3840
-      },
-      {
-        "start": 291840,
-        "duration": 3840
-      },
-      {
-        "start": 295680,
-        "duration": 3840
-      },
-      {
-        "start": 299520,
-        "duration": 3840
-      },
-      {
-        "start": 303360,
-        "duration": 3840
-      },
-      {
-        "start": 307200,
-        "duration": 3840
-      },
-      {
-        "start": 311040,
-        "duration": 3840
-      },
-      {
-        "start": 314880,
-        "duration": 3840
-      },
-      {
-        "start": 318720,
-        "duration": 3840
-      },
-      {
-        "start": 322560,
-        "duration": 3840
-      },
-      {
-        "start": 326400,
-        "duration": 3840
-      },
-      {
-        "start": 330240,
-        "duration": 3840
-      },
-      {
-        "start": 334080,
-        "duration": 3840
-      },
-      {
-        "start": 337920,
-        "duration": 3840
-      },
-      {
-        "start": 341760,
-        "duration": 3840
-      },
-      {
-        "start": 345600,
-        "duration": 3840
-      },
-      {
-        "start": 349440,
-        "duration": 3840
-      },
-      {
-        "start": 353280,
-        "duration": 3840
-      },
-      {
-        "start": 357120,
-        "duration": 3840
-      },
-      {
-        "start": 360960,
-        "duration": 3840
-      },
-      {
-        "start": 364800,
-        "duration": 3840
-      },
-      {
-        "start": 368640,
-        "duration": 3840
-      },
-      {
-        "start": 372480,
-        "duration": 3840
-      },
-      {
-        "start": 376320,
-        "duration": 3840
-      },
-      {
-        "start": 380160,
-        "duration": 3840
-      },
-      {
-        "start": 384000,
-        "duration": 3840
-      },
-      {
-        "start": 387840,
-        "duration": 3840
-      },
-      {
-        "start": 391680,
-        "duration": 3840
-      },
-      {
-        "start": 395520,
-        "duration": 3840
-      },
-      {
-        "start": 399360,
-        "duration": 3840
-      },
-      {
-        "start": 403200,
-        "duration": 3840
       }
     ],
     "tempo": {
-      "bpm": 72.0
+      "bpm": 72
     },
     "parts": [
       {
@@ -477,7 +285,7 @@
               {
                 "verse": "verse1",
                 "text": "lit",
-                "syllabic": "single"
+                "syllabic": "begin"
               }
             ]
           },
@@ -490,7 +298,7 @@
               {
                 "verse": "verse1",
                 "text": "tle",
-                "syllabic": "single"
+                "syllabic": "end"
               }
             ]
           },
@@ -516,7 +324,7 @@
               {
                 "verse": "verse1",
                 "text": "fun",
-                "syllabic": "single"
+                "syllabic": "begin"
               }
             ]
           },
@@ -529,7 +337,7 @@
               {
                 "verse": "verse1",
                 "text": "ny",
-                "syllabic": "single"
+                "syllabic": "end"
               }
             ]
           },
@@ -555,7 +363,7 @@
               {
                 "verse": "verse1",
                 "text": "fee",
-                "syllabic": "single"
+                "syllabic": "begin"
               }
             ]
           },
@@ -568,7 +376,7 @@
               {
                 "verse": "verse1",
                 "text": "ling",
-                "syllabic": "single"
+                "syllabic": "end"
               }
             ]
           },
@@ -698,7 +506,7 @@
               {
                 "verse": "verse1",
                 "text": "eas",
-                "syllabic": "single"
+                "syllabic": "begin"
               }
             ]
           },
@@ -711,7 +519,7 @@
               {
                 "verse": "verse1",
                 "text": "i",
-                "syllabic": "single"
+                "syllabic": "middle"
               }
             ]
           },
@@ -724,7 +532,7 @@
               {
                 "verse": "verse1",
                 "text": "ly",
-                "syllabic": "single"
+                "syllabic": "end"
               }
             ]
           },
@@ -802,7 +610,7 @@
               {
                 "verse": "verse1",
                 "text": "mo",
-                "syllabic": "single"
+                "syllabic": "begin"
               }
             ]
           },
@@ -815,7 +623,7 @@
               {
                 "verse": "verse1",
                 "text": "ney",
-                "syllabic": "single"
+                "syllabic": "end"
               }
             ]
           },
@@ -1075,7 +883,7 @@
               {
                 "verse": "verse1",
                 "text": "sculp",
-                "syllabic": "single"
+                "syllabic": "begin"
               }
             ]
           },
@@ -1088,7 +896,7 @@
               {
                 "verse": "verse1",
                 "text": "tor",
-                "syllabic": "single"
+                "syllabic": "end"
               }
             ]
           },
@@ -1231,7 +1039,7 @@
               {
                 "verse": "verse1",
                 "text": "po",
-                "syllabic": "single"
+                "syllabic": "begin"
               }
             ]
           },
@@ -1244,7 +1052,7 @@
               {
                 "verse": "verse1",
                 "text": "tions",
-                "syllabic": "single"
+                "syllabic": "end"
               }
             ]
           },
@@ -1283,7 +1091,7 @@
               {
                 "verse": "verse1",
                 "text": "tra",
-                "syllabic": "single"
+                "syllabic": "begin"
               }
             ]
           },
@@ -1296,7 +1104,7 @@
               {
                 "verse": "verse1",
                 "text": "vel",
-                "syllabic": "single"
+                "syllabic": "middle"
               }
             ]
           },
@@ -1309,7 +1117,7 @@
               {
                 "verse": "verse1",
                 "text": "ling",
-                "syllabic": "single"
+                "syllabic": "end"
               }
             ]
           },
@@ -1673,7 +1481,7 @@
               {
                 "verse": "verse1",
                 "text": "ev",
-                "syllabic": "single"
+                "syllabic": "begin"
               }
             ]
           },
@@ -1686,7 +1494,7 @@
               {
                 "verse": "verse1",
                 "text": "ry",
-                "syllabic": "single"
+                "syllabic": "middle"
               }
             ]
           },
@@ -1699,7 +1507,7 @@
               {
                 "verse": "verse1",
                 "text": "bo",
-                "syllabic": "single"
+                "syllabic": "middle"
               }
             ]
           },
@@ -1712,7 +1520,7 @@
               {
                 "verse": "verse1",
                 "text": "dy",
-                "syllabic": "single"
+                "syllabic": "end"
               }
             ]
           },
@@ -1816,7 +1624,7 @@
               {
                 "verse": "verse1",
                 "text": "qui",
-                "syllabic": "single"
+                "syllabic": "begin"
               }
             ]
           },
@@ -1829,7 +1637,7 @@
               {
                 "verse": "verse1",
                 "text": "te",
-                "syllabic": "single"
+                "syllabic": "end"
               }
             ]
           },
@@ -1842,7 +1650,7 @@
               {
                 "verse": "verse1",
                 "text": "sim",
-                "syllabic": "single"
+                "syllabic": "begin"
               }
             ]
           },
@@ -1855,7 +1663,7 @@
               {
                 "verse": "verse1",
                 "text": "ple",
-                "syllabic": "single"
+                "syllabic": "end"
               }
             ]
           },
@@ -2154,7 +1962,7 @@
               {
                 "verse": "verse1",
                 "text": "won",
-                "syllabic": "single"
+                "syllabic": "begin"
               }
             ]
           },
@@ -2167,7 +1975,7 @@
               {
                 "verse": "verse1",
                 "text": "der",
-                "syllabic": "single"
+                "syllabic": "end"
               }
             ]
           },
@@ -2622,7 +2430,7 @@
               {
                 "verse": "verse1",
                 "text": "qui",
-                "syllabic": "single"
+                "syllabic": "begin"
               }
             ]
           },
@@ -2635,7 +2443,7 @@
               {
                 "verse": "verse1",
                 "text": "te",
-                "syllabic": "single"
+                "syllabic": "end"
               }
             ]
           },
@@ -2752,7 +2560,7 @@
               {
                 "verse": "verse1",
                 "text": "peo",
-                "syllabic": "single"
+                "syllabic": "begin"
               }
             ]
           },
@@ -2765,7 +2573,7 @@
               {
                 "verse": "verse1",
                 "text": "ple",
-                "syllabic": "single"
+                "syllabic": "end"
               }
             ]
           },
@@ -2843,7 +2651,7 @@
               {
                 "verse": "verse1",
                 "text": "turn",
-                "syllabic": "single"
+                "syllabic": "begin"
               }
             ]
           },
@@ -2856,7 +2664,7 @@
               {
                 "verse": "verse1",
                 "text": "ing",
-                "syllabic": "single"
+                "syllabic": "end"
               }
             ]
           },
@@ -2895,7 +2703,7 @@
               {
                 "verse": "verse1",
                 "text": "ex",
-                "syllabic": "single"
+                "syllabic": "begin"
               }
             ]
           },
@@ -2908,7 +2716,7 @@
               {
                 "verse": "verse1",
                 "text": "cuse",
-                "syllabic": "single"
+                "syllabic": "end"
               }
             ]
           },
@@ -2947,7 +2755,7 @@
               {
                 "verse": "verse1",
                 "text": "get",
-                "syllabic": "single"
+                "syllabic": "begin"
               }
             ]
           },
@@ -2960,7 +2768,7 @@
               {
                 "verse": "verse1",
                 "text": "ting",
-                "syllabic": "single"
+                "syllabic": "end"
               }
             ]
           },
@@ -3090,7 +2898,7 @@
               {
                 "verse": "verse1",
                 "text": "got",
-                "syllabic": "single"
+                "syllabic": "begin"
               }
             ]
           },
@@ -3103,7 +2911,7 @@
               {
                 "verse": "verse1",
                 "text": "ten",
-                "syllabic": "single"
+                "syllabic": "end"
               }
             ]
           },
@@ -3194,7 +3002,7 @@
               {
                 "verse": "verse1",
                 "text": "an",
-                "syllabic": "single"
+                "syllabic": "begin"
               }
             ]
           },
@@ -3207,7 +3015,7 @@
               {
                 "verse": "verse1",
                 "text": "y",
-                "syllabic": "single"
+                "syllabic": "end"
               }
             ]
           },
@@ -3298,7 +3106,7 @@
               {
                 "verse": "verse1",
                 "text": "re",
-                "syllabic": "single"
+                "syllabic": "begin"
               }
             ]
           },
@@ -3311,7 +3119,7 @@
               {
                 "verse": "verse1",
                 "text": "al",
-                "syllabic": "single"
+                "syllabic": "middle"
               }
             ]
           },
@@ -3324,7 +3132,7 @@
               {
                 "verse": "verse1",
                 "text": "ly",
-                "syllabic": "single"
+                "syllabic": "end"
               }
             ]
           },
@@ -3389,7 +3197,7 @@
               {
                 "verse": "verse1",
                 "text": "sweet",
-                "syllabic": "single"
+                "syllabic": "begin"
               }
             ]
           },
@@ -3402,7 +3210,7 @@
               {
                 "verse": "verse1",
                 "text": "est",
-                "syllabic": "single"
+                "syllabic": "end"
               }
             ]
           },
@@ -3441,7 +3249,7 @@
               {
                 "verse": "verse1",
                 "text": "ev",
-                "syllabic": "single"
+                "syllabic": "begin"
               }
             ]
           },
@@ -3454,7 +3262,7 @@
               {
                 "verse": "verse1",
                 "text": "er",
-                "syllabic": "single"
+                "syllabic": "end"
               }
             ]
           },
@@ -3532,7 +3340,7 @@
               {
                 "verse": "verse1",
                 "text": "ev",
-                "syllabic": "single"
+                "syllabic": "begin"
               }
             ]
           },
@@ -3545,7 +3353,7 @@
               {
                 "verse": "verse1",
                 "text": "ry",
-                "syllabic": "single"
+                "syllabic": "middle"
               }
             ]
           },
@@ -3558,7 +3366,7 @@
               {
                 "verse": "verse1",
                 "text": "bo",
-                "syllabic": "single"
+                "syllabic": "middle"
               }
             ]
           },
@@ -3571,7 +3379,7 @@
               {
                 "verse": "verse1",
                 "text": "dy",
-                "syllabic": "single"
+                "syllabic": "end"
               }
             ]
           },
@@ -3675,7 +3483,7 @@
               {
                 "verse": "verse1",
                 "text": "qui",
-                "syllabic": "single"
+                "syllabic": "begin"
               }
             ]
           },
@@ -3688,7 +3496,7 @@
               {
                 "verse": "verse1",
                 "text": "te",
-                "syllabic": "single"
+                "syllabic": "end"
               }
             ]
           },
@@ -3701,7 +3509,7 @@
               {
                 "verse": "verse1",
                 "text": "sim",
-                "syllabic": "single"
+                "syllabic": "begin"
               }
             ]
           },
@@ -3714,7 +3522,7 @@
               {
                 "verse": "verse1",
                 "text": "ple",
-                "syllabic": "single"
+                "syllabic": "end"
               }
             ]
           },
@@ -4013,7 +3821,7 @@
               {
                 "verse": "verse1",
                 "text": "won",
-                "syllabic": "single"
+                "syllabic": "begin"
               }
             ]
           },
@@ -4026,7 +3834,7 @@
               {
                 "verse": "verse1",
                 "text": "der",
-                "syllabic": "single"
+                "syllabic": "end"
               }
             ]
           },
@@ -4364,7 +4172,7 @@
               {
                 "verse": "verse1",
                 "text": "won",
-                "syllabic": "single"
+                "syllabic": "begin"
               }
             ]
           },
@@ -4377,7 +4185,7 @@
               {
                 "verse": "verse1",
                 "text": "der",
-                "syllabic": "single"
+                "syllabic": "end"
               }
             ]
           },
@@ -5378,976 +5186,652 @@
     ],
     "harmony": [
       {
-        "start": 6240,
-        "root": 8,
-        "quality": "major",
-        "duration": 3264
-      },
-      {
-        "start": 9504,
-        "root": 5,
-        "quality": "major",
-        "duration": 384
-      },
-      {
-        "start": 9888,
+        "start": 1233,
         "root": 3,
-        "quality": "major",
-        "duration": 2352
-      },
-      {
-        "start": 12240,
-        "root": 0,
-        "quality": "major",
-        "duration": 432
-      },
-      {
-        "start": 12672,
-        "root": 8,
-        "quality": "major",
-        "duration": 1488
-      },
-      {
-        "start": 14160,
-        "root": 0,
         "quality": "major",
         "duration": 1536
       },
       {
-        "start": 15696,
+        "start": 2769,
+        "root": 8,
+        "quality": "major",
+        "slashBass": 3,
+        "duration": 1943
+      },
+      {
+        "start": 4712,
         "root": 3,
         "quality": "major",
-        "duration": 2520
+        "duration": 872
       },
       {
-        "start": 18216,
+        "start": 5584,
         "root": 8,
         "quality": "major",
-        "duration": 2496
+        "slashBass": 3,
+        "duration": 2112
       },
       {
-        "start": 20712,
-        "root": 5,
+        "start": 7696,
+        "root": 3,
         "quality": "major",
-        "duration": 552
+        "duration": 1997
       },
       {
-        "start": 21264,
-        "root": 2,
+        "start": 9693,
+        "root": 8,
         "quality": "major",
-        "duration": 576
+        "duration": 1667
       },
       {
-        "start": 21840,
+        "start": 11360,
         "root": 10,
         "quality": "major",
-        "duration": 1584
+        "slashBass": 2,
+        "duration": 1970
       },
       {
-        "start": 23424,
+        "start": 13330,
         "root": 7,
         "quality": "major",
-        "duration": 4080
+        "duration": 1175
       },
       {
-        "start": 27504,
+        "start": 14505,
         "root": 0,
         "quality": "major",
-        "duration": 1152
+        "duration": 3621
       },
       {
-        "start": 28656,
-        "root": 8,
-        "quality": "major",
-        "duration": 576
-      },
-      {
-        "start": 29232,
-        "root": 0,
-        "quality": "major",
-        "duration": 4368
-      },
-      {
-        "start": 33600,
+        "start": 18126,
         "root": 9,
         "quality": "major",
-        "duration": 2496
+        "duration": 1751
       },
       {
-        "start": 36096,
+        "start": 19877,
         "root": 8,
         "quality": "major",
-        "duration": 1512
+        "duration": 2054
       },
       {
-        "start": 37608,
-        "root": 5,
+        "start": 21931,
+        "root": 3,
         "quality": "major",
-        "duration": 1464
+        "slashBass": 10,
+        "duration": 1236
       },
       {
-        "start": 39072,
+        "start": 23167,
         "root": 10,
         "quality": "major",
-        "duration": 528
+        "duration": 1563
       },
       {
-        "start": 39600,
+        "start": 24730,
         "root": 7,
         "quality": "major",
-        "duration": 528
-      },
-      {
-        "start": 40128,
-        "root": 3,
-        "quality": "major",
-        "duration": 1512
-      },
-      {
-        "start": 41640,
-        "root": 10,
-        "quality": "major",
-        "duration": 3432
-      },
-      {
-        "start": 45072,
-        "root": 11,
-        "quality": "major",
-        "duration": 552
-      },
-      {
-        "start": 45624,
-        "root": 7,
-        "quality": "major",
-        "duration": 2424
-      },
-      {
-        "start": 48048,
-        "root": 0,
-        "quality": "major",
-        "duration": 3936
-      },
-      {
-        "start": 51984,
-        "root": 3,
-        "quality": "major",
-        "duration": 2472
-      },
-      {
-        "start": 54456,
-        "root": 5,
-        "quality": "major",
-        "duration": 4416
-      },
-      {
-        "start": 58872,
-        "root": 8,
-        "quality": "major",
-        "duration": 2448
-      },
-      {
-        "start": 61320,
-        "root": 10,
-        "quality": "major",
-        "duration": 7008
-      },
-      {
-        "start": 68328,
-        "root": 3,
-        "quality": "major",
-        "duration": 3624
-      },
-      {
-        "start": 71952,
-        "root": 8,
-        "quality": "major",
-        "duration": 3624
-      },
-      {
-        "start": 75576,
-        "root": 10,
-        "quality": "major",
-        "duration": 3384
-      },
-      {
-        "start": 78960,
-        "root": 7,
-        "quality": "major",
-        "duration": 4176
-      },
-      {
-        "start": 83136,
-        "root": 0,
-        "quality": "major",
-        "duration": 4512
-      },
-      {
-        "start": 87648,
-        "root": 7,
-        "quality": "major",
-        "duration": 1776
-      },
-      {
-        "start": 89424,
-        "root": 9,
-        "quality": "major",
-        "duration": 4632
-      },
-      {
-        "start": 94056,
-        "root": 8,
-        "quality": "major",
-        "duration": 2808
-      },
-      {
-        "start": 96864,
-        "root": 0,
-        "quality": "major",
-        "duration": 888
-      },
-      {
-        "start": 97752,
-        "root": 7,
-        "quality": "major",
-        "duration": 912
-      },
-      {
-        "start": 98664,
-        "root": 3,
-        "quality": "major",
-        "duration": 2832
-      },
-      {
-        "start": 101496,
-        "root": 10,
-        "quality": "major",
-        "duration": 2832
-      },
-      {
-        "start": 104328,
-        "root": 7,
-        "quality": "major",
-        "duration": 3768
-      },
-      {
-        "start": 108096,
-        "root": 0,
-        "quality": "major",
-        "duration": 2856
-      },
-      {
-        "start": 110952,
-        "root": 8,
-        "quality": "major",
-        "duration": 936
-      },
-      {
-        "start": 111888,
-        "root": 0,
-        "quality": "major",
-        "duration": 936
-      },
-      {
-        "start": 112824,
-        "root": 3,
-        "quality": "major",
-        "duration": 2904
-      },
-      {
-        "start": 115728,
-        "root": 5,
-        "quality": "major",
-        "duration": 4008
-      },
-      {
-        "start": 119736,
-        "root": 8,
-        "quality": "major",
-        "duration": 3312
-      },
-      {
-        "start": 123048,
-        "root": 3,
-        "quality": "major",
-        "duration": 7440
-      },
-      {
-        "start": 130488,
-        "root": 10,
-        "quality": "major",
-        "duration": 2208
-      },
-      {
-        "start": 132696,
-        "root": 3,
-        "quality": "major",
-        "duration": 240
-      },
-      {
-        "start": 132936,
-        "root": 0,
-        "quality": "major",
-        "duration": 2280
-      },
-      {
-        "start": 135216,
-        "root": 5,
-        "quality": "major",
-        "duration": 4608
-      },
-      {
-        "start": 139824,
-        "root": 8,
-        "quality": "major",
-        "duration": 2208
-      },
-      {
-        "start": 142032,
-        "root": 2,
-        "quality": "major",
-        "duration": 312
-      },
-      {
-        "start": 142344,
-        "root": 10,
-        "quality": "major",
-        "duration": 2256
-      },
-      {
-        "start": 144600,
-        "root": 0,
-        "quality": "major",
-        "duration": 3312
-      },
-      {
-        "start": 147912,
-        "root": 5,
-        "quality": "major",
-        "duration": 3312
-      },
-      {
-        "start": 151224,
-        "root": 8,
-        "quality": "major",
-        "duration": 1416
-      },
-      {
-        "start": 152640,
-        "root": 5,
-        "quality": "major",
-        "duration": 432
-      },
-      {
-        "start": 153072,
-        "root": 8,
-        "quality": "major",
-        "duration": 1488
-      },
-      {
-        "start": 154560,
-        "root": 0,
-        "quality": "major",
-        "duration": 3048
-      },
-      {
-        "start": 157608,
-        "root": 7,
-        "quality": "major",
-        "duration": 1488
-      },
-      {
-        "start": 159096,
-        "root": 3,
-        "quality": "major",
-        "duration": 528
-      },
-      {
-        "start": 159624,
-        "root": 9,
-        "quality": "major",
-        "duration": 3504
-      },
-      {
-        "start": 163128,
-        "root": 5,
-        "quality": "major",
-        "duration": 8184
-      },
-      {
-        "start": 171312,
-        "root": 8,
-        "quality": "major",
-        "duration": 504
-      },
-      {
-        "start": 171816,
-        "root": 0,
-        "quality": "major",
-        "duration": 504
-      },
-      {
-        "start": 172320,
-        "root": 3,
-        "quality": "major",
-        "duration": 504
-      },
-      {
-        "start": 172824,
-        "root": 7,
-        "quality": "major",
-        "duration": 480
-      },
-      {
-        "start": 173304,
-        "root": 8,
-        "quality": "major",
-        "duration": 504
-      },
-      {
-        "start": 173808,
-        "root": 5,
-        "quality": "major",
-        "duration": 6192
-      },
-      {
-        "start": 180000,
-        "root": 10,
-        "quality": "major",
-        "duration": 5688
-      },
-      {
-        "start": 185688,
-        "root": 3,
-        "quality": "major",
-        "duration": 4368
-      },
-      {
-        "start": 190056,
-        "root": 8,
-        "quality": "major",
-        "duration": 2424
-      },
-      {
-        "start": 192480,
-        "root": 0,
-        "quality": "major",
-        "duration": 528
-      },
-      {
-        "start": 193008,
-        "root": 3,
-        "quality": "major",
-        "duration": 528
-      },
-      {
-        "start": 193536,
-        "root": 5,
-        "quality": "major",
-        "duration": 1968
-      },
-      {
-        "start": 195504,
-        "root": 8,
-        "quality": "major",
-        "duration": 3456
-      },
-      {
-        "start": 198960,
-        "root": 3,
-        "quality": "major",
-        "duration": 2544
-      },
-      {
-        "start": 201504,
-        "root": 8,
-        "quality": "major",
-        "duration": 3504
-      },
-      {
-        "start": 205008,
-        "root": 3,
-        "quality": "major",
-        "duration": 648
-      },
-      {
-        "start": 205656,
-        "root": 10,
-        "quality": "major",
-        "duration": 2520
-      },
-      {
-        "start": 208176,
-        "root": 7,
-        "quality": "major",
-        "duration": 3072
-      },
-      {
-        "start": 211248,
-        "root": 0,
-        "quality": "major",
-        "duration": 600
-      },
-      {
-        "start": 211848,
-        "root": 8,
-        "quality": "major",
-        "duration": 576
-      },
-      {
-        "start": 212424,
-        "root": 0,
-        "quality": "major",
-        "duration": 2496
-      },
-      {
-        "start": 214920,
-        "root": 7,
-        "quality": "major",
-        "duration": 552
-      },
-      {
-        "start": 215472,
-        "root": 0,
-        "quality": "major",
-        "duration": 1512
-      },
-      {
-        "start": 216984,
-        "root": 9,
-        "quality": "major",
-        "duration": 2976
-      },
-      {
-        "start": 219960,
-        "root": 8,
-        "quality": "major",
-        "duration": 3312
-      },
-      {
-        "start": 223272,
-        "root": 0,
-        "quality": "major",
-        "duration": 552
-      },
-      {
-        "start": 223824,
-        "root": 7,
-        "quality": "major",
-        "duration": 3336
-      },
-      {
-        "start": 227160,
-        "root": 10,
-        "quality": "major",
-        "duration": 2352
-      },
-      {
-        "start": 229512,
-        "root": 11,
-        "quality": "major",
-        "duration": 456
-      },
-      {
-        "start": 229968,
-        "root": 7,
-        "quality": "major",
-        "duration": 2328
-      },
-      {
-        "start": 232296,
-        "root": 0,
-        "quality": "major",
-        "duration": 3000
-      },
-      {
-        "start": 235296,
-        "root": 3,
-        "quality": "major",
-        "duration": 2328
-      },
-      {
-        "start": 237624,
-        "root": 5,
-        "quality": "major",
-        "duration": 4296
-      },
-      {
-        "start": 241920,
-        "root": 8,
-        "quality": "major",
-        "duration": 2352
-      },
-      {
-        "start": 244272,
-        "root": 10,
-        "quality": "major",
-        "duration": 6672
-      },
-      {
-        "start": 250944,
-        "root": 3,
-        "quality": "major",
-        "duration": 3432
-      },
-      {
-        "start": 254376,
-        "root": 8,
-        "quality": "major",
-        "duration": 3504
-      },
-      {
-        "start": 257880,
-        "root": 10,
-        "quality": "major",
-        "duration": 3264
-      },
-      {
-        "start": 261144,
-        "root": 7,
-        "quality": "major",
-        "duration": 3360
-      },
-      {
-        "start": 264504,
-        "root": 9,
-        "quality": "major",
-        "duration": 768
-      },
-      {
-        "start": 265272,
-        "root": 0,
-        "quality": "major",
-        "duration": 3648
-      },
-      {
-        "start": 268920,
-        "root": 7,
-        "quality": "major",
+        "slashBass": 11,
         "duration": 1728
       },
       {
-        "start": 270648,
+        "start": 26458,
         "root": 0,
         "quality": "major",
-        "duration": 744
+        "duration": 2008
       },
       {
-        "start": 271392,
-        "root": 9,
+        "start": 28466,
+        "root": 3,
         "quality": "major",
-        "duration": 4344
+        "duration": 1236
       },
       {
-        "start": 275736,
+        "start": 29702,
+        "root": 5,
+        "quality": "major",
+        "duration": 1459
+      },
+      {
+        "start": 31161,
         "root": 8,
         "quality": "major",
-        "duration": 2808
+        "duration": 1682
       },
       {
-        "start": 278544,
+        "start": 32843,
         "root": 10,
         "quality": "major",
-        "duration": 912
+        "duration": 4140
       },
       {
-        "start": 279456,
+        "start": 36983,
+        "root": 3,
+        "quality": "major",
+        "duration": 1985
+      },
+      {
+        "start": 38968,
+        "root": 8,
+        "quality": "major",
+        "duration": 1705
+      },
+      {
+        "start": 40673,
+        "root": 10,
+        "quality": "major",
+        "slashBass": 2,
+        "duration": 2031
+      },
+      {
+        "start": 42704,
         "root": 7,
         "quality": "major",
-        "duration": 3816
+        "duration": 1179
       },
       {
-        "start": 283272,
-        "root": 10,
-        "quality": "major",
-        "duration": 2856
-      },
-      {
-        "start": 286128,
-        "root": 11,
-        "quality": "major",
-        "duration": 984
-      },
-      {
-        "start": 287112,
-        "root": 7,
-        "quality": "major",
-        "duration": 1992
-      },
-      {
-        "start": 289104,
+        "start": 43883,
         "root": 0,
         "quality": "major",
-        "duration": 5784
+        "duration": 3291
       },
       {
-        "start": 294888,
-        "root": 3,
-        "quality": "major",
-        "duration": 1152
-      },
-      {
-        "start": 296040,
-        "root": 5,
-        "quality": "major",
-        "duration": 3576
-      },
-      {
-        "start": 299616,
-        "root": 8,
-        "quality": "major",
-        "duration": 3096
-      },
-      {
-        "start": 302712,
-        "root": 3,
-        "quality": "major",
-        "duration": 2688
-      },
-      {
-        "start": 305400,
-        "root": 5,
-        "quality": "major",
-        "duration": 168
-      },
-      {
-        "start": 305568,
-        "root": 3,
-        "quality": "major",
-        "duration": 3096
-      },
-      {
-        "start": 308664,
-        "root": 10,
-        "quality": "major",
-        "duration": 2736
-      },
-      {
-        "start": 311400,
-        "root": 2,
-        "quality": "major",
-        "duration": 216
-      },
-      {
-        "start": 311616,
-        "root": 0,
-        "quality": "major",
-        "duration": 2856
-      },
-      {
-        "start": 314472,
-        "root": 5,
-        "quality": "major",
-        "duration": 3240
-      },
-      {
-        "start": 317712,
-        "root": 8,
-        "quality": "major",
-        "duration": 3696
-      },
-      {
-        "start": 321408,
-        "root": 2,
-        "quality": "major",
-        "duration": 384
-      },
-      {
-        "start": 321792,
-        "root": 10,
-        "quality": "major",
-        "duration": 2304
-      },
-      {
-        "start": 324096,
-        "root": 2,
-        "quality": "major",
-        "duration": 384
-      },
-      {
-        "start": 324480,
-        "root": 0,
-        "quality": "major",
-        "duration": 2328
-      },
-      {
-        "start": 326808,
-        "root": 5,
-        "quality": "major",
-        "duration": 2352
-      },
-      {
-        "start": 329160,
-        "root": 2,
-        "quality": "major",
-        "duration": 336
-      },
-      {
-        "start": 329496,
-        "root": 8,
-        "quality": "major",
-        "duration": 336
-      },
-      {
-        "start": 329832,
-        "root": 5,
-        "quality": "major",
-        "duration": 1392
-      },
-      {
-        "start": 331224,
-        "root": 8,
-        "quality": "major",
-        "duration": 2928
-      },
-      {
-        "start": 334152,
-        "root": 0,
-        "quality": "major",
-        "duration": 3096
-      },
-      {
-        "start": 337248,
-        "root": 7,
-        "quality": "major",
-        "duration": 240
-      },
-      {
-        "start": 337488,
-        "root": 10,
-        "quality": "major",
-        "duration": 888
-      },
-      {
-        "start": 338376,
+        "start": 47174,
         "root": 9,
         "quality": "major",
-        "duration": 4008
+        "duration": 1928
       },
       {
-        "start": 342384,
-        "root": 5,
-        "quality": "major",
-        "duration": 6648
-      },
-      {
-        "start": 349032,
+        "start": 49102,
         "root": 8,
         "quality": "major",
-        "duration": 912
+        "duration": 1236
       },
       {
-        "start": 349944,
+        "start": 50338,
         "root": 3,
         "quality": "major",
-        "duration": 2904
+        "slashBass": 10,
+        "duration": 1344
       },
       {
-        "start": 352848,
-        "root": 8,
-        "quality": "major",
-        "duration": 120
-      },
-      {
-        "start": 352968,
-        "root": 5,
-        "quality": "major",
-        "duration": 6072
-      },
-      {
-        "start": 359040,
+        "start": 51682,
         "root": 10,
         "quality": "major",
-        "duration": 6696
+        "duration": 1624
       },
       {
-        "start": 365736,
+        "start": 53306,
+        "root": 7,
+        "quality": "major",
+        "slashBass": 11,
+        "duration": 1870
+      },
+      {
+        "start": 55176,
         "root": 0,
         "quality": "major",
-        "duration": 6768
+        "duration": 2173
       },
       {
-        "start": 372504,
+        "start": 57349,
+        "root": 3,
+        "quality": "major",
+        "duration": 1379
+      },
+      {
+        "start": 58728,
+        "root": 5,
+        "quality": "major",
+        "duration": 1647
+      },
+      {
+        "start": 60375,
+        "root": 8,
+        "quality": "major",
+        "duration": 1893
+      },
+      {
+        "start": 62268,
+        "root": 3,
+        "quality": "major",
+        "duration": 4339
+      },
+      {
+        "start": 66607,
+        "root": 10,
+        "quality": "major",
+        "slashBass": 2,
+        "duration": 1705
+      },
+      {
+        "start": 68312,
+        "root": 0,
+        "quality": "major",
+        "duration": 1893
+      },
+      {
+        "start": 70205,
+        "root": 5,
+        "quality": "major",
+        "duration": 2093
+      },
+      {
+        "start": 72298,
+        "root": 8,
+        "quality": "major",
+        "duration": 1425
+      },
+      {
+        "start": 73723,
+        "root": 10,
+        "quality": "major",
+        "slashBass": 2,
+        "duration": 2081
+      },
+      {
+        "start": 75804,
+        "root": 0,
+        "quality": "major",
+        "duration": 1893
+      },
+      {
+        "start": 77697,
+        "root": 5,
+        "quality": "major",
+        "duration": 2093
+      },
+      {
+        "start": 79790,
+        "root": 8,
+        "quality": "major",
+        "duration": 1379
+      },
+      {
+        "start": 81169,
+        "root": 0,
+        "quality": "major",
+        "duration": 3713
+      },
+      {
+        "start": 84882,
         "root": 9,
         "quality": "major",
-        "duration": 2496
+        "duration": 1213
       },
       {
-        "start": 375000,
+        "start": 86095,
         "root": 8,
         "quality": "major",
-        "duration": 1296
+        "duration": 3890
       },
       {
-        "start": 376296,
-        "root": 5,
-        "quality": "major",
-        "duration": 5352
-      },
-      {
-        "start": 381648,
-        "root": 8,
-        "quality": "major",
-        "duration": 624
-      },
-      {
-        "start": 382272,
+        "start": 89985,
         "root": 3,
         "quality": "major",
-        "duration": 2688
+        "slashBass": 7,
+        "duration": 1094
       },
       {
-        "start": 384960,
+        "start": 91079,
         "root": 8,
         "quality": "major",
-        "duration": 768
+        "duration": 3644
       },
       {
-        "start": 385728,
-        "root": 5,
+        "start": 94723,
+        "root": 10,
         "quality": "major",
-        "duration": 7752
+        "duration": 4239
       },
       {
-        "start": 393480,
+        "start": 98962,
         "root": 3,
         "quality": "major",
-        "duration": 3144
+        "duration": 1536
       },
       {
-        "start": 396624,
+        "start": 100498,
         "root": 8,
         "quality": "major",
-        "duration": 3048
+        "slashBass": 3,
+        "duration": 2185
       },
       {
-        "start": 399672,
+        "start": 102683,
         "root": 3,
         "quality": "major",
-        "duration": 1992
+        "duration": 952
       },
       {
-        "start": 401664,
-        "root": 5,
-        "quality": "major",
-        "duration": 960
-      },
-      {
-        "start": 402624,
+        "start": 103635,
         "root": 8,
         "quality": "major",
-        "duration": 936
+        "slashBass": 3,
+        "duration": 2135
       },
       {
-        "start": 403560,
-        "root": 5,
+        "start": 105770,
+        "root": 3,
+        "quality": "major",
+        "duration": 1640
+      },
+      {
+        "start": 107410,
+        "root": 8,
+        "quality": "major",
+        "duration": 1667
+      },
+      {
+        "start": 109077,
+        "root": 10,
+        "quality": "major",
+        "slashBass": 2,
+        "duration": 2028
+      },
+      {
+        "start": 111105,
+        "root": 7,
+        "quality": "major",
+        "duration": 1476
+      },
+      {
+        "start": 112581,
+        "root": 0,
+        "quality": "major",
+        "duration": 3594
+      },
+      {
+        "start": 116175,
+        "root": 9,
         "quality": "major",
         "duration": 1968
       },
       {
-        "start": 405528,
+        "start": 118143,
+        "root": 8,
+        "quality": "major",
+        "duration": 1974
+      },
+      {
+        "start": 120117,
+        "root": 3,
+        "quality": "major",
+        "slashBass": 10,
+        "duration": 1398
+      },
+      {
+        "start": 121515,
+        "root": 10,
+        "quality": "major",
+        "duration": 1482
+      },
+      {
+        "start": 122997,
+        "root": 7,
+        "quality": "major",
+        "slashBass": 11,
+        "duration": 1624
+      },
+      {
+        "start": 124621,
         "root": 0,
         "quality": "major",
-        "duration": 384
+        "duration": 1870
+      },
+      {
+        "start": 126491,
+        "root": 3,
+        "quality": "major",
+        "duration": 2058
+      },
+      {
+        "start": 128549,
+        "root": 5,
+        "quality": "major",
+        "duration": 1321
+      },
+      {
+        "start": 129870,
+        "root": 8,
+        "quality": "major",
+        "duration": 1624
+      },
+      {
+        "start": 131494,
+        "root": 10,
+        "quality": "major",
+        "duration": 3932
+      },
+      {
+        "start": 135426,
+        "root": 3,
+        "quality": "major",
+        "duration": 1321
+      },
+      {
+        "start": 136747,
+        "root": 8,
+        "quality": "major",
+        "duration": 1601
+      },
+      {
+        "start": 138348,
+        "root": 10,
+        "quality": "major",
+        "slashBass": 2,
+        "duration": 1847
+      },
+      {
+        "start": 140195,
+        "root": 7,
+        "quality": "major",
+        "duration": 2058
+      },
+      {
+        "start": 142253,
+        "root": 0,
+        "quality": "major",
+        "duration": 3049
+      },
+      {
+        "start": 145302,
+        "root": 9,
+        "quality": "major",
+        "duration": 1812
+      },
+      {
+        "start": 147114,
+        "root": 8,
+        "quality": "major",
+        "duration": 2093
+      },
+      {
+        "start": 149207,
+        "root": 3,
+        "quality": "major",
+        "slashBass": 10,
+        "duration": 1321
+      },
+      {
+        "start": 150528,
+        "root": 10,
+        "quality": "major",
+        "duration": 1647
+      },
+      {
+        "start": 152175,
+        "root": 7,
+        "quality": "major",
+        "slashBass": 11,
+        "duration": 1812
+      },
+      {
+        "start": 153987,
+        "root": 0,
+        "quality": "major",
+        "duration": 2139
+      },
+      {
+        "start": 156126,
+        "root": 3,
+        "quality": "major",
+        "duration": 1356
+      },
+      {
+        "start": 157482,
+        "root": 5,
+        "quality": "major",
+        "duration": 1601
+      },
+      {
+        "start": 159083,
+        "root": 8,
+        "quality": "major",
+        "duration": 1847
+      },
+      {
+        "start": 160930,
+        "root": 3,
+        "quality": "major",
+        "duration": 4236
+      },
+      {
+        "start": 165166,
+        "root": 10,
+        "quality": "major",
+        "slashBass": 2,
+        "duration": 1624
+      },
+      {
+        "start": 166790,
+        "root": 0,
+        "quality": "major",
+        "duration": 1847
+      },
+      {
+        "start": 168637,
+        "root": 5,
+        "quality": "major",
+        "duration": 2173
+      },
+      {
+        "start": 170810,
+        "root": 8,
+        "quality": "major",
+        "duration": 1356
+      },
+      {
+        "start": 172166,
+        "root": 10,
+        "quality": "major",
+        "slashBass": 2,
+        "duration": 1601
+      },
+      {
+        "start": 173767,
+        "root": 0,
+        "quality": "major",
+        "duration": 1847
+      },
+      {
+        "start": 175614,
+        "root": 5,
+        "quality": "major",
+        "duration": 1989
+      },
+      {
+        "start": 177603,
+        "root": 8,
+        "quality": "major",
+        "duration": 1298
+      },
+      {
+        "start": 178901,
+        "root": 0,
+        "quality": "major",
+        "duration": 3471
+      },
+      {
+        "start": 182372,
+        "root": 9,
+        "quality": "major",
+        "duration": 2070
+      },
+      {
+        "start": 184442,
+        "root": 8,
+        "quality": "major",
+        "duration": 4345
+      },
+      {
+        "start": 188787,
+        "root": 3,
+        "quality": "major",
+        "slashBass": 7,
+        "duration": 1951
+      },
+      {
+        "start": 190738,
+        "root": 8,
+        "quality": "major",
+        "duration": 3483
+      },
+      {
+        "start": 194221,
+        "root": 10,
+        "quality": "major",
+        "duration": 3928
+      },
+      {
+        "start": 198149,
+        "root": 0,
+        "quality": "major",
+        "duration": 2903
+      },
+      {
+        "start": 201052,
+        "root": 9,
+        "quality": "major",
+        "duration": 1763
+      },
+      {
+        "start": 202815,
+        "root": 8,
+        "quality": "major",
+        "duration": 4301
+      },
+      {
+        "start": 207116,
+        "root": 3,
+        "quality": "major",
+        "slashBass": 7,
+        "duration": 1667
+      },
+      {
+        "start": 208783,
+        "root": 8,
+        "quality": "major",
+        "duration": 4251
+      },
+      {
+        "start": 213034,
+        "root": 3,
+        "quality": "major",
+        "duration": 2043
+      },
+      {
+        "start": 215077,
+        "root": 8,
+        "quality": "major",
+        "slashBass": 3,
+        "duration": 5050
+      },
+      {
+        "start": 220127,
+        "root": 3,
+        "quality": "major",
+        "duration": 240
       }
     ]
   }

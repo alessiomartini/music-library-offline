@@ -3,3637 +3,3249 @@
   "aligned": [
     {
       "event_index": 0,
-      "start": 2162,
-      "duration": 513,
+      "start": 2400,
+      "duration": 480,
       "pitch": 49,
       "lyric": {
         "verse": "verse1",
         "text": "E",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "syllabic": "single"
       }
     },
     {
       "event_index": 1,
-      "start": 2675,
-      "duration": 423,
+      "start": 2880,
+      "duration": 240,
       "pitch": 49,
       "lyric": {
         "verse": "verse1",
         "text": "cer",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 2,
-      "start": 3121,
-      "duration": 312,
+      "start": 3360,
+      "duration": 240,
       "pitch": 50,
       "lyric": {
         "verse": "verse1",
         "text": "ca",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "syllabic": "middle"
       }
     },
     {
       "event_index": 3,
-      "start": 3477,
-      "duration": 268,
+      "start": 3600,
+      "duration": 240,
       "pitch": 53,
       "lyric": {
         "verse": "verse1",
         "text": "e",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "syllabic": "end"
       }
     },
     {
       "event_index": 4,
-      "start": 3903,
-      "duration": 602,
+      "start": 3840,
+      "duration": 480,
       "pitch": 54,
       "lyric": {
         "verse": "verse1",
         "text": "me",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "syllabic": "single"
       }
     },
     {
       "event_index": 5,
-      "start": 4505,
-      "duration": 357,
+      "start": 4320,
+      "duration": 480,
       "pitch": 54,
       "lyric": {
         "verse": "verse1",
         "text": "ca",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 6,
-      "start": 4862,
-      "duration": 357,
+      "start": 4800,
+      "duration": 480,
       "pitch": 54,
       "lyric": {
         "verse": "verse1",
         "text": "pi",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "syllabic": "end"
       }
     },
     {
       "event_index": 7,
-      "start": 10549,
-      "duration": 445,
+      "start": 10560,
+      "duration": 480,
       "pitch": 54,
       "lyric": {
         "verse": "verse1",
         "text": "chi",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "syllabic": "single"
       }
     },
     {
       "event_index": 8,
-      "start": 11084,
-      "duration": 359,
+      "start": 11040,
+      "duration": 480,
       "pitch": 58,
       "lyric": {
         "verse": "verse1",
         "text": "sa",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "syllabic": "single"
       }
     },
     {
       "event_index": 9,
-      "start": 11443,
-      "duration": 334,
+      "start": 11520,
+      "duration": 480,
       "pitch": 57,
       "lyric": {
         "verse": "verse1",
         "text": "pe",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "syllabic": "single"
       }
     },
     {
       "event_index": 10,
-      "start": 11777,
-      "duration": 312,
+      "start": 12000,
+      "duration": 240,
       "pitch": 56,
       "lyric": {
         "verse": "verse1",
         "text": "che",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "syllabic": "single"
       }
     },
     {
       "event_index": 11,
-      "start": 12713,
-      "duration": 379,
+      "start": 12480,
+      "duration": 480,
       "pitch": 54,
       "lyric": {
         "verse": "verse1",
         "text": "co",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "syllabic": "single"
       }
     },
     {
       "event_index": 12,
-      "start": 13092,
-      "duration": 379,
+      "start": 12960,
+      "duration": 480,
       "pitch": 52,
       "lyric": {
         "verse": "verse1",
         "text": "sa",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "syllabic": "single"
       }
     },
     {
       "event_index": 13,
-      "start": 13516,
-      "duration": 267,
+      "start": 13440,
+      "duration": 480,
       "pitch": 51,
       "lyric": {
         "verse": "verse1",
         "text": "\u00e8",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "syllabic": "single"
       }
     },
     {
       "event_index": 14,
-      "start": 13850,
-      "duration": 268,
+      "start": 13920,
+      "duration": 240,
       "pitch": 53,
       "lyric": {
         "verse": "verse1",
         "text": "l'a",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "syllabic": "single"
       }
     },
     {
       "event_index": 15,
-      "start": 14185,
-      "duration": 312,
+      "start": 14400,
+      "duration": 240,
       "pitch": 56,
       "lyric": {
         "verse": "verse1",
         "text": "mo",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 16,
-      "start": 14675,
-      "duration": 379,
+      "start": 14880,
+      "duration": 240,
       "pitch": 53,
       "lyric": {
         "verse": "verse1",
         "text": "re",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "syllabic": "end"
       }
     },
     {
       "event_index": 17,
-      "start": 16929,
-      "duration": 290,
+      "start": 16800,
+      "duration": 480,
       "pitch": 49,
       "lyric": {
         "verse": "verse1",
         "text": "che",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "syllabic": "single"
       }
     },
     {
       "event_index": 18,
-      "start": 17241,
-      "duration": 290,
+      "start": 17280,
+      "duration": 480,
       "pitch": 50,
       "lyric": {
         "verse": "verse1",
         "text": "non",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "syllabic": "single"
       }
     },
     {
       "event_index": 19,
-      "start": 18489,
-      "duration": 424,
+      "start": 18720,
+      "duration": 240,
       "pitch": 58,
       "lyric": {
         "verse": "verse1",
         "text": "si",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "syllabic": "single"
       }
     },
     {
       "event_index": 20,
-      "start": 19069,
-      "duration": 2165,
+      "start": 19200,
+      "duration": 1920,
       "pitch": 62,
       "lyric": {
         "verse": "verse1",
-        "text": "dimen",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "di",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 21,
-      "start": 21234,
-      "duration": 869,
+      "start": 21120,
+      "duration": 960,
       "pitch": 61,
       "lyric": {
         "verse": "verse1",
-        "text": "ti",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "men",
+        "syllabic": "middle"
       }
     },
     {
       "event_index": 22,
-      "start": 22103,
-      "duration": 1585,
+      "start": 22080,
+      "duration": 1440,
       "pitch": 61,
       "lyric": {
         "verse": "verse1",
-        "text": "ca",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "ti",
+        "syllabic": "middle"
       }
     },
     {
       "event_index": 23,
-      "start": 23688,
-      "duration": 424,
+      "start": 23520,
+      "duration": 480,
       "pitch": 61,
       "lyric": {
         "verse": "verse1",
-        "text": "ma",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "ca",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 24,
-      "start": 25494,
-      "duration": 267,
+      "start": 25440,
+      "duration": 480,
       "pitch": 59,
       "lyric": {
         "verse": "verse1",
-        "text": "ti",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "ma",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 25,
-      "start": 25828,
-      "duration": 513,
+      "start": 25920,
+      "duration": 480,
       "pitch": 57,
       "lyric": {
         "verse": "verse1",
-        "text": "pren",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "ti",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 26,
-      "start": 26341,
-      "duration": 289,
+      "start": 26400,
+      "duration": 240,
       "pitch": 57,
       "lyric": {
         "verse": "verse1",
-        "text": "de",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "pren",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 27,
-      "start": 27079,
-      "duration": 290,
+      "start": 26880,
+      "duration": 480,
       "pitch": 55,
       "lyric": {
         "verse": "verse1",
-        "text": "e",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "de",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 28,
-      "start": 27369,
-      "duration": 356,
+      "start": 27360,
+      "duration": 480,
       "pitch": 55,
       "lyric": {
         "verse": "verse1",
-        "text": "ti",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "e",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 29,
-      "start": 27747,
-      "duration": 268,
+      "start": 27840,
+      "duration": 240,
       "pitch": 53,
       "lyric": {
         "verse": "verse1",
-        "text": "por",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "ti",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 30,
-      "start": 28037,
-      "duration": 446,
+      "start": 28080,
+      "duration": 240,
       "pitch": 52,
       "lyric": {
         "verse": "verse1",
-        "text": "ta",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "por",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 31,
-      "start": 28483,
-      "duration": 268,
+      "start": 28320,
+      "duration": 480,
       "pitch": 55,
       "lyric": {
         "verse": "verse1",
-        "text": "via",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "ta",
+        "syllabic": "middle"
       }
     },
     {
       "event_index": 32,
-      "start": 28773,
-      "duration": 1092,
+      "start": 28800,
+      "duration": 960,
       "pitch": 55,
       "lyric": {
-        "verse": "chorus1",
-        "text": "E",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "verse": "verse1",
+        "text": "via",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 33,
-      "start": 29999,
-      "duration": 267,
+      "start": 29760,
+      "duration": 480,
       "pitch": 54,
       "lyric": {
         "verse": "chorus1",
-        "text": "cer",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "E",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 34,
-      "start": 30378,
-      "duration": 247,
+      "start": 30240,
+      "duration": 480,
       "pitch": 52,
       "lyric": {
         "verse": "chorus1",
-        "text": "ca",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "cer",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 35,
-      "start": 30648,
-      "duration": 267,
+      "start": 30720,
+      "duration": 240,
       "pitch": 54,
       "lyric": {
         "verse": "chorus1",
-        "text": "e",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "ca",
+        "syllabic": "middle"
       }
     },
     {
       "event_index": 36,
-      "start": 31250,
-      "duration": 356,
-      "pitch": 57,
-      "lyric": {
-        "verse": "chorus1",
-        "text": "me",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
-      }
-    },
-    {
-      "event_index": 37,
-      "start": 31606,
-      "duration": 379,
-      "pitch": 57,
-      "lyric": {
-        "verse": "chorus1",
-        "text": "ca",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
-      }
-    },
-    {
-      "event_index": 38,
-      "start": 33434,
-      "duration": 401,
-      "pitch": 59,
-      "lyric": {
-        "verse": "chorus1",
-        "text": "pi",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
-      }
-    },
-    {
-      "event_index": 39,
-      "start": 33925,
-      "duration": 289,
-      "pitch": 57,
-      "lyric": {
-        "verse": "chorus1",
-        "text": "se",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
-      }
-    },
-    {
-      "event_index": 40,
-      "start": 34507,
-      "duration": 289,
-      "pitch": 57,
-      "lyric": {
-        "verse": "chorus1",
-        "text": "po",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
-      }
-    },
-    {
-      "event_index": 41,
-      "start": 35042,
-      "duration": 624,
-      "pitch": 64,
-      "lyric": {
-        "verse": "chorus1",
-        "text": "sso",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
-      }
-    },
-    {
-      "event_index": 42,
-      "start": 35666,
-      "duration": 356,
-      "pitch": 64,
-      "lyric": {
-        "verse": "chorus1",
-        "text": "sta",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
-      }
-    },
-    {
-      "event_index": 43,
-      "start": 36022,
-      "duration": 446,
-      "pitch": 64,
-      "lyric": {
-        "verse": "chorus1",
-        "text": "vo",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
-      }
-    },
-    {
-      "event_index": 44,
-      "start": 36892,
-      "duration": 423,
-      "pitch": 61,
-      "lyric": {
-        "verse": "chorus1",
-        "text": "tan",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
-      }
-    },
-    {
-      "event_index": 45,
-      "start": 37315,
-      "duration": 312,
-      "pitch": 61,
-      "lyric": {
-        "verse": "chorus1",
-        "text": "to",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
-      }
-    },
-    {
-      "event_index": 46,
-      "start": 37627,
-      "duration": 379,
-      "pitch": 61,
-      "lyric": {
-        "verse": "chorus1",
-        "text": "ma",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
-      }
-    },
-    {
-      "event_index": 47,
-      "start": 38006,
-      "duration": 538,
-      "pitch": 61,
-      "lyric": {
-        "verse": "chorus1",
-        "text": "le",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
-      }
-    },
-    {
-      "event_index": 48,
-      "start": 39012,
-      "duration": 312,
-      "pitch": 59,
-      "lyric": {
-        "verse": "chorus1",
-        "text": "per",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
-      }
-    },
-    {
-      "event_index": 49,
-      "start": 39324,
-      "duration": 357,
-      "pitch": 58,
-      "lyric": {
-        "verse": "chorus1",
-        "text": "un",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
-      }
-    },
-    {
-      "event_index": 50,
-      "start": 40639,
-      "duration": 357,
-      "pitch": 62,
-      "lyric": {
-        "verse": "chorus1",
-        "text": "ba",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
-      }
-    },
-    {
-      "event_index": 51,
-      "start": 41419,
-      "duration": 335,
-      "pitch": 61,
-      "lyric": {
-        "verse": "chorus1",
-        "text": "cio",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
-      }
-    },
-    {
-      "event_index": 52,
-      "start": 41754,
-      "duration": 359,
-      "pitch": 61,
-      "lyric": {
-        "verse": "chorus1",
-        "text": "che",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
-      }
-    },
-    {
-      "event_index": 53,
-      "start": 42113,
-      "duration": 490,
-      "pitch": 61,
-      "lyric": {
-        "verse": "chorus1",
-        "text": "non",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
-      }
-    },
-    {
-      "event_index": 54,
-      "start": 43183,
-      "duration": 1025,
-      "pitch": 59,
-      "lyric": {
-        "verse": "chorus1",
-        "text": "ho",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
-      }
-    },
-    {
-      "event_index": 55,
-      "start": 44186,
-      "duration": 669,
-      "pitch": 61,
-      "lyric": {
-        "verse": "chorus1",
-        "text": "dato",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
-      }
-    },
-    {
-      "event_index": 56,
-      "start": 45256,
-      "duration": 312,
-      "pitch": 57,
-      "lyric": {
-        "verse": "chorus1",
-        "text": "ma",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
-      }
-    },
-    {
-      "event_index": 57,
-      "start": 45568,
-      "duration": 314,
-      "pitch": 57,
-      "lyric": {
-        "verse": "chorus1",
-        "text": "il",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
-      }
-    },
-    {
-      "event_index": 58,
-      "start": 45882,
-      "duration": 335,
-      "pitch": 57,
-      "lyric": {
-        "verse": "chorus1",
-        "text": "tem",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
-      }
-    },
-    {
-      "event_index": 59,
-      "start": 46217,
-      "duration": 267,
-      "pitch": 57,
-      "lyric": {
-        "verse": "chorus1",
-        "text": "po",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
-      }
-    },
-    {
-      "event_index": 60,
-      "start": 46484,
-      "duration": 379,
-      "pitch": 57,
-      "lyric": {
-        "verse": "chorus1",
-        "text": "pas",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
-      }
-    },
-    {
-      "event_index": 61,
-      "start": 46863,
-      "duration": 446,
-      "pitch": 57,
-      "lyric": {
-        "verse": "chorus1",
-        "text": "sa",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
-      }
-    },
-    {
-      "event_index": 62,
-      "start": 47309,
-      "duration": 491,
+      "start": 31200,
+      "duration": 480,
       "pitch": 57,
       "lyric": {
         "verse": "chorus1",
         "text": "e",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "syllabic": "end"
+      }
+    },
+    {
+      "event_index": 37,
+      "start": 31680,
+      "duration": 480,
+      "pitch": 57,
+      "lyric": {
+        "verse": "chorus1",
+        "text": "me",
+        "syllabic": "single"
+      }
+    },
+    {
+      "event_index": 38,
+      "start": 33600,
+      "duration": 240,
+      "pitch": 59,
+      "lyric": {
+        "verse": "chorus1",
+        "text": "ca",
+        "syllabic": "begin"
+      }
+    },
+    {
+      "event_index": 39,
+      "start": 34080,
+      "duration": 240,
+      "pitch": 57,
+      "lyric": {
+        "verse": "chorus1",
+        "text": "pi",
+        "syllabic": "end"
+      }
+    },
+    {
+      "event_index": 40,
+      "start": 34560,
+      "duration": 240,
+      "pitch": 57,
+      "lyric": {
+        "verse": "chorus1",
+        "text": "se",
+        "syllabic": "single"
+      }
+    },
+    {
+      "event_index": 41,
+      "start": 35040,
+      "duration": 480,
+      "pitch": 64,
+      "lyric": {
+        "verse": "chorus1",
+        "text": "po",
+        "syllabic": "begin"
+      }
+    },
+    {
+      "event_index": 42,
+      "start": 35520,
+      "duration": 480,
+      "pitch": 64,
+      "lyric": {
+        "verse": "chorus1",
+        "text": "sso",
+        "syllabic": "end"
+      }
+    },
+    {
+      "event_index": 43,
+      "start": 36000,
+      "duration": 480,
+      "pitch": 64,
+      "lyric": {
+        "verse": "chorus1",
+        "text": "sta",
+        "syllabic": "single"
+      }
+    },
+    {
+      "event_index": 44,
+      "start": 36960,
+      "duration": 480,
+      "pitch": 61,
+      "lyric": {
+        "verse": "chorus1",
+        "text": "vo",
+        "syllabic": "single"
+      }
+    },
+    {
+      "event_index": 45,
+      "start": 37440,
+      "duration": 240,
+      "pitch": 61,
+      "lyric": {
+        "verse": "chorus1",
+        "text": "tan",
+        "syllabic": "begin"
+      }
+    },
+    {
+      "event_index": 46,
+      "start": 37680,
+      "duration": 240,
+      "pitch": 61,
+      "lyric": {
+        "verse": "chorus1",
+        "text": "to",
+        "syllabic": "end"
+      }
+    },
+    {
+      "event_index": 47,
+      "start": 37920,
+      "duration": 480,
+      "pitch": 61,
+      "lyric": {
+        "verse": "chorus1",
+        "text": "ma",
+        "syllabic": "single"
+      }
+    },
+    {
+      "event_index": 48,
+      "start": 38880,
+      "duration": 480,
+      "pitch": 59,
+      "lyric": {
+        "verse": "chorus1",
+        "text": "le",
+        "syllabic": "single"
+      }
+    },
+    {
+      "event_index": 49,
+      "start": 39360,
+      "duration": 480,
+      "pitch": 58,
+      "lyric": {
+        "verse": "chorus1",
+        "text": "per",
+        "syllabic": "single"
+      }
+    },
+    {
+      "event_index": 50,
+      "start": 40800,
+      "duration": 240,
+      "pitch": 62,
+      "lyric": {
+        "verse": "chorus1",
+        "text": "un",
+        "syllabic": "single"
+      }
+    },
+    {
+      "event_index": 51,
+      "start": 41280,
+      "duration": 480,
+      "pitch": 61,
+      "lyric": {
+        "verse": "chorus1",
+        "text": "ba",
+        "syllabic": "begin"
+      }
+    },
+    {
+      "event_index": 52,
+      "start": 41760,
+      "duration": 480,
+      "pitch": 61,
+      "lyric": {
+        "verse": "chorus1",
+        "text": "cio",
+        "syllabic": "end"
+      }
+    },
+    {
+      "event_index": 53,
+      "start": 42240,
+      "duration": 480,
+      "pitch": 61,
+      "lyric": {
+        "verse": "chorus1",
+        "text": "che",
+        "syllabic": "single"
+      }
+    },
+    {
+      "event_index": 54,
+      "start": 43200,
+      "duration": 960,
+      "pitch": 59,
+      "lyric": {
+        "verse": "chorus1",
+        "text": "non",
+        "syllabic": "single"
+      }
+    },
+    {
+      "event_index": 55,
+      "start": 44160,
+      "duration": 480,
+      "pitch": 61,
+      "lyric": {
+        "verse": "chorus1",
+        "text": "ho",
+        "syllabic": "single"
+      }
+    },
+    {
+      "event_index": 56,
+      "start": 45120,
+      "duration": 480,
+      "pitch": 57,
+      "lyric": {
+        "verse": "chorus1",
+        "text": "da",
+        "syllabic": "begin"
+      }
+    },
+    {
+      "event_index": 57,
+      "start": 45600,
+      "duration": 480,
+      "pitch": 57,
+      "lyric": {
+        "verse": "chorus1",
+        "text": "to",
+        "syllabic": "end"
+      }
+    },
+    {
+      "event_index": 58,
+      "start": 46080,
+      "duration": 240,
+      "pitch": 57,
+      "lyric": {
+        "verse": "chorus1",
+        "text": "ma",
+        "syllabic": "single"
+      }
+    },
+    {
+      "event_index": 59,
+      "start": 46320,
+      "duration": 240,
+      "pitch": 57,
+      "lyric": {
+        "verse": "chorus1",
+        "text": "il",
+        "syllabic": "single"
+      }
+    },
+    {
+      "event_index": 60,
+      "start": 46560,
+      "duration": 480,
+      "pitch": 57,
+      "lyric": {
+        "verse": "chorus1",
+        "text": "tem",
+        "syllabic": "begin"
+      }
+    },
+    {
+      "event_index": 61,
+      "start": 47040,
+      "duration": 480,
+      "pitch": 57,
+      "lyric": {
+        "verse": "chorus1",
+        "text": "po",
+        "syllabic": "end"
+      }
+    },
+    {
+      "event_index": 62,
+      "start": 47520,
+      "duration": 480,
+      "pitch": 57,
+      "lyric": {
+        "verse": "chorus1",
+        "text": "pas",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 63,
-      "start": 47800,
-      "duration": 535,
+      "start": 48000,
+      "duration": 480,
       "pitch": 57,
       "lyric": {
         "verse": "chorus1",
-        "text": "non",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "sa",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 64,
-      "start": 54759,
-      "duration": 691,
+      "start": 54720,
+      "duration": 960,
       "pitch": 57,
       "lyric": {
         "verse": "chorus1",
-        "text": "tor",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "e",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 65,
-      "start": 56119,
-      "duration": 580,
+      "start": 56160,
+      "duration": 480,
       "pitch": 54,
       "lyric": {
         "verse": "chorus1",
-        "text": "na",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "non",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 66,
-      "start": 56721,
-      "duration": 401,
+      "start": 56640,
+      "duration": 480,
       "pitch": 51,
       "lyric": {
-        "verse": "verse2",
-        "text": "Nun",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "verse": "chorus1",
+        "text": "tor",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 67,
-      "start": 57660,
-      "duration": 267,
+      "start": 57600,
+      "duration": 480,
       "pitch": 54,
       "lyric": {
-        "verse": "verse2",
-        "text": "te",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "verse": "chorus1",
+        "text": "na",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 68,
-      "start": 58105,
-      "duration": 446,
+      "start": 58080,
+      "duration": 480,
       "pitch": 55,
       "lyric": {
         "verse": "verse2",
-        "text": "ne",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "Nun",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 69,
-      "start": 58551,
-      "duration": 268,
+      "start": 58560,
+      "duration": 480,
       "pitch": 54,
       "lyric": {
         "verse": "verse2",
-        "text": "vai",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "te",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 70,
-      "start": 58819,
-      "duration": 267,
+      "start": 59040,
+      "duration": 240,
       "pitch": 54,
       "lyric": {
         "verse": "verse2",
-        "text": "sen",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "ne",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 71,
-      "start": 59889,
-      "duration": 290,
+      "start": 60000,
+      "duration": 240,
       "pitch": 57,
       "lyric": {
         "verse": "verse2",
-        "text": "za",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "vai",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 72,
-      "start": 60179,
-      "duration": 468,
+      "start": 60240,
+      "duration": 240,
       "pitch": 57,
       "lyric": {
         "verse": "verse2",
-        "text": "di",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "sen",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 73,
       "start": 61920,
-      "duration": 267,
+      "duration": 480,
       "pitch": 57,
       "lyric": {
         "verse": "verse2",
-        "text": "me",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "za",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 74,
-      "start": 62209,
-      "duration": 335,
+      "start": 62400,
+      "duration": 240,
       "pitch": 59,
       "lyric": {
         "verse": "verse2",
-        "text": "las",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "di",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 75,
-      "start": 62834,
-      "duration": 445,
+      "start": 62880,
+      "duration": 480,
       "pitch": 56,
       "lyric": {
         "verse": "verse2",
-        "text": "san",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "me",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 76,
-      "start": 64037,
-      "duration": 357,
+      "start": 63840,
+      "duration": 480,
       "pitch": 64,
       "lyric": {
         "verse": "verse2",
-        "text": "do",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "las",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 77,
-      "start": 64795,
-      "duration": 337,
+      "start": 64800,
+      "duration": 480,
       "pitch": 50,
       "lyric": {
         "verse": "verse2",
-        "text": "un",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "san",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 78,
-      "start": 65154,
-      "duration": 625,
+      "start": 65280,
+      "duration": 480,
       "pitch": 61,
       "lyric": {
         "verse": "verse2",
-        "text": "vuo",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "do",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 79,
-      "start": 65801,
-      "duration": 535,
+      "start": 65760,
+      "duration": 480,
       "pitch": 62,
       "lyric": {
         "verse": "verse2",
-        "text": "to",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "un",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 80,
-      "start": 66336,
-      "duration": 557,
+      "start": 66240,
+      "duration": 480,
       "pitch": 61,
       "lyric": {
         "verse": "verse2",
-        "text": "che",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "vuo",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 81,
-      "start": 66893,
-      "duration": 490,
+      "start": 66720,
+      "duration": 480,
       "pitch": 62,
       "lyric": {
         "verse": "verse2",
-        "text": "non",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "to",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 82,
-      "start": 67762,
-      "duration": 268,
+      "start": 67680,
+      "duration": 480,
       "pitch": 59,
       "lyric": {
         "verse": "verse2",
-        "text": "si",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "che",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 83,
-      "start": 68030,
-      "duration": 513,
+      "start": 68160,
+      "duration": 480,
       "pitch": 59,
       "lyric": {
         "verse": "verse2",
-        "text": "co",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "non",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 84,
-      "start": 69281,
-      "duration": 334,
+      "start": 69120,
+      "duration": 480,
       "pitch": 64,
       "lyric": {
         "verse": "verse2",
-        "text": "lma",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "si",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 85,
-      "start": 69637,
-      "duration": 290,
+      "start": 69600,
+      "duration": 480,
       "pitch": 62,
       "lyric": {
         "verse": "verse2",
-        "text": "ma",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "co",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 86,
-      "start": 69927,
-      "duration": 1694,
+      "start": 70080,
+      "duration": 1440,
       "pitch": 61,
       "lyric": {
         "verse": "verse2",
-        "text": "io",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "lma",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 87,
-      "start": 71733,
-      "duration": 1005,
+      "start": 71520,
+      "duration": 1440,
       "pitch": 59,
       "lyric": {
         "verse": "verse2",
-        "text": "so",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "ma",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 88,
-      "start": 72961,
-      "duration": 513,
+      "start": 72960,
+      "duration": 480,
       "pitch": 61,
       "lyric": {
         "verse": "verse2",
-        "text": "che",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "io",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 89,
-      "start": 73831,
-      "duration": 445,
+      "start": 73920,
+      "duration": 480,
       "pitch": 57,
       "lyric": {
         "verse": "verse2",
-        "text": "tor",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "so",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 90,
-      "start": 74276,
-      "duration": 781,
+      "start": 74400,
+      "duration": 480,
       "pitch": 57,
       "lyric": {
         "verse": "verse2",
-        "text": "ne",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "che",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 91,
-      "start": 75057,
-      "duration": 958,
+      "start": 74880,
+      "duration": 960,
       "pitch": 57,
       "lyric": {
         "verse": "verse2",
-        "text": "rai",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "tor",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 92,
-      "start": 76015,
-      "duration": 292,
+      "start": 75840,
+      "duration": 480,
       "pitch": 57,
       "lyric": {
         "verse": "verse2",
-        "text": "per",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "ne",
+        "syllabic": "middle"
       }
     },
     {
       "event_index": 93,
-      "start": 76307,
-      "duration": 290,
+      "start": 76320,
+      "duration": 480,
       "pitch": 57,
       "lyric": {
         "verse": "verse2",
-        "text": "ch\u00e9",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "rai",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 94,
-      "start": 76597,
-      "duration": 580,
+      "start": 76800,
+      "duration": 480,
       "pitch": 57,
       "lyric": {
         "verse": "verse2",
-        "text": "l'a",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "per",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 95,
-      "start": 77177,
-      "duration": 490,
+      "start": 77280,
+      "duration": 480,
       "pitch": 57,
       "lyric": {
         "verse": "verse2",
-        "text": "mo",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "ch\u00e9",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 96,
-      "start": 78737,
-      "duration": 268,
+      "start": 78720,
+      "duration": 480,
       "pitch": 57,
       "lyric": {
         "verse": "verse2",
-        "text": "re",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "l'a",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 97,
-      "start": 82975,
-      "duration": 267,
+      "start": 83040,
+      "duration": 240,
       "pitch": 65,
       "lyric": {
         "verse": "verse2",
-        "text": "non",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "mo",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 98,
-      "start": 83577,
-      "duration": 359,
+      "start": 83520,
+      "duration": 480,
       "pitch": 66,
       "lyric": {
         "verse": "verse2",
-        "text": "si",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "re",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 99,
-      "start": 84315,
-      "duration": 468,
+      "start": 84480,
+      "duration": 480,
       "pitch": 66,
       "lyric": {
         "verse": "verse2",
-        "text": "fer",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "non",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 100,
-      "start": 84783,
-      "duration": 958,
+      "start": 84960,
+      "duration": 960,
       "pitch": 66,
       "lyric": {
         "verse": "verse2",
-        "text": "ma",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "si",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 101,
-      "start": 86276,
-      "duration": 625,
+      "start": 86400,
+      "duration": 480,
       "pitch": 69,
       "lyric": {
         "verse": "verse2",
-        "text": "mai",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "fer",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 102,
-      "start": 86901,
-      "duration": 267,
+      "start": 86880,
+      "duration": 480,
       "pitch": 68,
       "lyric": {
-        "verse": "chorus2",
-        "text": "E",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "verse": "verse2",
+        "text": "ma",
+        "syllabic": "middle"
       }
     },
     {
       "event_index": 103,
-      "start": 87280,
-      "duration": 470,
+      "start": 87360,
+      "duration": 480,
       "pitch": 66,
       "lyric": {
-        "verse": "chorus2",
-        "text": "cer",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "verse": "verse2",
+        "text": "mai",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 104,
-      "start": 87795,
-      "duration": 312,
+      "start": 87840,
+      "duration": 480,
       "pitch": 64,
       "lyric": {
         "verse": "chorus2",
-        "text": "ca",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "E",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 105,
-      "start": 88241,
-      "duration": 289,
+      "start": 88320,
+      "duration": 240,
       "pitch": 62,
       "lyric": {
         "verse": "chorus2",
-        "text": "e",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "cer",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 106,
-      "start": 88241,
-      "duration": 334,
+      "start": 88560,
+      "duration": 240,
       "pitch": 50,
       "lyric": {
         "verse": "chorus2",
-        "text": "me",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "ca",
+        "syllabic": "middle"
       }
     },
     {
       "event_index": 107,
-      "start": 88998,
-      "duration": 290,
+      "start": 88800,
+      "duration": 480,
       "pitch": 64,
       "lyric": {
         "verse": "chorus2",
-        "text": "ca",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "e",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 108,
-      "start": 89288,
-      "duration": 379,
+      "start": 89280,
+      "duration": 480,
       "pitch": 64,
       "lyric": {
         "verse": "chorus2",
-        "text": "pi",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "me",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 109,
-      "start": 90202,
-      "duration": 557,
+      "start": 90240,
+      "duration": 480,
       "pitch": 64,
       "lyric": {
         "verse": "chorus2",
-        "text": "se",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "ca",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 110,
-      "start": 90915,
-      "duration": 558,
+      "start": 90720,
+      "duration": 960,
       "pitch": 66,
       "lyric": {
         "verse": "chorus2",
-        "text": "pos",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "pi",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 111,
-      "start": 91988,
-      "duration": 825,
+      "start": 92160,
+      "duration": 480,
       "pitch": 62,
       "lyric": {
         "verse": "chorus2",
-        "text": "so",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "se",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 112,
-      "start": 94328,
-      "duration": 580,
+      "start": 94560,
+      "duration": 480,
       "pitch": 66,
       "lyric": {
         "verse": "chorus2",
-        "text": "sta",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "pos",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 113,
-      "start": 96605,
-      "duration": 1382,
+      "start": 96480,
+      "duration": 1440,
       "pitch": 61,
       "lyric": {
         "verse": "chorus2",
-        "text": "vo",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "so",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 114,
-      "start": 97987,
-      "duration": 468,
+      "start": 97920,
+      "duration": 480,
       "pitch": 61,
       "lyric": {
         "verse": "chorus2",
-        "text": "tan",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "sta",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 115,
-      "start": 99171,
-      "duration": 289,
+      "start": 99360,
+      "duration": 240,
       "pitch": 59,
       "lyric": {
         "verse": "chorus2",
-        "text": "to",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "vo",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 116,
-      "start": 99483,
-      "duration": 445,
+      "start": 99600,
+      "duration": 240,
       "pitch": 59,
       "lyric": {
         "verse": "chorus2",
-        "text": "ma",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "tan",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 117,
-      "start": 100040,
-      "duration": 267,
+      "start": 99840,
+      "duration": 480,
       "pitch": 64,
       "lyric": {
         "verse": "chorus2",
-        "text": "le",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "to",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 118,
-      "start": 100575,
-      "duration": 490,
+      "start": 100800,
+      "duration": 480,
       "pitch": 62,
       "lyric": {
         "verse": "chorus2",
-        "text": "per",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "ma",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 119,
-      "start": 101065,
-      "duration": 379,
+      "start": 101280,
+      "duration": 240,
       "pitch": 61,
       "lyric": {
         "verse": "chorus2",
-        "text": "un",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "le",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 120,
-      "start": 101444,
-      "duration": 535,
+      "start": 101520,
+      "duration": 240,
       "pitch": 61,
       "lyric": {
         "verse": "chorus2",
-        "text": "ba",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "per",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 121,
-      "start": 102314,
-      "duration": 760,
+      "start": 102240,
+      "duration": 960,
       "pitch": 59,
       "lyric": {
         "verse": "chorus2",
-        "text": "cio",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "un",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 122,
-      "start": 103208,
-      "duration": 267,
+      "start": 103200,
+      "duration": 480,
       "pitch": 64,
       "lyric": {
         "verse": "chorus2",
-        "text": "che",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "ba",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 123,
-      "start": 103787,
-      "duration": 959,
+      "start": 103680,
+      "duration": 960,
       "pitch": 61,
       "lyric": {
         "verse": "chorus2",
-        "text": "non",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "cio",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 124,
-      "start": 104746,
-      "duration": 713,
+      "start": 104640,
+      "duration": 960,
       "pitch": 62,
       "lyric": {
         "verse": "chorus2",
-        "text": "ho",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "che",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 125,
-      "start": 105459,
-      "duration": 335,
+      "start": 105600,
+      "duration": 240,
       "pitch": 61,
       "lyric": {
         "verse": "chorus2",
-        "text": "dato",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "non",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 126,
-      "start": 105771,
-      "duration": 691,
+      "start": 105840,
+      "duration": 720,
       "pitch": 59,
       "lyric": {
         "verse": "chorus2",
-        "text": "ma",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "ho",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 127,
-      "start": 106462,
-      "duration": 426,
+      "start": 106560,
+      "duration": 480,
       "pitch": 59,
       "lyric": {
         "verse": "chorus2",
-        "text": "il",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "da",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 128,
-      "start": 106888,
-      "duration": 357,
+      "start": 107040,
+      "duration": 240,
       "pitch": 59,
       "lyric": {
         "verse": "chorus2",
-        "text": "tem",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "to",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 129,
-      "start": 110680,
-      "duration": 491,
+      "start": 110880,
+      "duration": 480,
       "pitch": 57,
       "lyric": {
         "verse": "chorus2",
-        "text": "po",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "ma",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 130,
-      "start": 115431,
-      "duration": 401,
+      "start": 115200,
+      "duration": 480,
       "pitch": 66,
       "lyric": {
         "verse": "chorus2",
-        "text": "pas",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "il",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 131,
-      "start": 116411,
-      "duration": 268,
+      "start": 116640,
+      "duration": 240,
       "pitch": 66,
       "lyric": {
         "verse": "chorus2",
-        "text": "sa",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "tem",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 132,
-      "start": 116679,
-      "duration": 691,
+      "start": 116880,
+      "duration": 720,
       "pitch": 66,
       "lyric": {
         "verse": "chorus2",
-        "text": "e",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "po",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 133,
-      "start": 117370,
-      "duration": 468,
+      "start": 117600,
+      "duration": 240,
       "pitch": 66,
       "lyric": {
         "verse": "chorus2",
-        "text": "non",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "pas",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 134,
-      "start": 117838,
-      "duration": 312,
+      "start": 117840,
+      "duration": 240,
       "pitch": 66,
       "lyric": {
         "verse": "chorus2",
-        "text": "tor",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "sa",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 135,
-      "start": 117838,
-      "duration": 290,
+      "start": 118080,
+      "duration": 240,
       "pitch": 54,
       "lyric": {
         "verse": "chorus2",
-        "text": "na",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "e",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 136,
-      "start": 118286,
-      "duration": 268,
+      "start": 118320,
+      "duration": 240,
       "pitch": 69,
       "lyric": {
-        "verse": "bridge",
-        "text": "E",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "verse": "chorus2",
+        "text": "non",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 137,
-      "start": 119245,
-      "duration": 602,
+      "start": 119040,
+      "duration": 960,
       "pitch": 66,
       "lyric": {
-        "verse": "bridge",
-        "text": "for",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "verse": "chorus2",
+        "text": "tor",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 138,
-      "start": 120114,
-      "duration": 268,
+      "start": 120000,
+      "duration": 480,
       "pitch": 62,
       "lyric": {
-        "verse": "bridge",
-        "text": "se",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "verse": "chorus2",
+        "text": "na",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 139,
-      "start": 120582,
-      "duration": 535,
+      "start": 120480,
+      "duration": 480,
       "pitch": 64,
       "lyric": {
         "verse": "bridge",
-        "text": "un",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "E",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 140,
-      "start": 121117,
-      "duration": 424,
+      "start": 120960,
+      "duration": 480,
       "pitch": 65,
       "lyric": {
         "verse": "bridge",
-        "text": "gior",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "for",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 141,
-      "start": 121541,
-      "duration": 401,
+      "start": 121440,
+      "duration": 480,
       "pitch": 64,
       "lyric": {
         "verse": "bridge",
-        "text": "no",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "se",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 142,
-      "start": 122435,
-      "duration": 446,
+      "start": 122400,
+      "duration": 480,
       "pitch": 66,
       "lyric": {
         "verse": "bridge",
-        "text": "ca",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "un",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 143,
-      "start": 124419,
-      "duration": 602,
+      "start": 124320,
+      "duration": 480,
       "pitch": 62,
       "lyric": {
         "verse": "bridge",
-        "text": "pri",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "gior",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 144,
-      "start": 125021,
-      "duration": 312,
+      "start": 124800,
+      "duration": 480,
       "pitch": 63,
       "lyric": {
         "verse": "bridge",
-        "text": "rai",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "no",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 145,
-      "start": 125333,
-      "duration": 334,
+      "start": 125280,
+      "duration": 480,
       "pitch": 63,
       "lyric": {
         "verse": "bridge",
-        "text": "che",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "ca",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 146,
-      "start": 125667,
-      "duration": 404,
+      "start": 125760,
+      "duration": 480,
       "pitch": 63,
       "lyric": {
         "verse": "bridge",
-        "text": "io",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "pri",
+        "syllabic": "middle"
       }
     },
     {
       "event_index": 147,
-      "start": 126606,
-      "duration": 267,
+      "start": 126720,
+      "duration": 240,
       "pitch": 67,
       "lyric": {
         "verse": "bridge",
-        "text": "so",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "rai",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 148,
-      "start": 128456,
-      "duration": 379,
+      "start": 128640,
+      "duration": 240,
       "pitch": 61,
       "lyric": {
         "verse": "bridge",
-        "text": "no",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "che",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 149,
-      "start": 128835,
-      "duration": 580,
+      "start": 128880,
+      "duration": 720,
       "pitch": 61,
       "lyric": {
         "verse": "bridge",
-        "text": "qui",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "io",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 150,
-      "start": 129415,
-      "duration": 292,
+      "start": 129600,
+      "duration": 240,
       "pitch": 61,
       "lyric": {
         "verse": "bridge",
-        "text": "ad",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "so",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 151,
-      "start": 130398,
-      "duration": 267,
+      "start": 130560,
+      "duration": 240,
       "pitch": 62,
       "lyric": {
         "verse": "bridge",
-        "text": "as",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "no",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 152,
-      "start": 131134,
-      "duration": 423,
+      "start": 131040,
+      "duration": 480,
       "pitch": 59,
       "lyric": {
         "verse": "bridge",
-        "text": "pet",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "qui",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 153,
-      "start": 131557,
-      "duration": 290,
+      "start": 131520,
+      "duration": 480,
       "pitch": 59,
       "lyric": {
         "verse": "bridge",
-        "text": "tar",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "ad",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 154,
-      "start": 132003,
-      "duration": 334,
+      "start": 132000,
+      "duration": 480,
       "pitch": 64,
       "lyric": {
         "verse": "bridge",
-        "text": "ti",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "as",
+        "syllabic": "middle"
       }
     },
     {
       "event_index": 155,
-      "start": 132560,
-      "duration": 335,
+      "start": 132480,
+      "duration": 480,
       "pitch": 62,
       "lyric": {
         "verse": "bridge",
-        "text": "e",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "pet",
+        "syllabic": "middle"
       }
     },
     {
       "event_index": 156,
-      "start": 132895,
-      "duration": 312,
+      "start": 132960,
+      "duration": 480,
       "pitch": 61,
       "lyric": {
         "verse": "bridge",
-        "text": "all'ora",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "tar",
+        "syllabic": "middle"
       }
     },
     {
       "event_index": 157,
-      "start": 133207,
-      "duration": 336,
+      "start": 133440,
+      "duration": 240,
       "pitch": 61,
       "lyric": {
         "verse": "bridge",
-        "text": "sa",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "ti",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 158,
-      "start": 133543,
-      "duration": 357,
+      "start": 133680,
+      "duration": 240,
       "pitch": 61,
       "lyric": {
         "verse": "bridge",
-        "text": "rai",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "e",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 159,
-      "start": 134234,
-      "duration": 313,
+      "start": 134400,
+      "duration": 240,
       "pitch": 59,
       "lyric": {
         "verse": "bridge",
-        "text": "che",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "all'o",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 160,
-      "start": 134547,
-      "duration": 401,
+      "start": 134640,
+      "duration": 240,
       "pitch": 60,
       "lyric": {
         "verse": "bridge",
-        "text": "non",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "ra",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 161,
-      "start": 135037,
-      "duration": 267,
+      "start": 134880,
+      "duration": 480,
       "pitch": 64,
       "lyric": {
         "verse": "bridge",
-        "text": "c'\u00e8",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "sa",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 162,
-      "start": 135505,
-      "duration": 1003,
+      "start": 135360,
+      "duration": 960,
       "pitch": 61,
       "lyric": {
         "verse": "bridge",
-        "text": "nien",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "rai",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 163,
-      "start": 136553,
-      "duration": 646,
+      "start": 136320,
+      "duration": 960,
       "pitch": 63,
       "lyric": {
         "verse": "bridge",
-        "text": "te",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "che",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 164,
-      "start": 137603,
-      "duration": 1070,
+      "start": 137760,
+      "duration": 960,
       "pitch": 60,
       "lyric": {
         "verse": "bridge",
-        "text": "di",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "non",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 165,
-      "start": 138673,
-      "duration": 267,
+      "start": 138720,
+      "duration": 240,
       "pitch": 59,
       "lyric": {
         "verse": "bridge",
-        "text": "pi\u00f9",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "c'\u00e8",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 166,
-      "start": 138940,
-      "duration": 312,
+      "start": 138960,
+      "duration": 240,
       "pitch": 59,
       "lyric": {
         "verse": "bridge",
-        "text": "for",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "nien",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 167,
-      "start": 139252,
-      "duration": 313,
+      "start": 139200,
+      "duration": 480,
       "pitch": 59,
       "lyric": {
         "verse": "bridge",
         "text": "te",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "syllabic": "end"
       }
     },
     {
       "event_index": 168,
-      "start": 139565,
-      "duration": 757,
+      "start": 139680,
+      "duration": 480,
       "pitch": 59,
       "lyric": {
         "verse": "bridge",
         "text": "di",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "syllabic": "single"
       }
     },
     {
       "event_index": 169,
-      "start": 144538,
-      "duration": 334,
+      "start": 144480,
+      "duration": 480,
       "pitch": 48,
       "lyric": {
         "verse": "bridge",
-        "text": "me",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "pi\u00f9",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 170,
-      "start": 144986,
-      "duration": 290,
+      "start": 144960,
+      "duration": 480,
       "pitch": 49,
       "lyric": {
-        "verse": "chorus3",
-        "text": "E",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "verse": "bridge",
+        "text": "for",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 171,
-      "start": 145477,
-      "duration": 289,
+      "start": 145440,
+      "duration": 480,
       "pitch": 50,
       "lyric": {
-        "verse": "chorus3",
-        "text": "cer",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "verse": "bridge",
+        "text": "te",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 172,
-      "start": 146234,
-      "duration": 357,
+      "start": 146400,
+      "duration": 240,
       "pitch": 54,
       "lyric": {
-        "verse": "chorus3",
-        "text": "ca",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "verse": "bridge",
+        "text": "di",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 173,
-      "start": 146591,
-      "duration": 357,
+      "start": 146640,
+      "duration": 240,
       "pitch": 54,
       "lyric": {
-        "verse": "chorus3",
-        "text": "e",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "verse": "bridge",
+        "text": "me",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 174,
-      "start": 152882,
-      "duration": 446,
+      "start": 153120,
+      "duration": 240,
       "pitch": 55,
       "lyric": {
         "verse": "chorus3",
-        "text": "me",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "E",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 175,
-      "start": 153328,
-      "duration": 268,
+      "start": 153360,
+      "duration": 240,
       "pitch": 55,
       "lyric": {
         "verse": "chorus3",
-        "text": "ca",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "cer",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 176,
-      "start": 153774,
-      "duration": 423,
+      "start": 153600,
+      "duration": 480,
       "pitch": 57,
       "lyric": {
         "verse": "chorus3",
-        "text": "pi",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "ca",
+        "syllabic": "middle"
       }
     },
     {
       "event_index": 177,
-      "start": 154197,
-      "duration": 335,
+      "start": 154080,
+      "duration": 480,
       "pitch": 56,
       "lyric": {
         "verse": "chorus3",
-        "text": "se",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "e",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 178,
-      "start": 154599,
-      "duration": 401,
+      "start": 154560,
+      "duration": 480,
       "pitch": 55,
       "lyric": {
         "verse": "chorus3",
-        "text": "pos",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "me",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 179,
-      "start": 155000,
-      "duration": 312,
+      "start": 155040,
+      "duration": 480,
       "pitch": 54,
       "lyric": {
         "verse": "chorus3",
-        "text": "so",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "ca",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 180,
-      "start": 155379,
-      "duration": 312,
+      "start": 155520,
+      "duration": 240,
       "pitch": 51,
       "lyric": {
         "verse": "chorus3",
-        "text": "sta",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "pi",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 181,
-      "start": 155691,
-      "duration": 401,
+      "start": 155760,
+      "duration": 240,
       "pitch": 51,
       "lyric": {
         "verse": "chorus3",
-        "text": "vo",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "se",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 182,
-      "start": 156652,
-      "duration": 401,
+      "start": 156480,
+      "duration": 480,
       "pitch": 55,
       "lyric": {
         "verse": "chorus3",
-        "text": "tan",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "pos",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 183,
-      "start": 156986,
-      "duration": 357,
+      "start": 156960,
+      "duration": 480,
       "pitch": 53,
       "lyric": {
         "verse": "chorus3",
-        "text": "to",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "so",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 184,
-      "start": 159238,
-      "duration": 356,
+      "start": 159360,
+      "duration": 240,
       "pitch": 50,
       "lyric": {
         "verse": "chorus3",
-        "text": "ma",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "sta",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 185,
-      "start": 160422,
-      "duration": 512,
+      "start": 160320,
+      "duration": 480,
       "pitch": 57,
       "lyric": {
         "verse": "chorus3",
-        "text": "le",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "vo",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 186,
-      "start": 161090,
-      "duration": 290,
+      "start": 161280,
+      "duration": 240,
       "pitch": 62,
       "lyric": {
         "verse": "chorus3",
-        "text": "per",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "tan",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 187,
-      "start": 161380,
-      "duration": 736,
+      "start": 161520,
+      "duration": 720,
       "pitch": 62,
       "lyric": {
         "verse": "chorus3",
-        "text": "un",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "to",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 188,
-      "start": 162116,
-      "duration": 423,
+      "start": 162240,
+      "duration": 480,
       "pitch": 62,
       "lyric": {
         "verse": "chorus3",
-        "text": "ba",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "ma",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 189,
-      "start": 162539,
-      "duration": 557,
+      "start": 162720,
+      "duration": 480,
       "pitch": 62,
       "lyric": {
         "verse": "chorus3",
-        "text": "cio",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "le",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 190,
-      "start": 163096,
-      "duration": 1229,
+      "start": 163200,
+      "duration": 960,
       "pitch": 61,
       "lyric": {
         "verse": "chorus3",
-        "text": "che",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "per",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 191,
-      "start": 164325,
-      "duration": 357,
+      "start": 164160,
+      "duration": 480,
       "pitch": 61,
       "lyric": {
         "verse": "chorus3",
-        "text": "non",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "un",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 192,
-      "start": 164682,
-      "duration": 980,
+      "start": 164640,
+      "duration": 960,
       "pitch": 61,
       "lyric": {
         "verse": "chorus3",
-        "text": "ho",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "ba",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 193,
-      "start": 165662,
-      "duration": 379,
+      "start": 165600,
+      "duration": 480,
       "pitch": 61,
       "lyric": {
         "verse": "chorus3",
-        "text": "dato",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "cio",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 194,
-      "start": 167134,
-      "duration": 445,
+      "start": 167040,
+      "duration": 480,
       "pitch": 58,
       "lyric": {
         "verse": "chorus3",
-        "text": "ma",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "che",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 195,
-      "start": 167579,
-      "duration": 560,
+      "start": 167520,
+      "duration": 480,
       "pitch": 58,
       "lyric": {
         "verse": "chorus3",
-        "text": "il",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "non",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 196,
-      "start": 168474,
-      "duration": 401,
+      "start": 168480,
+      "duration": 480,
       "pitch": 57,
       "lyric": {
         "verse": "chorus3",
-        "text": "tem",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "ho",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 197,
-      "start": 169031,
-      "duration": 401,
+      "start": 168960,
+      "duration": 480,
       "pitch": 55,
       "lyric": {
         "verse": "chorus3",
-        "text": "po",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "da",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 198,
-      "start": 169655,
-      "duration": 312,
+      "start": 169440,
+      "duration": 480,
       "pitch": 52,
       "lyric": {
         "verse": "chorus3",
-        "text": "pas",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "to",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 199,
-      "start": 169967,
-      "duration": 513,
+      "start": 169920,
+      "duration": 480,
       "pitch": 52,
       "lyric": {
         "verse": "chorus3",
-        "text": "sa",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "ma",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 200,
-      "start": 171171,
-      "duration": 401,
+      "start": 171360,
+      "duration": 240,
       "pitch": 55,
       "lyric": {
         "verse": "chorus3",
-        "text": "e",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "il",
+        "syllabic": "single"
       }
     },
     {
       "event_index": 201,
-      "start": 171572,
-      "duration": 404,
+      "start": 171600,
+      "duration": 240,
       "pitch": 55,
       "lyric": {
         "verse": "chorus3",
-        "text": "non",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "tem",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 202,
-      "start": 172043,
-      "duration": 267,
+      "start": 171840,
+      "duration": 480,
       "pitch": 54,
       "lyric": {
         "verse": "chorus3",
-        "text": "tor",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "po",
+        "syllabic": "end"
       }
     },
     {
       "event_index": 203,
-      "start": 172310,
-      "duration": 669,
+      "start": 172320,
+      "duration": 480,
       "pitch": 53,
       "lyric": {
         "verse": "chorus3",
-        "text": "na",
-        "syllabic": "single",
-        "melisma": null,
-        "elision": null
+        "text": "pas",
+        "syllabic": "begin"
       }
     },
     {
       "event_index": 204,
-      "start": 173291,
-      "duration": 446,
+      "start": 173280,
+      "duration": 480,
       "pitch": 57,
-      "lyric": null
+      "lyric": {
+        "verse": "chorus3",
+        "text": "sa",
+        "syllabic": "end"
+      }
     },
     {
       "event_index": 205,
-      "start": 174428,
-      "duration": 267,
+      "start": 174240,
+      "duration": 480,
       "pitch": 54,
-      "lyric": null
+      "lyric": {
+        "verse": "chorus3",
+        "text": "e",
+        "syllabic": "single"
+      }
     },
     {
       "event_index": 206,
-      "start": 175275,
-      "duration": 426,
+      "start": 175200,
+      "duration": 480,
       "pitch": 59,
-      "lyric": null
+      "lyric": {
+        "verse": "chorus3",
+        "text": "non",
+        "syllabic": "single"
+      }
     },
     {
       "event_index": 207,
-      "start": 175701,
-      "duration": 334,
+      "start": 175680,
+      "duration": 480,
       "pitch": 59,
-      "lyric": null
+      "lyric": {
+        "verse": "chorus3",
+        "text": "tor",
+        "syllabic": "begin"
+      }
     },
     {
       "event_index": 208,
-      "start": 176548,
-      "duration": 290,
+      "start": 176640,
+      "duration": 240,
       "pitch": 56,
-      "lyric": null
+      "lyric": {
+        "verse": "chorus3",
+        "text": "na",
+        "syllabic": "end"
+      }
     },
     {
       "event_index": 209,
-      "start": 177662,
-      "duration": 491,
+      "start": 177600,
+      "duration": 480,
       "pitch": 64,
       "lyric": null
     },
     {
       "event_index": 210,
-      "start": 178666,
-      "duration": 401,
+      "start": 178560,
+      "duration": 480,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 211,
-      "start": 179111,
-      "duration": 270,
+      "start": 179040,
+      "duration": 480,
       "pitch": 62,
       "lyric": null
     },
     {
       "event_index": 212,
-      "start": 179404,
-      "duration": 780,
+      "start": 179520,
+      "duration": 480,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 213,
-      "start": 180184,
-      "duration": 557,
+      "start": 180000,
+      "duration": 960,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 214,
-      "start": 180741,
-      "duration": 290,
+      "start": 180960,
+      "duration": 240,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 215,
-      "start": 181142,
-      "duration": 268,
+      "start": 181200,
+      "duration": 240,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 216,
-      "start": 181410,
-      "duration": 401,
+      "start": 181440,
+      "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 217,
-      "start": 182658,
-      "duration": 335,
+      "start": 182880,
+      "duration": 240,
       "pitch": 64,
       "lyric": null
     },
     {
       "event_index": 218,
-      "start": 183082,
-      "duration": 1406,
+      "start": 183120,
+      "duration": 1200,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 219,
-      "start": 184488,
-      "duration": 580,
+      "start": 184320,
+      "duration": 960,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 220,
-      "start": 185046,
-      "duration": 981,
+      "start": 185280,
+      "duration": 960,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 221,
-      "start": 186004,
-      "duration": 736,
+      "start": 186240,
+      "duration": 480,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 222,
-      "start": 186695,
-      "duration": 248,
+      "start": 186720,
+      "duration": 240,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 223,
-      "start": 187077,
-      "duration": 624,
+      "start": 187200,
+      "duration": 480,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 224,
-      "start": 187701,
-      "duration": 446,
+      "start": 187680,
+      "duration": 480,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 225,
-      "start": 188147,
-      "duration": 423,
+      "start": 188160,
+      "duration": 480,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 226,
-      "start": 188570,
-      "duration": 1070,
+      "start": 188640,
+      "duration": 960,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 227,
-      "start": 189640,
-      "duration": 335,
+      "start": 189600,
+      "duration": 480,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 228,
-      "start": 189975,
-      "duration": 782,
+      "start": 190080,
+      "duration": 480,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 229,
-      "start": 195909,
-      "duration": 312,
+      "start": 195840,
+      "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 230,
-      "start": 196332,
-      "duration": 558,
+      "start": 196320,
+      "duration": 480,
       "pitch": 58,
       "lyric": null
     },
     {
       "event_index": 231,
-      "start": 197625,
-      "duration": 424,
+      "start": 197760,
+      "duration": 480,
       "pitch": 56,
       "lyric": null
     },
     {
       "event_index": 232,
-      "start": 198049,
-      "duration": 292,
+      "start": 198240,
+      "duration": 240,
       "pitch": 54,
       "lyric": null
     },
     {
       "event_index": 233,
-      "start": 198363,
-      "duration": 357,
+      "start": 198480,
+      "duration": 240,
       "pitch": 52,
       "lyric": null
     },
     {
       "event_index": 234,
       "start": 198720,
-      "duration": 268,
+      "duration": 480,
       "pitch": 51,
       "lyric": null
     },
     {
       "event_index": 235,
-      "start": 199567,
-      "duration": 446,
+      "start": 199680,
+      "duration": 480,
       "pitch": 55,
       "lyric": null
     },
     {
       "event_index": 236,
-      "start": 200013,
-      "duration": 312,
+      "start": 200160,
+      "duration": 240,
       "pitch": 55,
       "lyric": null
     },
     {
       "event_index": 237,
-      "start": 200414,
-      "duration": 268,
+      "start": 200640,
+      "duration": 240,
       "pitch": 54,
       "lyric": null
     },
     {
       "event_index": 238,
-      "start": 200704,
-      "duration": 290,
+      "start": 200880,
+      "duration": 240,
       "pitch": 52,
       "lyric": null
     },
     {
       "event_index": 239,
-      "start": 201506,
-      "duration": 290,
+      "start": 201600,
+      "duration": 240,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 240,
-      "start": 201796,
-      "duration": 312,
+      "start": 201840,
+      "duration": 240,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 241,
-      "start": 202108,
-      "duration": 359,
+      "start": 202080,
+      "duration": 480,
       "pitch": 56,
       "lyric": null
     },
     {
       "event_index": 242,
-      "start": 203560,
-      "duration": 267,
+      "start": 203520,
+      "duration": 480,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 243,
-      "start": 203850,
-      "duration": 356,
+      "start": 204000,
+      "duration": 240,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 244,
-      "start": 204429,
-      "duration": 513,
+      "start": 204480,
+      "duration": 480,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 245,
-      "start": 205165,
-      "duration": 267,
+      "start": 204960,
+      "duration": 480,
       "pitch": 58,
       "lyric": null
     },
     {
       "event_index": 246,
-      "start": 205700,
-      "duration": 267,
+      "start": 205920,
+      "duration": 240,
       "pitch": 65,
       "lyric": null
     },
     {
       "event_index": 247,
-      "start": 206393,
-      "duration": 892,
+      "start": 206400,
+      "duration": 960,
       "pitch": 62,
       "lyric": null
     },
     {
       "event_index": 248,
-      "start": 207285,
-      "duration": 468,
+      "start": 207360,
+      "duration": 480,
       "pitch": 62,
       "lyric": null
     },
     {
       "event_index": 249,
-      "start": 207887,
-      "duration": 423,
+      "start": 207840,
+      "duration": 480,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 250,
-      "start": 208310,
-      "duration": 312,
+      "start": 208320,
+      "duration": 480,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 251,
-      "start": 208622,
-      "duration": 312,
+      "start": 208800,
+      "duration": 240,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 252,
-      "start": 208934,
-      "duration": 312,
+      "start": 209040,
+      "duration": 240,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 253,
-      "start": 209358,
-      "duration": 423,
+      "start": 209280,
+      "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 254,
-      "start": 209781,
-      "duration": 315,
+      "start": 209760,
+      "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 255,
-      "start": 210854,
-      "duration": 379,
+      "start": 210720,
+      "duration": 480,
       "pitch": 64,
       "lyric": null
     },
     {
       "event_index": 256,
-      "start": 211411,
-      "duration": 1048,
+      "start": 211200,
+      "duration": 1440,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 257,
-      "start": 212459,
-      "duration": 312,
+      "start": 212640,
+      "duration": 240,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 258,
-      "start": 212771,
-      "duration": 290,
+      "start": 212880,
+      "duration": 240,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 259,
-      "start": 213061,
-      "duration": 267,
+      "start": 213120,
+      "duration": 240,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 260,
-      "start": 213261,
-      "duration": 493,
+      "start": 213360,
+      "duration": 240,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 261,
-      "start": 213754,
-      "duration": 268,
+      "start": 213600,
+      "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 262,
-      "start": 214022,
-      "duration": 423,
+      "start": 214080,
+      "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 263,
-      "start": 214423,
-      "duration": 669,
+      "start": 214560,
+      "duration": 480,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 264,
-      "start": 215047,
-      "duration": 268,
+      "start": 215040,
+      "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 265,
-      "start": 215448,
-      "duration": 446,
+      "start": 215520,
+      "duration": 480,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 266,
-      "start": 215894,
-      "duration": 290,
+      "start": 216000,
+      "duration": 240,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 267,
-      "start": 216184,
-      "duration": 490,
+      "start": 216240,
+      "duration": 240,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 268,
-      "start": 216674,
-      "duration": 647,
+      "start": 216480,
+      "duration": 960,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 269,
-      "start": 217321,
-      "duration": 470,
+      "start": 217440,
+      "duration": 480,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 270,
-      "start": 217791,
-      "duration": 1137,
+      "start": 217920,
+      "duration": 960,
       "pitch": 57,
       "lyric": null
     },
     {
       "event_index": 271,
-      "start": 224882,
-      "duration": 360,
+      "start": 225120,
+      "duration": 240,
       "pitch": 66,
       "lyric": null
     },
     {
       "event_index": 272,
-      "start": 225620,
-      "duration": 1449,
+      "start": 225600,
+      "duration": 1440,
       "pitch": 66,
       "lyric": null
     },
     {
       "event_index": 273,
-      "start": 226356,
-      "duration": 446,
+      "start": 227040,
+      "duration": 240,
       "pitch": 54,
       "lyric": null
     },
     {
       "event_index": 274,
-      "start": 227069,
-      "duration": 379,
+      "start": 227280,
+      "duration": 240,
       "pitch": 66,
       "lyric": null
     },
     {
       "event_index": 275,
-      "start": 227582,
-      "duration": 401,
+      "start": 227520,
+      "duration": 480,
       "pitch": 69,
       "lyric": null
     },
     {
       "event_index": 276,
-      "start": 227983,
-      "duration": 424,
+      "start": 228000,
+      "duration": 480,
       "pitch": 69,
       "lyric": null
     },
     {
       "event_index": 277,
-      "start": 228608,
-      "duration": 492,
+      "start": 228480,
+      "duration": 480,
       "pitch": 66,
       "lyric": null
     },
     {
       "event_index": 278,
-      "start": 229568,
-      "duration": 268,
+      "start": 229440,
+      "duration": 480,
       "pitch": 62,
       "lyric": null
     },
     {
       "event_index": 279,
-      "start": 230059,
-      "duration": 758,
+      "start": 229920,
+      "duration": 960,
       "pitch": 64,
       "lyric": null
     },
     {
       "event_index": 280,
-      "start": 232132,
-      "duration": 582,
+      "start": 232320,
+      "duration": 480,
       "pitch": 66,
       "lyric": null
     },
     {
       "event_index": 281,
-      "start": 233048,
-      "duration": 491,
+      "start": 233280,
+      "duration": 480,
       "pitch": 62,
       "lyric": null
     },
     {
       "event_index": 282,
-      "start": 233539,
-      "duration": 379,
+      "start": 233760,
+      "duration": 240,
       "pitch": 62,
       "lyric": null
     },
     {
       "event_index": 283,
-      "start": 235590,
-      "duration": 579,
+      "start": 235680,
+      "duration": 480,
       "pitch": 66,
       "lyric": null
     },
     {
       "event_index": 284,
-      "start": 236214,
-      "duration": 314,
+      "start": 236160,
+      "duration": 480,
       "pitch": 64,
       "lyric": null
     },
     {
       "event_index": 285,
-      "start": 237063,
-      "duration": 268,
+      "start": 237120,
+      "duration": 240,
       "pitch": 73,
       "lyric": null
     },
     {
       "event_index": 286,
-      "start": 237063,
-      "duration": 268,
+      "start": 237360,
+      "duration": 240,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 287,
-      "start": 237331,
-      "duration": 290,
+      "start": 237600,
+      "duration": 240,
       "pitch": 60,
       "lyric": null
     },
     {
       "event_index": 288,
-      "start": 237910,
-      "duration": 268,
+      "start": 238080,
+      "duration": 240,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 289,
-      "start": 238178,
-      "duration": 334,
+      "start": 238320,
+      "duration": 240,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 290,
-      "start": 238512,
-      "duration": 357,
+      "start": 238560,
+      "duration": 480,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 291,
-      "start": 238869,
-      "duration": 267,
+      "start": 239040,
+      "duration": 240,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 292,
-      "start": 238980,
-      "duration": 424,
+      "start": 239280,
+      "duration": 240,
       "pitch": 49,
       "lyric": null
     },
     {
       "event_index": 293,
-      "start": 239538,
-      "duration": 401,
+      "start": 239520,
+      "duration": 480,
       "pitch": 60,
       "lyric": null
     },
     {
       "event_index": 294,
-      "start": 240454,
-      "duration": 669,
+      "start": 240480,
+      "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 295,
-      "start": 241680,
-      "duration": 290,
+      "start": 241920,
+      "duration": 240,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 296,
-      "start": 241970,
-      "duration": 713,
+      "start": 242160,
+      "duration": 720,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 297,
-      "start": 242683,
-      "duration": 446,
+      "start": 242880,
+      "duration": 480,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 298,
-      "start": 243330,
-      "duration": 757,
+      "start": 243360,
+      "duration": 960,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 299,
-      "start": 244179,
-      "duration": 401,
+      "start": 244320,
+      "duration": 480,
       "pitch": 63,
       "lyric": null
     },
     {
       "event_index": 300,
-      "start": 244781,
-      "duration": 1025,
+      "start": 244800,
+      "duration": 960,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 301,
-      "start": 245806,
-      "duration": 624,
+      "start": 245760,
+      "duration": 480,
       "pitch": 62,
       "lyric": null
     },
     {
       "event_index": 302,
-      "start": 246430,
-      "duration": 313,
+      "start": 246240,
+      "duration": 480,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 303,
-      "start": 246832,
-      "duration": 646,
+      "start": 246720,
+      "duration": 960,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 304,
-      "start": 247478,
-      "duration": 290,
+      "start": 247680,
+      "duration": 240,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 305,
-      "start": 247768,
-      "duration": 649,
+      "start": 247920,
+      "duration": 720,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 306,
-      "start": 248417,
-      "duration": 713,
+      "start": 248640,
+      "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 307,
-      "start": 256224,
-      "duration": 445,
+      "start": 256320,
+      "duration": 480,
       "pitch": 66,
       "lyric": null
     },
     {
       "event_index": 308,
-      "start": 256937,
-      "duration": 290,
+      "start": 256800,
+      "duration": 480,
       "pitch": 66,
       "lyric": null
     },
     {
       "event_index": 309,
-      "start": 257249,
-      "duration": 490,
+      "start": 257280,
+      "duration": 480,
       "pitch": 66,
       "lyric": null
     },
     {
       "event_index": 310,
-      "start": 257739,
-      "duration": 469,
+      "start": 257760,
+      "duration": 480,
       "pitch": 66,
       "lyric": null
     },
     {
       "event_index": 311,
-      "start": 258208,
-      "duration": 668,
+      "start": 258240,
+      "duration": 480,
       "pitch": 66,
       "lyric": null
     },
     {
       "event_index": 312,
-      "start": 259010,
-      "duration": 448,
+      "start": 259200,
+      "duration": 480,
       "pitch": 69,
       "lyric": null
     },
     {
       "event_index": 313,
-      "start": 259882,
-      "duration": 379,
+      "start": 259680,
+      "duration": 480,
       "pitch": 66,
       "lyric": null
     },
     {
       "event_index": 314,
-      "start": 261175,
-      "duration": 1159,
+      "start": 261120,
+      "duration": 1440,
       "pitch": 64,
       "lyric": null
     },
     {
       "event_index": 315,
-      "start": 262936,
-      "duration": 493,
+      "start": 263040,
+      "duration": 480,
       "pitch": 65,
       "lyric": null
     },
     {
       "event_index": 316,
-      "start": 264922,
-      "duration": 268,
+      "start": 264960,
+      "duration": 240,
       "pitch": 63,
       "lyric": null
     },
     {
       "event_index": 317,
-      "start": 265190,
-      "duration": 802,
+      "start": 265200,
+      "duration": 720,
       "pitch": 62,
       "lyric": null
     },
     {
       "event_index": 318,
-      "start": 266014,
-      "duration": 312,
+      "start": 265920,
+      "duration": 480,
       "pitch": 63,
       "lyric": null
     },
     {
       "event_index": 319,
-      "start": 266326,
-      "duration": 268,
+      "start": 266400,
+      "duration": 240,
       "pitch": 63,
       "lyric": null
     },
     {
       "event_index": 320,
-      "start": 268157,
-      "duration": 290,
+      "start": 268320,
+      "duration": 240,
       "pitch": 62,
       "lyric": null
     },
     {
       "event_index": 321,
-      "start": 268848,
-      "duration": 624,
+      "start": 268800,
+      "duration": 480,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 322,
-      "start": 269517,
-      "duration": 312,
+      "start": 269280,
+      "duration": 480,
       "pitch": 49,
       "lyric": null
     },
     {
       "event_index": 323,
-      "start": 271124,
-      "duration": 268,
+      "start": 271200,
+      "duration": 240,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 324,
-      "start": 271414,
-      "duration": 334,
+      "start": 271440,
+      "duration": 240,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 325,
-      "start": 271748,
-      "duration": 379,
+      "start": 271680,
+      "duration": 480,
       "pitch": 60,
       "lyric": null
     },
     {
       "event_index": 326,
-      "start": 272194,
-      "duration": 379,
+      "start": 272160,
+      "duration": 480,
       "pitch": 64,
       "lyric": null
     },
     {
       "event_index": 327,
-      "start": 272662,
-      "duration": 491,
+      "start": 272640,
+      "duration": 480,
       "pitch": 62,
       "lyric": null
     },
     {
       "event_index": 328,
-      "start": 273353,
-      "duration": 268,
+      "start": 273120,
+      "duration": 480,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 329,
-      "start": 273621,
-      "duration": 468,
+      "start": 273600,
+      "duration": 480,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 330,
-      "start": 274133,
-      "duration": 446,
+      "start": 274080,
+      "duration": 480,
       "pitch": 60,
       "lyric": null
     },
     {
       "event_index": 331,
-      "start": 274693,
-      "duration": 357,
+      "start": 274560,
+      "duration": 480,
       "pitch": 60,
       "lyric": null
     },
     {
       "event_index": 332,
-      "start": 275094,
-      "duration": 379,
+      "start": 275040,
+      "duration": 480,
       "pitch": 64,
       "lyric": null
     },
     {
       "event_index": 333,
-      "start": 275852,
-      "duration": 714,
+      "start": 276000,
+      "duration": 480,
       "pitch": 61,
       "lyric": null
     },
     {
       "event_index": 334,
-      "start": 276566,
-      "duration": 512,
+      "start": 276480,
+      "duration": 480,
       "pitch": 62,
       "lyric": null
     },
     {
       "event_index": 335,
-      "start": 277078,
-      "duration": 379,
+      "start": 276960,
+      "duration": 480,
       "pitch": 62,
       "lyric": null
     },
     {
       "event_index": 336,
-      "start": 277702,
-      "duration": 669,
+      "start": 277920,
+      "duration": 480,
       "pitch": 60,
       "lyric": null
     },
     {
       "event_index": 337,
-      "start": 278371,
-      "duration": 404,
+      "start": 278400,
+      "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 338,
-      "start": 278797,
-      "duration": 624,
+      "start": 278880,
+      "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 339,
-      "start": 279421,
-      "duration": 624,
+      "start": 279360,
+      "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 340,
-      "start": 280045,
-      "duration": 268,
+      "start": 279840,
+      "duration": 480,
       "pitch": 60,
       "lyric": null
     },
     {
       "event_index": 341,
-      "start": 280313,
-      "duration": 736,
+      "start": 280320,
+      "duration": 960,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 342,
-      "start": 283414,
-      "duration": 267,
+      "start": 283200,
+      "duration": 480,
       "pitch": 59,
       "lyric": null
     },
     {
       "event_index": 343,
-      "start": 283458,
-      "duration": 357,
+      "start": 283680,
+      "duration": 240,
       "pitch": 52,
       "lyric": null
     }
   ],
-  "notes_without_lyrics": 140,
-  "total_syllables": 204
+  "notes_without_lyrics": 135,
+  "total_syllables": 209
 }
