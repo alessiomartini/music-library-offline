@@ -59,7 +59,7 @@ supports that work.
 
 The working file is:
 
-`working/your-song/curated.musicxml`
+`input/your-song-curated.musicxml`
 
 It remains `score-partwise`, MusicXML 4.0, and contains only the original
 `P1` part and its 68 measures. No new musical notes, rests, parts, harmony,

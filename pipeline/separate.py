@@ -56,6 +56,11 @@ def run_demucs(slug: str) -> None:
     print(f"Vocals: {working_dir / 'vocals.wav'}")
     print(f"Accompaniment: {working_dir / 'accompaniment.wav'}")
 
+    # demucs_output is Demucs' own raw output layout, already copied above
+    # into the two stems working/<slug>/ actually uses; keeping it around
+    # just duplicates ~2x the audio on disk for no reason.
+    shutil.rmtree(working_dir / "demucs_output")
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)

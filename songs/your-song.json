@@ -12,7 +12,7 @@
   },
   "melodySource": {
     "type": "curated",
-    "musicxml": "working/your-song/curated.musicxml"
+    "musicxml": "input/your-song-curated.musicxml"
   },
   "lyrics": [
     {
