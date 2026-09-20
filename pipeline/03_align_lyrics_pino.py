@@ -125,7 +125,7 @@ def align_lyrics():
 
 if __name__ == "__main__":
     if not VOCAL_EVENTS.exists():
-        print(f"ERROR: {VOCAL_EVENTS} not found. Run 02c_use_curated_melody_pino.py first.")
+        print(f"ERROR: {VOCAL_EVENTS} not found. Run 02_transcribe_vocals_pino.py first.")
         sys.exit(1)
     success = align_lyrics()
     sys.exit(0 if success else 1)

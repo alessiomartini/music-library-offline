@@ -23,3 +23,4 @@ __pycache__/
 *.temp
 
 # Keep final normalized JSON output trackable.
+pipeline/*.egg-info/

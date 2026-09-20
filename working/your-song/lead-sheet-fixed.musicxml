@@ -9,7 +9,7 @@
     <creator type="composer">Elton John</creator>
     <creator type="lyricist">Bernie Taupin</creator>
     <encoding>
-      <encoding-date>2026-09-19</encoding-date>
+      <encoding-date>2026-09-20</encoding-date>
       <software>music21 v.10.5.0</software>
       <supports element="beam" type="yes" />
       <supports element="stem" type="yes" />
@@ -23,15 +23,15 @@
     </scaling>
   </defaults>
   <part-list>
-    <score-part id="P28315a65021fa426325eda9ed9acea68">
+    <score-part id="Pd9c84ffb30f75aa16de0e82c11f5f3c3">
       <part-name>Voice</part-name>
     </score-part>
-    <score-part id="Pd9ded11e3e4148c03aaf50c465f543a3">
+    <score-part id="Pc885b7d95d4296e9b12c08c32d78a73e">
       <part-name>Harmony</part-name>
     </score-part>
   </part-list>
   <!--=========================== Part 1 ===========================-->
-  <part id="P28315a65021fa426325eda9ed9acea68">
+  <part id="Pd9c84ffb30f75aa16de0e82c11f5f3c3">
     <!--========================= Measure 1 ==========================-->
     <measure implicit="no" number="1">
       <attributes>
@@ -7150,7 +7150,7 @@
     </measure>
   </part>
   <!--=========================== Part 2 ===========================-->
-  <part id="Pd9ded11e3e4148c03aaf50c465f543a3">
+  <part id="Pc885b7d95d4296e9b12c08c32d78a73e">
     <!--========================= Measure 1 ==========================-->
     <measure implicit="no" number="1">
       <attributes>

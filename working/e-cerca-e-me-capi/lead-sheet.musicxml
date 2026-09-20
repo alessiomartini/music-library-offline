@@ -23,15 +23,15 @@
     </scaling>
   </defaults>
   <part-list>
-    <score-part id="Pa282e1741b5959aad51b9e545b01603e">
+    <score-part id="P7eb1c42c79102455c9f2184b841f612b">
       <part-name>Voice</part-name>
     </score-part>
-    <score-part id="P0fde505fff820c6400a073ca095c2dbb">
+    <score-part id="P851e70c604a8e6f60e84b5edb57bcf04">
       <part-name>Harmony</part-name>
     </score-part>
   </part-list>
   <!--=========================== Part 1 ===========================-->
-  <part id="Pa282e1741b5959aad51b9e545b01603e">
+  <part id="P7eb1c42c79102455c9f2184b841f612b">
     <!--========================= Measure 1 ==========================-->
     <measure implicit="no" number="1">
       <attributes>
@@ -9143,7 +9143,7 @@
     </measure>
   </part>
   <!--=========================== Part 2 ===========================-->
-  <part id="P0fde505fff820c6400a073ca095c2dbb">
+  <part id="P851e70c604a8e6f60e84b5edb57bcf04">
     <!--========================= Measure 1 ==========================-->
     <measure implicit="no" number="1">
       <attributes>
@@ -10215,25 +10215,9 @@
           <normal-type>1024th</normal-type>
         </time-modification>
         <notations>
-          <tuplet bracket="yes" number="1" placement="above" type="start">
-            <tuplet-actual>
-              <tuplet-number>960</tuplet-number>
-              <tuplet-type>1024th</tuplet-type>
-            </tuplet-actual>
-            <tuplet-normal>
-              <tuplet-number>689</tuplet-number>
-              <tuplet-type>1024th</tuplet-type>
-            </tuplet-normal>
-          </tuplet>
+          <tuplet number="1" type="stop" />
         </notations>
       </note>
-      <harmony>
-        <root>
-          <root-step>G</root-step>
-        </root>
-        <kind>major-seventh</kind>
-        <offset sound="yes">-8777</offset>
-      </harmony>
       <harmony>
         <root>
           <root-step>F</root-step>
@@ -10961,26 +10945,9 @@
           <normal-type>128th</normal-type>
         </time-modification>
         <notations>
-          <tuplet bracket="yes" number="1" placement="above" type="start">
-            <tuplet-actual>
-              <tuplet-number>120</tuplet-number>
-              <tuplet-type>128th</tuplet-type>
-            </tuplet-actual>
-            <tuplet-normal>
-              <tuplet-number>73</tuplet-number>
-              <tuplet-type>128th</tuplet-type>
-            </tuplet-normal>
-          </tuplet>
+          <tuplet number="1" type="stop" />
         </notations>
       </note>
-      <harmony>
-        <root>
-          <root-step>F</root-step>
-          <root-alter>1</root-alter>
-        </root>
-        <kind>minor-seventh</kind>
-        <offset sound="yes">-4367</offset>
-      </harmony>
       <harmony>
         <root>
           <root-step>E</root-step>
@@ -12223,32 +12190,9 @@
           <normal-type>128th</normal-type>
         </time-modification>
         <notations>
-          <tuplet bracket="yes" number="1" placement="above" type="start">
-            <tuplet-actual>
-              <tuplet-number>60</tuplet-number>
-              <tuplet-type>128th</tuplet-type>
-            </tuplet-actual>
-            <tuplet-normal>
-              <tuplet-number>47</tuplet-number>
-              <tuplet-type>128th</tuplet-type>
-            </tuplet-normal>
-          </tuplet>
+          <tuplet number="1" type="stop" />
         </notations>
       </note>
-      <harmony>
-        <root>
-          <root-step>E</root-step>
-        </root>
-        <kind>major-seventh</kind>
-        <offset sound="yes">-5712</offset>
-      </harmony>
-      <harmony>
-        <root>
-          <root-step>E</root-step>
-        </root>
-        <kind>major-seventh</kind>
-        <offset sound="yes">-671</offset>
-      </harmony>
       <harmony>
         <root>
           <root-step>B</root-step>
@@ -13805,26 +13749,9 @@
           <normal-type>128th</normal-type>
         </time-modification>
         <notations>
-          <tuplet bracket="yes" number="1" placement="above" type="start">
-            <tuplet-actual>
-              <tuplet-number>120</tuplet-number>
-              <tuplet-type>128th</tuplet-type>
-            </tuplet-actual>
-            <tuplet-normal>
-              <tuplet-number>73</tuplet-number>
-              <tuplet-type>128th</tuplet-type>
-            </tuplet-normal>
-          </tuplet>
+          <tuplet number="1" type="stop" />
         </notations>
       </note>
-      <harmony>
-        <root>
-          <root-step>F</root-step>
-          <root-alter>1</root-alter>
-        </root>
-        <kind>minor-seventh</kind>
-        <offset sound="yes">-4367</offset>
-      </harmony>
       <harmony>
         <root>
           <root-step>C</root-step>

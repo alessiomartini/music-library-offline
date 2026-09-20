@@ -86,22 +86,33 @@ def extract_harmony():
         if best_chord:
             start_ticks = int(round(beat_time * (tempo / 60.0) * PPQ))
 
-            if i + 1 < len(beat_times):
-                next_beat_time = beat_times[i + 1]
-                duration_sec = next_beat_time - beat_time
-            else:
-                duration_sec = 60.0 / tempo
-
-            duration_ticks = int(round(duration_sec * (tempo / 60.0) * PPQ))
-
             harmony_events.append({
                 "start": start_ticks,
-                "duration": duration_ticks,
                 "root": best_root,
                 "quality": best_chord,
                 "slashBass": None,
                 "confidence": float(best_score)
             })
+
+    # Duration is derived from the *next* event's (already rounded) start
+    # rather than rounded independently from the real inter-beat time. Two
+    # independent roundings of dependent quantities can each land on either
+    # side of .5, which used to produce a stray tick of gap or overlap
+    # between consecutive chords and made the score fail overlap validation.
+    # Deriving duration = nextStart - start guarantees the chords tile
+    # exactly, by construction.
+    for i, event in enumerate(harmony_events):
+        if i + 1 < len(harmony_events):
+            event["duration"] = harmony_events[i + 1]["start"] - event["start"]
+        else:
+            event["duration"] = PPQ  # one beat, last event
+
+    # Two detected beats can round to the same tick; a zero/negative-duration
+    # event is invalid, so drop it rather than emit unplayable harmony.
+    dropped = sum(1 for e in harmony_events if e["duration"] <= 0)
+    if dropped:
+        print(f"Dropping {dropped} zero/negative-duration event(s) from coincident beat roundings")
+    harmony_events = [e for e in harmony_events if e["duration"] > 0]
 
     # Merge consecutive identical chords
     merged = []

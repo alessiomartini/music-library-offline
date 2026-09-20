@@ -1,6 +1,0 @@
-pyproject.toml
-music_library_offline.egg-info/PKG-INFO
-music_library_offline.egg-info/SOURCES.txt
-music_library_offline.egg-info/dependency_links.txt
-music_library_offline.egg-info/requires.txt
-music_library_offline.egg-info/top_level.txt

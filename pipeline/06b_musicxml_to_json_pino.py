@@ -61,18 +61,17 @@ def extract_voice_part(voice_part):
                     "verse": f"verse{ly.number}" if ly.number else "verse1",
                     "text": ly.text,
                     "syllabic": ly.syllabic if ly.syllabic else "single",
-                    "melisma": None,
-                    "elision": None
                 })
 
-            events.append({
+            event = {
                 "kind": "note",
                 "start": start_ticks,
                 "duration": dur_ticks,
                 "pitch": pitch,
-                "lyrics": lyrics if lyrics else None,
-                "tie": None
-            })
+            }
+            if lyrics:
+                event["lyrics"] = lyrics
+            events.append(event)
         elif isinstance(element, note.Rest):
             start_ticks = int(round(element.offset * PPQ / 4.0))
             dur_ticks = int(round(element.duration.quarterLength * PPQ / 4.0))
@@ -92,20 +91,28 @@ def extract_harmony(harmony_part):
     for element in harmony_part.flatten().notes:
         if isinstance(element, m21harmony.ChordSymbol):
             start_ticks = int(round(element.offset * PPQ / 4.0))
-            dur_ticks = int(round(element.duration.quarterLength * PPQ / 4.0))
-
-            if dur_ticks <= 0:
-                dur_ticks = PPQ // 4
-
             root_pc, quality, slash_bass = parse_chord_symbol(element)
 
-            events.append({
-                "start": start_ticks,
-                "duration": dur_ticks,
-                "root": root_pc,
-                "quality": quality,
-                "slashBass": slash_bass
-            })
+            event = {"start": start_ticks, "root": root_pc, "quality": quality}
+            if slash_bass is not None:
+                event["slashBass"] = slash_bass
+            events.append(event)
+
+    events.sort(key=lambda e: e["start"])
+
+    # Duration is derived from the *next* event's (already rounded) start
+    # rather than rounded independently from element.duration.quarterLength.
+    # MusicXML's own duration/divisions rounding can disagree by a tick with
+    # the offset rounding, which used to produce stray overlaps and gaps
+    # between consecutive chords. Deriving duration = nextStart - start
+    # guarantees the chords tile exactly, by construction.
+    for i, event in enumerate(events):
+        if i + 1 < len(events):
+            event["duration"] = events[i + 1]["start"] - event["start"]
+        else:
+            event["duration"] = PPQ // 4
+
+    events = [e for e in events if e["duration"] > 0]
 
     # Merge consecutive identical chords
     merged = []
