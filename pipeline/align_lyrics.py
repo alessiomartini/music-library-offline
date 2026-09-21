@@ -6,24 +6,22 @@ Forced alignment: given the vocal stem and the song config's already-known
 lyric text, finds when each syllable is actually sung by running torchaudio's
 MMS_FA (a multilingual Wav2Vec2 CTC forced aligner) over the full audio
 against the flattened, romanized syllable sequence from every verse in
-songs/<slug>.json's "lyrics", in order. This replaces the previous
-sequential/per-verse heuristic (assign syllables to notes in order, reset at
-guessed verse boundaries), which had no information about where in the
-recording a syllable actually falls and broke down whenever the automatic
-melody transcription's note count didn't match the syllable count.
+songs/<slug>.json's "lyrics", in order. Because CTC forced alignment
+naturally absorbs silence/instrumental gaps between tokens (via the blank
+symbol), it needs no verse-boundary guessing, and it produces exact
+onset/offset timing per syllable directly from the audio.
 
-Because CTC forced alignment naturally absorbs silence/instrumental gaps
-between tokens (via the blank symbol), it does not need verse boundaries
-guessed in advance, and it produces exact onset/offset timing per syllable
-directly from the audio.
-
-Vocal note pitch still comes from working/<slug>/vocal-events.json (Basic
-Pitch, see transcribe_vocals.py): each syllable's aligned time window is
-matched to the Basic Pitch note event active at its midpoint (nearest by
-start tick if none is active there) purely to read off a pitch. Basic
-Pitch's own note *boundaries* are no longer used for anything — every
-output event's timing comes from the forced aligner, and there is exactly
-one output event per syllable (no more notes carried with no lyric).
+Each syllable's aligned onset is then attached to whichever
+working/<slug>/vocal-events.json note (transcribe_vocals.py: Basic Pitch
+detection, MuseScore-quantized — see musescore_import.py) is sounding at
+that instant, or the nearest one if none is. The notes themselves — their
+pitch *and* timing — are never altered or fabricated here: forced alignment
+only decides which note each syllable belongs to. When a passage has more
+sung syllables than detected notes (common — automatic transcription misses
+notes a human wouldn't), more than one syllable lands on the same note,
+which the schema already supports (a note's "lyrics" is a list); a note
+that gets none keeps its pitch with no lyric, same as an ordinary
+wordless/melisma-continuation note.
 
 A syllable whose text romanizes to no character in the aligner's vocabulary
 (e.g. corrupted source text) cannot be aligned and is dropped with a
@@ -54,15 +52,6 @@ def safe_print(message: str) -> None:
     mojibake or accented text)."""
     encoding = sys.stdout.encoding or "ascii"
     print(message.encode(encoding, errors="replace").decode(encoding))
-
-
-# Snap syllable onsets/durations to a sixteenth-note grid: the forced
-# aligner's raw frame timestamps land at arbitrary audio-frame precision,
-# and an unquantized quarterLength is either rejected outright or notated
-# unreadably by music21's MusicXML writer (same rationale as
-# transcribe_vocals.py's and extract_harmony.py's grid quantization).
-GRID_TICKS = PPQ // 4
-MIN_DURATION_TICKS = GRID_TICKS
 
 
 def flatten_syllables(config: dict) -> list[dict]:
@@ -107,11 +96,26 @@ def align_audio(vocals_path: Path, romanized: list[str]) -> tuple[list, float]:
     return spans, ratio
 
 
-def nearest_pitch(vocal_events: list[dict], midpoint_tick: int) -> int:
-    for event in vocal_events:
-        if event["start"] <= midpoint_tick < event["start"] + event["duration"]:
-            return event["pitch"]
-    return min(vocal_events, key=lambda e: abs(e["start"] - midpoint_tick))["pitch"]
+# If a syllable's aligned instant isn't inside any detected note, only
+# attach it to the nearest one when that note starts within this many
+# seconds — otherwise it's very likely a real gap in transcribe_vocals.py's
+# detection (a passage with no notes at all), and forcing an attachment
+# there would silently pile unrelated syllables from a real gap onto
+# whatever note happens to be nearest, arbitrarily far away.
+MAX_FALLBACK_GAP_SECONDS = 1.5
+
+
+def find_note_index(vocal_events: list[dict], tick: int, max_gap_ticks: int) -> int | None:
+    for i, event in enumerate(vocal_events):
+        if event["start"] <= tick < event["start"] + event["duration"]:
+            return i
+    nearest_i = min(range(len(vocal_events)), key=lambda i: abs(vocal_events[i]["start"] - tick))
+    nearest = vocal_events[nearest_i]
+    if tick >= nearest["start"] + nearest["duration"]:
+        gap = tick - (nearest["start"] + nearest["duration"])
+    else:
+        gap = nearest["start"] - tick
+    return nearest_i if gap <= max_gap_ticks else None
 
 
 def align(slug: str) -> None:
@@ -123,9 +127,11 @@ def align(slug: str) -> None:
     if not events_path.exists():
         raise SystemExit(f"ERROR: {events_path} not found — run transcribe_vocals.py first")
     vocal_events = sorted(json.loads(events_path.read_text())["events"], key=lambda e: e["start"])
+    if not vocal_events:
+        raise SystemExit(f"ERROR: no vocal notes in {events_path}")
 
     syllables = flatten_syllables(config)
-    safe_print(f"Syllables in song config: {len(syllables)}")
+    safe_print(f"Syllables in song config: {len(syllables)}, vocal notes: {len(vocal_events)}")
 
     warnings: list[str] = []
     valid_chars = set(BUNDLE.get_dict(star=None)) - {"-"}
@@ -138,34 +144,52 @@ def align(slug: str) -> None:
     tempo_bpm = config["tempoBpm"]
     ticks_per_sec = tempo_bpm / 60.0 * PPQ
 
-    aligned = []
+    max_gap_ticks = round(MAX_FALLBACK_GAP_SECONDS * ticks_per_sec)
+    notes_lyrics: list[list[dict]] = [[] for _ in vocal_events]
     span_i = 0
-    previous_end = 0
     dropped = 0
+    unplaced: list[tuple[dict, float]] = []
     for syl, word in zip(syllables, romanized):
         if not word:
             dropped += 1
             continue
         span = spans[span_i]
         span_i += 1
-
         start_sec = span[0].start * ratio
-        end_sec = span[-1].end * ratio
-        start = round(start_sec * ticks_per_sec / GRID_TICKS) * GRID_TICKS
-        end = round(end_sec * ticks_per_sec / GRID_TICKS) * GRID_TICKS
-        start = max(start, previous_end)
-        duration = max(end - start, MIN_DURATION_TICKS)
+        start_tick = round(start_sec * ticks_per_sec)
+        note_index = find_note_index(vocal_events, start_tick, max_gap_ticks)
+        if note_index is None:
+            unplaced.append((syl, start_sec))
+            continue
+        notes_lyrics[note_index].append({"verse": syl["verse"], "text": syl["text"], "syllabic": syl["syllabic"]})
 
-        pitch = nearest_pitch(vocal_events, start + duration // 2)
-        aligned.append({
-            "start": start,
-            "duration": duration,
-            "pitch": pitch,
-            "lyric": {"verse": syl["verse"], "text": syl["text"], "syllabic": syl["syllabic"]},
-        })
-        previous_end = start + duration
+    aligned = []
+    notes_with_lyrics = 0
+    max_syllables_per_note = 0
+    for event, lyrics in zip(vocal_events, notes_lyrics):
+        entry = {"start": event["start"], "duration": event["duration"], "pitch": event["pitch"]}
+        if lyrics:
+            entry["lyrics"] = lyrics
+            notes_with_lyrics += 1
+            max_syllables_per_note = max(max_syllables_per_note, len(lyrics))
+        aligned.append(entry)
 
-    safe_print(f"Aligned {len(aligned)}/{len(syllables)} syllables ({dropped} dropped, unalignable text)")
+    placed = len(syllables) - dropped - len(unplaced)
+    safe_print(f"Placed {placed}/{len(syllables)} syllables onto {notes_with_lyrics}/{len(vocal_events)} notes "
+               f"({dropped} dropped as unalignable text, {len(unplaced)} unplaced — more than {MAX_FALLBACK_GAP_SECONDS}s from any detected note)")
+    if max_syllables_per_note > 1:
+        safe_print(f"NOTE: up to {max_syllables_per_note} syllables landed on the same note (fewer detected notes than sung syllables here) — check working/{slug}/voice.musicxml")
+    if unplaced:
+        safe_print("Unplaced syllables (likely a gap in transcribe_vocals.py's note detection around these times):")
+        group_start = unplaced[0][1]
+        group_texts = [unplaced[0][0]["text"]]
+        for (syl, sec), (prev_syl, prev_sec) in zip(unplaced[1:], unplaced):
+            if sec - prev_sec > MAX_FALLBACK_GAP_SECONDS:
+                safe_print(f"  ~{group_start:.1f}s-{prev_sec:.1f}s: {' '.join(group_texts)!r}")
+                group_start = sec
+                group_texts = []
+            group_texts.append(syl["text"])
+        safe_print(f"  ~{group_start:.1f}s-{unplaced[-1][1]:.1f}s: {' '.join(group_texts)!r}")
 
     output_path = REPO_ROOT / "working" / slug / "aligned-lyrics.json"
     output_path.write_text(json.dumps({
@@ -173,6 +197,8 @@ def align(slug: str) -> None:
         "aligned": aligned,
         "total_syllables": len(syllables),
         "syllables_dropped": dropped,
+        "syllables_unplaced": len(unplaced),
+        "notes_without_lyrics": len(vocal_events) - notes_with_lyrics,
     }, indent=2))
     safe_print(f"Wrote {output_path}")
 

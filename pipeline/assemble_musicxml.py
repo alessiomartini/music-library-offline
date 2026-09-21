@@ -59,11 +59,10 @@ def chord_symbol(h: dict) -> m21harmony.ChordSymbol:
 
 
 def build_voice_part(aligned: list[dict]) -> stream.Part:
-    """Builds the voice part from align_lyrics.py's own events — one per
-    syllable, forced-aligned timing — rather than from
-    transcribe_vocals.py's raw Basic Pitch notes: align_lyrics.py's output
-    is the authoritative note timing (see its module docstring), and its
-    "start" ticks generally don't coincide with Basic Pitch's own."""
+    """Builds the voice part from align_lyrics.py's own events: real
+    detected/quantized notes (see musescore_import.py), each carrying zero
+    or more attached syllables in "lyrics" — more than one when a passage
+    has more sung syllables than detected notes."""
     part = stream.Part()
     part.id = "voice"
     part.partName = "Voice"
@@ -77,9 +76,8 @@ def build_voice_part(aligned: list[dict]) -> stream.Part:
         n.duration.quarterLength = ticks_to_ql(event["duration"])
         n.offset = ticks_to_ql(event["start"])
 
-        lyric = event.get("lyric")
-        if lyric:
-            n.lyrics.append(note.Lyric(text=lyric["text"], number=1, syllabic=lyric.get("syllabic", "single")))
+        for i, lyric in enumerate(event.get("lyrics", [])):
+            n.lyrics.append(note.Lyric(text=lyric["text"], number=i + 1, syllabic=lyric.get("syllabic", "single")))
 
         if "tie" in event:
             n.tie = m21tie.Tie(event["tie"]["type"])
@@ -193,7 +191,7 @@ def assemble(slug: str) -> None:
         raise SystemExit(f"ERROR: {instrumental_path} not found — run transcribe_instrumental.py first")
     instrumental_events = json.loads(instrumental_path.read_text())["events"]
 
-    print(f"Aligned voice events: {len(aligned)} ({len([a for a in aligned if a['lyric']])} with a lyric)")
+    print(f"Aligned voice events: {len(aligned)} ({len([a for a in aligned if a.get('lyrics')])} with a lyric)")
     print(f"Harmony events: {len(harmony_events)}")
     print(f"Instrumental events: {len(instrumental_events)}")
 

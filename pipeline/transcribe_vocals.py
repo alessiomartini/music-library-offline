@@ -2,12 +2,14 @@
 """
 Step 2 — vocal melody transcription.
 
-Produces working/<slug>/vocal-events.json: automatic transcription (Basic
-Pitch) over the vocal stem, filtered by songs/<slug>.json's
-melodySource.vocalRange / firstVocalSec / velocityThreshold /
-minDurationTicks. Expect the result to need correction, same as any
-automatic transcription (see docs/FUTURE-ARCHITECTURE.md, "Human Curation Is
-Part of the Workflow").
+Produces working/<slug>/vocal-events.json: Basic Pitch detects notes from
+the vocal stem (filtered by songs/<slug>.json's melodySource.vocalRange /
+firstVocalSec / velocityThreshold / minDurationTicks), and MuseScore 4
+(see musescore_import.py) quantizes and notates them — replacing this
+script's former hand-rolled fixed-grid snap, which produced far worse
+notation than opening the same raw MIDI directly in MuseScore. Expect the
+result to still need correction, same as any automatic transcription (see
+docs/FUTURE-ARCHITECTURE.md, "Human Curation Is Part of the Workflow").
 
 Run with:  python pipeline/transcribe_vocals.py <slug>
 """
@@ -15,9 +17,18 @@ import argparse
 import json
 from pathlib import Path
 
+import musescore_import
 from constants import PPQ
 
 REPO_ROOT = Path(__file__).parent.parent
+
+# General MIDI "Voice Oohs". MuseScore's MIDI import auto-splits a
+# piano-family program (GM 0-7) across a grand staff, which scatters a
+# monophonic vocal line's harmonic/separation-bleed artifacts (Basic Pitch
+# occasionally detects a spurious simultaneous second pitch) into a
+# spurious second staff instead of leaving them as ordinary overlaps to
+# resolve. A non-piano program keeps the import on a single staff.
+VOICE_PROGRAM = 53
 
 
 def load_song_config(slug: str) -> dict:
@@ -40,65 +51,37 @@ def from_basic_pitch(slug: str, config: dict):
     vmin, vmax = source.get("vocalRange", [40, 84])
     first_vocal_sec = source.get("firstVocalSec", 0.5)
     velocity_threshold = source.get("velocityThreshold", 0.3)
-    min_duration_ticks = source.get("minDurationTicks", 30)
+    tempo_bpm = config["tempoBpm"]
+    min_duration_sec = source.get("minDurationTicks", 30) * 60.0 / (tempo_bpm * PPQ)
 
     print("Running Basic Pitch transcription...")
-    _, midi_data, note_events = predict(str(vocals_wav), ICASSP_2022_MODEL_PATH)
+    # midi_tempo: without it, predict() writes PrettyMIDI's meaningless
+    # 120bpm default into the MIDI file rather than a detected value, which
+    # would make MuseScore's import land at the wrong absolute times.
+    _, midi_data, _ = predict(str(vocals_wav), ICASSP_2022_MODEL_PATH, midi_tempo=tempo_bpm)
+
+    instrument = midi_data.instruments[0]
+    before = len(instrument.notes)
+    instrument.notes = [
+        n for n in instrument.notes
+        if n.start >= first_vocal_sec
+        and vmin <= n.pitch <= vmax
+        and n.velocity / 127.0 >= velocity_threshold
+        and n.end - n.start >= min_duration_sec
+    ]
+    print(f"Raw notes: {before} -> after filters: {len(instrument.notes)}")
+    instrument.program = VOICE_PROGRAM
+    instrument.name = "Voice"
+    instrument.is_drum = False
     midi_data.write(str(midi_out))
 
-    # Index by position rather than unpacking the whole tuple: basic-pitch's
-    # note_events rows carry extra trailing fields (e.g. pitch bend) we
-    # don't use, and a strict `for s, e, p, v in note_events` breaks if a
-    # basic-pitch version adds one.
-    raw = [
-        {"start_sec": float(item[0]), "end_sec": float(item[1]), "pitch": int(item[2]), "velocity": float(item[3])}
-        for item in note_events
-    ]
-    before = len(raw)
-    raw = [n for n in raw if n["start_sec"] >= first_vocal_sec]
-    raw = [n for n in raw if vmin <= n["pitch"] <= vmax]
-    raw = [n for n in raw if n["velocity"] >= velocity_threshold]
-    print(f"Raw notes: {before} -> after filters: {len(raw)}")
-
-    # Basic Pitch's raw note_events start/end times are real seconds, tied
-    # to the actual recording — never to a musical tempo. The tempo baked
-    # into the MIDI it writes is PrettyMIDI's meaningless default (120bpm),
-    # not a detected value, so reading it back here silently rescaled every
-    # note's tick position by song_tempo/120 and made the vocal timeline
-    # drift out of sync with the harmony/measure grid (both built from the
-    # song config's real tempo) over the course of the song. Always convert
-    # using the song's actual tempo instead.
-    tempo_bpm = config["tempoBpm"]
-    seconds_per_tick = 60.0 / (tempo_bpm * PPQ)
-
-    events = []
-    for n in raw:
-        start = int(round(n["start_sec"] / seconds_per_tick))
-        end = int(round(n["end_sec"] / seconds_per_tick))
-        duration = end - start
-        if duration >= min_duration_ticks:
-            events.append({
-                "start": start, "duration": duration, "pitch": n["pitch"],
-                "velocity": n["velocity"], "kind": "note",
-            })
-    events.sort(key=lambda e: e["start"])
-
-    # Basic Pitch's raw millisecond-derived tick values rarely land on a
-    # notatable duration (music21's MusicXML writer rejects "inexpressible"
-    # durations outright). Snap to an eighth-note grid, with a sixteenth-note
-    # minimum, then clamp against the previous event so quantization can't
-    # introduce an overlap between two originally-adjacent notes.
-    eighth_note = PPQ // 2
-    sixteenth_note = PPQ // 4
-    previous_end = 0
-    for event in events:
-        start = round(event["start"] / eighth_note) * eighth_note
-        end = round((event["start"] + event["duration"]) / eighth_note) * eighth_note
-        start = max(start, previous_end)
-        duration = max(end - start, sixteenth_note)
-        event["start"] = start
-        event["duration"] = duration
-        previous_end = start + duration
+    ts = config["timeSignature"]
+    measure_length_quarters = ts["numerator"] * 4 / ts["denominator"]
+    events = musescore_import.import_midi(midi_out, measure_length_quarters)
+    before_mono = len(events)
+    events = musescore_import.enforce_monophonic(events)
+    if len(events) != before_mono:
+        print(f"Resolved {before_mono - len(events)} overlapping note(s) to a single vocal line: {before_mono} -> {len(events)}")
 
     return events, tempo_bpm
 

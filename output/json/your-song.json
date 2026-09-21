@@ -291,6 +291,122 @@
       {
         "start": 268800,
         "duration": 3840
+      },
+      {
+        "start": 272640,
+        "duration": 3840
+      },
+      {
+        "start": 276480,
+        "duration": 3840
+      },
+      {
+        "start": 280320,
+        "duration": 3840
+      },
+      {
+        "start": 284160,
+        "duration": 3840
+      },
+      {
+        "start": 288000,
+        "duration": 3840
+      },
+      {
+        "start": 291840,
+        "duration": 3840
+      },
+      {
+        "start": 295680,
+        "duration": 3840
+      },
+      {
+        "start": 299520,
+        "duration": 3840
+      },
+      {
+        "start": 303360,
+        "duration": 3840
+      },
+      {
+        "start": 307200,
+        "duration": 3840
+      },
+      {
+        "start": 311040,
+        "duration": 3840
+      },
+      {
+        "start": 314880,
+        "duration": 3840
+      },
+      {
+        "start": 318720,
+        "duration": 3840
+      },
+      {
+        "start": 322560,
+        "duration": 3840
+      },
+      {
+        "start": 326400,
+        "duration": 3840
+      },
+      {
+        "start": 330240,
+        "duration": 3840
+      },
+      {
+        "start": 334080,
+        "duration": 3840
+      },
+      {
+        "start": 337920,
+        "duration": 3840
+      },
+      {
+        "start": 341760,
+        "duration": 3840
+      },
+      {
+        "start": 345600,
+        "duration": 3840
+      },
+      {
+        "start": 349440,
+        "duration": 3840
+      },
+      {
+        "start": 353280,
+        "duration": 3840
+      },
+      {
+        "start": 357120,
+        "duration": 3840
+      },
+      {
+        "start": 360960,
+        "duration": 3840
+      },
+      {
+        "start": 364800,
+        "duration": 3840
+      },
+      {
+        "start": 368640,
+        "duration": 3840
+      },
+      {
+        "start": 372480,
+        "duration": 3840
+      },
+      {
+        "start": 376320,
+        "duration": 3840
+      },
+      {
+        "start": 380160,
+        "duration": 3840
       }
     ],
     "tempo": {
@@ -304,62 +420,75 @@
         "events": [
           {
             "kind": "note",
-            "start": 10560,
-            "duration": 240,
+            "start": 0,
+            "duration": 960,
+            "pitch": 63
+          },
+          {
+            "kind": "rest",
+            "start": 960,
+            "duration": 6720
+          },
+          {
+            "kind": "note",
+            "start": 7680,
+            "duration": 300,
+            "pitch": 55
+          },
+          {
+            "kind": "rest",
+            "start": 7980,
+            "duration": 360
+          },
+          {
+            "kind": "note",
+            "start": 8340,
+            "duration": 300,
+            "pitch": 55
+          },
+          {
+            "kind": "rest",
+            "start": 8640,
+            "duration": 600
+          },
+          {
+            "kind": "note",
+            "start": 9240,
+            "duration": 180,
+            "pitch": 55
+          },
+          {
+            "kind": "note",
+            "start": 9420,
+            "duration": 180,
+            "pitch": 55
+          },
+          {
+            "kind": "note",
+            "start": 9600,
+            "duration": 960,
             "pitch": 55,
             "lyrics": [
               {
                 "verse": "verse1",
                 "text": "It's",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 10800,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "verse1",
                 "text": "a",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 11040,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "verse1",
                 "text": "lit",
                 "syllabic": "begin"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 11280,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "verse1",
                 "text": "tle",
                 "syllabic": "end"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 11520,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "verse1",
                 "text": "bit",
@@ -369,46 +498,20 @@
           },
           {
             "kind": "rest",
-            "start": 11760,
-            "duration": 240
+            "start": 10560,
+            "duration": 3120
           },
           {
             "kind": "note",
-            "start": 12000,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "verse1",
-                "text": "fun",
-                "syllabic": "begin"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 12240,
+            "start": 13680,
             "duration": 720,
-            "pitch": 55,
+            "pitch": 58,
             "lyrics": [
               {
                 "verse": "verse1",
                 "text": "ny",
                 "syllabic": "end"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 12960,
-            "duration": 1680
-          },
-          {
-            "kind": "note",
-            "start": 14640,
-            "duration": 240,
-            "pitch": 58,
-            "lyrics": [
+              },
               {
                 "verse": "verse1",
                 "text": "this",
@@ -417,60 +520,31 @@
             ]
           },
           {
+            "kind": "rest",
+            "start": 14400,
+            "duration": 1440
+          },
+          {
             "kind": "note",
-            "start": 14880,
+            "start": 15840,
             "duration": 480,
-            "pitch": 58,
+            "pitch": 55,
             "lyrics": [
               {
                 "verse": "verse1",
                 "text": "fee",
                 "syllabic": "begin"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 15360,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 15600,
-            "duration": 240,
-            "pitch": 58,
-            "lyrics": [
+              },
               {
                 "verse": "verse1",
                 "text": "ling",
                 "syllabic": "end"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 15840,
-            "duration": 240,
-            "pitch": 58,
-            "lyrics": [
+              },
               {
                 "verse": "verse1",
                 "text": "in",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 16080,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 16320,
-            "duration": 1440,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "verse1",
                 "text": "side",
@@ -480,188 +554,36 @@
           },
           {
             "kind": "rest",
-            "start": 17760,
-            "duration": 1680
+            "start": 16320,
+            "duration": 120
           },
           {
             "kind": "note",
-            "start": 19440,
-            "duration": 240,
-            "pitch": 56,
-            "lyrics": [
-              {
-                "verse": "verse1",
-                "text": "I'm",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 19680,
-            "duration": 240,
-            "pitch": 56,
-            "lyrics": [
-              {
-                "verse": "verse1",
-                "text": "not",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 19920,
-            "duration": 240,
-            "pitch": 56,
-            "lyrics": [
-              {
-                "verse": "verse1",
-                "text": "one",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 20160,
-            "duration": 240,
-            "pitch": 56,
-            "lyrics": [
-              {
-                "verse": "verse1",
-                "text": "of",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 20400,
-            "duration": 720,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "verse1",
-                "text": "those",
-                "syllabic": "single"
-              }
-            ]
+            "start": 16440,
+            "duration": 360,
+            "pitch": 56
           },
           {
             "kind": "rest",
-            "start": 21120,
-            "duration": 240
+            "start": 16800,
+            "duration": 8640
           },
           {
             "kind": "note",
-            "start": 21360,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "verse1",
-                "text": "who",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 21600,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 21840,
-            "duration": 720,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "verse1",
-                "text": "can",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 22560,
-            "duration": 720
-          },
-          {
-            "kind": "note",
-            "start": 23280,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "verse1",
-                "text": "eas",
-                "syllabic": "begin"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 23520,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 23760,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "verse1",
-                "text": "i",
-                "syllabic": "middle"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 24000,
-            "duration": 240,
+            "start": 25440,
+            "duration": 480,
             "pitch": 55,
             "lyrics": [
               {
                 "verse": "verse1",
                 "text": "ly",
                 "syllabic": "end"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 24240,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 24480,
-            "duration": 1920,
-            "pitch": 81,
-            "lyrics": [
+              },
               {
                 "verse": "verse1",
                 "text": "hide",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 26400,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 26640,
-            "duration": 240,
-            "pitch": 81,
-            "lyrics": [
+              },
               {
                 "verse": "verse1",
                 "text": "I",
@@ -671,13 +593,13 @@
           },
           {
             "kind": "rest",
-            "start": 26880,
-            "duration": 960
+            "start": 25920,
+            "duration": 1920
           },
           {
             "kind": "note",
             "start": 27840,
-            "duration": 480,
+            "duration": 240,
             "pitch": 54,
             "lyrics": [
               {
@@ -689,72 +611,30 @@
           },
           {
             "kind": "note",
-            "start": 28320,
-            "duration": 240,
-            "pitch": 54,
+            "start": 28080,
+            "duration": 720,
+            "pitch": 81,
             "lyrics": [
               {
                 "verse": "verse1",
                 "text": "have",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 28560,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
+              },
               {
                 "verse": "verse1",
                 "text": "much",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 28800,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 29040,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
+              },
               {
                 "verse": "verse1",
                 "text": "mo",
                 "syllabic": "begin"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 29280,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
+              },
               {
                 "verse": "verse1",
                 "text": "ney",
                 "syllabic": "end"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 29520,
-            "duration": 960
-          },
-          {
-            "kind": "note",
-            "start": 30480,
-            "duration": 480,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "verse1",
                 "text": "but",
@@ -764,90 +644,30 @@
           },
           {
             "kind": "rest",
-            "start": 30960,
-            "duration": 960
+            "start": 28800,
+            "duration": 5760
           },
           {
             "kind": "note",
-            "start": 31920,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "verse1",
-                "text": "boy",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 32160,
-            "duration": 240,
-            "pitch": 58,
-            "lyrics": [
-              {
-                "verse": "verse1",
-                "text": "if",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 32400,
-            "duration": 720
-          },
-          {
-            "kind": "note",
-            "start": 33120,
-            "duration": 240,
-            "pitch": 60,
+            "start": 34560,
+            "duration": 960,
+            "pitch": 54,
             "lyrics": [
               {
                 "verse": "verse1",
                 "text": "I",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 33360,
-            "duration": 240,
-            "pitch": 60,
-            "lyrics": [
+              },
               {
                 "verse": "verse1",
                 "text": "did",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 33600,
-            "duration": 2640,
-            "pitch": 60,
-            "lyrics": [
+              },
               {
                 "verse": "verse1",
                 "text": "I'd",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 36240,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 36480,
-            "duration": 480,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "verse1",
                 "text": "buy",
@@ -856,8 +676,13 @@
             ]
           },
           {
+            "kind": "rest",
+            "start": 35520,
+            "duration": 2880
+          },
+          {
             "kind": "note",
-            "start": 36960,
+            "start": 38400,
             "duration": 240,
             "pitch": 55,
             "lyrics": [
@@ -865,51 +690,17 @@
                 "verse": "verse1",
                 "text": "a",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 37200,
-            "duration": 240,
-            "pitch": 58,
-            "lyrics": [
+              },
               {
                 "verse": "verse1",
                 "text": "big",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 37440,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 37680,
-            "duration": 720,
-            "pitch": 58,
-            "lyrics": [
+              },
               {
                 "verse": "verse1",
                 "text": "house",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 38400,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 38640,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
+              },
               {
                 "verse": "verse1",
                 "text": "where",
@@ -918,70 +709,43 @@
             ]
           },
           {
+            "kind": "note",
+            "start": 38640,
+            "duration": 480,
+            "pitch": 58
+          },
+          {
             "kind": "rest",
-            "start": 38880,
-            "duration": 1440
+            "start": 39120,
+            "duration": 60
           },
           {
             "kind": "note",
-            "start": 40320,
-            "duration": 240,
-            "pitch": 54,
+            "start": 39180,
+            "duration": 180,
+            "pitch": 58
+          },
+          {
+            "kind": "note",
+            "start": 39360,
+            "duration": 960,
+            "pitch": 60,
             "lyrics": [
               {
                 "verse": "verse1",
                 "text": "we",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 40560,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 40800,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
+              },
               {
                 "verse": "verse1",
                 "text": "both",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 41040,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 41280,
-            "duration": 480,
-            "pitch": 54,
-            "lyrics": [
+              },
               {
                 "verse": "verse1",
                 "text": "could",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 41760,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 42000,
-            "duration": 1440,
-            "pitch": 54,
-            "lyrics": [
+              },
               {
                 "verse": "verse1",
                 "text": "live",
@@ -991,14 +755,26 @@
           },
           {
             "kind": "rest",
-            "start": 43440,
-            "duration": 3840
+            "start": 40320,
+            "duration": 5760
           },
           {
             "kind": "note",
-            "start": 47280,
-            "duration": 240,
-            "pitch": 55,
+            "start": 46080,
+            "duration": 300,
+            "pitch": 55
+          },
+          {
+            "kind": "note",
+            "start": 46380,
+            "duration": 660,
+            "pitch": 58
+          },
+          {
+            "kind": "note",
+            "start": 47040,
+            "duration": 300,
+            "pitch": 58,
             "lyrics": [
               {
                 "verse": "verse2",
@@ -1008,29 +784,16 @@
             ]
           },
           {
-            "kind": "rest",
-            "start": 47520,
-            "duration": 240
-          },
-          {
             "kind": "note",
-            "start": 47760,
-            "duration": 240,
-            "pitch": 55,
+            "start": 47340,
+            "duration": 660,
+            "pitch": 60,
             "lyrics": [
               {
                 "verse": "verse2",
                 "text": "I",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 48000,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "verse2",
                 "text": "was",
@@ -1040,36 +803,20 @@
           },
           {
             "kind": "note",
-            "start": 48240,
-            "duration": 240,
-            "pitch": 55,
+            "start": 48000,
+            "duration": 960,
+            "pitch": 54,
             "lyrics": [
               {
                 "verse": "verse2",
                 "text": "a",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 48480,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "verse2",
                 "text": "sculp",
                 "syllabic": "begin"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 48720,
-            "duration": 480,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "verse2",
                 "text": "tor",
@@ -1079,276 +826,30 @@
           },
           {
             "kind": "rest",
-            "start": 49200,
-            "duration": 2400
+            "start": 48960,
+            "duration": 12480
           },
           {
             "kind": "note",
-            "start": 51600,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
-              {
-                "verse": "verse2",
-                "text": "but",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 51840,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
-              {
-                "verse": "verse2",
-                "text": "then",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 52080,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
-              {
-                "verse": "verse2",
-                "text": "a",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 52320,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
-              {
-                "verse": "verse2",
-                "text": "gain",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 52560,
-            "duration": 480
-          },
-          {
-            "kind": "note",
-            "start": 53040,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "verse2",
-                "text": "no",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 53280,
-            "duration": 1200
-          },
-          {
-            "kind": "note",
-            "start": 54480,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "verse2",
-                "text": "or",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 54720,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "verse2",
-                "text": "a",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 54960,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "verse2",
-                "text": "man",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 55200,
-            "duration": 960
-          },
-          {
-            "kind": "note",
-            "start": 56160,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "verse2",
-                "text": "who",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 56400,
-            "duration": 480,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "verse2",
-                "text": "makes",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 56880,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 57120,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "verse2",
-                "text": "po",
-                "syllabic": "begin"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 57360,
-            "duration": 480,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "verse2",
-                "text": "tions",
-                "syllabic": "end"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 57840,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 58080,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "verse2",
-                "text": "in",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 58320,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 58560,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "verse2",
-                "text": "a",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 58800,
-            "duration": 1440
-          },
-          {
-            "kind": "note",
-            "start": 60240,
-            "duration": 240,
+            "start": 61440,
+            "duration": 960,
             "pitch": 55,
             "lyrics": [
               {
                 "verse": "verse2",
                 "text": "tra",
                 "syllabic": "begin"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 60480,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 60720,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "verse2",
                 "text": "vel",
                 "syllabic": "middle"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 60960,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "verse2",
                 "text": "ling",
                 "syllabic": "end"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 61200,
-            "duration": 720,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "verse2",
                 "text": "show",
@@ -1358,8 +859,8 @@
           },
           {
             "kind": "rest",
-            "start": 61920,
-            "duration": 1200
+            "start": 62400,
+            "duration": 720
           },
           {
             "kind": "note",
@@ -1375,42 +876,21 @@
             ]
           },
           {
-            "kind": "rest",
-            "start": 63360,
-            "duration": 1200
-          },
-          {
             "kind": "note",
-            "start": 64560,
-            "duration": 240,
+            "start": 63360,
+            "duration": 960,
             "pitch": 55,
             "lyrics": [
               {
                 "verse": "verse2",
                 "text": "know",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 64800,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "verse2",
                 "text": "it's",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 65040,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "verse2",
                 "text": "not",
@@ -1420,67 +900,30 @@
           },
           {
             "kind": "rest",
-            "start": 65280,
-            "duration": 240
+            "start": 64320,
+            "duration": 2880
           },
           {
             "kind": "note",
-            "start": 65520,
+            "start": 67200,
             "duration": 960,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "verse2",
-                "text": "much",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 66480,
-            "duration": 720,
-            "pitch": 55,
+            "pitch": 54,
             "lyrics": [
               {
                 "verse": "verse2",
                 "text": "but",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 67200,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "verse2",
                 "text": "it's",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 67440,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "verse2",
                 "text": "the",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 67680,
-            "duration": 720,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "verse2",
                 "text": "best",
@@ -1490,46 +933,25 @@
           },
           {
             "kind": "rest",
-            "start": 68400,
-            "duration": 480
+            "start": 68160,
+            "duration": 1440
           },
           {
             "kind": "note",
-            "start": 68880,
-            "duration": 240,
-            "pitch": 59,
+            "start": 69600,
+            "duration": 480,
+            "pitch": 55,
             "lyrics": [
               {
                 "verse": "verse2",
                 "text": "I",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 69120,
-            "duration": 480,
-            "pitch": 59,
-            "lyrics": [
+              },
               {
                 "verse": "verse2",
                 "text": "can",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 69600,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 69840,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
+              },
               {
                 "verse": "verse2",
                 "text": "do",
@@ -1540,347 +962,40 @@
           {
             "kind": "rest",
             "start": 70080,
-            "duration": 2640
+            "duration": 10560
           },
           {
             "kind": "note",
-            "start": 72720,
-            "duration": 240,
-            "pitch": 56,
-            "lyrics": [
-              {
-                "verse": "verse2",
-                "text": "My",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 72960,
-            "duration": 480,
-            "pitch": 56,
-            "lyrics": [
-              {
-                "verse": "verse2",
-                "text": "gift",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 73440,
-            "duration": 240,
-            "pitch": 56,
-            "lyrics": [
-              {
-                "verse": "verse2",
-                "text": "is",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 73680,
-            "duration": 240,
-            "pitch": 56,
-            "lyrics": [
-              {
-                "verse": "verse2",
-                "text": "my",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 73920,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 74160,
+            "start": 80640,
             "duration": 960,
-            "pitch": 58,
-            "lyrics": [
-              {
-                "verse": "verse2",
-                "text": "song",
-                "syllabic": "single"
-              }
-            ]
+            "pitch": 55
           },
           {
             "kind": "rest",
-            "start": 75120,
-            "duration": 240
+            "start": 81600,
+            "duration": 6720
           },
           {
             "kind": "note",
-            "start": 75360,
-            "duration": 240,
-            "pitch": 60,
-            "lyrics": [
-              {
-                "verse": "verse2",
-                "text": "and",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 75600,
-            "duration": 1440
-          },
-          {
-            "kind": "note",
-            "start": 77040,
-            "duration": 240,
-            "pitch": 60,
-            "lyrics": [
-              {
-                "verse": "verse2",
-                "text": "this",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 77280,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 77520,
-            "duration": 240,
-            "pitch": 60,
-            "lyrics": [
-              {
-                "verse": "verse2",
-                "text": "one's",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 77760,
-            "duration": 240,
-            "pitch": 60,
-            "lyrics": [
-              {
-                "verse": "verse2",
-                "text": "for",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 78000,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 78240,
-            "duration": 240,
-            "pitch": 60,
-            "lyrics": [
-              {
-                "verse": "verse2",
-                "text": "you",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 78480,
-            "duration": 5040
-          },
-          {
-            "kind": "note",
-            "start": 83520,
-            "duration": 240,
+            "start": 88320,
+            "duration": 960,
             "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "chorus1",
-                "text": "And",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 83760,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "chorus1",
-                "text": "you",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 84000,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 84240,
-            "duration": 240,
-            "pitch": 58,
-            "lyrics": [
-              {
-                "verse": "chorus1",
-                "text": "can",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 84480,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 84720,
-            "duration": 480,
-            "pitch": 58,
-            "lyrics": [
-              {
-                "verse": "chorus1",
-                "text": "tell",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 85200,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 85440,
-            "duration": 240,
-            "pitch": 60,
-            "lyrics": [
-              {
-                "verse": "chorus1",
-                "text": "ev",
-                "syllabic": "begin"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 85680,
-            "duration": 240,
-            "pitch": 60,
-            "lyrics": [
-              {
-                "verse": "chorus1",
-                "text": "ry",
-                "syllabic": "middle"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 85920,
-            "duration": 240,
-            "pitch": 60,
-            "lyrics": [
-              {
-                "verse": "chorus1",
-                "text": "bo",
-                "syllabic": "middle"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 86160,
-            "duration": 480
-          },
-          {
-            "kind": "note",
-            "start": 86640,
-            "duration": 240,
-            "pitch": 60,
-            "lyrics": [
-              {
-                "verse": "chorus1",
-                "text": "dy",
-                "syllabic": "end"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 86880,
-            "duration": 1200
-          },
-          {
-            "kind": "note",
-            "start": 88080,
-            "duration": 480,
-            "pitch": 60,
             "lyrics": [
               {
                 "verse": "chorus1",
                 "text": "this",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 88560,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 88800,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "chorus1",
                 "text": "is",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 89040,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "chorus1",
                 "text": "your",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 89280,
-            "duration": 960,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "chorus1",
                 "text": "song",
@@ -1890,64 +1005,41 @@
           },
           {
             "kind": "rest",
-            "start": 90240,
+            "start": 89280,
+            "duration": 1680
+          },
+          {
+            "kind": "note",
+            "start": 90960,
+            "duration": 240,
+            "pitch": 55
+          },
+          {
+            "kind": "rest",
+            "start": 91200,
             "duration": 1920
           },
           {
             "kind": "note",
-            "start": 92160,
-            "duration": 240,
-            "pitch": 55,
+            "start": 93120,
+            "duration": 480,
+            "pitch": 59,
             "lyrics": [
               {
                 "verse": "chorus1",
                 "text": "It",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 92400,
-            "duration": 240,
-            "pitch": 56,
-            "lyrics": [
+              },
               {
                 "verse": "chorus1",
                 "text": "may",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 92640,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 92880,
-            "duration": 240,
-            "pitch": 58,
-            "lyrics": [
+              },
               {
                 "verse": "chorus1",
                 "text": "be",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 93120,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 93360,
-            "duration": 720,
-            "pitch": 58,
-            "lyrics": [
+              },
               {
                 "verse": "chorus1",
                 "text": "qui",
@@ -1956,55 +1048,44 @@
             ]
           },
           {
-            "kind": "rest",
+            "kind": "note",
+            "start": 93600,
+            "duration": 180,
+            "pitch": 59
+          },
+          {
+            "kind": "note",
+            "start": 93780,
+            "duration": 300,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
             "start": 94080,
-            "duration": 240
+            "duration": 240,
+            "pitch": 54
           },
           {
             "kind": "note",
             "start": 94320,
-            "duration": 240,
-            "pitch": 55,
+            "duration": 720,
+            "pitch": 65,
             "lyrics": [
               {
                 "verse": "chorus1",
                 "text": "te",
                 "syllabic": "end"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 94560,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "chorus1",
                 "text": "sim",
                 "syllabic": "begin"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 94800,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "chorus1",
                 "text": "ple",
                 "syllabic": "end"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 95040,
-            "duration": 960,
-            "pitch": 54,
-            "lyrics": [
+              },
               {
                 "verse": "chorus1",
                 "text": "but",
@@ -2014,80 +1095,23 @@
           },
           {
             "kind": "rest",
-            "start": 96000,
-            "duration": 960
+            "start": 95040,
+            "duration": 5280
           },
           {
             "kind": "note",
-            "start": 96960,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
-              {
-                "verse": "chorus1",
-                "text": "now",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 97200,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
-              {
-                "verse": "chorus1",
-                "text": "that",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 97440,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 97680,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
-              {
-                "verse": "chorus1",
-                "text": "it's",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 97920,
-            "duration": 960,
-            "pitch": 54,
-            "lyrics": [
-              {
-                "verse": "chorus1",
-                "text": "done",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 98880,
-            "duration": 1680
-          },
-          {
-            "kind": "note",
-            "start": 100560,
-            "duration": 240,
-            "pitch": 54,
+            "start": 100320,
+            "duration": 480,
+            "pitch": 56,
             "lyrics": [
               {
                 "verse": "chorus1",
                 "text": "I",
+                "syllabic": "single"
+              },
+              {
+                "verse": "chorus1",
+                "text": "hope",
                 "syllabic": "single"
               }
             ]
@@ -2095,48 +1119,30 @@
           {
             "kind": "note",
             "start": 100800,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
-              {
-                "verse": "chorus1",
-                "text": "hope",
-                "syllabic": "single"
-              }
-            ]
+            "duration": 300,
+            "pitch": 58
+          },
+          {
+            "kind": "rest",
+            "start": 101100,
+            "duration": 360
           },
           {
             "kind": "note",
-            "start": 101040,
-            "duration": 240,
-            "pitch": 72,
+            "start": 101460,
+            "duration": 300,
+            "pitch": 58,
             "lyrics": [
               {
                 "verse": "chorus1",
                 "text": "you",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 101280,
-            "duration": 240,
-            "pitch": 60,
-            "lyrics": [
+              },
               {
                 "verse": "chorus1",
                 "text": "don't",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 101520,
-            "duration": 1200,
-            "pitch": 60,
-            "lyrics": [
+              },
               {
                 "verse": "chorus1",
                 "text": "mind",
@@ -2146,284 +1152,58 @@
           },
           {
             "kind": "note",
-            "start": 102720,
-            "duration": 240,
-            "pitch": 58,
-            "lyrics": [
-              {
-                "verse": "chorus1",
-                "text": "I",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 102960,
-            "duration": 240,
-            "pitch": 58,
-            "lyrics": [
-              {
-                "verse": "chorus1",
-                "text": "hope",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 103200,
-            "duration": 240,
-            "pitch": 58,
-            "lyrics": [
-              {
-                "verse": "chorus1",
-                "text": "you",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 103440,
-            "duration": 240,
-            "pitch": 60,
-            "lyrics": [
-              {
-                "verse": "chorus1",
-                "text": "don't",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 103680,
-            "duration": 1200,
-            "pitch": 63,
-            "lyrics": [
-              {
-                "verse": "chorus1",
-                "text": "mind",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 104880,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 105120,
-            "duration": 240,
-            "pitch": 59,
-            "lyrics": [
-              {
-                "verse": "chorus1",
-                "text": "that",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 105360,
-            "duration": 240,
-            "pitch": 60,
-            "lyrics": [
-              {
-                "verse": "chorus1",
-                "text": "I",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 105600,
-            "duration": 240,
-            "pitch": 60,
-            "lyrics": [
-              {
-                "verse": "chorus1",
-                "text": "put",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 105840,
-            "duration": 480,
-            "pitch": 63,
-            "lyrics": [
-              {
-                "verse": "chorus1",
-                "text": "down",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 106320,
-            "duration": 240,
-            "pitch": 70,
-            "lyrics": [
-              {
-                "verse": "chorus1",
-                "text": "in",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 106560,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 106800,
-            "duration": 1920,
-            "pitch": 60,
-            "lyrics": [
-              {
-                "verse": "chorus1",
-                "text": "words",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 108720,
-            "duration": 1680
-          },
-          {
-            "kind": "note",
-            "start": 110400,
-            "duration": 480,
-            "pitch": 57,
-            "lyrics": [
-              {
-                "verse": "chorus1",
-                "text": "how",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 110880,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 111120,
+            "start": 101760,
             "duration": 960,
-            "pitch": 58,
+            "pitch": 60,
             "lyrics": [
               {
                 "verse": "chorus1",
-                "text": "won",
-                "syllabic": "begin"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 112080,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+                "text": "I",
+                "syllabic": "single"
+              },
               {
                 "verse": "chorus1",
-                "text": "der",
-                "syllabic": "end"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 112320,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 112560,
-            "duration": 480,
-            "pitch": 55,
-            "lyrics": [
+                "text": "hope",
+                "syllabic": "single"
+              },
               {
                 "verse": "chorus1",
-                "text": "ful",
+                "text": "you",
+                "syllabic": "single"
+              },
+              {
+                "verse": "chorus1",
+                "text": "don't",
+                "syllabic": "single"
+              },
+              {
+                "verse": "chorus1",
+                "text": "mind",
                 "syllabic": "single"
               }
             ]
           },
           {
             "kind": "rest",
-            "start": 113040,
-            "duration": 480
+            "start": 102720,
+            "duration": 12960
           },
           {
             "kind": "note",
-            "start": 113520,
-            "duration": 720,
-            "pitch": 54,
-            "lyrics": [
-              {
-                "verse": "chorus1",
-                "text": "life",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 114240,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 114480,
+            "start": 115680,
             "duration": 480,
-            "pitch": 54,
+            "pitch": 55,
             "lyrics": [
               {
                 "verse": "chorus1",
                 "text": "is",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 114960,
-            "duration": 480
-          },
-          {
-            "kind": "note",
-            "start": 115440,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
+              },
               {
                 "verse": "chorus1",
                 "text": "while",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 115680,
-            "duration": 720,
-            "pitch": 54,
-            "lyrics": [
+              },
               {
                 "verse": "chorus1",
                 "text": "you're",
@@ -2432,15 +1212,10 @@
             ]
           },
           {
-            "kind": "rest",
-            "start": 116400,
-            "duration": 240
-          },
-          {
             "kind": "note",
-            "start": 116640,
-            "duration": 240,
-            "pitch": 54,
+            "start": 116160,
+            "duration": 660,
+            "pitch": 58,
             "lyrics": [
               {
                 "verse": "chorus1",
@@ -2450,15 +1225,10 @@
             ]
           },
           {
-            "kind": "rest",
-            "start": 116880,
-            "duration": 240
-          },
-          {
             "kind": "note",
-            "start": 117120,
-            "duration": 240,
-            "pitch": 54,
+            "start": 116820,
+            "duration": 300,
+            "pitch": 55,
             "lyrics": [
               {
                 "verse": "chorus1",
@@ -2469,9 +1239,9 @@
           },
           {
             "kind": "note",
-            "start": 117360,
-            "duration": 14160,
-            "pitch": 60,
+            "start": 117120,
+            "duration": 960,
+            "pitch": 58,
             "lyrics": [
               {
                 "verse": "chorus1",
@@ -2482,14 +1252,60 @@
           },
           {
             "kind": "rest",
-            "start": 131520,
-            "duration": 240
+            "start": 118080,
+            "duration": 960
           },
           {
             "kind": "note",
-            "start": 131760,
+            "start": 119040,
+            "duration": 960,
+            "pitch": 60
+          },
+          {
+            "kind": "rest",
+            "start": 120000,
+            "duration": 8640
+          },
+          {
+            "kind": "note",
+            "start": 128640,
+            "duration": 180,
+            "pitch": 55
+          },
+          {
+            "kind": "note",
+            "start": 128820,
+            "duration": 300,
+            "pitch": 56
+          },
+          {
+            "kind": "note",
+            "start": 129120,
+            "duration": 480,
+            "pitch": 58
+          },
+          {
+            "kind": "rest",
+            "start": 129600,
+            "duration": 960
+          },
+          {
+            "kind": "note",
+            "start": 130560,
+            "duration": 720,
+            "pitch": 58
+          },
+          {
+            "kind": "note",
+            "start": 131280,
             "duration": 240,
-            "pitch": 54,
+            "pitch": 58
+          },
+          {
+            "kind": "note",
+            "start": 131520,
+            "duration": 240,
+            "pitch": 60,
             "lyrics": [
               {
                 "verse": "verse3",
@@ -2499,24 +1315,21 @@
             ]
           },
           {
+            "kind": "rest",
+            "start": 131760,
+            "duration": 120
+          },
+          {
             "kind": "note",
-            "start": 132000,
-            "duration": 240,
-            "pitch": 54,
+            "start": 131880,
+            "duration": 600,
+            "pitch": 58,
             "lyrics": [
               {
                 "verse": "verse3",
                 "text": "sat",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 132240,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "verse3",
                 "text": "on",
@@ -2525,29 +1338,16 @@
             ]
           },
           {
-            "kind": "rest",
-            "start": 132480,
-            "duration": 240
-          },
-          {
             "kind": "note",
-            "start": 132720,
-            "duration": 240,
+            "start": 132480,
+            "duration": 960,
             "pitch": 55,
             "lyrics": [
               {
                 "verse": "verse3",
                 "text": "the",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 132960,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
+              },
               {
                 "verse": "verse3",
                 "text": "roof",
@@ -2557,28 +1357,26 @@
           },
           {
             "kind": "rest",
-            "start": 133200,
-            "duration": 2880
+            "start": 133440,
+            "duration": 960
           },
           {
             "kind": "note",
-            "start": 136080,
+            "start": 134400,
             "duration": 240,
-            "pitch": 58,
+            "pitch": 54
+          },
+          {
+            "kind": "note",
+            "start": 134640,
+            "duration": 720,
+            "pitch": 54,
             "lyrics": [
               {
                 "verse": "verse3",
                 "text": "and",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 136320,
-            "duration": 240,
-            "pitch": 58,
-            "lyrics": [
+              },
               {
                 "verse": "verse3",
                 "text": "kicked",
@@ -2587,76 +1385,41 @@
             ]
           },
           {
+            "kind": "rest",
+            "start": 135360,
+            "duration": 2880
+          },
+          {
             "kind": "note",
-            "start": 136560,
-            "duration": 480,
-            "pitch": 58,
+            "start": 138240,
+            "duration": 960,
+            "pitch": 54,
             "lyrics": [
               {
                 "verse": "verse3",
                 "text": "off",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 137040,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "verse3",
                 "text": "the",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 137280,
-            "duration": 1440,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "verse3",
                 "text": "moss",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 138720,
-            "duration": 240,
-            "pitch": 56,
-            "lyrics": [
+              },
               {
                 "verse": "verse3",
                 "text": "well",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 138960,
-            "duration": 240,
-            "pitch": 56,
-            "lyrics": [
+              },
               {
                 "verse": "verse3",
                 "text": "a",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 139200,
-            "duration": 240,
-            "pitch": 56,
-            "lyrics": [
+              },
               {
                 "verse": "verse3",
                 "text": "few",
@@ -2666,41 +1429,25 @@
           },
           {
             "kind": "rest",
-            "start": 139440,
-            "duration": 1680
+            "start": 139200,
+            "duration": 2880
           },
           {
             "kind": "note",
-            "start": 141120,
-            "duration": 240,
-            "pitch": 55,
+            "start": 142080,
+            "duration": 180,
+            "pitch": 54,
             "lyrics": [
               {
                 "verse": "verse3",
                 "text": "of",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 141360,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "verse3",
                 "text": "the",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 141600,
-            "duration": 1200,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "verse3",
                 "text": "verses",
@@ -2709,10 +1456,26 @@
             ]
           },
           {
+            "kind": "rest",
+            "start": 142260,
+            "duration": 120
+          },
+          {
             "kind": "note",
-            "start": 142800,
-            "duration": 240,
-            "pitch": 55,
+            "start": 142380,
+            "duration": 180,
+            "pitch": 60
+          },
+          {
+            "kind": "rest",
+            "start": 142560,
+            "duration": 120
+          },
+          {
+            "kind": "note",
+            "start": 142680,
+            "duration": 360,
+            "pitch": 58,
             "lyrics": [
               {
                 "verse": "verse3",
@@ -2724,8 +1487,8 @@
           {
             "kind": "note",
             "start": 143040,
-            "duration": 240,
-            "pitch": 55,
+            "duration": 300,
+            "pitch": 60,
             "lyrics": [
               {
                 "verse": "verse3",
@@ -2736,9 +1499,9 @@
           },
           {
             "kind": "note",
-            "start": 143280,
-            "duration": 480,
-            "pitch": 55,
+            "start": 143340,
+            "duration": 360,
+            "pitch": 60,
             "lyrics": [
               {
                 "verse": "verse3",
@@ -2749,9 +1512,9 @@
           },
           {
             "kind": "note",
-            "start": 143760,
-            "duration": 240,
-            "pitch": 55,
+            "start": 143700,
+            "duration": 300,
+            "pitch": 63,
             "lyrics": [
               {
                 "verse": "verse3",
@@ -2763,27 +1526,25 @@
           {
             "kind": "rest",
             "start": 144000,
-            "duration": 960
+            "duration": 300
           },
           {
             "kind": "note",
-            "start": 144960,
+            "start": 144300,
+            "duration": 360,
+            "pitch": 58
+          },
+          {
+            "kind": "note",
+            "start": 144660,
             "duration": 480,
-            "pitch": 54,
+            "pitch": 58,
             "lyrics": [
               {
                 "verse": "verse3",
                 "text": "quite",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 145440,
-            "duration": 1200,
-            "pitch": 54,
-            "lyrics": [
+              },
               {
                 "verse": "verse3",
                 "text": "cross",
@@ -2793,28 +1554,49 @@
           },
           {
             "kind": "rest",
-            "start": 146640,
-            "duration": 1680
+            "start": 145140,
+            "duration": 1500
           },
           {
             "kind": "note",
-            "start": 148320,
+            "start": 146640,
             "duration": 240,
-            "pitch": 55,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 146880,
+            "duration": 300,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 147180,
+            "duration": 360,
+            "pitch": 63
+          },
+          {
+            "kind": "rest",
+            "start": 147540,
+            "duration": 300
+          },
+          {
+            "kind": "note",
+            "start": 147840,
+            "duration": 300,
+            "pitch": 59
+          },
+          {
+            "kind": "note",
+            "start": 148140,
+            "duration": 360,
+            "pitch": 60,
             "lyrics": [
               {
                 "verse": "verse3",
                 "text": "but",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 148560,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "verse3",
                 "text": "the",
@@ -2824,9 +1606,9 @@
           },
           {
             "kind": "note",
-            "start": 148800,
-            "duration": 240,
-            "pitch": 55,
+            "start": 148500,
+            "duration": 480,
+            "pitch": 59,
             "lyrics": [
               {
                 "verse": "verse3",
@@ -2837,46 +1619,25 @@
           },
           {
             "kind": "rest",
-            "start": 149040,
-            "duration": 240
+            "start": 148980,
+            "duration": 780
           },
           {
             "kind": "note",
-            "start": 149280,
-            "duration": 240,
-            "pitch": 55,
+            "start": 149760,
+            "duration": 480,
+            "pitch": 60,
             "lyrics": [
               {
                 "verse": "verse3",
                 "text": "been",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 149520,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 149760,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "verse3",
                 "text": "qui",
                 "syllabic": "begin"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 150000,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "verse3",
                 "text": "te",
@@ -2887,8 +1648,8 @@
           {
             "kind": "note",
             "start": 150240,
-            "duration": 1200,
-            "pitch": 55,
+            "duration": 480,
+            "pitch": 63,
             "lyrics": [
               {
                 "verse": "verse3",
@@ -2898,15 +1659,22 @@
             ]
           },
           {
-            "kind": "rest",
-            "start": 151440,
-            "duration": 960
+            "kind": "note",
+            "start": 150720,
+            "duration": 360,
+            "pitch": 58
           },
           {
             "kind": "note",
-            "start": 152400,
-            "duration": 480,
-            "pitch": 55,
+            "start": 151080,
+            "duration": 600,
+            "pitch": 59
+          },
+          {
+            "kind": "note",
+            "start": 151680,
+            "duration": 960,
+            "pitch": 60,
             "lyrics": [
               {
                 "verse": "verse3",
@@ -2916,55 +1684,31 @@
             ]
           },
           {
+            "kind": "rest",
+            "start": 152640,
+            "duration": 960
+          },
+          {
             "kind": "note",
-            "start": 152880,
-            "duration": 240,
-            "pitch": 55,
+            "start": 153600,
+            "duration": 960,
+            "pitch": 59,
             "lyrics": [
               {
                 "verse": "verse3",
                 "text": "I",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 153120,
-            "duration": 240,
-            "pitch": 59,
-            "lyrics": [
+              },
               {
                 "verse": "verse3",
                 "text": "wrote",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 153360,
-            "duration": 480,
-            "pitch": 60,
-            "lyrics": [
+              },
               {
                 "verse": "verse3",
                 "text": "this",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 153840,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 154080,
-            "duration": 720,
-            "pitch": 54,
-            "lyrics": [
+              },
               {
                 "verse": "verse3",
                 "text": "song",
@@ -2974,14 +1718,14 @@
           },
           {
             "kind": "rest",
-            "start": 154800,
-            "duration": 1920
+            "start": 154560,
+            "duration": 1680
           },
           {
             "kind": "note",
-            "start": 156720,
+            "start": 156240,
             "duration": 240,
-            "pitch": 55,
+            "pitch": 57,
             "lyrics": [
               {
                 "verse": "verse3",
@@ -2991,37 +1735,26 @@
             ]
           },
           {
-            "kind": "note",
-            "start": 156960,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "verse3",
-                "text": "for",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 157200,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "verse3",
-                "text": "peo",
-                "syllabic": "begin"
-              }
-            ]
+            "kind": "rest",
+            "start": 156480,
+            "duration": 960
           },
           {
             "kind": "note",
             "start": 157440,
             "duration": 240,
-            "pitch": 55,
+            "pitch": 60,
             "lyrics": [
+              {
+                "verse": "verse3",
+                "text": "for",
+                "syllabic": "single"
+              },
+              {
+                "verse": "verse3",
+                "text": "peo",
+                "syllabic": "begin"
+              },
               {
                 "verse": "verse3",
                 "text": "ple",
@@ -3032,7 +1765,7 @@
           {
             "kind": "note",
             "start": 157680,
-            "duration": 480,
+            "duration": 240,
             "pitch": 58,
             "lyrics": [
               {
@@ -3043,14 +1776,9 @@
             ]
           },
           {
-            "kind": "rest",
-            "start": 158160,
-            "duration": 240
-          },
-          {
             "kind": "note",
-            "start": 158400,
-            "duration": 240,
+            "start": 157920,
+            "duration": 840,
             "pitch": 58,
             "lyrics": [
               {
@@ -3061,15 +1789,22 @@
             ]
           },
           {
-            "kind": "rest",
-            "start": 158640,
-            "duration": 720
+            "kind": "note",
+            "start": 158760,
+            "duration": 120,
+            "pitch": 56
           },
           {
             "kind": "note",
-            "start": 159360,
-            "duration": 480,
-            "pitch": 60,
+            "start": 158880,
+            "duration": 240,
+            "pitch": 55
+          },
+          {
+            "kind": "note",
+            "start": 159120,
+            "duration": 1200,
+            "pitch": 55,
             "lyrics": [
               {
                 "verse": "verse3",
@@ -3080,77 +1815,35 @@
           },
           {
             "kind": "rest",
-            "start": 159840,
-            "duration": 1920
+            "start": 160320,
+            "duration": 1440
           },
           {
             "kind": "note",
             "start": 161760,
-            "duration": 240,
-            "pitch": 60,
+            "duration": 480,
+            "pitch": 54,
             "lyrics": [
               {
                 "verse": "verse3",
                 "text": "keep",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 162000,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 162240,
-            "duration": 240,
-            "pitch": 60,
-            "lyrics": [
+              },
               {
                 "verse": "verse3",
                 "text": "it",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 162480,
-            "duration": 480,
-            "pitch": 60,
-            "lyrics": [
+              },
               {
                 "verse": "verse3",
                 "text": "turn",
                 "syllabic": "begin"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 162960,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 163200,
-            "duration": 240,
-            "pitch": 60,
-            "lyrics": [
+              },
               {
                 "verse": "verse3",
                 "text": "ing",
                 "syllabic": "end"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 163440,
-            "duration": 960,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "verse3",
                 "text": "on",
@@ -3160,276 +1853,35 @@
           },
           {
             "kind": "rest",
-            "start": 164400,
-            "duration": 3120
+            "start": 162240,
+            "duration": 16320
           },
           {
             "kind": "note",
-            "start": 167520,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "chorus2",
-                "text": "So",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 167760,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 168000,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "chorus2",
-                "text": "ex",
-                "syllabic": "begin"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 168240,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "chorus2",
-                "text": "cuse",
-                "syllabic": "end"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 168480,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 168720,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
-              {
-                "verse": "chorus2",
-                "text": "me",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 168960,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "chorus2",
-                "text": "for",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 169200,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 169440,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "chorus2",
-                "text": "get",
-                "syllabic": "begin"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 169680,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
-              {
-                "verse": "chorus2",
-                "text": "ting",
-                "syllabic": "end"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 169920,
-            "duration": 2400
-          },
-          {
-            "kind": "note",
-            "start": 172320,
-            "duration": 240,
-            "pitch": 58,
-            "lyrics": [
-              {
-                "verse": "chorus2",
-                "text": "but",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 172560,
-            "duration": 240,
-            "pitch": 58,
-            "lyrics": [
-              {
-                "verse": "chorus2",
-                "text": "these",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 172800,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 173040,
-            "duration": 480,
-            "pitch": 58,
-            "lyrics": [
-              {
-                "verse": "chorus2",
-                "text": "things",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 173520,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 173760,
-            "duration": 240,
+            "start": 178560,
+            "duration": 300,
             "pitch": 60,
-            "lyrics": [
-              {
-                "verse": "chorus2",
-                "text": "I",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 174000,
-            "duration": 240,
-            "pitch": 56,
-            "lyrics": [
-              {
-                "verse": "chorus2",
-                "text": "do",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 174240,
-            "duration": 2400
-          },
-          {
-            "kind": "note",
-            "start": 176640,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "chorus2",
-                "text": "you",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 176880,
-            "duration": 240,
-            "pitch": 55,
             "lyrics": [
               {
                 "verse": "chorus2",
                 "text": "see",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 177120,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 177360,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "chorus2",
                 "text": "I've",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 177600,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "chorus2",
                 "text": "for",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 177840,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "chorus2",
                 "text": "got",
                 "syllabic": "begin"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 178080,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
+              },
               {
                 "verse": "chorus2",
                 "text": "ten",
@@ -3439,41 +1891,25 @@
           },
           {
             "kind": "rest",
-            "start": 178320,
-            "duration": 1200
+            "start": 178860,
+            "duration": 360
           },
           {
             "kind": "note",
-            "start": 179520,
-            "duration": 240,
-            "pitch": 54,
+            "start": 179220,
+            "duration": 480,
+            "pitch": 60,
             "lyrics": [
               {
                 "verse": "chorus2",
                 "text": "if",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 179760,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
+              },
               {
                 "verse": "chorus2",
                 "text": "they're",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 180000,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
+              },
               {
                 "verse": "chorus2",
                 "text": "green",
@@ -3483,129 +1919,46 @@
           },
           {
             "kind": "rest",
-            "start": 180240,
-            "duration": 1440
+            "start": 179700,
+            "duration": 4620
           },
           {
             "kind": "note",
-            "start": 181680,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
-              {
-                "verse": "chorus2",
-                "text": "or",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 181920,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
-              {
-                "verse": "chorus2",
-                "text": "they're",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 182160,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
-              {
-                "verse": "chorus2",
-                "text": "blue",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 182400,
-            "duration": 2400
+            "start": 184320,
+            "duration": 480,
+            "pitch": 68
           },
           {
             "kind": "note",
             "start": 184800,
-            "duration": 240,
-            "pitch": 58,
+            "duration": 480,
+            "pitch": 60,
             "lyrics": [
               {
                 "verse": "chorus2",
                 "text": "an",
                 "syllabic": "begin"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 185040,
-            "duration": 240,
-            "pitch": 58,
-            "lyrics": [
+              },
               {
                 "verse": "chorus2",
                 "text": "y",
                 "syllabic": "end"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 185280,
-            "duration": 240,
-            "pitch": 58,
-            "lyrics": [
+              },
               {
                 "verse": "chorus2",
                 "text": "way",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 185520,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 185760,
-            "duration": 240,
-            "pitch": 58,
-            "lyrics": [
+              },
               {
                 "verse": "chorus2",
                 "text": "the",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 186000,
-            "duration": 240,
-            "pitch": 58,
-            "lyrics": [
+              },
               {
                 "verse": "chorus2",
                 "text": "thing",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 186240,
-            "duration": 480,
-            "pitch": 58,
-            "lyrics": [
+              },
               {
                 "verse": "chorus2",
                 "text": "is",
@@ -3615,85 +1968,40 @@
           },
           {
             "kind": "rest",
-            "start": 186720,
-            "duration": 1200
+            "start": 185280,
+            "duration": 3480
           },
           {
             "kind": "note",
-            "start": 187920,
-            "duration": 240,
-            "pitch": 58,
+            "start": 188760,
+            "duration": 360,
+            "pitch": 54,
             "lyrics": [
               {
                 "verse": "chorus2",
                 "text": "what",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 188160,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 188400,
-            "duration": 240,
-            "pitch": 58,
-            "lyrics": [
+              },
               {
                 "verse": "chorus2",
                 "text": "I",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 188640,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "chorus2",
                 "text": "re",
                 "syllabic": "begin"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 188880,
-            "duration": 240,
-            "pitch": 58,
-            "lyrics": [
+              },
               {
                 "verse": "chorus2",
                 "text": "al",
                 "syllabic": "middle"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 189120,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "chorus2",
                 "text": "ly",
                 "syllabic": "end"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 189360,
-            "duration": 480,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "chorus2",
                 "text": "mean",
@@ -3702,81 +2010,59 @@
             ]
           },
           {
-            "kind": "rest",
-            "start": 189840,
-            "duration": 4320
+            "kind": "note",
+            "start": 189120,
+            "duration": 240,
+            "pitch": 55
           },
           {
             "kind": "note",
-            "start": 194160,
-            "duration": 480,
-            "pitch": 55,
+            "start": 189360,
+            "duration": 720,
+            "pitch": 55
+          },
+          {
+            "kind": "note",
+            "start": 190080,
+            "duration": 960,
+            "pitch": 54
+          },
+          {
+            "kind": "rest",
+            "start": 191040,
+            "duration": 4800
+          },
+          {
+            "kind": "note",
+            "start": 195840,
+            "duration": 960,
+            "pitch": 58,
             "lyrics": [
               {
                 "verse": "chorus2",
                 "text": "yours",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 194640,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "chorus2",
                 "text": "are",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 194880,
-            "duration": 240,
-            "pitch": 59,
-            "lyrics": [
+              },
               {
                 "verse": "chorus2",
                 "text": "the",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 195120,
-            "duration": 480,
-            "pitch": 60,
-            "lyrics": [
+              },
               {
                 "verse": "chorus2",
                 "text": "sweet",
                 "syllabic": "begin"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 195600,
-            "duration": 480,
-            "pitch": 58,
-            "lyrics": [
+              },
               {
                 "verse": "chorus2",
                 "text": "est",
                 "syllabic": "end"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 196080,
-            "duration": 1920,
-            "pitch": 54,
-            "lyrics": [
+              },
               {
                 "verse": "chorus2",
                 "text": "eyes",
@@ -3786,54 +2072,42 @@
           },
           {
             "kind": "rest",
-            "start": 198000,
-            "duration": 240
+            "start": 196800,
+            "duration": 360
           },
           {
             "kind": "note",
-            "start": 198240,
-            "duration": 480,
-            "pitch": 54,
+            "start": 197160,
+            "duration": 360,
+            "pitch": 55
+          },
+          {
+            "kind": "note",
+            "start": 197520,
+            "duration": 240,
+            "pitch": 55
+          },
+          {
+            "kind": "note",
+            "start": 197760,
+            "duration": 960,
+            "pitch": 56,
             "lyrics": [
               {
                 "verse": "chorus2",
                 "text": "I've",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 198720,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
+              },
               {
                 "verse": "chorus2",
                 "text": "ev",
                 "syllabic": "begin"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 198960,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
+              },
               {
                 "verse": "chorus2",
                 "text": "er",
                 "syllabic": "end"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 199200,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
+              },
               {
                 "verse": "chorus2",
                 "text": "seen",
@@ -3843,116 +2117,30 @@
           },
           {
             "kind": "rest",
-            "start": 199440,
-            "duration": 5040
+            "start": 198720,
+            "duration": 8640
           },
           {
             "kind": "note",
-            "start": 204480,
-            "duration": 240,
+            "start": 207360,
+            "duration": 960,
             "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "chorus3",
-                "text": "And",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 204720,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "chorus3",
-                "text": "you",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 204960,
-            "duration": 240,
-            "pitch": 58,
-            "lyrics": [
-              {
-                "verse": "chorus3",
-                "text": "can",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 205200,
-            "duration": 720,
-            "pitch": 58,
-            "lyrics": [
-              {
-                "verse": "chorus3",
-                "text": "tell",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 205920,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 206160,
-            "duration": 480,
-            "pitch": 72,
             "lyrics": [
               {
                 "verse": "chorus3",
                 "text": "ev",
                 "syllabic": "begin"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 206640,
-            "duration": 240,
-            "pitch": 60,
-            "lyrics": [
+              },
               {
                 "verse": "chorus3",
                 "text": "ry",
                 "syllabic": "middle"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 206880,
-            "duration": 240,
-            "pitch": 58,
-            "lyrics": [
+              },
               {
                 "verse": "chorus3",
                 "text": "bo",
                 "syllabic": "middle"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 207120,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 207360,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
+              },
               {
                 "verse": "chorus3",
                 "text": "dy",
@@ -3962,59 +2150,30 @@
           },
           {
             "kind": "rest",
-            "start": 207600,
-            "duration": 1680
+            "start": 208320,
+            "duration": 960
           },
           {
             "kind": "note",
             "start": 209280,
-            "duration": 240,
+            "duration": 960,
             "pitch": 54,
             "lyrics": [
               {
                 "verse": "chorus3",
                 "text": "this",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 209520,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 209760,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
+              },
               {
                 "verse": "chorus3",
                 "text": "is",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 210000,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
+              },
               {
                 "verse": "chorus3",
                 "text": "your",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 210240,
-            "duration": 720,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "chorus3",
                 "text": "song",
@@ -4024,121 +2183,35 @@
           },
           {
             "kind": "rest",
-            "start": 210960,
-            "duration": 2160
+            "start": 210240,
+            "duration": 5760
           },
           {
             "kind": "note",
-            "start": 213120,
-            "duration": 240,
+            "start": 216000,
+            "duration": 300,
             "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "chorus3",
-                "text": "It",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 213360,
-            "duration": 240,
-            "pitch": 58,
-            "lyrics": [
-              {
-                "verse": "chorus3",
-                "text": "may",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 213600,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 213840,
-            "duration": 240,
-            "pitch": 58,
-            "lyrics": [
-              {
-                "verse": "chorus3",
-                "text": "be",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 214080,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 214320,
-            "duration": 720,
-            "pitch": 58,
             "lyrics": [
               {
                 "verse": "chorus3",
                 "text": "qui",
                 "syllabic": "begin"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 215040,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 215280,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
+              },
               {
                 "verse": "chorus3",
                 "text": "te",
                 "syllabic": "end"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 215520,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
+              },
               {
                 "verse": "chorus3",
                 "text": "sim",
                 "syllabic": "begin"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 215760,
-            "duration": 240,
-            "pitch": 65,
-            "lyrics": [
+              },
               {
                 "verse": "chorus3",
                 "text": "ple",
                 "syllabic": "end"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 216000,
-            "duration": 720,
-            "pitch": 54,
-            "lyrics": [
+              },
               {
                 "verse": "chorus3",
                 "text": "but",
@@ -4148,28 +2221,26 @@
           },
           {
             "kind": "rest",
-            "start": 216720,
-            "duration": 1200
+            "start": 216300,
+            "duration": 360
           },
           {
             "kind": "note",
-            "start": 217920,
-            "duration": 240,
-            "pitch": 54,
+            "start": 216660,
+            "duration": 300,
+            "pitch": 55
+          },
+          {
+            "kind": "note",
+            "start": 216960,
+            "duration": 960,
+            "pitch": 55,
             "lyrics": [
               {
                 "verse": "chorus3",
                 "text": "now",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 218160,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
+              },
               {
                 "verse": "chorus3",
                 "text": "that",
@@ -4179,28 +2250,20 @@
           },
           {
             "kind": "rest",
-            "start": 218400,
-            "duration": 240
+            "start": 217920,
+            "duration": 1920
           },
           {
             "kind": "note",
-            "start": 218640,
+            "start": 219840,
             "duration": 240,
-            "pitch": 54,
+            "pitch": 55,
             "lyrics": [
               {
                 "verse": "chorus3",
                 "text": "it's",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 218880,
-            "duration": 720,
-            "pitch": 54,
-            "lyrics": [
+              },
               {
                 "verse": "chorus3",
                 "text": "done",
@@ -4209,29 +2272,39 @@
             ]
           },
           {
+            "kind": "note",
+            "start": 220080,
+            "duration": 240,
+            "pitch": 55
+          },
+          {
             "kind": "rest",
-            "start": 219600,
-            "duration": 1920
+            "start": 220320,
+            "duration": 120
           },
           {
             "kind": "note",
-            "start": 221520,
-            "duration": 240,
-            "pitch": 55,
+            "start": 220440,
+            "duration": 360,
+            "pitch": 59
+          },
+          {
+            "kind": "note",
+            "start": 220800,
+            "duration": 300,
+            "pitch": 59
+          },
+          {
+            "kind": "note",
+            "start": 221100,
+            "duration": 360,
+            "pitch": 60,
             "lyrics": [
               {
                 "verse": "chorus3",
                 "text": "I",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 221760,
-            "duration": 240,
-            "pitch": 72,
-            "lyrics": [
+              },
               {
                 "verse": "chorus3",
                 "text": "hope",
@@ -4240,37 +2313,51 @@
             ]
           },
           {
+            "kind": "rest",
+            "start": 221460,
+            "duration": 1260
+          },
+          {
             "kind": "note",
-            "start": 222000,
-            "duration": 240,
-            "pitch": 60,
+            "start": 222720,
+            "duration": 960,
+            "pitch": 54,
             "lyrics": [
               {
                 "verse": "chorus3",
                 "text": "you",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 222240,
-            "duration": 240,
-            "pitch": 59,
-            "lyrics": [
+              },
               {
                 "verse": "chorus3",
                 "text": "don't",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 222480,
-            "duration": 1200,
-            "pitch": 63,
-            "lyrics": [
+              },
+              {
+                "verse": "chorus3",
+                "text": "mind",
+                "syllabic": "single"
+              },
+              {
+                "verse": "chorus3",
+                "text": "I",
+                "syllabic": "single"
+              },
+              {
+                "verse": "chorus3",
+                "text": "hope",
+                "syllabic": "single"
+              },
+              {
+                "verse": "chorus3",
+                "text": "you",
+                "syllabic": "single"
+              },
+              {
+                "verse": "chorus3",
+                "text": "don't",
+                "syllabic": "single"
+              },
               {
                 "verse": "chorus3",
                 "text": "mind",
@@ -4279,146 +2366,41 @@
             ]
           },
           {
-            "kind": "note",
+            "kind": "rest",
             "start": 223680,
-            "duration": 240,
-            "pitch": 58,
-            "lyrics": [
-              {
-                "verse": "chorus3",
-                "text": "I",
-                "syllabic": "single"
-              }
-            ]
+            "duration": 3840
           },
           {
             "kind": "note",
-            "start": 223920,
-            "duration": 240,
-            "pitch": 58,
-            "lyrics": [
-              {
-                "verse": "chorus3",
-                "text": "hope",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 224160,
-            "duration": 240,
-            "pitch": 58,
-            "lyrics": [
-              {
-                "verse": "chorus3",
-                "text": "you",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 224400,
-            "duration": 240,
-            "pitch": 60,
-            "lyrics": [
-              {
-                "verse": "chorus3",
-                "text": "don't",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 224640,
-            "duration": 1200,
-            "pitch": 63,
-            "lyrics": [
-              {
-                "verse": "chorus3",
-                "text": "mind",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 225840,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 226080,
-            "duration": 240,
-            "pitch": 58,
+            "start": 227520,
+            "duration": 300,
+            "pitch": 55,
             "lyrics": [
               {
                 "verse": "chorus3",
                 "text": "that",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 226320,
-            "duration": 240,
-            "pitch": 60,
-            "lyrics": [
+              },
               {
                 "verse": "chorus3",
                 "text": "I",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 226560,
-            "duration": 240,
-            "pitch": 60,
-            "lyrics": [
+              },
               {
                 "verse": "chorus3",
                 "text": "put",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 226800,
-            "duration": 480,
-            "pitch": 63,
-            "lyrics": [
+              },
               {
                 "verse": "chorus3",
                 "text": "down",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 227280,
-            "duration": 240,
-            "pitch": 58,
-            "lyrics": [
+              },
               {
                 "verse": "chorus3",
                 "text": "in",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 227520,
-            "duration": 3360,
-            "pitch": 60,
-            "lyrics": [
+              },
               {
                 "verse": "chorus3",
                 "text": "words",
@@ -4427,52 +2409,61 @@
             ]
           },
           {
+            "kind": "note",
+            "start": 227820,
+            "duration": 360,
+            "pitch": 58
+          },
+          {
             "kind": "rest",
-            "start": 230880,
-            "duration": 480
+            "start": 228180,
+            "duration": 300
           },
           {
             "kind": "note",
-            "start": 231360,
-            "duration": 480,
+            "start": 228480,
+            "duration": 240,
+            "pitch": 58
+          },
+          {
+            "kind": "note",
+            "start": 228720,
+            "duration": 240,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 228960,
+            "duration": 240,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 229200,
+            "duration": 240,
+            "pitch": 60
+          },
+          {
+            "kind": "rest",
+            "start": 229440,
+            "duration": 960
+          },
+          {
+            "kind": "note",
+            "start": 230400,
+            "duration": 960,
             "pitch": 60,
             "lyrics": [
               {
                 "verse": "chorus3",
                 "text": "how",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 231840,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 232080,
-            "duration": 720,
-            "pitch": 58,
-            "lyrics": [
+              },
               {
                 "verse": "chorus3",
                 "text": "won",
                 "syllabic": "begin"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 232800,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 233040,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "chorus3",
                 "text": "der",
@@ -4482,155 +2473,28 @@
           },
           {
             "kind": "rest",
-            "start": 233280,
-            "duration": 480
-          },
-          {
-            "kind": "note",
-            "start": 233760,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "chorus3",
-                "text": "ful",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 234000,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 234240,
-            "duration": 960,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "chorus3",
-                "text": "life",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 235200,
-            "duration": 480,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "chorus3",
-                "text": "is",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 235680,
-            "duration": 480
-          },
-          {
-            "kind": "note",
-            "start": 236160,
-            "duration": 480,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "chorus3",
-                "text": "while",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 236640,
-            "duration": 720,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "chorus3",
-                "text": "you're",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 237360,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 237600,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "chorus3",
-                "text": "in",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 237840,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
-              {
-                "verse": "chorus3",
-                "text": "the",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 238080,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 238320,
-            "duration": 5040,
-            "pitch": 72,
-            "lyrics": [
-              {
-                "verse": "chorus3",
-                "text": "world",
-                "syllabic": "single"
-              }
-            ]
+            "start": 231360,
+            "duration": 12000
           },
           {
             "kind": "note",
             "start": 243360,
-            "duration": 240,
-            "pitch": 72,
+            "duration": 480,
+            "pitch": 55,
             "lyrics": [
               {
                 "verse": "outro",
                 "text": "I",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 243600,
-            "duration": 240,
-            "pitch": 72,
-            "lyrics": [
+              },
               {
                 "verse": "outro",
                 "text": "hope",
+                "syllabic": "single"
+              },
+              {
+                "verse": "outro",
+                "text": "you",
                 "syllabic": "single"
               }
             ]
@@ -4638,25 +2502,25 @@
           {
             "kind": "note",
             "start": 243840,
-            "duration": 240,
-            "pitch": 60,
+            "duration": 180,
+            "pitch": 55,
             "lyrics": [
               {
                 "verse": "outro",
-                "text": "you",
+                "text": "don't",
                 "syllabic": "single"
               }
             ]
           },
           {
             "kind": "note",
-            "start": 244080,
-            "duration": 240,
-            "pitch": 60,
+            "start": 244020,
+            "duration": 300,
+            "pitch": 54,
             "lyrics": [
               {
                 "verse": "outro",
-                "text": "don't",
+                "text": "mind",
                 "syllabic": "single"
               }
             ]
@@ -4664,79 +2528,40 @@
           {
             "kind": "note",
             "start": 244320,
-            "duration": 720,
-            "pitch": 63,
-            "lyrics": [
-              {
-                "verse": "outro",
-                "text": "mind",
-                "syllabic": "single"
-              }
-            ]
+            "duration": 480,
+            "pitch": 55
           },
           {
             "kind": "rest",
-            "start": 245040,
-            "duration": 480
+            "start": 244800,
+            "duration": 960
           },
           {
             "kind": "note",
-            "start": 245520,
-            "duration": 240,
-            "pitch": 59,
+            "start": 245760,
+            "duration": 960,
+            "pitch": 55,
             "lyrics": [
               {
                 "verse": "outro",
                 "text": "I",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 245760,
-            "duration": 240,
-            "pitch": 66,
-            "lyrics": [
+              },
               {
                 "verse": "outro",
                 "text": "hope",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 246000,
-            "duration": 240,
-            "pitch": 66,
-            "lyrics": [
+              },
               {
                 "verse": "outro",
                 "text": "you",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 246240,
-            "duration": 240,
-            "pitch": 63,
-            "lyrics": [
+              },
               {
                 "verse": "outro",
                 "text": "don't",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 246480,
-            "duration": 960,
-            "pitch": 65,
-            "lyrics": [
+              },
               {
                 "verse": "outro",
                 "text": "mind",
@@ -4745,73 +2570,37 @@
             ]
           },
           {
-            "kind": "rest",
-            "start": 247440,
-            "duration": 240
+            "kind": "note",
+            "start": 246720,
+            "duration": 240,
+            "pitch": 54
           },
           {
             "kind": "note",
-            "start": 247680,
-            "duration": 240,
-            "pitch": 60,
+            "start": 246960,
+            "duration": 720,
+            "pitch": 54,
             "lyrics": [
               {
                 "verse": "outro",
                 "text": "that",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 247920,
-            "duration": 240,
-            "pitch": 59,
-            "lyrics": [
+              },
               {
                 "verse": "outro",
                 "text": "I",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 248160,
-            "duration": 240,
-            "pitch": 60,
-            "lyrics": [
+              },
               {
                 "verse": "outro",
                 "text": "put",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 248400,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 248640,
-            "duration": 240,
-            "pitch": 63,
-            "lyrics": [
+              },
               {
                 "verse": "outro",
                 "text": "down",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 248880,
-            "duration": 240,
-            "pitch": 63,
-            "lyrics": [
+              },
               {
                 "verse": "outro",
                 "text": "in",
@@ -4821,32 +2610,37 @@
           },
           {
             "kind": "rest",
-            "start": 249120,
-            "duration": 240
+            "start": 247680,
+            "duration": 3600
           },
           {
             "kind": "note",
-            "start": 249360,
-            "duration": 2880,
-            "pitch": 60,
-            "lyrics": [
-              {
-                "verse": "outro",
-                "text": "words",
-                "syllabic": "single"
-              }
-            ]
+            "start": 251280,
+            "duration": 240,
+            "pitch": 58
+          },
+          {
+            "kind": "note",
+            "start": 251520,
+            "duration": 480,
+            "pitch": 58
+          },
+          {
+            "kind": "note",
+            "start": 252000,
+            "duration": 480,
+            "pitch": 60
           },
           {
             "kind": "rest",
-            "start": 252240,
+            "start": 252480,
             "duration": 960
           },
           {
             "kind": "note",
-            "start": 253200,
-            "duration": 720,
-            "pitch": 57,
+            "start": 253440,
+            "duration": 240,
+            "pitch": 56,
             "lyrics": [
               {
                 "verse": "outro",
@@ -4857,9 +2651,9 @@
           },
           {
             "kind": "note",
-            "start": 253920,
-            "duration": 720,
-            "pitch": 58,
+            "start": 253680,
+            "duration": 420,
+            "pitch": 55,
             "lyrics": [
               {
                 "verse": "outro",
@@ -4869,52 +2663,21 @@
             ]
           },
           {
-            "kind": "rest",
-            "start": 254640,
-            "duration": 240
-          },
-          {
             "kind": "note",
-            "start": 254880,
-            "duration": 240,
+            "start": 254100,
+            "duration": 300,
             "pitch": 55,
             "lyrics": [
               {
                 "verse": "outro",
                 "text": "der",
                 "syllabic": "end"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 255120,
-            "duration": 240
-          },
-          {
-            "kind": "note",
-            "start": 255360,
-            "duration": 240,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "outro",
                 "text": "ful",
                 "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "rest",
-            "start": 255600,
-            "duration": 480
-          },
-          {
-            "kind": "note",
-            "start": 256080,
-            "duration": 960,
-            "pitch": 55,
-            "lyrics": [
+              },
               {
                 "verse": "outro",
                 "text": "life",
@@ -4923,92 +2686,724 @@
             ]
           },
           {
+            "kind": "rest",
+            "start": 254400,
+            "duration": 10560
+          },
+          {
             "kind": "note",
-            "start": 257040,
-            "duration": 480,
-            "pitch": 54,
-            "lyrics": [
-              {
-                "verse": "outro",
-                "text": "is",
-                "syllabic": "single"
-              }
-            ]
+            "start": 264960,
+            "duration": 960,
+            "pitch": 54
           },
           {
             "kind": "rest",
-            "start": 257520,
-            "duration": 480
+            "start": 265920,
+            "duration": 8640
           },
           {
             "kind": "note",
-            "start": 258000,
+            "start": 274560,
+            "duration": 300,
+            "pitch": 58
+          },
+          {
+            "kind": "note",
+            "start": 274860,
+            "duration": 180,
+            "pitch": 55
+          },
+          {
+            "kind": "note",
+            "start": 275040,
             "duration": 480,
-            "pitch": 54,
-            "lyrics": [
-              {
-                "verse": "outro",
-                "text": "while",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 258480,
-            "duration": 720,
-            "pitch": 54,
-            "lyrics": [
-              {
-                "verse": "outro",
-                "text": "you're",
-                "syllabic": "single"
-              }
-            ]
-          },
-          {
-            "kind": "note",
-            "start": 259200,
-            "duration": 240,
-            "pitch": 54,
-            "lyrics": [
-              {
-                "verse": "outro",
-                "text": "in",
-                "syllabic": "single"
-              }
-            ]
+            "pitch": 58
           },
           {
             "kind": "rest",
-            "start": 259440,
-            "duration": 240
+            "start": 275520,
+            "duration": 960
           },
           {
             "kind": "note",
-            "start": 259680,
+            "start": 276480,
+            "duration": 180,
+            "pitch": 55
+          },
+          {
+            "kind": "note",
+            "start": 276660,
+            "duration": 180,
+            "pitch": 55
+          },
+          {
+            "kind": "note",
+            "start": 276840,
+            "duration": 300,
+            "pitch": 55
+          },
+          {
+            "kind": "note",
+            "start": 277140,
+            "duration": 300,
+            "pitch": 54
+          },
+          {
+            "kind": "rest",
+            "start": 277440,
+            "duration": 7200
+          },
+          {
+            "kind": "note",
+            "start": 284640,
+            "duration": 480,
+            "pitch": 55
+          },
+          {
+            "kind": "note",
+            "start": 285120,
+            "duration": 180,
+            "pitch": 59
+          },
+          {
+            "kind": "note",
+            "start": 285300,
+            "duration": 300,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 285600,
             "duration": 240,
-            "pitch": 78,
-            "lyrics": [
-              {
-                "verse": "outro",
-                "text": "the",
-                "syllabic": "single"
-              }
-            ]
+            "pitch": 58
           },
           {
             "kind": "note",
-            "start": 259920,
+            "start": 285840,
+            "duration": 240,
+            "pitch": 58
+          },
+          {
+            "kind": "note",
+            "start": 286080,
+            "duration": 960,
+            "pitch": 54
+          },
+          {
+            "kind": "rest",
+            "start": 287040,
+            "duration": 960
+          },
+          {
+            "kind": "note",
+            "start": 288000,
+            "duration": 960,
+            "pitch": 54
+          },
+          {
+            "kind": "rest",
+            "start": 288960,
+            "duration": 960
+          },
+          {
+            "kind": "note",
+            "start": 289920,
+            "duration": 960,
+            "pitch": 54
+          },
+          {
+            "kind": "rest",
+            "start": 290880,
+            "duration": 6300
+          },
+          {
+            "kind": "note",
+            "start": 297180,
+            "duration": 120,
+            "pitch": 58
+          },
+          {
+            "kind": "note",
+            "start": 297300,
+            "duration": 300,
+            "pitch": 55
+          },
+          {
+            "kind": "rest",
+            "start": 297600,
+            "duration": 1920
+          },
+          {
+            "kind": "note",
+            "start": 299520,
+            "duration": 240,
+            "pitch": 55
+          },
+          {
+            "kind": "note",
+            "start": 299760,
+            "duration": 240,
+            "pitch": 58
+          },
+          {
+            "kind": "note",
+            "start": 300000,
+            "duration": 480,
+            "pitch": 55
+          },
+          {
+            "kind": "note",
+            "start": 300480,
+            "duration": 480,
+            "pitch": 58
+          },
+          {
+            "kind": "note",
+            "start": 300960,
+            "duration": 480,
+            "pitch": 58
+          },
+          {
+            "kind": "note",
+            "start": 301440,
+            "duration": 240,
+            "pitch": 72
+          },
+          {
+            "kind": "note",
+            "start": 301680,
+            "duration": 240,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 301920,
+            "duration": 240,
+            "pitch": 58
+          },
+          {
+            "kind": "note",
+            "start": 302160,
+            "duration": 240,
+            "pitch": 54
+          },
+          {
+            "kind": "rest",
+            "start": 302400,
+            "duration": 1560
+          },
+          {
+            "kind": "note",
+            "start": 303960,
+            "duration": 360,
+            "pitch": 54
+          },
+          {
+            "kind": "rest",
+            "start": 304320,
+            "duration": 7680
+          },
+          {
+            "kind": "note",
+            "start": 312000,
+            "duration": 480,
+            "pitch": 55
+          },
+          {
+            "kind": "note",
+            "start": 312480,
+            "duration": 240,
+            "pitch": 58
+          },
+          {
+            "kind": "note",
+            "start": 312720,
+            "duration": 240,
+            "pitch": 58
+          },
+          {
+            "kind": "note",
+            "start": 312960,
+            "duration": 480,
+            "pitch": 58
+          },
+          {
+            "kind": "note",
+            "start": 313440,
+            "duration": 240,
+            "pitch": 58
+          },
+          {
+            "kind": "note",
+            "start": 313680,
+            "duration": 240,
+            "pitch": 60
+          },
+          {
+            "kind": "rest",
+            "start": 313920,
+            "duration": 960
+          },
+          {
+            "kind": "note",
+            "start": 314880,
             "duration": 720,
-            "pitch": 78,
-            "lyrics": [
-              {
-                "verse": "outro",
-                "text": "world",
-                "syllabic": "single"
-              }
-            ]
+            "pitch": 58
+          },
+          {
+            "kind": "note",
+            "start": 315600,
+            "duration": 240,
+            "pitch": 54
+          },
+          {
+            "kind": "note",
+            "start": 315840,
+            "duration": 720,
+            "pitch": 65
+          },
+          {
+            "kind": "note",
+            "start": 316560,
+            "duration": 240,
+            "pitch": 54
+          },
+          {
+            "kind": "rest",
+            "start": 316800,
+            "duration": 3600
+          },
+          {
+            "kind": "note",
+            "start": 320400,
+            "duration": 240,
+            "pitch": 54
+          },
+          {
+            "kind": "note",
+            "start": 320640,
+            "duration": 960,
+            "pitch": 54
+          },
+          {
+            "kind": "rest",
+            "start": 321600,
+            "duration": 2580
+          },
+          {
+            "kind": "note",
+            "start": 324180,
+            "duration": 300,
+            "pitch": 55
+          },
+          {
+            "kind": "note",
+            "start": 324480,
+            "duration": 240,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 324720,
+            "duration": 240,
+            "pitch": 59
+          },
+          {
+            "kind": "rest",
+            "start": 324960,
+            "duration": 120
+          },
+          {
+            "kind": "note",
+            "start": 325080,
+            "duration": 360,
+            "pitch": 60
+          },
+          {
+            "kind": "rest",
+            "start": 325440,
+            "duration": 960
+          },
+          {
+            "kind": "note",
+            "start": 326400,
+            "duration": 300,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 326700,
+            "duration": 660,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 327360,
+            "duration": 180,
+            "pitch": 58
+          },
+          {
+            "kind": "note",
+            "start": 327540,
+            "duration": 300,
+            "pitch": 58
+          },
+          {
+            "kind": "rest",
+            "start": 327840,
+            "duration": 120
+          },
+          {
+            "kind": "note",
+            "start": 327960,
+            "duration": 360,
+            "pitch": 58
+          },
+          {
+            "kind": "note",
+            "start": 328320,
+            "duration": 240,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 328560,
+            "duration": 240,
+            "pitch": 61
+          },
+          {
+            "kind": "note",
+            "start": 328800,
+            "duration": 480,
+            "pitch": 63
+          },
+          {
+            "kind": "rest",
+            "start": 329280,
+            "duration": 1260
+          },
+          {
+            "kind": "note",
+            "start": 330540,
+            "duration": 360,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 330900,
+            "duration": 300,
+            "pitch": 58
+          },
+          {
+            "kind": "note",
+            "start": 331200,
+            "duration": 480,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 331680,
+            "duration": 480,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 332160,
+            "duration": 480,
+            "pitch": 58
+          },
+          {
+            "kind": "note",
+            "start": 332640,
+            "duration": 180,
+            "pitch": 59
+          },
+          {
+            "kind": "note",
+            "start": 332820,
+            "duration": 480,
+            "pitch": 60
+          },
+          {
+            "kind": "rest",
+            "start": 333300,
+            "duration": 780
+          },
+          {
+            "kind": "note",
+            "start": 334080,
+            "duration": 2400,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 336480,
+            "duration": 480,
+            "pitch": 59
+          },
+          {
+            "kind": "rest",
+            "start": 336960,
+            "duration": 1920
+          },
+          {
+            "kind": "note",
+            "start": 338880,
+            "duration": 300,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 339180,
+            "duration": 180,
+            "pitch": 58
+          },
+          {
+            "kind": "note",
+            "start": 339360,
+            "duration": 240,
+            "pitch": 58
+          },
+          {
+            "kind": "note",
+            "start": 339600,
+            "duration": 1200,
+            "pitch": 58
+          },
+          {
+            "kind": "rest",
+            "start": 340800,
+            "duration": 960
+          },
+          {
+            "kind": "note",
+            "start": 341760,
+            "duration": 960,
+            "pitch": 55
+          },
+          {
+            "kind": "rest",
+            "start": 342720,
+            "duration": 14400
+          },
+          {
+            "kind": "note",
+            "start": 357120,
+            "duration": 480,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 357600,
+            "duration": 480,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 358080,
+            "duration": 960,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 359040,
+            "duration": 360,
+            "pitch": 59
+          },
+          {
+            "kind": "note",
+            "start": 359400,
+            "duration": 600,
+            "pitch": 66
+          },
+          {
+            "kind": "rest",
+            "start": 360000,
+            "duration": 960
+          },
+          {
+            "kind": "note",
+            "start": 360960,
+            "duration": 240,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 361200,
+            "duration": 240,
+            "pitch": 63
+          },
+          {
+            "kind": "note",
+            "start": 361440,
+            "duration": 480,
+            "pitch": 65
+          },
+          {
+            "kind": "note",
+            "start": 361920,
+            "duration": 480,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 362400,
+            "duration": 180,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 362580,
+            "duration": 300,
+            "pitch": 59
+          },
+          {
+            "kind": "note",
+            "start": 362880,
+            "duration": 300,
+            "pitch": 60
+          },
+          {
+            "kind": "rest",
+            "start": 363180,
+            "duration": 360
+          },
+          {
+            "kind": "note",
+            "start": 363540,
+            "duration": 480,
+            "pitch": 63
+          },
+          {
+            "kind": "rest",
+            "start": 364020,
+            "duration": 780
+          },
+          {
+            "kind": "note",
+            "start": 364800,
+            "duration": 240,
+            "pitch": 58
+          },
+          {
+            "kind": "note",
+            "start": 365040,
+            "duration": 240,
+            "pitch": 58
+          },
+          {
+            "kind": "note",
+            "start": 365280,
+            "duration": 240,
+            "pitch": 58
+          },
+          {
+            "kind": "rest",
+            "start": 365520,
+            "duration": 60
+          },
+          {
+            "kind": "note",
+            "start": 365580,
+            "duration": 180,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 365760,
+            "duration": 180,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 365940,
+            "duration": 1740,
+            "pitch": 60
+          },
+          {
+            "kind": "rest",
+            "start": 367680,
+            "duration": 960
+          },
+          {
+            "kind": "note",
+            "start": 368640,
+            "duration": 420,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 369060,
+            "duration": 540,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 369600,
+            "duration": 960,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 370560,
+            "duration": 180,
+            "pitch": 57
+          },
+          {
+            "kind": "rest",
+            "start": 370740,
+            "duration": 120
+          },
+          {
+            "kind": "note",
+            "start": 370860,
+            "duration": 420,
+            "pitch": 60
+          },
+          {
+            "kind": "note",
+            "start": 371280,
+            "duration": 240,
+            "pitch": 58
+          },
+          {
+            "kind": "rest",
+            "start": 371520,
+            "duration": 960
+          },
+          {
+            "kind": "note",
+            "start": 372480,
+            "duration": 960,
+            "pitch": 58
+          },
+          {
+            "kind": "note",
+            "start": 373440,
+            "duration": 960,
+            "pitch": 55
+          },
+          {
+            "kind": "rest",
+            "start": 374400,
+            "duration": 3840
+          },
+          {
+            "kind": "note",
+            "start": 378240,
+            "duration": 960,
+            "pitch": 54
+          },
+          {
+            "kind": "rest",
+            "start": 379200,
+            "duration": 2400
+          },
+          {
+            "kind": "note",
+            "start": 381600,
+            "duration": 480,
+            "pitch": 78
           }
         ]
       }

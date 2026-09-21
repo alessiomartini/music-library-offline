@@ -40,9 +40,11 @@ def build_voice_events(aligned: list[dict]) -> list[dict]:
             events.append({"kind": "rest", "start": previous_end, "duration": start - previous_end})
 
         event = {"kind": "note", "start": start, "duration": duration, "pitch": entry["pitch"]}
-        if entry.get("lyric"):
-            lyric = entry["lyric"]
-            event["lyrics"] = [{"verse": lyric["verse"], "text": lyric["text"], "syllabic": lyric.get("syllabic", "single")}]
+        if entry.get("lyrics"):
+            event["lyrics"] = [
+                {"verse": ly["verse"], "text": ly["text"], "syllabic": ly.get("syllabic", "single")}
+                for ly in entry["lyrics"]
+            ]
         if "tie" in entry:
             event["tie"] = entry["tie"]
         events.append(event)
