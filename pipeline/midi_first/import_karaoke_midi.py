@@ -38,7 +38,7 @@ def load_song_config(slug: str) -> dict:
     path = REPO_ROOT / "songs" / f"{slug}.json"
     if not path.exists():
         raise SystemExit(f"ERROR: no song config at {path}")
-    return json.loads(path.read_text())
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def import_vocal_track(slug: str) -> None:

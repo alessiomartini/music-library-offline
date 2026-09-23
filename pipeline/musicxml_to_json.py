@@ -68,7 +68,7 @@ def load_harmony_events(slug: str) -> list[dict]:
     path = REPO_ROOT / "working" / slug / "harmony-events.json"
     if not path.exists():
         return []
-    return json.loads(path.read_text())["harmony"]
+    return json.loads(path.read_text(encoding="utf-8"))["harmony"]
 
 
 def build_measures(time_sig: dict, total_ticks: int) -> list[dict]:
@@ -82,9 +82,9 @@ def build_measures(time_sig: dict, total_ticks: int) -> list[dict]:
 
 
 def convert(slug: str) -> None:
-    config = json.loads((REPO_ROOT / "songs" / f"{slug}.json").read_text())
+    config = json.loads((REPO_ROOT / "songs" / f"{slug}.json").read_text(encoding="utf-8"))
     working_dir = REPO_ROOT / "working" / slug
-    aligned_data = json.loads((working_dir / "aligned-lyrics.json").read_text())
+    aligned_data = json.loads((working_dir / "aligned-lyrics.json").read_text(encoding="utf-8"))
     aligned = aligned_data["aligned"]
     lyric_sync_method = aligned_data.get("syncMethod", "derived")
 

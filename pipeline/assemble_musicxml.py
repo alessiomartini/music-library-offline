@@ -181,15 +181,15 @@ def build_score(config: dict, parts: list[stream.Part]) -> stream.Score:
 
 
 def assemble(slug: str) -> None:
-    config = json.loads((REPO_ROOT / "songs" / f"{slug}.json").read_text())
+    config = json.loads((REPO_ROOT / "songs" / f"{slug}.json").read_text(encoding="utf-8"))
     working_dir = REPO_ROOT / "working" / slug
 
-    aligned = json.loads((working_dir / "aligned-lyrics.json").read_text())["aligned"]
-    harmony_events = json.loads((working_dir / "harmony-events.json").read_text())["harmony"]
+    aligned = json.loads((working_dir / "aligned-lyrics.json").read_text(encoding="utf-8"))["aligned"]
+    harmony_events = json.loads((working_dir / "harmony-events.json").read_text(encoding="utf-8"))["harmony"]
     instrumental_path = working_dir / "instrumental-events.json"
     if not instrumental_path.exists():
         raise SystemExit(f"ERROR: {instrumental_path} not found — run transcribe_instrumental.py first")
-    instrumental_events = json.loads(instrumental_path.read_text())["events"]
+    instrumental_events = json.loads(instrumental_path.read_text(encoding="utf-8"))["events"]
 
     print(f"Aligned voice events: {len(aligned)} ({len([a for a in aligned if a.get('lyrics')])} with a lyric)")
     print(f"Harmony events: {len(harmony_events)}")

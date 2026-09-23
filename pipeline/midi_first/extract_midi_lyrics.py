@@ -9,8 +9,19 @@ same tick timeline as its notes. This step only has to parse that text
 (see midi_track_utils.parse_karaoke_syllables for the exact rules) and
 attach each syllable to whichever working/<slug>/vocal-events.json note
 (produced by import_karaoke_midi.py) is sounding at that tick — reusing
-the shared note_utils.find_note_index unmodified, since it's already
-generic over ticks regardless of where the notes came from.
+the shared note_utils.find_note_index for the confident case (sounding, or
+nearest within tolerance).
+
+A syllable whose tick has no note within tolerance is never simply
+dropped: it's forced onto the nearest note regardless of distance (see
+find_nearest_note_index_forced below) and counted separately as
+"approximate" rather than "confident", so the log/output still shows which
+placements to double-check, but the text is never silently missing —
+Alessio's explicit requirement after checking a published song and finding
+words gone entirely. (This is a different lever from the earlier reverted
+one-syllable-per-note experiment below: that one tried to stop notes from
+sharing syllables and made things worse; this one only changes what
+happens to a syllable that would otherwise get no note at all.)
 
 A note commonly ends up with more than one syllable attached (`lyrics` is
 a list, not a single entry): the karaoke text was hand-timed against the
@@ -60,6 +71,13 @@ REPO_ROOT = Path(__file__).parent.parent.parent
 DEFAULT_MAX_GAP_TICKS = PPQ // 8  # a 32nd note
 
 
+def find_nearest_note_index_forced(vocal_events: list[dict], tick: int) -> int:
+    """Like note_utils.find_note_index, but never returns None — the
+    caller's fallback for a syllable with no note within tolerance, so it
+    still lands somewhere instead of vanishing from the published song."""
+    return min(range(len(vocal_events)), key=lambda i: abs(vocal_events[i]["start"] - tick))
+
+
 def safe_print(message: str) -> None:
     encoding = sys.stdout.encoding or "ascii"
     print(message.encode(encoding, errors="replace").decode(encoding))
@@ -69,7 +87,7 @@ def load_song_config(slug: str) -> dict:
     path = REPO_ROOT / "songs" / f"{slug}.json"
     if not path.exists():
         raise SystemExit(f"ERROR: no song config at {path}")
-    return json.loads(path.read_text())
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def extract(slug: str) -> None:
@@ -81,7 +99,7 @@ def extract(slug: str) -> None:
     events_path = REPO_ROOT / "working" / slug / "vocal-events.json"
     if not events_path.exists():
         raise SystemExit(f"ERROR: {events_path} not found — run import_karaoke_midi.py first")
-    vocal_events = sorted(json.loads(events_path.read_text())["events"], key=lambda e: e["start"])
+    vocal_events = sorted(json.loads(events_path.read_text(encoding="utf-8"))["events"], key=lambda e: e["start"])
     if not vocal_events:
         raise SystemExit(f"ERROR: no vocal notes in {events_path}")
 
@@ -100,13 +118,13 @@ def extract(slug: str) -> None:
     max_gap_ticks = midi_source.get("maxLyricNoteGapTicks", DEFAULT_MAX_GAP_TICKS)
 
     notes_lyrics: list[list[dict]] = [[] for _ in vocal_events]
-    unplaced = 0
+    approximate = 0
     for syl in syllables:
         canonical_tick = round(syl["tick"] / ticks_per_beat * PPQ)
         note_index = find_note_index(vocal_events, canonical_tick, max_gap_ticks)
         if note_index is None:
-            unplaced += 1
-            continue
+            note_index = find_nearest_note_index_forced(vocal_events, canonical_tick)
+            approximate += 1
         entry = {"verse": syl["verse"]}
         if syl["melisma"]:
             entry["melisma"] = syl["melisma"]
@@ -124,8 +142,8 @@ def extract(slug: str) -> None:
             notes_with_lyrics += 1
         aligned.append(entry)
 
-    safe_print(f"Placed {len(syllables) - unplaced}/{len(syllables)} lyric event(s) onto {notes_with_lyrics}/{len(vocal_events)} notes"
-               + (f" ({unplaced} more than {max_gap_ticks} ticks from any note, unplaced)" if unplaced else ""))
+    safe_print(f"Placed {len(syllables)}/{len(syllables)} lyric event(s) onto {notes_with_lyrics}/{len(vocal_events)} notes"
+               + (f" ({approximate} more than {max_gap_ticks} ticks from the nearest note, forced onto it anyway — check these)" if approximate else ""))
 
     output_path = REPO_ROOT / "working" / slug / "aligned-lyrics.json"
     output_path.write_text(json.dumps({
@@ -134,9 +152,9 @@ def extract(slug: str) -> None:
         "syncMethod": "midi-native",
         "total_syllables": len(syllables),
         "syllables_dropped": 0,
-        "syllables_unplaced": unplaced,
+        "syllables_approximate": approximate,
         "notes_without_lyrics": len(vocal_events) - notes_with_lyrics,
-    }, indent=2, ensure_ascii=False))
+    }, indent=2, ensure_ascii=False), encoding="utf-8")
     safe_print(f"Wrote {output_path}")
 
 

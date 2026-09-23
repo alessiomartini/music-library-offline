@@ -164,7 +164,7 @@ def build_harmony_events(note_events: list[tuple[int, int]]) -> list[dict]:
 
 
 def extract(slug: str) -> None:
-    config = json.loads((REPO_ROOT / "songs" / f"{slug}.json").read_text())
+    config = json.loads((REPO_ROOT / "songs" / f"{slug}.json").read_text(encoding="utf-8"))
     midi_source = config.get("midiSource") or {}
     midi_path = mtu.find_midi_source(slug, config)
     mid = mido.MidiFile(str(midi_path), clip=True)
@@ -193,7 +193,7 @@ def extract(slug: str) -> None:
 
     vocal_events_path = REPO_ROOT / "working" / slug / "vocal-events.json"
     if vocal_events_path.exists():
-        vocal_pitches = [e["pitch"] for e in json.loads(vocal_events_path.read_text())["events"]]
+        vocal_pitches = [e["pitch"] for e in json.loads(vocal_events_path.read_text(encoding="utf-8"))["events"]]
         try:
             tonic, mode = suggest_key(vocal_pitches)
             print(f"Suggested key (from the vocal melody, music21 key-analysis — confirm by ear): {tonic} {mode}"

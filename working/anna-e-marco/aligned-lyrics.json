@@ -59,6 +59,11 @@
       "lyrics": [
         {
           "verse": "line0",
+          "text": "Anna",
+          "syllabic": "single"
+        },
+        {
+          "verse": "line0",
           "text": "permalosa",
           "syllabic": "single"
         }
@@ -144,6 +149,11 @@
           "verse": "line2",
           "text": "che",
           "syllabic": "single"
+        },
+        {
+          "verse": "line2",
+          "text": "ogni",
+          "syllabic": "single"
         }
       ]
     },
@@ -152,6 +162,16 @@
       "duration": 480,
       "pitch": 70,
       "lyrics": [
+        {
+          "verse": "line2",
+          "text": "giorno",
+          "syllabic": "single"
+        },
+        {
+          "verse": "line2",
+          "text": "perde",
+          "syllabic": "single"
+        },
         {
           "verse": "line2",
           "text": "qualcosa",
@@ -532,6 +552,11 @@
       "lyrics": [
         {
           "verse": "line8",
+          "text": "Marco",
+          "syllabic": "single"
+        },
+        {
+          "verse": "line8",
           "text": "cuore",
           "syllabic": "single"
         },
@@ -798,7 +823,14 @@
     {
       "start": 120960,
       "duration": 660,
-      "pitch": 79
+      "pitch": 79,
+      "lyrics": [
+        {
+          "verse": "line12",
+          "text": "lupo",
+          "syllabic": "single"
+        }
+      ]
     },
     {
       "start": 121620,
@@ -981,6 +1013,11 @@
           "verse": "line15",
           "text": "luna",
           "syllabic": "single"
+        },
+        {
+          "verse": "line15",
+          "text": "è",
+          "syllabic": "single"
         }
       ]
     },
@@ -1126,6 +1163,11 @@
           "verse": "line17",
           "text": "nei",
           "syllabic": "single"
+        },
+        {
+          "verse": "line17",
+          "text": "flipper",
+          "syllabic": "single"
         }
       ]
     },
@@ -1142,6 +1184,11 @@
         {
           "verse": "line18",
           "text": "sono",
+          "syllabic": "single"
+        },
+        {
+          "verse": "line18",
+          "text": "più",
           "syllabic": "single"
         }
       ]
@@ -1245,6 +1292,11 @@
       "lyrics": [
         {
           "verse": "line19",
+          "text": "non",
+          "syllabic": "single"
+        },
+        {
+          "verse": "line19",
           "text": "sa",
           "syllabic": "single"
         }
@@ -1258,6 +1310,11 @@
         {
           "verse": "line19",
           "text": "cosa",
+          "syllabic": "single"
+        },
+        {
+          "verse": "line19",
+          "text": "farà",
           "syllabic": "single"
         }
       ]
@@ -1285,6 +1342,11 @@
         {
           "verse": "line20",
           "text": "poi",
+          "syllabic": "single"
+        },
+        {
+          "verse": "line20",
+          "text": "c'è",
           "syllabic": "single"
         }
       ]
@@ -1381,6 +1443,11 @@
         },
         {
           "verse": "line21",
+          "text": "può",
+          "syllabic": "single"
+        },
+        {
+          "verse": "line21",
           "text": "andare",
           "syllabic": "single"
         }
@@ -1394,6 +1461,11 @@
         {
           "verse": "line21",
           "text": "in",
+          "syllabic": "single"
+        },
+        {
+          "verse": "line21",
+          "text": "città",
           "syllabic": "single"
         }
       ]
@@ -1612,6 +1684,11 @@
         },
         {
           "verse": "line24",
+          "text": "è",
+          "syllabic": "single"
+        },
+        {
+          "verse": "line24",
           "text": "uno",
           "syllabic": "single"
         }
@@ -1670,12 +1747,22 @@
       "lyrics": [
         {
           "verse": "line25",
+          "text": "che",
+          "syllabic": "single"
+        },
+        {
+          "verse": "line25",
           "text": "li",
           "syllabic": "single"
         },
         {
           "verse": "line25",
           "text": "guarda",
+          "syllabic": "single"
+        },
+        {
+          "verse": "line26",
+          "text": "c'è",
           "syllabic": "single"
         }
       ]
@@ -1793,6 +1880,11 @@
           "verse": "line27",
           "text": "dove",
           "syllabic": "single"
+        },
+        {
+          "verse": "line27",
+          "text": "sarà",
+          "syllabic": "single"
         }
       ]
     },
@@ -1841,6 +1933,11 @@
       "duration": 480,
       "pitch": 82,
       "lyrics": [
+        {
+          "verse": "line28",
+          "text": "dov'è",
+          "syllabic": "single"
+        },
         {
           "verse": "line28",
           "text": "la",
@@ -2023,6 +2120,11 @@
       "duration": 180,
       "pitch": 74,
       "lyrics": [
+        {
+          "verse": "line31",
+          "text": "E",
+          "syllabic": "single"
+        },
         {
           "verse": "line31",
           "text": "cominciano",
@@ -2331,6 +2433,11 @@
         {
           "verse": "line35",
           "text": "l'America",
+          "syllabic": "single"
+        },
+        {
+          "verse": "line35",
+          "text": "è",
           "syllabic": "single"
         }
       ]
@@ -2850,6 +2957,11 @@
           "verse": "line42",
           "text": "di",
           "syllabic": "single"
+        },
+        {
+          "verse": "line42",
+          "text": "città",
+          "syllabic": "single"
         }
       ]
     },
@@ -3130,7 +3242,14 @@
     {
       "start": 406560,
       "duration": 480,
-      "pitch": 65
+      "pitch": 65,
+      "lyrics": [
+        {
+          "verse": "line47",
+          "text": "qualcuno",
+          "syllabic": "single"
+        }
+      ]
     },
     {
       "start": 407040,
@@ -3238,7 +3357,7 @@
   "syncMethod": "midi-native",
   "total_syllables": 472,
   "syllables_dropped": 0,
-  "syllables_unplaced": 13,
-  "notes_without_lyrics": 42,
+  "syllables_approximate": 13,
+  "notes_without_lyrics": 41,
   "correctedFrom": "verified-source"
 }

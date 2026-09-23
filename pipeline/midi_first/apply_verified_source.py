@@ -37,16 +37,23 @@ Algorithm:
    (a mistranscribed MIDI word, a line the chart merges differently)
    without needing an exact match everywhere, and keeps both sequences in
    their original order (neither list is sorted or reordered first).
-3. For each matched pair, write the chart's word (correct spelling) onto
-   the first note of the MIDI word's note span, and clear the rest of that
-   span's lyrics (ScoreViewer.tsx then renders them as held/"_", since
-   they're mid-word notes with no MIDI-native melisma marker to say
-   otherwise). A chord attached to that word becomes a harmony event at
-   that first note's start tick.
-4. Unmatched chart words (no confident MIDI counterpart) are left unplaced
-   and reported, never guessed at. Unmatched MIDI words keep no lyric text
-   (the chart, not the MIDI's own guess, is the source of truth once this
-   step runs) — also reported, so a bad alignment is visible, not silent.
+3. For each confidently matched pair, write the chart's word (correct
+   spelling) onto the first note of the MIDI word's note span, and clear
+   the rest of that span's lyrics (ScoreViewer.tsx then renders them as
+   held/"_", since they're mid-word notes with no MIDI-native melisma
+   marker to say otherwise). A chord attached to that word becomes a
+   harmony event at that first note's start tick.
+4. A chart word with no confident MIDI counterpart is never simply
+   dropped — Alessio's explicit requirement, after finding words missing
+   from a published song. It's placed on the same note as the nearest
+   confidently-matched word elsewhere in the chart (nearest by reading
+   order — the only distance an unmatched word actually has, since it has
+   no tick of its own), stacking with whatever else is already on that
+   note the same way two confidently-matched words sharing a note already
+   do. This is reported separately from confident placements so a
+   questionable one stays visible without blocking anything. Unmatched
+   MIDI words keep no lyric text (the chart, not the MIDI's own guess, is
+   the source of truth once this step runs) — also reported.
 
 Writes working/<slug>/aligned-lyrics.json and working/<slug>/harmony-
 events.json, overwriting extract_midi_lyrics.py's / extract_midi_harmony.py's
@@ -56,6 +63,7 @@ this one if the source MIDI or vocal transcription changed.
 Run with:  python pipeline/midi_first/apply_verified_source.py <slug>
 """
 import argparse
+import bisect
 import json
 import re
 import sys
@@ -156,16 +164,43 @@ def align_verified_lines(
     return pairs
 
 
+def resolve_note_indices(
+    verified_lines: list[list[str]], confident_notes: dict[tuple[int, int], int],
+) -> dict[tuple[int, int], int]:
+    """Extends confident_notes (a {(line_index, word_index): note_index}
+    map for words align_verified_lines matched confidently) to cover every
+    verified word: an unmatched word gets the same note as whichever
+    confidently-matched word is nearest to it in reading order. Returns a
+    map with one entry per verified word, unless not a single word in the
+    whole chart matched (nothing to anchor a fallback to)."""
+    all_positions = [(li, wi) for li, words in enumerate(verified_lines) for wi in range(len(words))]
+    flat_index = {pos: i for i, pos in enumerate(all_positions)}
+    confident_flat_indices = sorted(flat_index[pos] for pos in confident_notes)
+    resolved = dict(confident_notes)
+    if not confident_flat_indices:
+        return resolved
+
+    for pos in all_positions:
+        if pos in resolved:
+            continue
+        i = flat_index[pos]
+        j = bisect.bisect_left(confident_flat_indices, i)
+        candidates = confident_flat_indices[max(0, j - 1):j + 1]
+        nearest_flat = min(candidates, key=lambda ci: abs(ci - i))
+        resolved[pos] = resolved[all_positions[nearest_flat]]
+    return resolved
+
+
 def apply(slug: str) -> None:
     working_dir = REPO_ROOT / "working" / slug
     aligned_path = working_dir / "aligned-lyrics.json"
-    aligned_data = json.loads(aligned_path.read_text())
+    aligned_data = json.loads(aligned_path.read_text(encoding="utf-8"))
     aligned = aligned_data["aligned"]
 
     source_path = REPO_ROOT / "corrections" / slug / "verified-source.json"
     if not source_path.exists():
         raise SystemExit(f"ERROR: no verified source at {source_path}")
-    source = json.loads(source_path.read_text())
+    source = json.loads(source_path.read_text(encoding="utf-8"))
 
     verified_lines: list[list[str]] = [line["words"] for line in source["lines"]]
     total_verified_words = sum(len(words) for words in verified_lines)
@@ -179,46 +214,58 @@ def apply(slug: str) -> None:
         note.pop("lyrics", None)
 
     harmony_events: list[dict] = []
-    config = json.loads((REPO_ROOT / "songs" / f"{slug}.json").read_text())
+    config = json.loads((REPO_ROOT / "songs" / f"{slug}.json").read_text(encoding="utf-8"))
 
+    # A confidently-matched word's note_indices can repeat the same note
+    # (its syllables were originally stacked on one physical note, see
+    # reconstruct_midi_words) — dedupe so a word doesn't clear its own
+    # just-written entry off its own first note when its later "notes" are
+    # really the same one.
+    confident_notes: dict[tuple[int, int], int] = {}
+    span_clears: dict[tuple[int, int], list[int]] = {}
     for midi_index, line_index, word_index in pairs:
-        midi_word = midi_words[midi_index]
-        verified_text = source["lines"][line_index]["words"][word_index]
-        # A word's note_indices can repeat the same note (its syllables were
-        # originally stacked on one physical note, see
-        # reconstruct_midi_words) and, separately, two different matched
-        # words can each resolve to that same note — append rather than
-        # overwrite, so ScoreViewer's joinNoteLyrics (frontend) shows both,
-        # and dedupe so a word doesn't clear its own just-written entry off
-        # its own first note when its later "notes" are really the same one.
-        unique_notes = list(dict.fromkeys(midi_word.note_indices))
-        first_note_index = unique_notes[0]
-        entry = {"verse": f"line{line_index}", "text": verified_text, "syllabic": "single"}
-        aligned[first_note_index].setdefault("lyrics", []).append(entry)
-        for note_index in unique_notes[1:]:
-            aligned[note_index].pop("lyrics", None)
+        unique_notes = list(dict.fromkeys(midi_words[midi_index].note_indices))
+        confident_notes[(line_index, word_index)] = unique_notes[0]
+        span_clears[(line_index, word_index)] = unique_notes[1:]
 
-        chord_text = source["lines"][line_index]["chords"].get(str(word_index))
-        if chord_text:
-            event = parse_italian_chord(chord_text)
-            event["start"] = aligned[first_note_index]["start"]
-            harmony_events.append(event)
+    resolved_notes = resolve_note_indices(verified_lines, confident_notes)
+
+    for line_index, words in enumerate(verified_lines):
+        for word_index, verified_text in enumerate(words):
+            position = (line_index, word_index)
+            note_index = resolved_notes.get(position)
+            if note_index is None:
+                continue  # only when not a single word in the chart matched at all
+            # Two different words resolving to the same note (either two
+            # confident matches sharing a note, or an approximate word
+            # landing on its nearest confident neighbor's note) append
+            # rather than overwrite — ScoreViewer's joinNoteLyrics (frontend)
+            # shows both instead of one silently replacing the other.
+            entry = {"verse": f"line{line_index}", "text": verified_text, "syllabic": "single"}
+            aligned[note_index].setdefault("lyrics", []).append(entry)
+            for cleared_note_index in span_clears.get(position, []):
+                aligned[cleared_note_index].pop("lyrics", None)
+
+            chord_text = source["lines"][line_index]["chords"].get(str(word_index))
+            if chord_text:
+                event = parse_italian_chord(chord_text)
+                event["start"] = aligned[note_index]["start"]
+                harmony_events.append(event)
 
     unmatched_midi = len(midi_words) - len(matched_midi)
-    unmatched_verified = total_verified_words - len(pairs)
-    safe_print(f"Matched {len(pairs)} word(s); {unmatched_midi}/{len(midi_words)} MIDI word(s) and "
-               f"{unmatched_verified}/{total_verified_words} verified word(s) left unmatched")
-    if unmatched_verified:
-        matched_owners = {(li, wi) for _, li, wi in pairs}
-        unmatched_texts = [
-            words[wi] for li, words in enumerate(verified_lines) for wi in range(len(words))
-            if (li, wi) not in matched_owners
-        ]
-        safe_print(f"  Unplaced verified words (no confident MIDI match): {unmatched_texts}")
+    approximate_positions = [pos for pos in resolved_notes if pos not in confident_notes]
+    unresolved = total_verified_words - len(resolved_notes)
+    safe_print(f"Placed {len(resolved_notes)}/{total_verified_words} verified word(s) "
+               f"({len(confident_notes)} confident, {len(approximate_positions)} approximate — nearest "
+               f"confident neighbor); {unmatched_midi}/{len(midi_words)} MIDI word(s) unused"
+               + (f"; {unresolved} word(s) could not be placed at all (nothing in the chart matched)" if unresolved else ""))
+    if approximate_positions:
+        approx_texts = [verified_lines[li][wi] for li, wi in sorted(approximate_positions)]
+        safe_print(f"  Approximately placed verified words (check these against the chart): {approx_texts}")
 
     aligned_data["aligned"] = aligned
     aligned_data["correctedFrom"] = "verified-source"
-    aligned_path.write_text(json.dumps(aligned_data, indent=2, ensure_ascii=False))
+    aligned_path.write_text(json.dumps(aligned_data, indent=2, ensure_ascii=False), encoding="utf-8")
     safe_print(f"Wrote {aligned_path}")
 
     harmony_events.sort(key=lambda e: e["start"])
@@ -229,7 +276,7 @@ def apply(slug: str) -> None:
     harmony_events = retile_durations(harmony_events, final_duration=PPQ)
 
     harmony_path = working_dir / "harmony-events.json"
-    harmony_path.write_text(json.dumps({"ppq": PPQ, "tempo_bpm": config["tempoBpm"], "harmony": harmony_events}, indent=2))
+    harmony_path.write_text(json.dumps({"ppq": PPQ, "tempo_bpm": config["tempoBpm"], "harmony": harmony_events}, indent=2), encoding="utf-8")
     safe_print(f"{len(harmony_events)} harmony event(s) -> {harmony_path}")
 
 

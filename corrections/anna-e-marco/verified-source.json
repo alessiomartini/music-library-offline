@@ -1,55 +1,633 @@
 {
-  "source": "Accordi&Spartiti (accordiespartiti.it), \"ANNA E MARCO Accordi 100% Corretti - Lucio Dalla\" PDF, verified by Alessio",
+  "source": "ANNA E MARCO Accordi 100% Corretti -Lucio Dalla.pdf (mechanically extracted)",
   "chordNotation": "italian",
   "lines": [
-    {"words": ["Anna", "come", "sono", "tante,", "Anna", "permalosa"], "chords": {"0": "SIb", "4": "DOm7"}},
-    {"words": ["Anna", "bello", "sguardo"], "chords": {"0": "MIb"}},
-    {"words": ["sguardo", "che", "ogni", "giorno", "perde", "qualcosa"], "chords": {"0": "FA", "5": "SIb"}},
-    {"words": ["Se", "chiude", "gli", "occhi", "lei", "lo", "sa"], "chords": {"0": "FA/LA", "1": "SOLm"}},
-    {"words": ["stella", "di", "periferia,"], "chords": {"0": "MIb6"}},
-    {"words": ["Anna", "con", "le", "amiche"], "chords": {"0": "FA4"}},
-    {"words": ["Anna", "che", "vorrebbe", "andar", "via"], "chords": {"0": "FA", "3": "SIb"}},
-    {"words": ["Marco", "grosse", "scarpe", "e", "poca", "carne"], "chords": {"0": "SIb"}},
-    {"words": ["Marco", "cuore", "in", "allarme"], "chords": {"0": "DOm7"}},
-    {"words": ["con", "sua", "madre", "e", "una", "sorella"], "chords": {"0": "MIb"}},
-    {"words": ["poca", "vita,", "sempre", "quella"], "chords": {"0": "FA", "2": "SIb"}},
-    {"words": ["Se", "chiude", "gli", "occhi", "lui", "lo", "sa"], "chords": {"0": "FA/LA", "1": "SOLm"}},
-    {"words": ["lupo", "di", "periferia"], "chords": {"0": "MIb6"}},
-    {"words": ["Marco", "col", "branco"], "chords": {"0": "FA4"}},
-    {"words": ["Marco", "che", "vorrebbe", "andar", "via"], "chords": {"0": "FA", "3": "SIb"}},
-    {"words": ["E", "la", "luna", "è", "una", "palla"], "chords": {"0": "FA"}},
-    {"words": ["ed", "il", "cielo", "un", "biliardo"], "chords": {"0": "DOm7", "3": "LAb/DO", "4": "DOm"}},
-    {"words": ["quante", "stelle", "nei", "flipper"], "chords": {"0": "FA"}},
-    {"words": ["sono", "più", "di", "un", "miliardo"], "chords": {"0": "DOm7"}},
-    {"words": ["Marco", "dentro", "a", "un", "bar,", "non", "sa", "cosa", "farà"], "chords": {"0": "MIb", "4": "FA", "6": "DOm7", "8": "FA"}},
-    {"words": ["poi", "c'è", "qualcuno", "che", "trova", "una", "moto"], "chords": {"0": "MIb", "5": "MIb/FA"}},
-    {"words": ["si", "può", "andare", "in", "città"], "chords": {"0": "SIb", "3": "DOm7/SIb"}},
-    {"words": ["Anna", "bello", "sguardo", "non", "perde", "un", "ballo"], "chords": {"0": "SIb"}},
-    {"words": ["Marco", "che", "a", "ballare", "sembra", "un", "cavallo"], "chords": {"0": "DOm7/SIb"}},
-    {"words": ["in", "un", "locale", "che", "è", "uno", "schifo"], "chords": {"0": "MIb"}},
-    {"words": ["poca", "gente", "che", "li", "guarda"], "chords": {"0": "FA"}},
-    {"words": ["c'è", "una", "checca", "che", "fa", "il", "tifo"], "chords": {"0": "SIb"}},
-    {"words": ["Ma", "dimmi", "tu", "dove", "sarà"], "chords": {"0": "FA/LA", "3": "SOLm"}},
-    {"words": ["dov'è", "la", "strada", "per", "le", "stelle"], "chords": {"0": "MIb6"}},
-    {"words": ["mentre", "parlano", "si", "guardano"], "chords": {"0": "FA"}},
-    {"words": ["e", "si", "scambiano", "la", "pelle"], "chords": {"0": "SIb"}},
-    {"words": ["E", "cominciano", "a", "volare"], "chords": {}},
-    {"words": ["con", "tre", "salti", "sono", "fuori", "dal", "locale"], "chords": {"0": "DOm7/SIb"}},
-    {"words": ["con", "un'aria", "da", "commedia", "americana"], "chords": {"0": "MIb"}},
-    {"words": ["sta", "finendo", "anche", "questa", "settimana"], "chords": {"0": "FA", "3": "SIb"}},
-    {"words": ["Ma", "l'America", "è", "lontana"], "chords": {"0": "FA/LA", "2": "SOLm"}},
-    {"words": ["dall'altra", "parte", "della", "luna"], "chords": {"0": "MIb6"}},
-    {"words": ["che", "li", "guarda", "e", "anche", "se", "ride"], "chords": {"0": "FA"}},
-    {"words": ["a", "vederla", "mette", "quasi", "paura"], "chords": {"0": "SIb"}},
-    {"words": ["E", "la", "luna", "in", "silenzio"], "chords": {"0": "FA"}},
-    {"words": ["ora", "si", "avvicina"], "chords": {"0": "DOm7", "1": "LAb/DO", "2": "DOm"}},
-    {"words": ["con", "un", "mucchio", "di", "stelle", "cade", "per", "strada"], "chords": {"0": "FA", "5": "DOm7"}},
-    {"words": ["luna", "che", "cammina,", "luna", "di", "città"], "chords": {"0": "MIb", "2": "FA", "3": "DOm7", "5": "FA"}},
-    {"words": ["poi", "passa", "un", "cane", "che", "sente", "qualcosa"], "chords": {"0": "MIb/FA"}},
-    {"words": ["li", "guarda,", "abbaia", "e", "se", "ne", "va"], "chords": {"0": "SIb", "5": "DOm7/SIb"}},
-    {"words": ["Anna", "avrebbe", "voluto", "morire"], "chords": {"0": "SIb"}},
-    {"words": ["Marco", "voleva", "andarsene", "lontano"], "chords": {"0": "DOm7"}},
-    {"words": ["qualcuno", "li", "ha", "visti", "tornare"], "chords": {"0": "MIb", "3": "FA"}},
-    {"words": ["tenendosi", "per", "mano"], "chords": {"0": "SIb", "1": "DOm7/SIb", "2": "SIb7+"}}
+    {
+      "words": [
+        "Anna",
+        "come",
+        "sono",
+        "tante,",
+        "Anna",
+        "permalosa"
+      ],
+      "chords": {
+        "0": "SIb",
+        "5": "DOm7"
+      }
+    },
+    {
+      "words": [
+        "Anna",
+        "bello",
+        "sguardo"
+      ],
+      "chords": {
+        "0": "MIb"
+      }
+    },
+    {
+      "words": [
+        "sguardo",
+        "che",
+        "ogni",
+        "giorno",
+        "perde",
+        "qualcosa"
+      ],
+      "chords": {
+        "0": "FA",
+        "4": "SIb"
+      }
+    },
+    {
+      "words": [
+        "Se",
+        "chiude",
+        "gli",
+        "occhi",
+        "lei",
+        "lo",
+        "sa"
+      ],
+      "chords": {
+        "4": "FA/LA",
+        "6": "SOLm"
+      }
+    },
+    {
+      "words": [
+        "stella",
+        "di",
+        "periferia,"
+      ],
+      "chords": {
+        "2": "MIb6"
+      }
+    },
+    {
+      "words": [
+        "Anna",
+        "con",
+        "le",
+        "amiche"
+      ],
+      "chords": {
+        "0": "FA4"
+      }
+    },
+    {
+      "words": [
+        "Anna",
+        "che",
+        "vorrebbe",
+        "andar",
+        "via"
+      ],
+      "chords": {
+        "0": "FA",
+        "4": "SIb"
+      }
+    },
+    {
+      "words": [
+        "Marco",
+        "grosse",
+        "scarpe",
+        "e",
+        "poca",
+        "carne"
+      ],
+      "chords": {
+        "2": "SIb"
+      }
+    },
+    {
+      "words": [
+        "Marco",
+        "cuore",
+        "in",
+        "allarme"
+      ],
+      "chords": {
+        "3": "DOm7"
+      }
+    },
+    {
+      "words": [
+        "con",
+        "sua",
+        "madre",
+        "e",
+        "una",
+        "sorella"
+      ],
+      "chords": {
+        "2": "MIb"
+      }
+    },
+    {
+      "words": [
+        "poca",
+        "vita,",
+        "sempre",
+        "quella"
+      ],
+      "chords": {
+        "0": "FA",
+        "2": "SIb"
+      }
+    },
+    {
+      "words": [
+        "Se",
+        "chiude",
+        "gli",
+        "occhi",
+        "lui",
+        "lo",
+        "sa"
+      ],
+      "chords": {
+        "4": "FA/LA",
+        "6": "SOLm"
+      }
+    },
+    {
+      "words": [
+        "lupo",
+        "di",
+        "periferia"
+      ],
+      "chords": {
+        "1": "MIb6"
+      }
+    },
+    {
+      "words": [
+        "Marco",
+        "col",
+        "branco"
+      ],
+      "chords": {
+        "0": "FA4"
+      }
+    },
+    {
+      "words": [
+        "Marco",
+        "che",
+        "vorrebbe",
+        "andar",
+        "via"
+      ],
+      "chords": {
+        "0": "FA",
+        "4": "SIb"
+      }
+    },
+    {
+      "words": [
+        "E",
+        "la",
+        "luna",
+        "è",
+        "una",
+        "palla"
+      ],
+      "chords": {
+        "0": "FA"
+      }
+    },
+    {
+      "words": [
+        "ed",
+        "il",
+        "cielo",
+        "un",
+        "biliardo"
+      ],
+      "chords": {
+        "2": "DOm7",
+        "4": "LAb/DO",
+        "3": "DOm"
+      }
+    },
+    {
+      "words": [
+        "quante",
+        "stelle",
+        "nei",
+        "flipper"
+      ],
+      "chords": {
+        "0": "FA"
+      }
+    },
+    {
+      "words": [
+        "sono",
+        "più",
+        "di",
+        "un",
+        "miliardo"
+      ],
+      "chords": {
+        "1": "DOm7"
+      }
+    },
+    {
+      "words": [
+        "Marco",
+        "dentro",
+        "a",
+        "un",
+        "bar,",
+        "non",
+        "sa",
+        "cosa",
+        "farà"
+      ],
+      "chords": {
+        "0": "MIb",
+        "4": "FA",
+        "6": "DOm7",
+        "8": "FA"
+      }
+    },
+    {
+      "words": [
+        "poi",
+        "c'è",
+        "qualcuno",
+        "che",
+        "trova",
+        "una",
+        "moto"
+      ],
+      "chords": {
+        "2": "MIb",
+        "6": "MIb/FA"
+      }
+    },
+    {
+      "words": [
+        "si",
+        "può",
+        "andare",
+        "in",
+        "città"
+      ],
+      "chords": {
+        "4": "SIb",
+        "3": "DOm7/SIb"
+      }
+    },
+    {
+      "words": [
+        "Anna",
+        "bello",
+        "sguardo",
+        "non",
+        "perde",
+        "un",
+        "ballo"
+      ],
+      "chords": {
+        "0": "SIb"
+      }
+    },
+    {
+      "words": [
+        "Marco",
+        "che",
+        "a",
+        "ballare",
+        "sembra",
+        "un",
+        "cavallo"
+      ],
+      "chords": {
+        "3": "DOm7/SIb"
+      }
+    },
+    {
+      "words": [
+        "in",
+        "un",
+        "locale",
+        "che",
+        "è",
+        "uno",
+        "schifo"
+      ],
+      "chords": {
+        "2": "MIb"
+      }
+    },
+    {
+      "words": [
+        "poca",
+        "gente",
+        "che",
+        "li",
+        "guarda"
+      ],
+      "chords": {
+        "1": "FA"
+      }
+    },
+    {
+      "words": [
+        "c'è",
+        "una",
+        "checca",
+        "che",
+        "fa",
+        "il",
+        "tifo"
+      ],
+      "chords": {
+        "2": "SIb"
+      }
+    },
+    {
+      "words": [
+        "Ma",
+        "dimmi",
+        "tu",
+        "dove",
+        "sarà"
+      ],
+      "chords": {
+        "3": "FA/LA",
+        "4": "SOLm"
+      }
+    },
+    {
+      "words": [
+        "dov'è",
+        "la",
+        "strada",
+        "per",
+        "le",
+        "stelle"
+      ],
+      "chords": {
+        "4": "MIb6"
+      }
+    },
+    {
+      "words": [
+        "mentre",
+        "parlano",
+        "si",
+        "guardano"
+      ],
+      "chords": {
+        "0": "FA"
+      }
+    },
+    {
+      "words": [
+        "e",
+        "si",
+        "scambiano",
+        "la",
+        "pelle"
+      ],
+      "chords": {
+        "4": "SIb"
+      }
+    },
+    {
+      "words": [
+        "E",
+        "cominciano",
+        "a",
+        "volare"
+      ],
+      "chords": {}
+    },
+    {
+      "words": [
+        "con",
+        "tre",
+        "salti",
+        "sono",
+        "fuori",
+        "dal",
+        "locale"
+      ],
+      "chords": {
+        "2": "DOm7/SIb"
+      }
+    },
+    {
+      "words": [
+        "con",
+        "un'aria",
+        "da",
+        "commedia",
+        "americana"
+      ],
+      "chords": {
+        "1": "MIb"
+      }
+    },
+    {
+      "words": [
+        "sta",
+        "finendo",
+        "anche",
+        "questa",
+        "settimana"
+      ],
+      "chords": {
+        "0": "FA",
+        "3": "SIb"
+      }
+    },
+    {
+      "words": [
+        "Ma",
+        "l'America",
+        "è",
+        "lontana"
+      ],
+      "chords": {
+        "3": "FA/LA",
+        "2": "SOLm"
+      }
+    },
+    {
+      "words": [
+        "dall'altra",
+        "parte",
+        "della",
+        "luna"
+      ],
+      "chords": {
+        "3": "MIb6"
+      }
+    },
+    {
+      "words": [
+        "che",
+        "li",
+        "guarda",
+        "e",
+        "anche",
+        "se",
+        "ride"
+      ],
+      "chords": {
+        "2": "FA"
+      }
+    },
+    {
+      "words": [
+        "a",
+        "vederla",
+        "mette",
+        "quasi",
+        "paura"
+      ],
+      "chords": {
+        "4": "SIb"
+      }
+    },
+    {
+      "words": [
+        "E",
+        "la",
+        "luna",
+        "in",
+        "silenzio"
+      ],
+      "chords": {
+        "0": "FA"
+      }
+    },
+    {
+      "words": [
+        "ora",
+        "si",
+        "avvicina"
+      ],
+      "chords": {
+        "2": "DOm7",
+        "1": "LAb/DO",
+        "0": "DOm"
+      }
+    },
+    {
+      "words": [
+        "con",
+        "un",
+        "mucchio",
+        "di",
+        "stelle",
+        "cade",
+        "per",
+        "strada"
+      ],
+      "chords": {
+        "0": "FA",
+        "6": "DOm7"
+      }
+    },
+    {
+      "words": [
+        "luna",
+        "che",
+        "cammina,",
+        "luna",
+        "di",
+        "città"
+      ],
+      "chords": {
+        "0": "MIb",
+        "2": "FA",
+        "3": "DOm7",
+        "5": "FA"
+      }
+    },
+    {
+      "words": [
+        "poi",
+        "passa",
+        "un",
+        "cane",
+        "che",
+        "sente",
+        "qualcosa"
+      ],
+      "chords": {
+        "3": "MIb/FA"
+      }
+    },
+    {
+      "words": [
+        "li",
+        "guarda,",
+        "abbaia",
+        "e",
+        "se",
+        "ne",
+        "va"
+      ],
+      "chords": {
+        "4": "SIb",
+        "6": "DOm7/SIb"
+      }
+    },
+    {
+      "words": [
+        "Anna",
+        "avrebbe",
+        "voluto",
+        "morire"
+      ],
+      "chords": {
+        "0": "SIb"
+      }
+    },
+    {
+      "words": [
+        "Marco",
+        "voleva",
+        "andarsene",
+        "lontano"
+      ],
+      "chords": {
+        "0": "DOm7"
+      }
+    },
+    {
+      "words": [
+        "qualcuno",
+        "li",
+        "ha",
+        "visti",
+        "tornare"
+      ],
+      "chords": {
+        "0": "MIb",
+        "4": "FA"
+      }
+    },
+    {
+      "words": [
+        "tenendosi",
+        "per",
+        "mano"
+      ],
+      "chords": {
+        "2": "DOm7/SIb",
+        "1": "DOm7/SIb",
+        "0": "SIb7+"
+      }
+    }
   ]
 }

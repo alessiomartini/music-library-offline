@@ -77,6 +77,61 @@ def test_align_verified_lines_does_not_cross_verse_repeats():
     assert by_line[(1, 0)] == 5
 
 
+def test_resolve_note_indices_falls_back_to_nearest_confident_neighbor():
+    # word (0,1) has no confident match; the nearest confident word in
+    # reading order is (0,0), one position before it and two before (0,2).
+    confident = {(0, 0): 5, (0, 2): 9}
+    resolved = avs.resolve_note_indices([["a", "b", "c"]], confident)
+    assert resolved[(0, 1)] == 5
+
+
+def test_resolve_note_indices_reaches_across_lines():
+    # Line 1 has no confident matches at all; it must fall back to the
+    # nearest confident word in the whole song, not just its own line.
+    confident = {(0, 0): 1, (2, 0): 9}
+    resolved = avs.resolve_note_indices([["x"], ["y", "z"], ["w"]], confident)
+    assert resolved[(1, 0)] == 1  # closer (in reading order) to line 0 than line 2
+    assert resolved[(1, 1)] == 9  # closer to line 2
+
+
+def test_resolve_note_indices_returns_nothing_extra_when_no_word_ever_matched():
+    resolved = avs.resolve_note_indices([["a", "b"]], {})
+    assert resolved == {}
+
+
+def test_apply_never_drops_a_verified_word_it_cannot_confidently_match(tmp_path, monkeypatch):
+    # "extra" has no MIDI counterpart at all (not even a noisy one) — it
+    # must still appear somewhere in the output instead of vanishing.
+    import json
+
+    slug = "test-song"
+    song_dir = tmp_path
+    monkeypatch.setattr(avs, "REPO_ROOT", song_dir)
+    (song_dir / "songs").mkdir()
+    (song_dir / "songs" / f"{slug}.json").write_text(json.dumps({
+        "slug": slug, "timeSignature": {"numerator": 4, "denominator": 4}, "tempoBpm": 120,
+    }))
+    (song_dir / "working" / slug).mkdir(parents=True)
+    (song_dir / "corrections" / slug).mkdir(parents=True)
+
+    aligned = {
+        "ppq": 960,
+        "aligned": [
+            {"start": 0, "duration": 480, "pitch": 60, "lyrics": [{"verse": "line1", "text": "Anna", "syllabic": "single"}]},
+        ],
+    }
+    (song_dir / "working" / slug / "aligned-lyrics.json").write_text(json.dumps(aligned))
+    (song_dir / "corrections" / slug / "verified-source.json").write_text(json.dumps({
+        "lines": [{"words": ["Anna", "extra"], "chords": {}}],
+    }))
+
+    avs.apply(slug)
+
+    result = json.loads((song_dir / "working" / slug / "aligned-lyrics.json").read_text())["aligned"]
+    all_text = [e["text"] for n in result for e in n.get("lyrics", [])]
+    assert all_text == ["Anna", "extra"]  # "extra" landed on Anna's note instead of disappearing
+
+
 def test_apply_keeps_both_words_when_two_words_share_one_note(tmp_path, monkeypatch):
     # Regression test for a real bug found on "Anna e Marco": when a note's
     # original stacked syllables reconstruct into two separate words (e.g.
@@ -114,6 +169,9 @@ def test_apply_keeps_both_words_when_two_words_share_one_note(tmp_path, monkeypa
     avs.apply(slug)
 
     result = json.loads((song_dir / "working" / slug / "aligned-lyrics.json").read_text())["aligned"]
-    assert [e["text"] for e in result[0]["lyrics"]] == ["Anna", "come"]
+    # "sono" (MIDI has only "so", not an exact normalize_word match) isn't
+    # confidently matched here, so it falls back to its nearest confident
+    # neighbor's note ("come", also on note 0) instead of being dropped.
+    assert [e["text"] for e in result[0]["lyrics"]] == ["Anna", "come", "sono"]
     harmony = json.loads((song_dir / "working" / slug / "harmony-events.json").read_text())["harmony"]
     assert harmony[0]["start"] == 0 and harmony[0]["root"] == 10 and harmony[0]["quality"] == "major"
