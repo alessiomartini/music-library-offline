@@ -1,0 +1,11 @@
+{
+  "_comment": "Maps a filename (as it arrives in inbox/) to 'artist-first' or 'title-first', for files organize_midi_intake.py's automatic Title-Artist-vs-Artist-Title detection gets wrong (see parse_artist_title). Most of Alessio's bulk collection is 'Title - Artist.mid'; these are known exceptions named 'Artist - Title.mid' instead.",
+  "Dalla - 4 Marzo 1943.mid": "artist-first",
+  "Dalla - Anna E Marco.mid": "artist-first",
+  "Dalla - Cara.mid": "artist-first",
+  "Dalla - Caruso.mid": "artist-first",
+  "Dalla - L'anno Che Verra'.mid": "artist-first",
+  "Queen - Bohemian Rhapsody.mid": "artist-first",
+  "Queen - We Are The Champions.mid": "artist-first",
+  "The Beatles - Don't Let Me Down.mid": "artist-first"
+}

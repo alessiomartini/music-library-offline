@@ -1,0 +1,4 @@
+{
+  "_comment": "Copy this file to source-overrides.json (gitignored, local-only) and map original filenames (as they arrive in inbox/) to a source site, for files organize_midi_intake.py couldn't auto-detect. Overrides always win over auto-detection.",
+  "Some Artist - Some Title.mid": "midiworld.com"
+}

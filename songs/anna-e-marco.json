@@ -1,0 +1,16 @@
+{
+  "slug": "anna-e-marco",
+  "title": "Anna e Marco",
+  "composer": "Lucio Dalla",
+  "lyricist": "Lucio Dalla",
+  "originalKey": "Bb",
+  "mode": "major",
+  "tempoBpm": 120,
+  "timeSignature": {
+    "numerator": 4,
+    "denominator": 4
+  },
+  "midiSource": {
+    "file": "Anna E Marco__src-s5a3665208c76f031.jimcontent.com.mid"
+  }
+}

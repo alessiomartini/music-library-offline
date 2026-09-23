@@ -9,9 +9,9 @@ pipeline that turns them into those assets, working intermediates, and
 curation notes.
 
 Two songs have been transcribed so far: **Your Song** (Elton John) and
-**E cerca 'e me capi** (Pino Daniele). The pipeline is one set of generic,
-slug-parameterized scripts — not a per-song copy — driven by a small JSON
-config per song:
+**E cerca 'e me capi** (Pino Daniele), through the **audio-first** pipeline
+below. The pipeline is one set of generic, slug-parameterized scripts — not
+a per-song copy — driven by a small JSON config per song:
 
 ```text
 source recording (input/<slug>.mp3)
@@ -26,6 +26,17 @@ source recording (input/<slug>.mp3)
   -> normalized JSON (schemaVersion 1 envelope)
   -> transfer to the web repository (src/data/songs/<slug>.json)
 ```
+
+**Status (2026-09-22): a second, preferred path is being added.** Free ML
+tools don't get audio-first transcription quality high enough. Many songs
+have high-quality, human-made MIDI files available (often karaoke-style,
+with lyrics already embedded and synced to the notes), which sidesteps ML
+transcription and lyric alignment entirely for voice/instruments/harmony.
+This **MIDI-first** path is additive — it doesn't touch or replace anything
+above, which stays available as a fallback for songs without a usable MIDI.
+See `midi-intake/README.md` for the MIDI intake/organization step, and
+`docs/FUTURE-ARCHITECTURE.md` (in the `music-library` repo) for the
+architecture discussion.
 
 ## Requirements
 
@@ -58,20 +69,34 @@ MIDI-to-notation quantization — see `pipeline/musescore_import.py`).
   on the web. It is not a duplicate of `songs/<slug>.json`: that file is
   hand-written identity/config fed *into* the pipeline; this one is the full
   musical result produced *by* it.
-- `pipeline/` — the pipeline scripts (below). One script per step, no
-  per-song duplicates.
+- `pipeline/` — the pipeline scripts (below): `audio_first/` (the original
+  MP3-based path), `midi_first/` (the newer path), and shared,
+  source-agnostic infrastructure both import, kept flat at `pipeline/`
+  root. One script per step, no per-song duplicates.
+- `midi-intake/` — landing area and organizer for the MIDI-first path: drop
+  downloaded MIDI files in `inbox/`, `midi_first/organize_midi_intake.py`
+  sorts them into `library/<slug>/`. See `midi-intake/README.md`.
 
 Raw audio, MIDI, and Python virtualenvs/caches are gitignored. Working JSON,
 corrections, and final output JSON are tracked.
 
 ## Pipeline scripts
 
+`pipeline/` is split into `pipeline/audio_first/` (this section — the
+original MP3-based path), `pipeline/midi_first/` (the newer, preferred-
+when-available path — see "MIDI-first offline transcription / curation
+pipeline" below), and shared, source-agnostic infrastructure kept flat at
+`pipeline/` root (`constants.py`, `musescore_import.py`,
+`assemble_musicxml.py`, `musicxml_to_json.py`, `note_utils.py`,
+`harmony_utils.py`) that both paths import — never the other way around;
+`audio_first/` and `midi_first/` don't import from each other.
+
 Each script takes a song slug and reads `songs/<slug>.json` for anything
 song-specific. Run them in order for a new or re-transcribed song:
 
-1. `separate.py <slug>` — Demucs source separation into vocal +
+1. `audio_first/separate.py <slug>` — Demucs source separation into vocal +
    accompaniment stems (`working/<slug>/{vocals,accompaniment}.wav`).
-2. `transcribe_vocals.py <slug>` — vocal melody transcription: Basic Pitch
+2. `audio_first/transcribe_vocals.py <slug>` — vocal melody transcription: Basic Pitch
    detects notes over the vocal stem (filtered by `melodySource.vocalRange`
    / `firstVocalSec` / `velocityThreshold` / `minDurationTicks`, applied to
    the MIDI notes before anything downstream sees them), then **MuseScore 4**
@@ -90,7 +115,7 @@ song-specific. Run them in order for a new or re-transcribed song:
    correction, same as any automatic transcription (see
    `docs/FUTURE-ARCHITECTURE.md`, "Human Curation Is Part of the
    Workflow").
-3. `align_lyrics.py <slug>` — forced alignment: runs torchaudio's `MMS_FA`
+3. `audio_first/align_lyrics.py <slug>` — forced alignment: runs torchaudio's `MMS_FA`
    (a multilingual Wav2Vec2 CTC aligner) over the vocal stem against the
    full, romanized (via `uroman`) syllable sequence from the song config's
    `lyrics`, to find each syllable's actual onset/offset in the recording.
@@ -104,7 +129,7 @@ song-specific. Run them in order for a new or re-transcribed song:
    with none keeps its pitch with no lyric. A syllable whose text romanizes
    to nothing in the aligner's vocabulary (e.g. corrupted source text) is
    dropped with a warning rather than aborting the run.
-4. `extract_harmony.py <slug>` — chord recognition on the accompaniment stem
+4. `audio_first/extract_harmony.py <slug>` — chord recognition on the accompaniment stem
    via **lv-chordia** (see below). Duration is derived from the next
    event's already-rounded start, not rounded independently — see "Harmony
    tick-tiling" below. A chord event that repeats the one immediately
@@ -112,7 +137,7 @@ song-specific. Run them in order for a new or re-transcribed song:
    a bar reading A A C D becomes A C D); a repeat that crosses a measure
    boundary is left alone, since that's the ordinary way a chart shows the
    harmony continuing into a new measure, not a duplicate to clean up.
-5. `transcribe_instrumental.py <slug>` — polyphonic instrumental
+5. `audio_first/transcribe_instrumental.py <slug>` — polyphonic instrumental
    transcription: Basic Pitch detects notes over the accompaniment stem
    (filtered by `instrumentalSource.pitchRange` / `velocityThreshold`,
    applied to the MIDI notes), then MuseScore 4 quantizes/notates them the
@@ -123,10 +148,11 @@ song-specific. Run them in order for a new or re-transcribed song:
    the result playable. This is an independent transcription of the
    accompaniment audio, not a reduction of the harmony analysis — expect it
    to need correction, same as any automatic transcription.
-6. `assemble_musicxml.py <slug>` — assembles voice, instrumental, and
-   harmony into several MusicXML views via `music21` (see below), using the
-   song config's metadata.
-7. `musicxml_to_json.py <slug>` — reads `vocal-events.json` +
+6. `assemble_musicxml.py <slug>` — shared, not audio_first-specific —
+   assembles voice, instrumental, and harmony into several MusicXML views
+   via `music21` (see below), using the song config's metadata.
+7. `musicxml_to_json.py <slug>` — shared, not audio_first-specific —
+   reads `vocal-events.json` +
    `aligned-lyrics.json` and `harmony-events.json` directly (not the
    assembled MusicXML — see "Why the JSON step bypasses MusicXML" below)
    and emits the `schemaVersion: 1` normalized JSON envelope the web repo's
@@ -135,10 +161,10 @@ song-specific. Run them in order for a new or re-transcribed song:
 Example, for a song already separated:
 
 ```bash
-python pipeline/transcribe_vocals.py your-song
-python pipeline/align_lyrics.py your-song
-python pipeline/extract_harmony.py your-song
-python pipeline/transcribe_instrumental.py your-song
+python pipeline/audio_first/transcribe_vocals.py your-song
+python pipeline/audio_first/align_lyrics.py your-song
+python pipeline/audio_first/extract_harmony.py your-song
+python pipeline/audio_first/transcribe_instrumental.py your-song
 python pipeline/assemble_musicxml.py your-song
 python pipeline/musicxml_to_json.py your-song
 ```

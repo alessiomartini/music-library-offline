@@ -7,6 +7,7 @@
 *.ogg
 *.mid
 *.midi
+*.kar
 
 # Python environments and caches
 .venv/
@@ -24,3 +25,8 @@ __pycache__/
 
 # Keep final normalized JSON output trackable.
 pipeline/*.egg-info/
+
+# midi-intake: ephemeral reports and the local (possibly personal) source
+# override map; source-overrides.example.json stays tracked as a template.
+midi-intake/report-*.json
+midi-intake/source-overrides.json

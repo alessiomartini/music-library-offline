@@ -41,10 +41,22 @@ def build_voice_events(aligned: list[dict]) -> list[dict]:
 
         event = {"kind": "note", "start": start, "duration": duration, "pitch": entry["pitch"]}
         if entry.get("lyrics"):
-            event["lyrics"] = [
-                {"verse": ly["verse"], "text": ly["text"], "syllabic": ly.get("syllabic", "single")}
-                for ly in entry["lyrics"]
-            ]
+            # A lyric entry either carries real text (the audio-first path's
+            # and most MIDI-first syllables) or, MIDI-first only, a bare
+            # melisma continuation marker with no text of its own (see
+            # extract_midi_lyrics.py) — ScoreLyric validation (src/lib/score.ts)
+            # requires one or the other, never both missing.
+            event["lyrics"] = []
+            for ly in entry["lyrics"]:
+                lyric = {"verse": ly["verse"]}
+                if ly.get("melisma"):
+                    lyric["melisma"] = ly["melisma"]
+                if "text" in ly and ly["text"] is not None:
+                    lyric["text"] = ly["text"]
+                    lyric["syllabic"] = ly.get("syllabic", "single")
+                if ly.get("elision"):
+                    lyric["elision"] = ly["elision"]
+                event["lyrics"].append(lyric)
         if "tie" in entry:
             event["tie"] = entry["tie"]
         events.append(event)
@@ -72,7 +84,9 @@ def build_measures(time_sig: dict, total_ticks: int) -> list[dict]:
 def convert(slug: str) -> None:
     config = json.loads((REPO_ROOT / "songs" / f"{slug}.json").read_text())
     working_dir = REPO_ROOT / "working" / slug
-    aligned = json.loads((working_dir / "aligned-lyrics.json").read_text())["aligned"]
+    aligned_data = json.loads((working_dir / "aligned-lyrics.json").read_text())
+    aligned = aligned_data["aligned"]
+    lyric_sync_method = aligned_data.get("syncMethod", "derived")
 
     voice_events = build_voice_events(aligned)
     harmony_events = load_harmony_events(slug)
@@ -95,6 +109,7 @@ def convert(slug: str) -> None:
             "tempo": {"bpm": config["tempoBpm"]},
             "parts": [{"id": "voice", "name": "Voice", "role": "voice", "events": voice_events}],
             "harmony": harmony_events,
+            "lyricSyncMethod": lyric_sync_method,
         },
     }
 
