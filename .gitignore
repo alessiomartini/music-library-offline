@@ -33,3 +33,4 @@ midi-intake/source-overrides.json
 
 # Cached f0 tracks (vocal_distribution.py)
 *.npz
+working/vocal-batch.log

@@ -32,3 +32,7 @@ VOCAL_MIN_RUN_S = 0.05                # shorter single-note runs are stem bleed 
 VOCAL_MIN_SHARE = 0.01                # a note needs this share of the singing time to set the range
 VOCAL_CORE_PERCENTILES = (0.1, 0.9)   # "core" range: where 80% of the singing time sits
 VOCAL_DURATION_TOLERANCE_S = 5        # YouTube vs Deezer duration, to accept a search result
+
+# Demucs window overlap: 0.1 instead of the default 0.25 is ~17% faster on CPU and gave the
+# same vocal histogram (overlap 0.993 on E cerca 'e me capi, 2026-10-16).
+DEMUCS_OVERLAP = 0.1

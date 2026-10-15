@@ -160,6 +160,8 @@ def main() -> None:
     parser.add_argument("--title", required=True)
     parser.add_argument("--artist", required=True)
     parser.add_argument("--youtube", help="YouTube id of the recording (skips the search)")
+    parser.add_argument("--separate-only", action="store_true",
+                        help="stop after the vocal stem (vocal_batch.py runs the pitch step separately)")
     args = parser.parse_args()
 
     t0 = time.time()
@@ -176,6 +178,9 @@ def main() -> None:
         from separate import run_demucs
         run_demucs(args.slug)
     t2 = time.time()
+    if args.separate_only:
+        print(f"timings: download {t1 - t0:.0f} s, separation {t2 - t1:.0f} s")
+        return
 
     f0_file = vocals.with_name("f0.npz")
     if not f0_file.exists():

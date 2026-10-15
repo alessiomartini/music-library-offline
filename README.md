@@ -63,8 +63,27 @@ YouTube search (accepted only if the duration matches Deezer's within 5 s;
 The JSON gives two normalized histograms (shares of the singing time, and shares
 of the sung notes, i.e. how many times each note is sung), the range
 (notes with at least 1% of the time) and the core (10th-90th percentile of the
-time). Thresholds are in `pipeline/constants.py`. Cost on this PC (CPU only):
-about 3-4.5 minutes per song, almost all of it Demucs.
+time). Thresholds are in `pipeline/constants.py`. Almost all the time is Demucs.
+
+Many songs: `python pipeline/audio_first/vocal_batch.py songs.tsv --gpu` (TSV lines:
+`slug`, `title`, `artist`, optional YouTube id; resumable, failures logged to
+`working/vocal-batch.log`). `--gpu` separates on the GPU, one song at a time,
+while the other worker downloads or tracks pitch on the CPU. It needs the CUDA
+build of PyTorch, kept in its own environment so the main one stays as it is
+(cu126 is the newest build that supports both the MX150's Pascal GPU and Python 3.14):
+
+```bash
+python -m venv .venv
+.venv/Scripts/python -m pip install torch==2.9.1 torchaudio==2.9.1 --index-url https://download.pytorch.org/whl/cu126
+.venv/Scripts/python -m pip install demucs soundfile
+```
+
+Measured on this PC (2026-10-16): separating 148 s of audio takes 148 s on CPU
+with Demucs defaults, 123 s with overlap 0.1 (same histogram, 0.993 overlap),
+76 s on the GPU (0.991 overlap with CPU). Two CPU songs in parallel give ~1.25x
+the throughput; a CPU song next to the GPU one gains almost nothing. The batch
+with `--gpu` did 4 songs (~17 min of audio) in 499 s: about 2 minutes per song,
+~60 hours for the whole library.
 
 Validation on 2026-10-15 against the published lead sheets: E cerca 'e me capi
 overlap 0.91; Anna e Marco same notes an octave lower than the karaoke-MIDI lead
