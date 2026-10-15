@@ -9,12 +9,15 @@ songs/<slug>.json — no per-song script needed.
 Run with:  python pipeline/audio_first/separate.py <slug>
 """
 import argparse
+import os
 import shutil
 import subprocess
 import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).parent.parent.parent
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from constants import DEMUCS_OVERLAP  # noqa: E402
 
 
 def run_demucs(slug: str) -> None:
@@ -26,10 +29,14 @@ def run_demucs(slug: str) -> None:
 
     working_dir.mkdir(parents=True, exist_ok=True)
 
+    # DEMUCS_PYTHON can point to another interpreter (e.g. one with the CUDA build of
+    # PyTorch), DEMUCS_DEVICE picks "cuda" or "cpu" (Demucs' default: cuda when available).
     cmd = [
-        sys.executable, "-m", "demucs.separate",
+        os.environ.get("DEMUCS_PYTHON", sys.executable), "-m", "demucs.separate",
         "--two-stems=vocals",
         "-n", "htdemucs",
+        "--overlap", str(DEMUCS_OVERLAP),
+        *(["-d", os.environ["DEMUCS_DEVICE"]] if os.environ.get("DEMUCS_DEVICE") else []),
         "-o", str(working_dir / "demucs_output"),
         str(input_path),
     ]
