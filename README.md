@@ -47,6 +47,29 @@ MIDI-to-notation quantization — see `pipeline/musescore_import.py`).
 `MUSESCORE4_PATH` environment variable, its default Windows install path, or
 `mscore`/`mscore4portable` on `PATH`, in that order.
 
+## Vocal range from the recording
+
+`pipeline/audio_first/vocal_distribution.py <slug> --title ... --artist ...` measures how
+long each note is sung in the original recording, without needing a score:
+
+```text
+YouTube search (accepted only if the duration matches Deezer's within 5 s;
+  the chosen video id is kept in input/<slug>.source)
+  -> Demucs vocal stem (separate.py)
+  -> pYIN f0 track (working/<slug>/f0.npz, cached)
+  -> seconds sung per MIDI note -> output/vocal/<slug>.json
+```
+
+The JSON gives the normalized histogram (shares of the singing time), the range
+(notes with at least 1% of the time) and the core (10th-90th percentile of the
+time). Thresholds are in `pipeline/constants.py`. Cost on this PC (CPU only):
+about 3-4.5 minutes per song, almost all of it Demucs.
+
+Validation on 2026-10-15 against the published lead sheets: E cerca 'e me capi
+overlap 0.91; Anna e Marco same notes an octave lower than the karaoke-MIDI lead
+sheet (0.77 by pitch class); Your Song's audio-first lead sheet is too unreliable
+to compare (it reaches A5).
+
 ## Layout
 
 - `songs/<slug>.json` — **pipeline input**: the one place a song's non-audio
