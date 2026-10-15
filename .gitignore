@@ -30,3 +30,6 @@ pipeline/*.egg-info/
 # override map; source-overrides.example.json stays tracked as a template.
 midi-intake/report-*.json
 midi-intake/source-overrides.json
+
+# Cached f0 tracks (vocal_distribution.py)
+*.npz
