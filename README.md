@@ -60,7 +60,8 @@ YouTube search (accepted only if the duration matches Deezer's within 5 s;
   -> seconds sung per MIDI note -> output/vocal/<slug>.json
 ```
 
-The JSON gives the normalized histogram (shares of the singing time), the range
+The JSON gives two normalized histograms (shares of the singing time, and shares
+of the sung notes, i.e. how many times each note is sung), the range
 (notes with at least 1% of the time) and the core (10th-90th percentile of the
 time). Thresholds are in `pipeline/constants.py`. Cost on this PC (CPU only):
 about 3-4.5 minutes per song, almost all of it Demucs.

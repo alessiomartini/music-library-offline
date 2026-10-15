@@ -5,13 +5,15 @@ Vocal range and duration-weighted pitch distribution of a song, from its recordi
     recording (YouTube, checked against the Deezer duration)
       -> Demucs vocal stem
       -> pYIN f0 track
-      -> seconds sung on each note, normalized to a distribution
+      -> seconds sung on each note and times each note is sung, normalized
 
 Writes output/vocal/<slug>.json:
     low, high          lowest / highest note sung for at least MIN_SHARE of the time
     coreLow, coreHigh  CORE_PERCENTILES of the singing time (where the voice sits)
     seconds            total voiced seconds counted
+    notes              number of sung notes counted
     histogram          {midi note: share of the singing time}, shares sum to 1
+    countHistogram     {midi note: share of the sung notes (how many times)}, shares sum to 1
     source             YouTube video id of the recording
 
 The audio, the stem and the f0 track stay in input/ and working/<slug>/ (gitignored).
@@ -47,32 +49,46 @@ from constants import (  # noqa: E402
 REPO_ROOT = Path(__file__).parent.parent.parent
 
 
-def note_seconds(f0_hz: np.ndarray, voiced_prob: np.ndarray, hop_s: float, min_prob: float = VOCAL_VOICED_PROB,
-                 min_run_s: float = VOCAL_MIN_RUN_S, median_frames: int = VOCAL_MEDIAN_FRAMES) -> dict[int, float]:
-    """Seconds sung on each MIDI note. Frames without f0 (pYIN's unvoiced decision) or below `min_prob`
-    are silence; the pitch is median-smoothed so vibrato doesn't flip the rounded note, and runs of
-    one note shorter than `min_run_s` (stem bleed, octave jumps) are dropped."""
+def sung_notes(f0_hz: np.ndarray, voiced_prob: np.ndarray, hop_s: float, min_prob: float = VOCAL_VOICED_PROB,
+               min_run_s: float = VOCAL_MIN_RUN_S, median_frames: int = VOCAL_MEDIAN_FRAMES) -> list[tuple[int, float]]:
+    """The sung notes in order, as (MIDI note, seconds). Frames without f0 (pYIN's unvoiced decision)
+    or below `min_prob` are silence; the pitch is median-smoothed so vibrato doesn't flip the rounded
+    note. Runs shorter than `min_run_s` (stem bleed, octave jumps) are dropped, and the same note on
+    both sides of a dropped run stays one note; a silence between two equal notes makes two."""
     from scipy.ndimage import median_filter
     ok = (voiced_prob >= min_prob) & np.isfinite(f0_hz) & (f0_hz > 0)
     midi = np.zeros(len(f0_hz))
     midi[ok] = 69 + 12 * np.log2(f0_hz[ok] / 440.0)
     if median_frames > 1:
         midi = median_filter(midi, size=median_frames)
-    notes = np.where(ok, np.rint(midi), -1).astype(int)
-    seconds: dict[int, float] = {}
+    frames = np.where(ok, np.rint(midi), -1).astype(int)
+    notes: list[tuple[int, float]] = []
+    last = -1  # note of the last kept run, or -1 after a silence
     start = 0
-    for i in range(1, len(notes) + 1):
-        if i == len(notes) or notes[i] != notes[start]:
-            run = (i - start) * hop_s
-            if notes[start] >= 0 and run >= min_run_s:
-                seconds[int(notes[start])] = seconds.get(int(notes[start]), 0.0) + run
+    for i in range(1, len(frames) + 1):
+        if i == len(frames) or frames[i] != frames[start]:
+            note, run = int(frames[start]), (i - start) * hop_s
+            if note < 0:
+                last = -1
+            elif run >= min_run_s:
+                if note == last:
+                    notes[-1] = (note, notes[-1][1] + run)
+                else:
+                    notes.append((note, run))
+                last = note
             start = i
-    return seconds
+    return notes
 
 
-def distribution(seconds: dict[int, float], min_share: float = VOCAL_MIN_SHARE,
+def distribution(notes: list[tuple[int, float]], min_share: float = VOCAL_MIN_SHARE,
                  core: tuple[float, float] = VOCAL_CORE_PERCENTILES) -> dict:
-    """Normalized histogram, range and core (percentiles of singing time) from note seconds."""
+    """Two normalized histograms of the sung notes, by singing time and by number of times sung,
+    plus the range and core (percentiles of the singing time)."""
+    seconds: dict[int, float] = {}
+    counts: dict[int, int] = {}
+    for n, s in notes:
+        seconds[n] = seconds.get(n, 0.0) + s
+        counts[n] = counts.get(n, 0) + 1
     total = sum(seconds.values())
     if total == 0:
         raise ValueError("no sung notes")
@@ -87,7 +103,9 @@ def distribution(seconds: dict[int, float], min_share: float = VOCAL_MIN_SHARE,
             core_high = n
     return {
         "low": min(kept), "high": max(kept), "coreLow": core_low, "coreHigh": core_high,
-        "seconds": round(total, 1), "histogram": {str(n): round(s, 4) for n, s in hist.items()},
+        "seconds": round(total, 1), "notes": len(notes),
+        "histogram": {str(n): round(s, 4) for n, s in hist.items()},
+        "countHistogram": {str(n): round(c / len(notes), 4) for n, c in sorted(counts.items())},
     }
 
 
@@ -170,7 +188,7 @@ def main() -> None:
     t3 = time.time()
     track = np.load(f0_file)
 
-    result = distribution(note_seconds(track["f0"], track["prob"], float(track["hop_s"])))
+    result = distribution(sung_notes(track["f0"], track["prob"], float(track["hop_s"])))
     result["source"] = vid
     out = REPO_ROOT / "output" / "vocal" / f"{args.slug}.json"
     out.parent.mkdir(parents=True, exist_ok=True)
