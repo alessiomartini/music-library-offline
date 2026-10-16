@@ -56,6 +56,7 @@ def run(song: list[str], gpu: bool) -> tuple[str, bool, str]:
 
 
 def main() -> None:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # song titles in a cp1252 console
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("songs", type=Path)
     parser.add_argument("--jobs", type=int, default=2)
