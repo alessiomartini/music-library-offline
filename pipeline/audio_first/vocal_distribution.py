@@ -36,6 +36,7 @@ import numpy as np
 sys.path.insert(0, str(Path(__file__).parent))
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from constants import (  # noqa: E402
+    VOCAL_CONSENSUS_MAX_DIFF_S,
     VOCAL_CORE_PERCENTILES,
     VOCAL_DURATION_TOLERANCE_S,
     VOCAL_FMAX,
@@ -121,33 +122,49 @@ def _bare(title: str) -> str:
     return _norm(re.sub(r"\s*[(\[].*?[)\]]", "", title))
 
 
-def deezer_duration(title: str, artist: str) -> int | None:
-    """Duration of the Deezer track with this title by this artist (first word of the credit must match)."""
+def deezer_durations(title: str, artist: str) -> list[int]:
+    """Durations of the Deezer tracks with this title by this artist (lead artist of the credit)."""
     q = urllib.parse.quote(f"{artist} {title}")
     with urllib.request.urlopen(f"https://api.deezer.com/search?q={q}", timeout=30) as r:
         data = json.load(r).get("data") or []
     lead = _norm(re.split(r",| ft\.? | feat\.? | & ", artist)[0])
-    for t in data:
-        if _bare(t["title_short"]) == _bare(title) and _norm(t["artist"]["name"]) == lead:
-            return t["duration"]
+    return [t["duration"] for t in data if _bare(t["title_short"]) == _bare(title) and _norm(t["artist"]["name"]) == lead]
+
+
+def pick_video(results: list[tuple[str, float | None]], durations: list[int],
+               tolerance: float = VOCAL_DURATION_TOLERANCE_S) -> tuple[str, int] | None:
+    """First search result whose duration matches one of the song's Deezer versions
+    (album, single, live... have different lengths): (video id, matched duration)."""
+    for vid, dur in results:
+        for expected in durations:
+            if dur is not None and abs(dur - expected) <= tolerance:
+                return vid, expected
+    # Otherwise the recording most uploads agree on: at least 3 results within the tolerance
+    # of each other, and close to a Deezer version (Deezer may only list a remaster or album cut).
+    for vid, dur in results:
+        if dur is None:
+            continue
+        agreeing = sum(1 for _, d in results if d is not None and abs(d - dur) <= tolerance)
+        if agreeing >= 3 and any(abs(dur - e) <= VOCAL_CONSENSUS_MAX_DIFF_S for e in durations):
+            return vid, int(dur)
     return None
 
 
 def find_recording(title: str, artist: str, youtube_id: str | None) -> tuple[str, int]:
-    """YouTube id of the recording: the given one, or the first of five search results
-    whose duration matches Deezer's within the tolerance."""
+    """YouTube id of the recording: the given one, or the first of ten search results
+    whose duration matches a Deezer version of the song."""
     if youtube_id:
         return youtube_id, 0
-    expected = deezer_duration(title, artist)
-    if expected is None:
+    durations = deezer_durations(title, artist)
+    if not durations:
         raise SystemExit(f"Deezer has no {title} by {artist}: pass --youtube to choose the recording by hand")
     out = subprocess.run([sys.executable, "-m", "yt_dlp", "--flat-playlist", "--print", "%(id)s\t%(duration)s",
-                          f"ytsearch5:{title} {artist} audio"], capture_output=True, text=True, check=True).stdout
-    for line in out.splitlines():
-        vid, dur = line.split("\t")
-        if dur != "NA" and abs(float(dur) - expected) <= VOCAL_DURATION_TOLERANCE_S:
-            return vid, expected
-    raise SystemExit(f"No YouTube result matches the Deezer duration ({expected} s) for {title} — {artist}")
+                          f"ytsearch10:{title} {artist} audio"], capture_output=True, text=True, check=True).stdout
+    results = [(v, None if d == "NA" else float(d)) for v, d in (line.split("\t") for line in out.splitlines())]
+    picked = pick_video(results, durations)
+    if picked is None:
+        raise SystemExit(f"No YouTube result matches a Deezer duration ({durations} s) for {title} - {artist}")
+    return picked
 
 
 def download(slug: str, vid: str) -> Path:
@@ -179,7 +196,7 @@ def main() -> None:
     t0 = time.time()
     source = REPO_ROOT / "input" / f"{args.slug}.source"
     if source.exists() and not args.youtube:
-        vid, expected = source.read_text().strip(), deezer_duration(args.title, args.artist)
+        vid, expected = source.read_text().strip(), 0
     else:
         vid, expected = find_recording(args.title, args.artist, args.youtube)
     download(args.slug, vid)

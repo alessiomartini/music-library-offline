@@ -31,8 +31,9 @@ VOCAL_MEDIAN_FRAMES = 7               # pitch smoothing (70 ms) so vibrato doesn
 VOCAL_MIN_RUN_S = 0.05                # shorter single-note runs are stem bleed or octave errors
 VOCAL_MIN_SHARE = 0.01                # a note needs this share of the singing time to set the range
 VOCAL_CORE_PERCENTILES = (0.1, 0.9)   # "core" range: where 80% of the singing time sits
-VOCAL_DURATION_TOLERANCE_S = 5        # YouTube vs Deezer duration, to accept a search result
+VOCAL_DURATION_TOLERANCE_S = 5        # YouTube vs any Deezer version of the song, to accept a search result
 
 # Demucs window overlap: 0.1 instead of the default 0.25 is ~17% faster on CPU and gave the
 # same vocal histogram (overlap 0.993 on E cerca 'e me capi, 2026-10-16).
 DEMUCS_OVERLAP = 0.1
+VOCAL_CONSENSUS_MAX_DIFF_S = 25       # ...or 3+ results agree on a duration this close to a Deezer version
