@@ -37,3 +37,19 @@ def test_a_dropped_glitch_inside_a_held_note_leaves_one_note():
     f0[200:212] = hz(64)  # a 120 ms pitch error: too long to smooth, shorter than the shortest note
     notes = sung_notes(f0, np.full(300, 0.9), hop, min_run_s=0.15)
     assert [n for n, _ in notes] == [57]
+
+
+def test_a_video_matches_any_deezer_version_of_the_song():
+    from vocal_distribution import pick_video
+    results = [("live", 301.0), ("single", 238.0), ("nodur", None)]
+    # Deezer lists the album version (256 s) first and the single (237 s) later.
+    assert pick_video(results, [256, 237]) == ("single", 237)
+    assert pick_video(results, [400]) is None
+
+
+def test_three_uploads_agreeing_on_a_duration_close_to_deezer_win():
+    from vocal_distribution import pick_video
+    results = [("a", 234.0), ("b", 238.0), ("c", 240.0), ("d", 301.0)]
+    assert pick_video(results, [256]) == ("b", 238)   # 7 Years: Deezer only has the 256 s version
+    assert pick_video(results, [330]) is None          # agreeing, but too far from any Deezer version
+    assert pick_video([("a", 234.0), ("d", 301.0)], [256]) is None  # two uploads are not enough
