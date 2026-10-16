@@ -22,6 +22,7 @@ Run with:  python pipeline/audio_first/vocal_distribution.py <slug> --title "...
 """
 import argparse
 import json
+import re
 import subprocess
 import sys
 import time
@@ -115,14 +116,19 @@ def _norm(s: str) -> str:
     return " ".join("".join(c if c.isalnum() else " " for c in s if unicodedata.category(c) != "Mn").split())
 
 
+def _bare(title: str) -> str:
+    """"Uptown Funk (feat. Bruno Mars)" -> "uptown funk"."""
+    return _norm(re.sub(r"\s*[(\[].*?[)\]]", "", title))
+
+
 def deezer_duration(title: str, artist: str) -> int | None:
     """Duration of the Deezer track with this title by this artist (first word of the credit must match)."""
     q = urllib.parse.quote(f"{artist} {title}")
     with urllib.request.urlopen(f"https://api.deezer.com/search?q={q}", timeout=30) as r:
         data = json.load(r).get("data") or []
-    lead = _norm(artist.split(",")[0])
+    lead = _norm(re.split(r",| ft\.? | feat\.? | & ", artist)[0])
     for t in data:
-        if _norm(t["title_short"]) == _norm(title) and _norm(t["artist"]["name"]) == lead:
+        if _bare(t["title_short"]) == _bare(title) and _norm(t["artist"]["name"]) == lead:
             return t["duration"]
     return None
 
@@ -148,9 +154,15 @@ def download(slug: str, vid: str) -> Path:
     path = REPO_ROOT / "input" / f"{slug}.mp3"
     if not path.exists():
         path.parent.mkdir(exist_ok=True)
-        subprocess.run([sys.executable, "-m", "yt_dlp", "--js-runtimes", "node", "-x", "--audio-format", "mp3",
-                        "-o", str(path.with_suffix(".%(ext)s")), f"https://www.youtube.com/watch?v={vid}"],
-                       check=True, capture_output=True)
+        for attempt in range(3):  # YouTube refuses a download now and then; a retry usually works
+            r = subprocess.run([sys.executable, "-m", "yt_dlp", "--js-runtimes", "node", "-x", "--audio-format", "mp3",
+                                "-o", str(path.with_suffix(".%(ext)s")), f"https://www.youtube.com/watch?v={vid}"],
+                               capture_output=True, text=True)
+            if r.returncode == 0:
+                break
+            time.sleep(30 * (attempt + 1))
+        else:
+            raise SystemExit(f"yt-dlp failed for {vid}: {r.stderr.strip().splitlines()[-1] if r.stderr.strip() else ''}")
     return path
 
 
