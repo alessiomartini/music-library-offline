@@ -1,0 +1,15 @@
+{
+  "low": 55,
+  "high": 55,
+  "coreLow": 55,
+  "coreHigh": 55,
+  "seconds": 0.4,
+  "notes": 3,
+  "histogram": {
+    "55": 1.0
+  },
+  "countHistogram": {
+    "55": 1.0
+  },
+  "source": "BuYf0taXoNw"
+}
