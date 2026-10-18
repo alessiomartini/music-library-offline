@@ -1,7 +1,7 @@
 # midi-intake
 
 Landing area for the MIDI-first offline workflow (see the root
-[README.md](../README.md) and `docs/FUTURE-ARCHITECTURE.md` in the
+[README.md](../README.md) and `docs/DESIGN.md` in the
 `music-library` repo for the two-path pipeline this feeds into).
 
 ## Usage

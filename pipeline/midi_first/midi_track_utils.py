@@ -133,7 +133,7 @@ def detect_vocal_channel(
     line on an unrelated instrument program (flute, sax, strings...).
 
     Scored as precision+recall (F1), not recall alone — against a real
-    file (see docs/FUTURE-ARCHITECTURE.md's MIDI-first section), a dense
+    file (see docs/DESIGN.md's MIDI-first section), a dense
     accompaniment channel (e.g. a bass line moving on nearly every beat)
     out-scored the real vocal channel on recall alone, simply because
     having far more onsets makes *some* of them land near *any* given
@@ -328,7 +328,7 @@ def read_lyric_events(mid: mido.MidiFile, track_idx: int, event_type: str) -> li
 #            classic \/-marker + trailing-space convention above cleanly.
 # This still has NOT been verified against every source site's variant —
 # spot-check working/<slug>/aligned-lyrics.json against the source file for
-# a new song before trusting it (see docs/FUTURE-ARCHITECTURE.md's
+# a new song before trusting it (see docs/DESIGN.md's
 # MIDI-first section). In particular, no real file surveyed so far has
 # shown an explicit "still holding this syllable" melisma marker distinct
 # from a plain word-final syllable — held notes with no following lyric
