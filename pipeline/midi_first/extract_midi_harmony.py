@@ -15,7 +15,7 @@ represent (e.g. a 9th chord reduces to its 7th-chord quality).
 A symmetric chord (e.g. an augmented triad, which reads the same from any
 of its three notes) has no single correct "root" from pitch content alone
 — this is a genuine, known limitation, not a bug; see
-docs/FUTURE-ARCHITECTURE.md Open Question 24 ("How should accompaniment be
+docs/DESIGN.md Open Question 24 ("How should accompaniment be
 represented when harmony is ambiguous?").
 
 Writes working/<slug>/harmony-events.json — same shape as

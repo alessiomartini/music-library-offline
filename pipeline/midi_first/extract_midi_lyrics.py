@@ -43,7 +43,7 @@ file's history.
 The text-parsing rules follow the common "Soft Karaoke" convention but
 have not been verified against every source site's variant — check the
 output against the source MIDI by ear/eye for a new song before trusting
-it (see docs/FUTURE-ARCHITECTURE.md's MIDI-first section).
+it (see docs/DESIGN.md's MIDI-first section).
 
 Writes working/<slug>/aligned-lyrics.json — same shape as align_lyrics.py's
 output, plus "syncMethod": "midi-native".

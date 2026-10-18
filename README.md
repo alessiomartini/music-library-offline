@@ -35,7 +35,7 @@ transcription and lyric alignment entirely for voice/instruments/harmony.
 This **MIDI-first** path is additive — it doesn't touch or replace anything
 above, which stays available as a fallback for songs without a usable MIDI.
 See `midi-intake/README.md` for the MIDI intake/organization step, and
-`docs/FUTURE-ARCHITECTURE.md` (in the `music-library` repo) for the
+`docs/DESIGN.md` (in the `music-library` repo) for the
 architecture discussion.
 
 ## Requirements
@@ -156,7 +156,7 @@ song-specific. Run them in order for a new or re-transcribed song:
    notes are then collapsed to one active line (`enforce_monophonic`), since
    a solo vocal is monophonic by definition. Expect the result to still need
    correction, same as any automatic transcription (see
-   `docs/FUTURE-ARCHITECTURE.md`, "Human Curation Is Part of the
+   `docs/DESIGN.md`, "Human Curation Is Part of the
    Workflow").
 3. `audio_first/align_lyrics.py <slug>` — forced alignment: runs torchaudio's `MMS_FA`
    (a multilingual Wav2Vec2 CTC aligner) over the vocal stem against the
@@ -225,7 +225,7 @@ JSON step bypasses MusicXML" below for why padding matters):
 - `lead-sheet.musicxml` — voice + harmony only; this is the pair that
   corresponds to what gets published (`musicxml_to_json.py` doesn't read
   the instrumental part at all — it's not part of the `Score` schema yet,
-  see `docs/FUTURE-ARCHITECTURE.md`'s "Bass/instrumental parts").
+  see `docs/DESIGN.md`'s "Bass/instrumental parts").
 
 ## Why the JSON step bypasses MusicXML
 
@@ -343,7 +343,7 @@ for absent optional fields (`tie`, `melisma`, `elision`, `lyrics`,
 3. Run the seven pipeline steps in order (above).
 4. Inspect `working/<slug>/lead-sheet.musicxml` and `output/json/<slug>.json`
    before transferring — automatic transcription and chord recognition are
-   both expected to need correction; see `docs/FUTURE-ARCHITECTURE.md`'s
+   both expected to need correction; see `docs/DESIGN.md`'s
    "Human Curation Is Part of the Workflow".
 5. Copy `output/json/<slug>.json` into the web repo's
    `src/data/songs/<slug>.json` and wire it into `src/data/songs/index.ts`.

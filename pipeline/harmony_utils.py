@@ -8,7 +8,7 @@ belongs here).
 def retile_durations(events: list[dict], final_duration: int) -> list[dict]:
     """Derive each event's duration from the next event's start (exact
     tiling by construction — see extract_harmony.py's "Harmony tick-tiling"
-    note in docs/FUTURE-ARCHITECTURE.md for why this matters); the last
+    note in docs/DESIGN.md for why this matters); the last
     event gets `final_duration`."""
     for i, event in enumerate(events):
         event["duration"] = events[i + 1]["start"] - event["start"] if i + 1 < len(events) else final_duration
