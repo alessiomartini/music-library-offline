@@ -40,19 +40,33 @@ def test_a_dropped_glitch_inside_a_held_note_leaves_one_note():
 
 
 def test_a_video_matches_any_deezer_version_of_the_song():
-    from vocal_distribution import pick_video
-    results = [("live", 301.0), ("single", 238.0), ("nodur", None)]
+    from vocal_distribution import pick_videos
+    results = [("live", 301.0, None, 9), ("single", 238.0, None, 5), ("nodur", None, None, 1)]
     # Deezer lists the album version (256 s) first and the single (237 s) later.
-    assert pick_video(results, [256, 237]) == ("single", 237)
-    assert pick_video(results, [400]) is None
+    assert pick_videos(results, [256, 237], "X")[0] == ("single", 237)
+    assert pick_videos(results, [400], "X") == []
 
 
 def test_three_uploads_agreeing_on_a_duration_close_to_deezer_win():
-    from vocal_distribution import pick_video
-    results = [("a", 234.0), ("b", 238.0), ("c", 240.0), ("d", 301.0)]
-    assert pick_video(results, [256]) == ("b", 238)   # 7 Years: Deezer only has the 256 s version
-    assert pick_video(results, [330]) is None          # agreeing, but too far from any Deezer version
-    assert pick_video([("a", 234.0), ("d", 301.0)], [256]) is None  # two uploads are not enough
+    from vocal_distribution import pick_videos
+    results = [("a", 234.0, None, 0), ("b", 238.0, None, 0), ("c", 240.0, None, 0), ("d", 301.0, None, 0)]
+    assert pick_videos(results, [256], "X") == [("b", 238)]   # 7 Years: Deezer only has the 256 s version
+    assert pick_videos(results, [330], "X") == []              # agreeing, but too far from any Deezer version
+    assert pick_videos([("a", 234.0, None, 0), ("d", 301.0, None, 0)], [256], "X") == []  # two are not enough
+
+
+def test_official_channels_and_views_come_first():
+    from vocal_distribution import official, pick_videos
+    assert official("Robin Williams - Topic", "Robin Williams")
+    assert official("AlexBrittiVEVO", "Alex Britti") and official("Alex Britti", "Alex Britti, Neri Per Caso")
+    assert not official("lyricscentral815", "Robin Williams")
+    results = [("fan", 163.0, "GEORGEN2890", 2_462_958), ("topic", 172.0, "Robin Williams - Topic", 8_203_170),
+               ("lyrics", 239.0, "lyricscentral815", 737_014)]
+    # Deezer has no matching version: only the official upload is trusted.
+    assert pick_videos(results, [], "Robin Williams") == [("topic", 172)]
+    # Several uploads match Deezer: the official one first, then by views.
+    both = [("fan", 171.0, "fans", 9_000_000), ("topic", 172.0, "Robin Williams - Topic", 10), ("other", 170.0, "x", 100)]
+    assert [v for v, _ in pick_videos(both, [171], "Robin Williams")] == ["topic", "fan", "other"]
 
 
 def test_a_cluster_an_octave_away_is_dropped_but_notes_joining_the_range_stay():
