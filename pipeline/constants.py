@@ -30,6 +30,8 @@ VOCAL_VOICED_PROB = 0.1               # on top of pYIN's own voiced decision; 0.
 VOCAL_MEDIAN_FRAMES = 7               # pitch smoothing (70 ms) so vibrato doesn't flip the rounded note
 VOCAL_MIN_RUN_S = 0.05                # shorter single-note runs are stem bleed or octave errors
 VOCAL_MIN_SHARE = 0.01                # a note needs this share of the singing time to set the range
+VOCAL_STRAY_SHARE = 0.002              # notes beyond the range are kept while they join it: each with this share...
+VOCAL_STRAY_GAP = 2                   # ...and at most this many weaker semitones in between (a scale step); farther clusters are octave errors or backing vocals
 VOCAL_CORE_PERCENTILES = (0.1, 0.9)   # "core" range: where 80% of the singing time sits
 VOCAL_DURATION_TOLERANCE_S = 5        # YouTube vs any Deezer version of the song, to accept a search result
 
