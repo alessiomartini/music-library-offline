@@ -22,6 +22,7 @@ Run with:  python pipeline/audio_first/vocal_distribution.py <slug> --title "...
 """
 import argparse
 import json
+import os
 import re
 import subprocess
 import sys
@@ -156,43 +157,62 @@ def deezer_durations(title: str, artist: str) -> list[int]:
     q = urllib.parse.quote(f"{artist} {title}")
     with urllib.request.urlopen(f"https://api.deezer.com/search?q={q}", timeout=30) as r:
         data = json.load(r).get("data") or []
-    lead = _norm(re.split(r",| ft\.? | feat\.? | & ", artist)[0])
+    lead = _norm(_lead(artist))
     return [t["duration"] for t in data if _bare(t["title_short"]) == _bare(title) and _norm(t["artist"]["name"]) == lead]
 
 
-def pick_video(results: list[tuple[str, float | None]], durations: list[int],
-               tolerance: float = VOCAL_DURATION_TOLERANCE_S) -> tuple[str, int] | None:
-    """First search result whose duration matches one of the song's Deezer versions
-    (album, single, live... have different lengths): (video id, matched duration)."""
-    for vid, dur in results:
+def official(channel: str | None, artist: str) -> bool:
+    """A channel of the artist: "<artist> - Topic" (label audio YouTube generates), "<artist>VEVO", or the artist's own."""
+    c = _norm((channel or "").removesuffix(" - Topic"))
+    lead = _norm(_lead(artist))
+    return bool(lead) and c.replace(" ", "") in (lead.replace(" ", ""), lead.replace(" ", "") + "vevo")
+
+
+def _lead(artist: str) -> str:
+    return re.split(r",| ft\.? | feat\.? | & ", artist)[0]
+
+
+def pick_videos(results: list[tuple[str, float | None, str | None, int | None]], durations: list[int], artist: str,
+                tolerance: float = VOCAL_DURATION_TOLERANCE_S) -> list[tuple[str, int]]:
+    """Search results to try, best first, as (video id, expected duration): results whose duration
+    matches one of the song's Deezer versions (album, single, live... have different lengths), the
+    artist's official channels and the most viewed first; else the recording at least 3 uploads agree
+    on, close to a Deezer version; else (no Deezer match at all) the artist's official uploads."""
+    rank = lambda r: (not official(r[2], artist), -(r[3] or 0))  # noqa: E731
+    matching = []
+    for r in sorted(results, key=rank):
         for expected in durations:
-            if dur is not None and abs(dur - expected) <= tolerance:
-                return vid, expected
-    # Otherwise the recording most uploads agree on: at least 3 results within the tolerance
-    # of each other, and close to a Deezer version (Deezer may only list a remaster or album cut).
-    for vid, dur in results:
+            if r[1] is not None and abs(r[1] - expected) <= tolerance:
+                matching.append((r[0], expected))
+                break
+    if matching:
+        return matching
+    for vid, dur, *_ in results:
         if dur is None:
             continue
-        agreeing = sum(1 for _, d in results if d is not None and abs(d - dur) <= tolerance)
+        agreeing = sum(1 for r in results if r[1] is not None and abs(r[1] - dur) <= tolerance)
         if agreeing >= 3 and any(abs(dur - e) <= VOCAL_CONSENSUS_MAX_DIFF_S for e in durations):
-            return vid, int(dur)
-    return None
+            return [(vid, int(dur))]
+    return [(r[0], int(r[1] or 0)) for r in sorted(results, key=rank) if official(r[2], artist)]
 
 
-def find_recording(title: str, artist: str, youtube_id: str | None) -> tuple[str, int]:
-    """YouTube id of the recording: the given one, or the first of ten search results
-    whose duration matches a Deezer version of the song."""
+def find_recording(title: str, artist: str, youtube_id: str | None) -> list[tuple[str, int]]:
+    """YouTube ids of the recording to try in order: the given one, or the best of ten search results."""
     if youtube_id:
-        return youtube_id, 0
+        return [(youtube_id, 0)]
     durations = deezer_durations(title, artist)
-    if not durations:
-        raise SystemExit(f"Deezer has no {title} by {artist}: pass --youtube to choose the recording by hand")
-    out = subprocess.run([sys.executable, "-m", "yt_dlp", "--flat-playlist", "--print", "%(id)s\t%(duration)s",
-                          f"ytsearch10:{title} {artist} audio"], capture_output=True, text=True, check=True).stdout
-    results = [(v, None if d == "NA" else float(d)) for v, d in (line.split("\t") for line in out.splitlines())]
-    picked = pick_video(results, durations)
-    if picked is None:
-        raise SystemExit(f"No YouTube result matches a Deezer duration ({durations} s) for {title} - {artist}")
+    out = subprocess.run([sys.executable, "-m", "yt_dlp", "--flat-playlist", "--print",
+                          "%(id)s	%(duration)s	%(channel)s	%(view_count)s",
+                          f"ytsearch10:{title} {artist} audio"], capture_output=True, text=True, encoding="utf-8",
+                         errors="replace", env={**os.environ, "PYTHONIOENCODING": "utf-8"}, check=True).stdout
+    results = []
+    for line in out.splitlines():
+        v, d, c, n = (line.split("	") + ["NA"] * 4)[:4]
+        results.append((v, None if d == "NA" else float(d), None if c == "NA" else c, None if n == "NA" else int(n)))
+    picked = pick_videos(results, durations, artist)
+    if not picked:
+        raise SystemExit(f"No YouTube result matches a Deezer duration ({durations} s) and none is from an official "
+                         f"channel for {title} - {artist}: pass --youtube to choose the recording by hand")
     return picked
 
 
@@ -225,10 +245,16 @@ def main() -> None:
     t0 = time.time()
     source = REPO_ROOT / "input" / f"{args.slug}.source"
     if source.exists() and not args.youtube:
-        vid, expected = source.read_text().strip(), 0
+        candidates = [(source.read_text().strip(), 0)]
     else:
-        vid, expected = find_recording(args.title, args.artist, args.youtube)
-    download(args.slug, vid)
+        candidates = find_recording(args.title, args.artist, args.youtube)
+    for i, (vid, expected) in enumerate(candidates):  # some uploads are blocked here: try the next one
+        try:
+            download(args.slug, vid)
+            break
+        except SystemExit:
+            if i == len(candidates) - 1:
+                raise
     source.write_text(vid + "\n")
     t1 = time.time()
     vocals = REPO_ROOT / "working" / args.slug / "vocals.wav"
