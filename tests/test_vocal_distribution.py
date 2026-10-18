@@ -23,11 +23,11 @@ def test_time_and_count_histograms_differ():
 
 def test_rare_notes_are_in_the_histogram_but_do_not_set_the_range():
     hop = 0.01
-    f0 = np.array([hz(48)] * 10 + [hz(62)] * 3000)
+    f0 = np.array([hz(60)] * 10 + [hz(62)] * 3000)
     prob = np.array([0.9] * 10 + [0.9] * 2990 + [0.05] * 10)
     d = distribution(sung_notes(f0, prob, hop))
-    # C3 is 0.1 s out of 30 s: in the histogram, but below the 1% share that sets the range.
-    assert d["low"] == 62 and "48" in d["histogram"]
+    # C4 is 0.1 s out of 30 s: in the histogram, but below the 1% share that sets the range.
+    assert d["low"] == 62 and "60" in d["histogram"]
 
 
 def test_a_dropped_glitch_inside_a_held_note_leaves_one_note():
@@ -53,3 +53,12 @@ def test_three_uploads_agreeing_on_a_duration_close_to_deezer_win():
     assert pick_video(results, [256]) == ("b", 238)   # 7 Years: Deezer only has the 256 s version
     assert pick_video(results, [330]) is None          # agreeing, but too far from any Deezer version
     assert pick_video([("a", 234.0), ("d", 301.0)], [256]) is None  # two uploads are not enough
+
+
+def test_a_cluster_an_octave_away_is_dropped_but_notes_joining_the_range_stay():
+    from vocal_distribution import drop_strays
+    # Melody on A3..E4 (a gap of one semitone between scale notes is normal), a brief
+    # G4 next to it, and an octave-error cluster around A4 three empty semitones away.
+    notes = [(57, 30.0), (59, 30.0), (60, 30.0), (62, 30.0), (64, 30.0), (66, 0.5), (70, 0.5), (71, 0.5)]
+    kept = [n for n, _ in drop_strays(notes)]
+    assert kept == [57, 59, 60, 62, 64, 66]

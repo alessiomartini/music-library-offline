@@ -45,6 +45,8 @@ from constants import (  # noqa: E402
     VOCAL_MEDIAN_FRAMES,
     VOCAL_MIN_RUN_S,
     VOCAL_MIN_SHARE,
+    VOCAL_STRAY_GAP,
+    VOCAL_STRAY_SHARE,
     VOCAL_VOICED_PROB,
 )
 
@@ -85,7 +87,9 @@ def sung_notes(f0_hz: np.ndarray, voiced_prob: np.ndarray, hop_s: float, min_pro
 def distribution(notes: list[tuple[int, float]], min_share: float = VOCAL_MIN_SHARE,
                  core: tuple[float, float] = VOCAL_CORE_PERCENTILES) -> dict:
     """Two normalized histograms of the sung notes, by singing time and by number of times sung,
-    plus the range and core (percentiles of the singing time)."""
+    plus the range and core (percentiles of the singing time). Stray notes, not joined to the range
+    by a chain of notes with some singing time, are dropped first (octave errors, backing vocals)."""
+    notes = drop_strays(notes, min_share)
     seconds: dict[int, float] = {}
     counts: dict[int, int] = {}
     for n, s in notes:
@@ -109,6 +113,31 @@ def distribution(notes: list[tuple[int, float]], min_share: float = VOCAL_MIN_SH
         "histogram": {str(n): round(s, 4) for n, s in hist.items()},
         "countHistogram": {str(n): round(c / len(notes), 4) for n, c in sorted(counts.items())},
     }
+
+
+def drop_strays(notes: list[tuple[int, float]], min_share: float = VOCAL_MIN_SHARE,
+                stray_share: float = VOCAL_STRAY_SHARE, max_gap: int = VOCAL_STRAY_GAP) -> list[tuple[int, float]]:
+    """The notes without those far from the range: walking out from the range (notes with
+    `min_share`), a note is kept while fewer than `max_gap` + 1 semitones in a row lack `stray_share`."""
+    seconds: dict[int, float] = {}
+    for n, s in notes:
+        seconds[n] = seconds.get(n, 0.0) + s
+    total = sum(seconds.values())
+    if total == 0:
+        return notes
+    share = {n: s / total for n, s in seconds.items()}
+    kept = [n for n, x in share.items() if x >= min_share] or list(share)
+    bounds = []
+    for start, step in ((min(kept), -1), (max(kept), 1)):
+        edge, n, gap = start, start + step, 0
+        while gap <= max_gap and min(share) <= n <= max(share):
+            if share.get(n, 0) >= stray_share:
+                edge, gap = n, 0
+            else:
+                gap += 1
+            n += step
+        bounds.append(edge)
+    return [(n, s) for n, s in notes if bounds[0] <= n <= bounds[1]]
 
 
 def _norm(s: str) -> str:
