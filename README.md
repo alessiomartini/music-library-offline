@@ -1,76 +1,62 @@
 # Music Library Offline
 
-This repository contains offline source material and the audio-first
-transcription pipeline for the `music-library` project. It is intentionally
-separate from the frontend repository: the web repository (`music-library`)
-contains the static React application and consumes published normalized JSON
-score assets; this repository contains source recordings, the Python
-pipeline that turns them into those assets, working intermediates, and
-curation notes.
+Offline source material and Python pipelines for the `music-library` project
+(<https://github.com/alessiomartini/music-library>). The web repository is a static React app that consumes
+published normalized JSON; this repository holds the source recordings and MIDI files, the scripts that turn them
+into those assets, working intermediates, and curation notes. The long-term design is `docs/DESIGN.md` in the
+`music-library` repository (it is not in this one).
 
-Two songs have been transcribed so far: **Your Song** (Elton John) and
-**E cerca 'e me capi** (Pino Daniele), through the **audio-first** pipeline
-below. The pipeline is one set of generic, slug-parameterized scripts — not
-a per-song copy — driven by a small JSON config per song:
+## What is active
 
-```text
-source recording (input/<slug>.mp3)
-  -> source separation (Demucs)
-  -> vocal melody transcription (Basic Pitch detection, MuseScore 4
-     quantization/notation)
-  -> lyric alignment (forced alignment, attached to the detected notes)
-  -> harmony extraction from accompaniment (lv-chordia, ML chord recognition)
-  -> instrumental transcription from accompaniment (Basic Pitch detection,
-     MuseScore 4 quantization/notation)
-  -> MusicXML assembly (music21)
-  -> normalized JSON (schemaVersion 1 envelope)
-  -> transfer to the web repository (src/data/songs/<slug>.json)
-```
+| Pipeline | Scripts | What it produces |
+| --- | --- | --- |
+| Vocal range from the recording | `pipeline/audio_first/vocal_distribution.py`, `vocal_batch.py`, `separate.py` | `output/vocal/<slug>.json` for 1902 songs (published by the web repo as vocal-range histograms) |
+| MIDI-first score | `pipeline/midi_first/*.py`, then shared `pipeline/assemble_musicxml.py` and `pipeline/musicxml_to_json.py` | `output/json/<slug>.json` (normalized `schemaVersion 1` score); so far `anna-e-marco` |
+| MIDI intake | `pipeline/midi_first/organize_midi_intake.py` | `midi-intake/library/<slug>/` (see `midi-intake/README.md`) |
 
-**Status (2026-09-22): a second, preferred path is being added.** Free ML
-tools don't get audio-first transcription quality high enough. Many songs
-have high-quality, human-made MIDI files available (often karaoke-style,
-with lyrics already embedded and synced to the notes), which sidesteps ML
-transcription and lyric alignment entirely for voice/instruments/harmony.
-This **MIDI-first** path is additive — it doesn't touch or replace anything
-above, which stays available as a fallback for songs without a usable MIDI.
-See `midi-intake/README.md` for the MIDI intake/organization step, and
-`docs/DESIGN.md` (in the `music-library` repo) for the
-architecture discussion.
+The older audio-first transcription (Demucs + Basic Pitch + forced alignment + lv-chordia) is **legacy**: it
+produced the first two published scores (Your Song, E cerca 'e me capi) but free ML tools were not accurate
+enough. Its scripts are in `pipeline/_OLD/audio_first/`, its per-song data in `_OLD/`, and its full
+documentation is in [`docs/legacy.md`](docs/legacy.md). Those scripts do not run from there as they are
+(`REPO_ROOT` is one level too shallow).
 
 ## Requirements
 
-Besides the Python dependencies in `pipeline/pyproject.toml`,
-**MuseScore 4** must be installed (used headlessly via its CLI for
-MIDI-to-notation quantization — see `pipeline/musescore_import.py`).
-`transcribe_vocals.py` and `transcribe_instrumental.py` locate it via the
-`MUSESCORE4_PATH` environment variable, its default Windows install path, or
-`mscore`/`mscore4portable` on `PATH`, in that order.
+Python dependencies are in `pipeline/pyproject.toml` (`pip install -e pipeline`; run tests with `pytest` from the
+repo root). **MuseScore 4** is needed for the MIDI-first path (headless quantization, see
+`pipeline/musescore_import.py`); it is located through the `MUSESCORE4_PATH` environment variable, its default
+Windows install path, or `mscore`/`mscore4portable` on `PATH`. Vocal ranges also need `yt-dlp` (with `node` for
+its JS runtime), `ffmpeg` and Demucs.
 
 ## Vocal range from the recording
 
-`pipeline/audio_first/vocal_distribution.py <slug> --title ... --artist ...` measures how
-long each note is sung in the original recording, without needing a score:
+`python pipeline/audio_first/vocal_distribution.py <slug> --title "..." --artist "..."` measures how long each
+note is sung in the original recording, without needing a score:
 
 ```text
-YouTube search (accepted only if the duration matches Deezer's within 5 s;
-  the chosen video id is kept in input/<slug>.source)
+YouTube search (accepted only if the duration matches Deezer's within 5 s)
   -> Demucs vocal stem (separate.py)
   -> pYIN f0 track (working/<slug>/f0.npz, cached)
   -> seconds sung per MIDI note -> output/vocal/<slug>.json
 ```
 
-The JSON gives two normalized histograms (shares of the singing time, and shares
-of the sung notes, i.e. how many times each note is sung), the range
-(notes with at least 1% of the time) and the core (10th-90th percentile of the
-time). Thresholds are in `pipeline/constants.py`. Almost all the time is Demucs.
+The JSON has two normalized histograms (shares of the singing time, and shares of the sung notes), the range
+(notes with at least 1% of the time) and the core (10th-90th percentile of the time). Thresholds are in
+`pipeline/constants.py`. Almost all the time is Demucs.
 
-Many songs: `python pipeline/audio_first/vocal_batch.py songs.tsv --gpu` (TSV lines:
-`slug`, `title`, `artist`, optional YouTube id; resumable, failures logged to
-`working/vocal-batch.log`). `--gpu` separates on the GPU, one song at a time,
-while the other worker downloads or tracks pitch on the CPU. It needs the CUDA
-build of PyTorch, kept in its own environment so the main one stays as it is
-(cu126 is the newest build that supports both the MX150's Pascal GPU and Python 3.14):
+### `input/*.source` files
+
+`input/<slug>.source` holds one line: the YouTube video id of the recording used for that song (for example
+`dCdbKK_hyQw`). `vocal_distribution.py` writes it after the first successful match and reuses it on later runs;
+`--youtube <id>` overrides it. The audio itself (`input/<slug>.mp3`/`.webm`, stems, f0 tracks) is gitignored, so
+the `.source` files are what makes a measurement reproducible: delete one to force a new search.
+
+### Many songs
+
+`python pipeline/audio_first/vocal_batch.py songs.tsv --gpu` (TSV lines: `slug`, `title`, `artist`, optional
+YouTube id). It is resumable (songs with an `output/vocal/<slug>.json` are skipped) and logs failures to
+`working/vocal-batch.log`. `--gpu` separates on the GPU, one song at a time, while the other worker downloads or
+tracks pitch on the CPU. It needs the CUDA build of PyTorch in its own environment:
 
 ```bash
 python -m venv .venv
@@ -78,281 +64,43 @@ python -m venv .venv
 .venv/Scripts/python -m pip install demucs soundfile
 ```
 
-Measured on this PC (2026-10-16): separating 148 s of audio takes 148 s on CPU
-with Demucs defaults, 123 s with overlap 0.1 (same histogram, 0.993 overlap),
-76 s on the GPU (0.991 overlap with CPU). Two CPU songs in parallel give ~1.25x
-the throughput; a CPU song next to the GPU one gains almost nothing. The batch
-with `--gpu` did 4 songs (~17 min of audio) in 499 s: about 2 minutes per song,
-~60 hours for the whole library.
+Timing measured on one PC (2026-10-16, 148 s of audio): CPU 148 s (123 s with overlap 0.1, same histogram), GPU
+76 s; the `--gpu` batch did about 2 minutes per song.
 
-Validation on 2026-10-15 against the published lead sheets: E cerca 'e me capi
-overlap 0.91; Anna e Marco same notes an octave lower than the karaoke-MIDI lead
-sheet (0.77 by pitch class); Your Song's audio-first lead sheet is too unreliable
-to compare (it reaches A5).
+Validation on 2026-10-15 against published lead sheets: E cerca 'e me capi overlap 0.91; Anna e Marco same notes
+an octave lower than the karaoke-MIDI lead sheet (0.77 by pitch class); Your Song's audio-first lead sheet is too
+unreliable to compare (it reaches A5).
+
+## MIDI-first score
+
+Many songs have good human-made MIDI files (often karaoke-style, with lyrics synced to the notes), which avoids
+ML transcription. Steps, per song slug (each reads `songs/<slug>.json` for song-specific settings):
+
+1. Organize downloaded MIDI files: `python pipeline/midi_first/organize_midi_intake.py` (dry run; `--apply` to
+   move into `midi-intake/library/<slug>/`). See `midi-intake/README.md`.
+2. `import_karaoke_midi.py <slug>`: find the vocal track and quantize it through MuseScore 4
+   (`working/<slug>/vocal-events.json`).
+3. `extract_midi_lyrics.py <slug>`: attach the MIDI's embedded syllables to the notes.
+4. `extract_midi_harmony.py <slug>`: chord templates over the accompaniment notes.
+5. Optional: `parse_chord_chart_pdf.py <slug>` then `apply_verified_source.py <slug>` replace lyrics and harmony
+   with a human-verified chart in `corrections/<slug>/verified-source.json`, keeping the MIDI timing.
+6. `assemble_musicxml.py <slug>` (MusicXML views in `working/<slug>/`) and `musicxml_to_json.py <slug>`
+   (`output/json/<slug>.json`).
+7. Review `working/<slug>/lead-sheet.musicxml` and the JSON (automatic extraction needs correction), then copy to
+   the web repo: `cp output/json/<slug>.json ../music-library/src/data/songs/<slug>.json`, wire it into
+   `src/data/songs/index.ts` and run `npm run validate` there.
 
 ## Layout
 
-- `songs/<slug>.json` — **pipeline input**: the one place a song's non-audio
-  identity lives — title, composer/lyricist, key, tempo, time signature,
-  Basic Pitch filter thresholds (`melodySource`, `instrumentalSource`), and
-  the lyrics (syllabified, per verse). Every pipeline script reads this
-  instead of hardcoding song-specific values. Hand-edited.
-- `input/<slug>.mp3` — the source recording.
-- `working/<slug>/` — pipeline-generated intermediates only: separated
-  stems, vocal/harmony event JSON, aligned lyrics, assembled MusicXML.
-  Fully regenerated by the pipeline on every run; never hand-edited and
-  never holds notes or instructions.
-- `corrections/<slug>/` — the human side of the workflow: manual correction
-  notes and curation records, one folder per song (scaffolded even before a
-  song has corrections yet). Not read by the pipeline.
-- `output/json/<slug>.json` — **pipeline output**: the final normalized
-  `schemaVersion 1` score (notes, timing, lyrics, harmony, measures),
-  transferred verbatim into the web repository's `src/data/songs/`. This is
-  the one directory whose content is meant to exactly match what's published
-  on the web. It is not a duplicate of `songs/<slug>.json`: that file is
-  hand-written identity/config fed *into* the pipeline; this one is the full
-  musical result produced *by* it.
-- `pipeline/` — the pipeline scripts (below): `audio_first/` (the original
-  MP3-based path), `midi_first/` (the newer path), and shared,
-  source-agnostic infrastructure both import, kept flat at `pipeline/`
-  root. One script per step, no per-song duplicates.
-- `midi-intake/` — landing area and organizer for the MIDI-first path: drop
-  downloaded MIDI files in `inbox/`, `midi_first/organize_midi_intake.py`
-  sorts them into `library/<slug>/`. See `midi-intake/README.md`.
+- `songs/<slug>.json`: hand-edited pipeline input (title, key, tempo, meter, source settings, lyrics).
+- `input/`: source recordings (gitignored) and the tracked `<slug>.source` files.
+- `midi-intake/`: inbox and organized library of source MIDI files (gitignored media; overrides tracked).
+- `working/<slug>/`: pipeline intermediates, regenerated on every run, never hand-edited.
+- `corrections/<slug>/`: manual correction notes and verified sources. Not read by the pipeline except
+  `verified-source.json`.
+- `output/json/`: final scores, copied verbatim to the web repo. `output/vocal/`: vocal-range measurements.
+- `pipeline/`: active scripts (`audio_first/` for vocal range and separation, `midi_first/`, shared modules at the
+  root); `pipeline/_OLD/` and `_OLD/` are the legacy audio-first scripts and data.
+- `tests/`: pytest suite for the MIDI-first and vocal-distribution code.
 
-Raw audio, MIDI, and Python virtualenvs/caches are gitignored. Working JSON,
-corrections, and final output JSON are tracked.
-
-## Pipeline scripts
-
-`pipeline/` is split into `pipeline/audio_first/` (this section — the
-original MP3-based path), `pipeline/midi_first/` (the newer, preferred-
-when-available path — see "MIDI-first offline transcription / curation
-pipeline" below), and shared, source-agnostic infrastructure kept flat at
-`pipeline/` root (`constants.py`, `musescore_import.py`,
-`assemble_musicxml.py`, `musicxml_to_json.py`, `note_utils.py`,
-`harmony_utils.py`) that both paths import — never the other way around;
-`audio_first/` and `midi_first/` don't import from each other.
-
-Each script takes a song slug and reads `songs/<slug>.json` for anything
-song-specific. Run them in order for a new or re-transcribed song:
-
-1. `audio_first/separate.py <slug>` — Demucs source separation into vocal +
-   accompaniment stems (`working/<slug>/{vocals,accompaniment}.wav`).
-2. `audio_first/transcribe_vocals.py <slug>` — vocal melody transcription: Basic Pitch
-   detects notes over the vocal stem (filtered by `melodySource.vocalRange`
-   / `firstVocalSec` / `velocityThreshold` / `minDurationTicks`, applied to
-   the MIDI notes before anything downstream sees them), then **MuseScore 4**
-   quantizes and notates them (`musescore_import.py`, via its `--score-elements`
-   CLI export — see below) — this replaced an earlier fixed-grid snap that
-   produced far worse notation than opening the same raw MIDI directly in
-   MuseScore. Basic Pitch's raw MIDI export gets a corrected embedded tempo
-   (`predict(..., midi_tempo=...)`; its default bakes in a meaningless
-   120bpm) and a non-piano instrument program, since MuseScore auto-splits a
-   piano-family program across a grand staff — appropriate for the
-   instrumental step, but it scatters a monophonic vocal line's occasional
-   spurious simultaneous pitch (separation bleed/harmonics) into a bogus
-   second staff instead of leaving it as an ordinary overlap. Overlapping
-   notes are then collapsed to one active line (`enforce_monophonic`), since
-   a solo vocal is monophonic by definition. Expect the result to still need
-   correction, same as any automatic transcription (see
-   `docs/DESIGN.md`, "Human Curation Is Part of the
-   Workflow").
-3. `audio_first/align_lyrics.py <slug>` — forced alignment: runs torchaudio's `MMS_FA`
-   (a multilingual Wav2Vec2 CTC aligner) over the vocal stem against the
-   full, romanized (via `uroman`) syllable sequence from the song config's
-   `lyrics`, to find each syllable's actual onset/offset in the recording.
-   CTC alignment absorbs silence and instrumental gaps between syllables on
-   its own, so no verse-boundary guessing is needed. Each syllable's onset is
-   then attached to whichever `transcribe_vocals.py` note (real, MuseScore-
-   quantized pitch and timing) is sounding at that instant — the notes
-   themselves are never altered or fabricated here. When a passage has more
-   sung syllables than detected notes, more than one syllable lands on the
-   same note (the schema already supports a list of lyrics per note); a note
-   with none keeps its pitch with no lyric. A syllable whose text romanizes
-   to nothing in the aligner's vocabulary (e.g. corrupted source text) is
-   dropped with a warning rather than aborting the run.
-4. `audio_first/extract_harmony.py <slug>` — chord recognition on the accompaniment stem
-   via **lv-chordia** (see below). Duration is derived from the next
-   event's already-rounded start, not rounded independently — see "Harmony
-   tick-tiling" below. A chord event that repeats the one immediately
-   before it is dropped, but only when both land in the same measure (e.g.
-   a bar reading A A C D becomes A C D); a repeat that crosses a measure
-   boundary is left alone, since that's the ordinary way a chart shows the
-   harmony continuing into a new measure, not a duplicate to clean up.
-5. `audio_first/transcribe_instrumental.py <slug>` — polyphonic instrumental
-   transcription: Basic Pitch detects notes over the accompaniment stem
-   (filtered by `instrumentalSource.pitchRange` / `velocityThreshold`,
-   applied to the MIDI notes), then MuseScore 4 quantizes/notates them the
-   same way as the vocal step, keeping its own polyphony and voices instead
-   of a fixed-grid snap. A polyphony cap (`instrumentalSource.maxPolyphony`,
-   default 6 notes/onset) is still applied after import as a safety net
-   against pathologically dense passages, not as the primary way of making
-   the result playable. This is an independent transcription of the
-   accompaniment audio, not a reduction of the harmony analysis — expect it
-   to need correction, same as any automatic transcription.
-6. `assemble_musicxml.py <slug>` — shared, not audio_first-specific —
-   assembles voice, instrumental, and harmony into several MusicXML views
-   via `music21` (see below), using the song config's metadata.
-7. `musicxml_to_json.py <slug>` — shared, not audio_first-specific —
-   reads `vocal-events.json` +
-   `aligned-lyrics.json` and `harmony-events.json` directly (not the
-   assembled MusicXML — see "Why the JSON step bypasses MusicXML" below)
-   and emits the `schemaVersion: 1` normalized JSON envelope the web repo's
-   `loadScoreJson` expects, to `output/json/<slug>.json`.
-
-Example, for a song already separated:
-
-```bash
-python pipeline/audio_first/transcribe_vocals.py your-song
-python pipeline/audio_first/align_lyrics.py your-song
-python pipeline/audio_first/extract_harmony.py your-song
-python pipeline/audio_first/transcribe_instrumental.py your-song
-python pipeline/assemble_musicxml.py your-song
-python pipeline/musicxml_to_json.py your-song
-```
-
-## MusicXML assembly output
-
-`assemble_musicxml.py` writes five files to `working/<slug>/`, all padded so
-every part in a given file ends on the same final measure (see "Why the
-JSON step bypasses MusicXML" below for why padding matters):
-
-- `voice.musicxml` — voice only.
-- `instrumental.musicxml` — the transcribed accompaniment only.
-- `harmony.musicxml` — chord symbols only, no noteheads.
-- `full-score.musicxml` — all three parts together, for a full read.
-- `lead-sheet.musicxml` — voice + harmony only; this is the pair that
-  corresponds to what gets published (`musicxml_to_json.py` doesn't read
-  the instrumental part at all — it's not part of the `Score` schema yet,
-  see `docs/DESIGN.md`'s "Bass/instrumental parts").
-
-## Why the JSON step bypasses MusicXML
-
-`musicxml_to_json.py` reads voice and harmony from their JSON intermediates
-(`vocal-events.json`/`aligned-lyrics.json`, `harmony-events.json`) rather
-than re-parsing `lead-sheet.musicxml`. Two music21 round-trip issues drove
-this:
-
-- A ChordSymbol's `<harmony>` tag gets re-emitted once per measure it
-  spans, the same way a tied note is split at a barline. With this many
-  chord changes, re-parsing that duplicated the tag and corrupted the
-  harmony part's own offsets partway through the score, silently
-  truncating the harmony read back from it.
-- A single Rest spanning several empty measures (e.g. Voice padded out to
-  match Harmony's length) made `makeMeasures()` emit a duplicated
-  whole-measure rest in the final measure instead of one correctly sized
-  one — most notation software reports that as an incomplete/overfull
-  measure. `assemble_musicxml.py` works around this for its own MusicXML
-  output by padding one measure-length Rest at a time instead of one long
-  one, but the JSON step sidesteps the whole class of issue by not
-  round-tripping through MusicXML at all.
-
-## MuseScore 4 import
-
-**Added 2026-09-21.** `pipeline/musescore_import.py` shells out to
-`MuseScore4.exe --score-elements <midi>`, which imports a MIDI file with
-MuseScore's own adaptive quantization (tuplet detection, tie handling, full
-polyphony/voices) and prints the resulting score as JSON — no MusicXML/
-music21 round-trip needed. This replaced this pipeline's own fixed-grid
-snap-to-eighth-note quantization for both the vocal and instrumental steps,
-which produced markedly worse notation than opening the same raw MIDI
-directly in MuseScore.
-
-Two things needed correcting before MuseScore's import could be trusted:
-
-- **Tempo.** Basic Pitch's `predict()` writes a MIDI whose tempo is
-  PrettyMIDI's meaningless 120bpm default unless `midi_tempo=` is passed
-  explicitly; both transcription scripts now pass the song's real
-  `tempoBpm`, so MuseScore's imported absolute timing is correct.
-- **Duration.** MuseScore reports each note's position as `beat` (already
-  correct even inside a tuplet — the "real", compressed position) but its
-  nominal `duration: {name, dots}` does not reflect tuplet scaling.
-  `import_midi()` derives each note's duration from the gap to the next
-  note in the same MuseScore voice, capped at the nominal duration: the cap
-  matters because MuseScore sometimes keeps a voice track active but nearly
-  empty for long stretches, so "gap to the next event in this voice" alone
-  can produce a wildly too-long note; taking the smaller of the two still
-  correctly shortens a tuplet note (whose real gap is smaller than its
-  nominal duration implies) while bounding the pathological case.
-
-`transcribe_vocals.py` additionally writes the vocal MIDI with a non-piano
-instrument program (MuseScore auto-splits a piano-family program, GM 0-7,
-across a grand staff — the right behavior for the instrumental step, but it
-scatters a monophonic vocal line's occasional spurious simultaneous pitch
-into a bogus second staff) and calls `enforce_monophonic()` afterward, which
-collapses any still-overlapping notes to a single active line, independent
-of which MuseScore voice/staff they came from.
-
-## Harmony extraction: lv-chordia
-
-**Switched 2026-09-20.** Harmony extraction now uses
-[`lv-chordia`](https://github.com/openmirlab/lv-chordia) (MIT-licensed, an
-inference-only PyPI package of the ISMIR 2019 "Large-Vocabulary Chord
-Transcription via Chord Structure Decomposition" model — an ensemble of 5
-networks decoded with an HMM for temporal smoothing; weights are bundled in
-the package, ~28MB, no separate download). This replaced a hand-rolled
-librosa chroma-template-per-beat matcher, which had no temporal smoothing
-and produced much noisier chord boundaries.
-
-`lv-chordia` emits mir_eval-style labels (`"Eb:maj7"`, `"Ab:maj/5"`, `"N"`
-for no-chord). `extract_harmony.py` maps these onto the web app's supported
-`ChordQuality` vocabulary (`src/lib/score.ts` in the web repo — major,
-minor, dominant7, major7, minor7, halfDiminished7, augmented, sus4,
-dominant7sus4, major6); a handful of qualities that vocabulary can't
-represent (full diminished-7th, added 9ths/11ths/13ths, sus2, minor6) are
-approximated to the nearest supported quality rather than invented or
-crashed on — a recorded, deliberate information loss, not silent
-corruption. See `QUALITY_MAP` in `extract_harmony.py` for the exact mapping.
-
-Two install notes: `lv-chordia` pulls in `pydub`, which still imports the
-stdlib `audioop` module that Python 3.13+ removed — the `audioop-lts`
-backport (already in `pipeline/pyproject.toml`) fixes that on 3.13+. `pydub`
-also wants `ffmpeg` on `PATH` for non-WAV input; our stems are already WAV,
-so this only matters if `chord_recognition` is pointed at an mp3 directly.
-
-## Harmony tick-tiling (fixed 2026-09-20, applies regardless of extractor)
-
-The harmony extractor and the MusicXML-to-JSON converter both used to round
-each chord event's `start` and `duration` **independently** — once from the
-extractor's own timestamps, and again from `music21`'s float `offset` /
-`quarterLength` on the MusicXML round-trip. Two independent roundings of
-dependent quantities can each land on either side of `.5`, which produced
-stray one-tick gaps/overlaps between consecutive chords and failed the web
-repo's `validateScore` overlap check.
-
-Fixed in both `extract_harmony.py` and `musicxml_to_json.py` by deriving
-`duration = nextEvent.start - event.start` from the already-rounded starts
-instead of rounding duration separately. This guarantees exact tiling by
-construction, independent of which chord-recognition backend produces the
-raw timestamps. Re-run steps 4 through 6 for a song if you touch harmony
-extraction again, and copy the regenerated `output/json/<slug>.json` into
-the web repo — don't hand-patch a published JSON asset's harmony array.
-
-Also fixed at the same time: the JSON writer was emitting explicit `null`
-for absent optional fields (`tie`, `melisma`, `elision`, `lyrics`,
-`slashBass`). The web repo's schema treats "optional" as "key absent", not
-`null`; `null` failed validation. The writer now omits the key instead.
-
-## Adding a new song
-
-1. Add `input/<slug>.mp3`.
-2. Write `songs/<slug>.json` (see the two existing files for the shape):
-   metadata, `melodySource` (curated MusicXML path, or `basic-pitch` with
-   its vocal range), and syllabified `lyrics`.
-3. Run the seven pipeline steps in order (above).
-4. Inspect `working/<slug>/lead-sheet.musicxml` and `output/json/<slug>.json`
-   before transferring — automatic transcription and chord recognition are
-   both expected to need correction; see `docs/DESIGN.md`'s
-   "Human Curation Is Part of the Workflow".
-5. Copy `output/json/<slug>.json` into the web repo's
-   `src/data/songs/<slug>.json` and wire it into `src/data/songs/index.ts`.
-
-## Transferring to the web repository
-
-```bash
-cp output/json/<slug>.json ../music-library/src/data/songs/<slug>.json
-```
-
-then, in `music-library`, run `npm run validate` to confirm the score is
-structurally valid before it reaches `src/data/songs/index.ts`.
+Raw audio, MIDI and virtualenvs/caches are gitignored; working JSON, corrections and output JSON are tracked.
