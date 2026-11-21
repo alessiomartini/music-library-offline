@@ -1,27 +1,28 @@
 # Roadmap
 
 <!--
-Unico file per todo, idee, decisioni e diario, letto da Projects Overview
-(https://alessiomartini.github.io/projects-overview/). Protocollo: templates/ROADMAP.md di projects-overview.
-Il tracker principale del progetto è il ROADMAP.md di `music-library`; qui solo la parte offline (pipeline e sorgenti).
+Single file for todos, ideas, decisions and diary, read by Projects Overview
+(https://alessiomartini.github.io/projects-overview/). Protocol: templates/ROADMAP.md of projects-overview.
+The main tracker of the project is the ROADMAP.md of `music-library`; here only the offline part (pipeline and sources).
 -->
 
-## Fatto
-- [x] Pipeline audio-first generica (Demucs, Basic Pitch, allineamento testo, lv-chordia, music21 → JSON)
-- [x] Your Song e E cerca 'e me capi trascritte come Score
-- [x] Range vocale misurato dalla registrazione: 1743 canzoni (batch completato)
+## Done
+- [x] Generic audio-first pipeline (Demucs, Basic Pitch, lyrics alignment, lv-chordia, music21 → JSON)
+- [x] Your Song and E cerca 'e me capi transcribed as Score
+- [x] Vocal range measured from the recording: 1743 songs (batch completed)
 
-## Da fare
-- [ ] Percorso MIDI-first (MIDI karaoke fatti a mano al posto della trascrizione ML): vedi `midi-intake/README.md`
-- [ ] Trascrivere altri brani come Score e trasferirli in `music-library`
+## To do
+- [ ] MIDI-first path (hand-made karaoke MIDI instead of ML transcription): see `midi-intake/README.md`
+- [ ] Transcribe more songs as Score and transfer them to `music-library`
 
-## Decisioni e cose provate
+## Decisions and things tried
 
-- Repo separato dal frontend apposta: qui sorgenti audio, pipeline Python, intermedi (`working/`) e note di curazione;
-  `music-library` riceve solo i JSON normalizzati.
-- Gli strumenti ML gratuiti non danno una trascrizione audio-first abbastanza buona (2026-09-22): da qui il percorso
-  MIDI-first, che si aggiunge senza sostituire l'audio-first (resta come ripiego).
-- Il documento di progetto lungo è `docs/DESIGN.md` nel repo `music-library`. Il codice vecchio sta in `pipeline/_OLD/`.
+- Separate repo from the frontend on purpose: here audio sources, Python pipeline, intermediates (`working/`) and curation notes;
+  `music-library` receives only the normalized JSON.
+- Free ML tools do not give a good enough audio-first transcription (2026-09-22): hence the MIDI-first
+  path, which is added without replacing audio-first (it stays as a fallback).
+- The long design document is `docs/DESIGN.md` in the `music-library` repo. The old code is in `pipeline/_OLD/`.
 
 ## Log
-- 2026-10-18: creata ROADMAP.md (protocollo unico); riferimenti a docs/FUTURE-ARCHITECTURE.md → docs/DESIGN.md
+- 2026-11-21: 🤖 ROADMAP translated to English (language rule: projects in English or bilingual EN/IT).
+- 2026-10-18: created ROADMAP.md (single protocol); references to docs/FUTURE-ARCHITECTURE.md → docs/DESIGN.md
